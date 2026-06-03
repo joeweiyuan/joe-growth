@@ -62,21 +62,27 @@ if diff:
     result = run("git push origin main")
     print(f"  {result}")
 
-    # Step 4: deploy gh-pages (checkout orphan, copy index.html, push)
+    # Step 4: deploy gh-pages (checkout orphan, restore site files, push)
     print("\n🌐 部署 gh-pages...")
+    current_branch = run("git rev-parse --abbrev-ref HEAD")
     run(f"git branch -D {BRANCH_PAGES} 2>/dev/null || true")
     run(f"git checkout --orphan {BRANCH_PAGES}")
     run("git rm -rf . 2>/dev/null || true")
-    # Copy just the site files
+    # Restore site files from index (they're in the git object store from the commit)
+    run(f"git checkout {current_branch} -- index.html README.md 2>/dev/null || true")
+    # If checkout from other branch fails, files are in working dir (gh-pages orphan)
     for f in ["index.html", "README.md"]:
-        src = os.path.join(REPO_DIR, f)
-        if os.path.exists(src):
-            shutil.copy2(src, os.path.join(REPO_DIR, f))
-    run("git add index.html README.md")
-    run(f'git commit -m "deploy: {datetime.now().strftime("%Y-%m-%d %H:%M")}"')
-    run(f"git push origin {BRANCH_PAGES} --force")
-    run("git checkout main")
-    print("✅ gh-pages 部署完成！")
+        if not os.path.exists(os.path.join(REPO_DIR, f)):
+            print(f"  ⚠️  {f} not found, skipping")
+    run("git add index.html README.md 2>/dev/null || true")
+    diff = run("git diff --cached --stat")
+    if diff:
+        run(f'git commit -m "deploy: {datetime.now().strftime("%Y-%m-%d %H:%M")}"')
+        run(f"git push origin {BRANCH_PAGES} --force")
+        print("✅ gh-pages 部署完成！")
+    else:
+        print("  gh-pages 无变更，跳过")
+    run(f"git checkout {current_branch}")
 else:
     print("  无变更，跳过推送")
     run("git checkout main 2>/dev/null || true")
