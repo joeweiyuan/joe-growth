@@ -49,6 +49,16 @@ if os.path.exists(os.path.join(TRACKER_DIR, "growth_index.json")):
     shutil.copy2(os.path.join(TRACKER_DIR, "growth_index.json"), os.path.join(REPO_DIR, "growth_index.json"))
     print("  复制 growth_index.json")
 
+# Copy assets (images, videos)
+assets_src = os.path.join(TRACKER_DIR, "assets")
+assets_dst = os.path.join(REPO_DIR, "assets")
+if os.path.exists(assets_src):
+    if os.path.exists(assets_dst):
+        shutil.rmtree(assets_dst)
+    shutil.copytree(assets_src, assets_dst)
+    count = sum(len(files) for _, _, files in os.walk(assets_dst))
+    print(f"  复制 assets/ ({count} 个文件)")
+
 # Step 2: git add & commit
 print("\n📦 提交更改...")
 run(f"git add -A")
@@ -70,11 +80,13 @@ if diff:
     run("git rm -rf . 2>/dev/null || true")
     # Restore site files from index (they're in the git object store from the commit)
     run(f"git checkout {current_branch} -- index.html README.md 2>/dev/null || true")
+    # Restore assets for the site
+    run(f"git checkout {current_branch} -- assets 2>/dev/null || true")
     # If checkout from other branch fails, files are in working dir (gh-pages orphan)
     for f in ["index.html", "README.md"]:
         if not os.path.exists(os.path.join(REPO_DIR, f)):
             print(f"  ⚠️  {f} not found, skipping")
-    run("git add index.html README.md 2>/dev/null || true")
+    run("git add index.html README.md assets 2>/dev/null || true")
     diff = run("git diff --cached --stat")
     if diff:
         run(f'git commit -m "deploy: {datetime.now().strftime("%Y-%m-%d %H:%M")}"')
