@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>子焘记 · Joe Wei 成长轨迹</title>
+<style>
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --card2: #334155;
+  --gold: #fbbf24;
+  --accent: #60a5fa;
+  --sports: #34d399;
+  --academic: #a78bfa;
+  --quality: #f472b6;
+  --text: #e2e8f0;
+  --text2: #94a3b8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding-bottom:80px}
+.container{max-width:640px;margin:0 auto;padding:20px}
+
+/* Hero */
+.hero{text-align:center;padding:40px 0 30px}
+.badge{display:inline-block;background:rgba(251,191,36,.15);color:var(--gold);padding:6px 16px;border-radius:20px;font-size:.82rem;margin-bottom:12px;border:1px solid rgba(251,191,36,.25)}
+.hero h1{font-size:2.2rem;font-weight:700;margin-bottom:4px}
+.hero h1 .sub{font-size:1rem;font-weight:400;color:var(--text2);margin-left:8px}
+.tagline{color:var(--text2);font-size:.92rem;margin-bottom:8px}
+.motto{font-size:1.1rem;color:var(--gold);font-style:italic;letter-spacing:2px}
+
+/* Profile Grid */
+.profile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
+.profile-card{background:var(--card);border-radius:14px;padding:16px 10px;text-align:center;border:1px solid var(--card2)}
+.profile-card .icon{font-size:1.5rem;margin-bottom:6px}
+.profile-card .label{font-size:.72rem;color:var(--text2)}
+.profile-card .value{font-size:1rem;font-weight:600;margin-top:2px}
+
+/* Navigation */
+.nav{display:flex;background:var(--card);border-radius:16px;padding:6px;margin-bottom:24px;border:1px solid var(--card2)}
+.nav-item{flex:1;text-align:center;padding:10px 0;border-radius:12px;font-size:.82rem;color:var(--text2);cursor:pointer;transition:all .2s}
+.nav-item.active{background:var(--accent);color:#fff;font-weight:600}
+.nav-item:not(.active):hover{background:var(--card2)}
+
+/* Pages */
+.page{display:none}
+.page.active{display:block}
+
+/* Section */
+.section{margin-bottom:28px}
+.section h2{font-size:1.1rem;margin-bottom:4px}
+.subtitle{color:var(--text2);font-size:.82rem;margin-bottom:16px}
+
+/* Timeline */
+.timeline{border-left:2px solid var(--card2);padding-left:20px;margin-left:10px}
+.tl-item{position:relative;padding-bottom:24px}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-27px;top:4px;width:14px;height:14px;border-radius:50%;border:2px solid var(--bg)}
+.tl-dot.milestone{background:var(--gold)}
+.tl-dot.academic{background:var(--academic)}
+.tl-dot.sports{background:var(--sports)}
+.tl-dot.quality{background:var(--quality)}
+.tl-date{font-size:.78rem;color:var(--text2);margin-bottom:4px}
+.tl-title{font-size:.95rem;font-weight:600}
+.tl-desc{font-size:.85rem;color:var(--text2);margin-top:2px}
+.tag{display:inline-block;font-size:.72rem;padding:2px 10px;border-radius:10px;margin-top:4px}
+.tag-academic{background:rgba(167,139,250,.2);color:var(--academic)}
+.tag-sports{background:rgba(52,211,153,.2);color:var(--sports)}
+.tag-quality{background:rgba(244,114,182,.2);color:var(--quality)}
+
+/* Monthly Card */
+.monthly-card{background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--card2)}
+.month-title{font-size:1.1rem;font-weight:600;margin-bottom:12px}
+.month-keyword{color:var(--gold);font-weight:400}
+.month-highlights{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.highlight-tag{background:rgba(96,165,250,.15);color:var(--accent);padding:4px 12px;border-radius:12px;font-size:.82rem;border:1px solid rgba(96,165,250,.25)}
+.month-detail{font-size:.88rem;color:var(--text2);line-height:1.7}
+
+/* Milestones */
+.milestone-table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:8px}
+.milestone-table th,.milestone-table td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--card2)}
+.milestone-table th{color:var(--text2);font-weight:500}
+
+/* Footer */
+.footer{text-align:center;padding:30px 0;color:var(--text2);font-size:.82rem;border-top:1px solid var(--card2);margin-top:20px}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- ============== PAGE: HOME ============== -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <div class="badge">子焘记 · 焘藏今日，照亮未来</div>
+    <h1>Joe Wei <span class="sub">魏源</span></h1>
+    <div class="tagline">从一个少年的日常，看见成长的轨迹</div>
+    <div class="motto">「焘藏今日，照亮未来」</div>
+  </div>
+
+  <!-- Profile Cards -->
+  <div class="profile-grid">
+    <div class="profile-card"><div class="icon">🎂</div><div class="label">生日</div><div class="value">2011.05</div></div>
+    <div class="profile-card"><div class="icon">📏</div><div class="label">身高</div><div class="value">182.5 cm</div></div>
+    <div class="profile-card"><div class="icon">🏫</div><div class="label">学校</div><div class="value">光华剑桥美高</div></div>
+    <div class="profile-card"><div class="icon">📊</div><div class="label">GPA</div><div class="value">3.91</div></div>
+    <div class="profile-card"><div class="icon">🎯</div><div class="label">托福</div><div class="value">3.5/6.0</div></div>
+    <div class="profile-card"><div class="icon">🚣</div><div class="label">赛艇2km</div><div class="value">7'30"</div></div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav">
+    <div class="nav-item active" onclick="switchPage('home')">🏠 首页</div>
+    <div class="nav-item" onclick="switchPage('timeline')">📅 时间线</div>
+    <div class="nav-item" onclick="switchPage('monthly')">📖 月度叙事</div>
+    <div class="nav-item" onclick="switchPage('themes')">🌱 成长主题</div>
+    <div class="nav-item" onclick="switchPage('milestones')">🏆 里程碑</div>
+  </div>
+</div>
+
+<!-- ============== PAGE: TIMELINE ============== -->
+<div id="page-timeline" class="page">
+  <div class="section">
+    <h2>📅 成长时间线</h2>
+    <div class="subtitle">每一天都在积累 · 滑到底部查看更多</div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot milestone"></div>
+        <div class="tl-date">2026-05-31 · 周日</div>
+        <div class="tl-title">🎯 首次周常错词复习</div>
+        <div class="tl-desc">系统自动生成TOP8高频错词报告，含练习题全覆盖，精准补短板</div>
+        <div style="margin-top:4px"><span class="tag tag-academic">📚学术</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot academic"></div>
+        <div class="tl-date">2026-05-29 · 周五</div>
+        <div class="tl-title">📋 学管辅导（补课）</div>
+        <div class="tl-desc">补赛艇比赛耽误的托福辅导课，学业影响最小化</div>
+        <div style="margin-top:4px"><span class="tag tag-academic">📚学术</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot quality"></div>
+        <div class="tl-date">2026-05-24 · 周日</div>
+        <div class="tl-title">🧠 作业写完才吃饭（19:40）</div>
+        <div class="tl-desc">主母摆好饭后坚持先完成作业，延迟满足能力突出</div>
+        <div style="margin-top:4px"><span class="tag tag-quality">💪品质</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot sports"></div>
+        <div class="tl-date">2026-05-24 · 周日</div>
+        <div class="tl-title">💪 赛艇训练：从抗拒到快乐</div>
+        <div class="tl-desc">因下雨改室内测功仪2小时，从不想去→咬牙坚持→满身大汗但开心</div>
+        <div style="margin-top:4px"><span class="tag tag-sports">🚣体育</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot academic"></div>
+        <div class="tl-date">2026-05-24 · 周日</div>
+        <div class="tl-title">📚 托福38天冲刺计划 · Day 2</div>
+        <div class="tl-desc">07:10出门上托福课，持续学习闭环</div>
+        <div style="margin-top:4px"><span class="tag tag-academic">📚学术</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot academic"></div>
+        <div class="tl-date">2026-05-23 · 周六</div>
+        <div class="tl-title">📋 补托福课</div>
+        <div class="tl-desc">4.5小时托福课，为上周比赛耽误的课程还债</div>
+        <div style="margin-top:4px"><span class="tag tag-academic">📚学术</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot milestone"></div>
+        <div class="tl-date">2026-05-16 · 周六</div>
+        <div class="tl-title">🥇 平湖赛艇公开赛500m混双夺冠</div>
+        <div class="tl-desc">人生首赛！第4名→逆转到第1名，0.46秒绝杀。搭档紫色红衣队友</div>
+        <div style="margin-top:4px"><span class="tag tag-sports">🚣体育</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============== PAGE: MONTHLY ============== -->
+<div id="page-monthly" class="page">
+  <div class="section">
+    <h2>📖 月度叙事</h2>
+    <div class="subtitle">每月一篇 · 提炼成长脉络</div>
+
+    <div class="monthly-card">
+      <div class="month-title">2026年5月 <span class="month-keyword">· 夺冠 · 回归 · 系统化</span></div>
+      <div class="month-highlights">
+        <span class="highlight-tag">🥇 平湖赛艇夺冠</span>
+        <span class="highlight-tag">🧠 延迟满足吃饭</span>
+        <span class="highlight-tag">📋 学管补课</span>
+        <span class="highlight-tag">📊 错词追踪系统</span>
+      </div>
+      <div class="month-detail">
+        <p><strong>📚 学术线：</strong>冲刺托福4.5。38天冲刺计划启动，6,840词全部入库，90个数据分区。每周错词追踪，课程安排系统化：每周六口写+每周日听阅，缺课立即补。</p>
+        <p style="margin-top:6px"><strong>🚣 体育线：</strong>5月16日首赛夺冠！第4→第1，逆转0.46秒绝杀。赛后回归室内测功仪训练，从抗拒到享受。</p>
+        <p style="margin-top:10px;color:var(--gold);font-style:italic">「五月是故事的开始：一个冠军，一套系统，一段征程。」</p>
+      </div>
+    </div>
+
+    <!-- System milestones -->
+    <div style="background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--card2);margin-top:16px">
+      <h2 style="font-size:1rem;margin-bottom:12px">🛠️ 系统基建里程碑</h2>
+      <table class="milestone-table">
+        <tr><th>系统</th><th>上线</th><th>功能</th></tr>
+        <tr><td>子焘记成长档案馆</td><td>5月16日</td><td>流水账→结构化叙事→升学文书素材</td></tr>
+        <tr><td>托福每日提醒</td><td>5月23日</td><td>每日8:00微信推送学习任务</td></tr>
+        <tr><td>托福每周复习</td><td>5月31日</td><td>每周日自动生成错词报告+练习题</td></tr>
+        <tr><td>托福课程提醒</td><td>已配置</td><td>课前1天/3小时/1小时飞书提醒</td></tr>
+      </table>
+    </div>
+
+    <!-- Growth Signals -->
+    <div style="background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--card2);margin-top:16px">
+      <h2 style="font-size:1rem;margin-bottom:12px">📈 5月成长信号</h2>
+      <table class="milestone-table">
+        <tr><th>信号</th><th>表现</th></tr>
+        <tr><td>🚀 从冠军到日常</td><td>夺冠后第二天即开始补课，不骄不躁，回归节奏</td></tr>
+        <tr><td>🔄 延迟满足</td><td>19:30饭已摆好，坚持写完作业再吃</td></tr>
+        <tr><td>💪 突破舒适区</td><td>从"不想去训练"到"练完很开心"的经典弧线</td></tr>
+        <tr><td>🧠 系统化自律</td><td>自动化的学习追踪系统正在培养持续的学习习惯</td></tr>
+      </table>
+    </div>
+
+    <!-- Data -->
+    <div style="background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--card2);margin-top:16px">
+      <h2 style="font-size:1rem;margin-bottom:12px">📊 5月关键数据</h2>
+      <table class="milestone-table">
+        <tr><th>项目</th><th>数据</th><th>备注</th></tr>
+        <tr><td>赛艇比赛</td><td>1次</td><td>🥇夺冠</td></tr>
+        <tr><td>托福课程</td><td>8次</td><td>(每周2次×4周)</td></tr>
+        <tr><td>学管辅导（含补）</td><td>5次</td><td></td></tr>
+        <tr><td>错词积累</td><td>8个</td><td>📊待攻克</td></tr>
+        <tr><td>每日学习推送</td><td>9天</td><td>(5/23起)</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ============== PAGE: THEMES ============== -->
+<div id="page-themes" class="page">
+  <div class="section">
+    <h2>🌱 成长主题</h2>
+    <div class="subtitle">跨时间线的品质提炼 · 升学文书素材库</div>
+
+    <div style="background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--card2);margin-bottom:12px">
+      <h3 style="font-size:.95rem;margin-bottom:6px;color:var(--gold)}">💪 毅力 · 抗挫折</h3>
+      <p style="font-size:.85rem;color:var(--text2);line-height:1.7">
+        从赛艇训练"不想去→咬牙坚持→满身大汗但开心"的弧线，到比赛第4名→逆转夺冠的0.46秒绝杀。每一次"再坚持一下"都在重新定义极限。
+      </p>
+    </div>
+
+    <div style="background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--card2);margin-bottom:12px">
+      <h3 style="font-size:.95rem;margin-bottom:6px;color:var(--accent)">📚 学术成长</h3>
+      <p style="font-size:.85rem;color:var(--text2);line-height:1.7">
+        托福六分制从3.5起步 → 6月底目标4.5。38天冲刺计划，6,840词全部入库，每周错词追踪形成闭环。比赛耽误的课主动补回，学训两不误。
+      </p>
+    </div>
+
+    <div style="background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--card2);margin-bottom:12px">
+      <h3 style="font-size:.95rem;margin-bottom:6px;color:var(--sports)">🚣 体育精神</h3>
+      <p style="font-size:.85rem;color:var(--text2);line-height:1.7">
+        赛艇校队，2km测功仪7'30"。2026平湖公开赛首赛即夺冠：500m混双第4→第1逆转。计划通过赛艇体育爬藤，目标MIT/斯坦福。
+      </p>
+    </div>
+
+    <div style="background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--card2);margin-bottom:12px">
+      <h3 style="font-size:.95rem;margin-bottom:6px;color:var(--quality)">🔍 自我认知</h3>
+      <p style="font-size:.85rem;color:var(--text2);line-height:1.7">
+        从"不想去训练"到主动补课，从比赛巅峰回到日常坚持。在赢与输、强与弱之间认识真实的自己，学会系统化自我管理。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ============== PAGE: MILESTONES ============== -->
+<div id="page-milestones" class="page">
+  <div class="section">
+    <h2>🏆 里程碑</h2>
+    <div class="subtitle">记录每一个值得纪念的时刻</div>
+
+    <table class="milestone-table">
+      <tr><th>日期</th><th>事件</th><th>分类</th></tr>
+      <tr><td style="white-space:nowrap">2026-05-31</td><td>首次托福每周错词复习系统上线</td><td>系统</td></tr>
+      <tr><td>2026-05-29</td><td>学管辅导补课（赛艇比赛耽误）</td><td>学术</td></tr>
+      <tr><td>2026-05-24</td><td>赛艇训练：从抗拒到快乐的经典弧线</td><td>体育</td></tr>
+      <tr><td>2026-05-23</td><td>托福38天冲刺计划启动</td><td>学术</td></tr>
+      <tr><td>2026-05-16</td><td>🥇 平湖赛艇公开赛500m混双冠军</td><td>体育</td></tr>
+      <tr><td>2026-05-16</td><td>子焘记成长档案系统上线</td><td>系统</td></tr>
+    </table>
+  </div>
+</div>
+
+<script>
+function switchPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.querySelectorAll('.nav-item')[['home','timeline','monthly','themes','milestones'].indexOf(id)].classList.add('active');
+}
+</script>
+
+<!-- Footer -->
+<div class="footer">
+  子焘记 · <span class="heart">♥</span> 焘藏今日，照亮未来<br>
+  <span style="font-size:.72rem">数据持续更新中 · 记录始于 2026年5月</span>
+</div>
+
+</div>
+</body>
+</html>
