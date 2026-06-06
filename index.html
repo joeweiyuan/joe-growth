@@ -249,12 +249,12 @@ a:hover{text-decoration:underline}
     <div class="profile-card"><div class="icon">🚣</div><div class="label">赛艇2km</div><div class="value">7'30"</div></div>
   </div>
 
-  <!-- Quick Stats -->
+  <!-- Quick Stats (clickable → detail pages) -->
   <div class="quick-stats">
-    <div class="qs-card"><div class="num">38</div><div class="label">🏆 获奖总数</div></div>
-    <div class="qs-card"><div class="num">¥275万+</div><div class="label">💰 累计投入</div></div>
-    <div class="qs-card"><div class="num">4</div><div class="label">🌍 国际奖项</div></div>
-    <div class="qs-card"><div class="num">🥇</div><div class="label">🚣 赛艇冠军</div></div>
+    <div class="qs-card" onclick="switchPage('awards')" style="cursor:pointer"><div class="num">38</div><div class="label">🏆 获奖总数</div></div>
+    <div class="qs-card" onclick="switchPage('expenses')" style="cursor:pointer"><div class="num">¥275万+</div><div class="label">💰 累计投入</div></div>
+    <div class="qs-card" onclick="switchPage('awards')" style="cursor:pointer"><div class="num">4</div><div class="label">🌍 国际奖项</div></div>
+    <div class="qs-card" onclick="switchPage('milestones')" style="cursor:pointer"><div class="num">🥇</div><div class="label">🚣 赛艇冠军</div></div>
   </div>
 
   <!-- Section Entry Cards -->
@@ -546,7 +546,7 @@ a:hover{text-decoration:underline}
 
   <!-- By Year -->
   <div class="expense-year">
-    <div class="expense-year-title">🏫 2026年（高二）</div>
+    <div class="expense-year-title">🏫 2026年（预高 · 9年级）</div>
     <div class="expense-row"><span class="cat">ROW</span><span class="item">🚣 赛艇校队常规训练</span><span class="amt">¥100,000</span></div>
     <div class="expense-row"><span class="cat">OTHER</span><span class="item">🇺🇸 UC Davis 冬令营</span><span class="amt">¥80,000</span></div>
     <div class="expense-row"><span class="cat">TEST</span><span class="item">📚 托福培训（上海超级学长）</span><span class="amt">¥24,000</span></div>
@@ -560,7 +560,7 @@ a:hover{text-decoration:underline}
   </div>
 
   <div class="expense-year">
-    <div class="expense-year-title">🏫 2025年（高一）</div>
+    <div class="expense-year-title">🏫 2025年（初二 · 转光华）</div>
     <div class="expense-row"><span class="cat">TU</span><span class="item">光华剑桥美高 9年级学费</span><span class="amt">¥250,000</span></div>
     <div class="expense-row" style="border-top:1px solid var(--card2);margin-top:4px;padding-top:6px">
       <span></span><span class="item" style="font-weight:600">年度合计</span><span class="amt">¥250,000</span>
