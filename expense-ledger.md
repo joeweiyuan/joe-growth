@@ -2,6 +2,8 @@
 
 > *学习、兴趣、体育、标化 — 所有成长相关开支统一记录*
 >
+> 🔗 学业成绩（GPA）详见 → [**Joe Academic Tracker**](https://joeweiyuan.github.io/joe-academic-tracker/)
+>
 > 建档时间：2026年6月5日
 
 ---

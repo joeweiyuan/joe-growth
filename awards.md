@@ -2,6 +2,8 @@
 
 > *科创·数学·赛艇·声乐·编程 — 各类赛事荣誉记录*
 >
+> 🔗 学业成绩（GPA）详见 → [**Joe Academic Tracker**](https://joeweiyuan.github.io/joe-academic-tracker/)
+>
 > 建档时间：2026年6月5日（导入获奖列表.xlsx）
 
 ---
