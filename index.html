@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>子焘记 · Joe Wei 成长全记录</title>
+<script src="data.js"></script>
 <style>
 /* ============ RESET & BASE ============ */
 :root {
@@ -241,18 +242,18 @@ a:hover{text-decoration:underline}
 
   <!-- Profile -->
   <div class="profile-grid">
-    <div class="profile-card"><div class="icon">🎂</div><div class="label">生日</div><div class="value">2011.05</div></div>
-    <div class="profile-card"><div class="icon">📏</div><div class="label">身高</div><div class="value">182.5 cm</div></div>
-    <div class="profile-card"><div class="icon">🏫</div><div class="label">学校</div><div class="value">光华剑桥美高</div></div>
-    <div class="profile-card" onclick="window.open('https://joeweiyuan.github.io/joe-academic-tracker/','_blank')" style="cursor:pointer"><div class="icon">📊</div><div class="label">GPA</div><div class="value">3.91 ↗</div></div>
-    <div class="profile-card"><div class="icon">🎯</div><div class="label">托福</div><div class="value">3.5 / 6.0</div></div>
-    <div class="profile-card"><div class="icon">🚣</div><div class="label">赛艇2km</div><div class="value">7'30"</div></div>
+    <div class="profile-card"><div class="icon">🎂</div><div class="label">生日</div><div class="value" id="val-birthday">2011.05</div></div>
+    <div class="profile-card"><div class="icon">📏</div><div class="label">身高</div><div class="value" id="val-height">182.5 cm</div></div>
+    <div class="profile-card"><div class="icon">🏫</div><div class="label">学校</div><div class="value" id="val-school">光华剑桥美高</div></div>
+    <div class="profile-card" onclick="window.open('https://joeweiyuan.github.io/joe-academic-tracker/','_blank')" style="cursor:pointer"><div class="icon">📊</div><div class="label">GPA</div><div class="value" id="val-gpa">3.91 ↗</div></div>
+    <div class="profile-card"><div class="icon">🎯</div><div class="label">托福</div><div class="value" id="val-toefl">3.5 / 6.0</div></div>
+    <div class="profile-card"><div class="icon">🚣</div><div class="label">赛艇2km</div><div class="value" id="val-rowing">7'30"</div></div>
   </div>
 
   <!-- Quick Stats (clickable → detail pages) -->
   <div class="quick-stats">
     <div class="qs-card" onclick="switchPage('awards')" style="cursor:pointer"><div class="num">38</div><div class="label">🏆 获奖总数</div></div>
-    <div class="qs-card" onclick="switchPage('expenses')" style="cursor:pointer"><div class="num">¥278万+</div><div class="label">💰 累计投入</div></div>
+    <div class="qs-card" onclick="switchPage('expenses')" style="cursor:pointer"><div class="num" id="stat-expense-total">¥278万+</div><div class="label">💰 累计投入</div></div>
     <div class="qs-card" onclick="switchPage('awards')" style="cursor:pointer"><div class="num">4</div><div class="label">🌍 国际奖项</div></div>
     <div class="qs-card" onclick="switchPage('milestones')" style="cursor:pointer"><div class="num">🥇</div><div class="label">🚣 赛艇冠军</div></div>
   </div>
@@ -287,7 +288,7 @@ a:hover{text-decoration:underline}
       <div class="e-icon">💰</div>
       <div class="e-title">培养投入</div>
       <div class="e-desc">教育 · 赛艇 · 科创 · 标化 · 旅行</div>
-      <div class="e-badge">¥278万+</div>
+      <div class="e-badge" id="badge-expense-total">¥278万+</div>
       <div class="e-arrow">→</div>
     </div>
     <div class="entry-card award" onclick="switchPage('awards')">
@@ -725,6 +726,34 @@ a:hover{text-decoration:underline}
 </div>
 
 </div><!-- .container -->
+
+<script>
+// 从 data.js 读取数据，自动填充首页动态数值
+(function() {
+  const d = SITE_DATA;
+  
+  // 培养投入
+  const expenseTotalEls = [
+    document.getElementById('stat-expense-total'),
+    document.getElementById('badge-expense-total')
+  ];
+  expenseTotalEls.forEach(el => { if (el) el.textContent = d.expenses.display; });
+
+  // 档案
+  const map = {
+    'val-birthday': d.profile.birthday,
+    'val-height': d.profile.height,
+    'val-school': d.profile.school,
+    'val-gpa': d.profile.gpa + ' ↗',
+    'val-toefl': d.profile.toefl,
+    'val-rowing': d.profile.rowing2k
+  };
+  Object.entries(map).forEach(([id, val]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = val;
+  });
+})();
+</script>
 
 <!-- ============ FOOTER ============ -->
 <div class="footer">
