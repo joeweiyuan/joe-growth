@@ -255,6 +255,16 @@ const SITE_DATA = {
           { word: '(待确认)', correctMeaning: '待确认具体词汇', category: '待确认' }
         ],
         media: 'assets/images/toefl/list5-99-100.jpg'
+      },
+      {
+        date: '2026-06-07', section: '精听 · TPO1 Conversation D (梦境/图书馆)', source: '精听听写',
+        tested: 100, correct: 98, accuracy: 98,
+        status: 'warning',
+        note: '老师评语：正确率98%[强] 学生与图书管理员关于Dream Interpretation(梦境解读)的文献检索对话。附带中英对照词汇表。错词：assignment写成now(已改)',
+        errorWords: [
+          { word: 'assignment', correctMeaning: '任务，作业', wrongAnswer: 'now', category: '听辨错误' }
+        ],
+        media: 'assets/images/toefl/tpo1-conversationD-dictation-20260607.jpg'
       }
     ],
 
