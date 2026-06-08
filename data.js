@@ -82,8 +82,9 @@ const SITE_DATA = {
         date: '2026-05-24', section: '酒店话题词汇', source: '默写',
         tested: 27, correct: 27, accuracy: 100,
         status: 'perfect',
-        note: '全部正确，check out/rate/lamp/closed已入库',
-        errorWords: []
+        note: 'reservation/check out/front desk/receptionist/single room/amenities/buffet/room service/laundry service/gym/luggage/occupancy/rate/discount/complimentary/lobby/elevator/corridor/balcony/maintenance/air conditioner/lamp/soap/sink/closed/fire alarm/emergency exit',
+        errorWords: [],
+        media: 'assets/images/toefl/hotel-dictation-full.jpg'
       },
       {
         date: '2026-05-24', section: '人际话题词汇（李晓源）', source: '默写',
@@ -229,10 +230,11 @@ const SITE_DATA = {
         date: '2026-06-11', section: '阅读 List 4 默写', source: '课堂默写',
         tested: 100, correct: 97, accuracy: 97,
         status: 'warning',
-        note: '准确率97/100。distinct(形容词: 不同的/明显的)与distinguish(动词: 区分/辨别)混淆——distinct不能当动词用',
+        note: '准确率97/100。distinct(形容词: 不同的/明显的)与distinguish(动词: 区分/辨别)混淆——distinct不能当动词用; 试卷图片附后',
         errorWords: [
           { word: 'distinct', correctMeaning: '不同的，明显的', wrongAnswer: '区别于(混为distinguish)', category: '词性混淆' }
-        ]
+        ],
+        media: 'assets/images/toefl/list4-97-100.jpg'
       }
     ],
 
