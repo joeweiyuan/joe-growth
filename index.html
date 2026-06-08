@@ -1333,8 +1333,8 @@ function toggleWordList(name) {
 
   <!-- 🅰️ 计划 -->
   <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
-    <h2 style="font-size:.95rem;margin-bottom:12px">🅰️ 赛艇爬藤路线图</h2>
-    <div id="rowing-target-chart" style="display:flex;align-items:flex-end;gap:6px;height:120px;padding:8px 0"></div>
+    <h2 style="font-size:.95rem;margin:0 0 12px 0">🅰️ 赛艇爬藤路线图</h2>
+    <div id="rowing-target-chart" style="display:flex;align-items:flex-end;gap:6px;height:120px;padding:20px 0 8px 0"></div>
   </div>
 
   <!-- 🅱️ 履历 -->
@@ -1380,18 +1380,20 @@ function toggleWordList(name) {
     var data = [
       { label: '2月最佳', time: R.bestTime, h: 90, color: 'var(--sports)', extra: 'opacity:.6' },
       { label: '现在', time: R.latestTime, h: 96, color: 'var(--card2)', extra: '' },
-      { label: R.targets[0].label, time: R.targets[0].time, h: 83, color: 'var(--accent)', extra: '', arrow: '🎯' },
-      { label: R.targets[1].label, time: R.targets[1].time, h: 68, color: 'var(--expense)', extra: '', arrow: '🎯' },
-      { label: '巅峰', time: R.targets[2].time, h: 48, color: 'var(--gold)', extra: '', arrow: '💎' }
+      { label: R.targets[0].label, time: R.targets[0].time, h: 83, color: 'var(--accent)', extra: '' },
+      { label: R.targets[1].label, time: R.targets[1].time, h: 68, color: 'var(--expense)', extra: '' },
+      { label: '巅峰', time: R.targets[2].time, h: 48, color: 'var(--gold)', extra: '' }
     ];
+    chart.style.gap = '3px';
     var html = '';
     for (var i = 0; i < data.length; i++) {
       var d = data[i];
-      html += '<div style="flex:1;display:flex;flex-direction:column;align-items:center">' +
-        (d.arrow ? '<div style="font-size:.65rem;color:var(--gold);margin-bottom:2px">' + d.arrow + '</div>' : '<div style="font-size:.65rem;margin-bottom:2px">&nbsp;</div>') +
-        '<div style="background:' + d.color + ';border-radius:4px 4px 0 0;width:70%;height:' + d.h + 'px;position:relative;' + d.extra + '">' +
-        '<span style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:.75rem;font-weight:600;color:' + (i <= 1 ? 'var(--text)' : d.color) + '">' + d.time + '</span></div>' +
-        '<span style="font-size:.6rem;color:' + (i <= 1 ? 'var(--text3)' : d.color) + ';margin-top:2px;font-weight:' + (i > 0 ? '600' : '400') + '">' + d.label + '</span></div>';
+      var arrowIcon = i >= 2 ? (i === 4 ? '💎' : '🎯') : '';
+      html += '<div style="flex:1;display:flex;flex-direction:column;align-items:center;min-width:0">' +
+        '<span style="font-size:.78rem;font-weight:600;color:' + (i <= 1 ? 'var(--text)' : d.color) + ';margin-bottom:3px;white-space:nowrap">' + d.time + '</span>' +
+        '<div style="font-size:.65rem;color:var(--gold);margin-bottom:4px;min-height:14px;line-height:1">' + arrowIcon + '</div>' +
+        '<div style="background:' + d.color + ';border-radius:4px 4px 0 0;width:65%;height:' + d.h + 'px;min-width:20px;' + d.extra + '"></div>' +
+        '<span style="font-size:.6rem;color:' + (i <= 1 ? 'var(--text3)' : d.color) + ';margin-top:3px;font-weight:' + (i > 0 ? '600' : '400') + ';text-align:center;line-height:1.2">' + d.label + '</span></div>';
     }
     chart.innerHTML = html;
   }
