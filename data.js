@@ -235,6 +235,24 @@ const SITE_DATA = {
           { word: 'distinct', correctMeaning: '不同的，明显的', wrongAnswer: '区别于(混为distinguish)', category: '词性混淆' }
         ],
         media: 'assets/images/toefl/list4-97-100.jpg'
+      },
+      {
+        date: '2026-06-12', section: '听力 · 图书馆主题词汇(二)', source: '课堂默写',
+        tested: 26, correct: 23, accuracy: 88.5,
+        status: 'error',
+        note: '老师评语：错误3个，均为单词拼写粗心。需注意拼写细节',
+        errorWords: [
+          { word: '(拼写粗心3词)', correctMeaning: '待确认具体词汇', category: '拼写粗心' }
+        ]
+      },
+      {
+        date: '2026-06-12', section: '阅读 List 5 默写', source: '课堂默写',
+        tested: 100, correct: 99, accuracy: 99,
+        status: 'warning',
+        note: '老师评语：准确率99/100，很棒！',
+        errorWords: [
+          { word: '(待确认)', correctMeaning: '待确认具体词汇', category: '待确认' }
+        ]
       }
     ],
 
