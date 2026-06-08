@@ -4,7 +4,7 @@
 >
 > 🔗 学业成绩（GPA）详见 → [**Joe Academic Tracker**](https://joeweiyuan.github.io/joe-academic-tracker/)
 > 🔗 成长全记录 → [**子焘记首页**](https://joeweiyuan.github.io/joe-growth/)
-> 🔗 Offer路书创业项目 → [**OfferPath**](http://43.162.92.9:3000/)
+> 🔗 Offer路书创业项目 → [**OfferPath**](https://www.offerpath.top)
 
 ---
 
