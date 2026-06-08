@@ -994,6 +994,18 @@ a:hover{text-decoration:underline}
   <!-- 🅳 待学列表 -->
   <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
     <h2 style="font-size:.95rem;margin-bottom:12px">🅳 待学列表</h2>
+
+    <!-- 词库总进度条 -->
+    <div style="background:var(--card2);padding:14px;border-radius:12px;margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:.82rem">
+        <span>📖 词汇库总进度</span>
+        <span><strong id="word-progress-pct" style="color:var(--sports)">0%</strong> · <span id="word-progress-detail" style="color:var(--text3);font-size:.75rem">0 / 6,846</span></span>
+      </div>
+      <div style="background:var(--card2);border-radius:10px;height:14px;overflow:hidden">
+        <div id="word-progress-bar" style="width:0%;height:100%;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--sports));transition:width .6s ease"></div>
+      </div>
+    </div>
+
     <table class="data-table" id="toefl-wordlists"></table>
     <div style="font-size:.78rem;color:var(--text3);background:rgba(96,165,250,.08);padding:8px 12px;border-radius:8px;margin-top:8px">
       📌 每学完一个List会自动记录到这里 · 错词自动进入错题库 · 每周日9:00推送复习提醒<br>👉 <a href="#" onclick="switchPage('toefl-words');return false" style="color:var(--accent);text-decoration:underline">查看全部90个词库详情 →</a>
@@ -1022,7 +1034,8 @@ a:hover{text-decoration:underline}
     '<div class="qs-card"><div class="num">' + T.currentLevel + '</div><div class="label">📊 当前</div></div>' +
     '<div class="qs-card"><div class="num">' + T.targetLevels[0].score + '</div><div class="label">🎯 ' + T.targetLevels[0].label + '</div></div>' +
     '<div class="qs-card"><div class="num">' + st.totalSessions + '</div><div class="label">📝 练习次数</div></div>' +
-    '<div class="qs-card"><div class="num">' + st.accuracyRate + '%</div><div class="label">✅ 总正确率</div></div>';
+    '<div class="qs-card"><div class="num">' + st.accuracyRate + '%</div><div class="label">✅ 总正确率</div></div>' +
+    '<div class="qs-card"><div class="num" style="color:var(--sports)">' + st.wordCompletionPct + '%</div><div class="label">📖 词库完成</div></div>';
 
   // Target chart
   var chart = document.getElementById('toefl-target-chart');
@@ -1096,6 +1109,16 @@ a:hover{text-decoration:underline}
   // Word lists
   var wl = document.getElementById('toefl-wordlists');
   if (wl) {
+    // 进度条
+    var pctEl = document.getElementById('word-progress-pct');
+    var detailEl = document.getElementById('word-progress-detail');
+    var barEl = document.getElementById('word-progress-bar');
+    if (pctEl && detailEl && barEl) {
+      var wpc = st.wordCompletionPct || 0;
+      pctEl.textContent = wpc + '%';
+      detailEl.textContent = '701 / 6,846';
+      barEl.style.width = wpc + '%';
+    }
     var html = '<tr><th>词库</th><th>进度</th><th>状态</th></tr>';
     var wls = T.wordLists;
     Object.keys(wls).forEach(function(key) {
