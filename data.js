@@ -217,6 +217,22 @@ const SITE_DATA = {
           { word: '(元音错误6词)', correctMeaning: '待确认具体词汇', category: '元音拼写' }
         ],
         media: 'assets/images/toefl/listening-list3-dictation.jpg'
+      },
+      {
+        date: '2026-06-11', section: '听力 · 酒店话题词汇(二)', source: '课堂默写',
+        tested: 27, correct: 27, accuracy: 100,
+        status: 'perfect',
+        note: '老师评语：全部正确[强]',
+        errorWords: []
+      },
+      {
+        date: '2026-06-11', section: '阅读 List 4 默写', source: '课堂默写',
+        tested: 100, correct: 97, accuracy: 97,
+        status: 'warning',
+        note: '准确率97/100。distinct(形容词: 不同的/明显的)与distinguish(动词: 区分/辨别)混淆——distinct不能当动词用',
+        errorWords: [
+          { word: 'distinct', correctMeaning: '不同的，明显的', wrongAnswer: '区别于(混为distinguish)', category: '词性混淆' }
+        ]
       }
     ],
 
