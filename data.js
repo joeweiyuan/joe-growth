@@ -158,6 +158,30 @@ const SITE_DATA = {
         status: 'perfect',
         note: 'vegetable/infant/principal/neighborhood/pinnacle/obligatory/omit/from time to time/anchor/echo/remarkable/ally/visible/domesticate',
         errorWords: []
+      },
+      {
+        date: '2026-06-09', section: '阅读词汇练习(兴趣~认识到)', source: '默写纸',
+        tested: 22, correct: 22, accuracy: 100,
+        status: 'perfect',
+        note: 'interest/investigate/cushion/manual/rendering/underscore/flexible/moral/despite/rupture/saline/executive/respective/isolated/remarkably/foreordain/inspire/sample/obtain/yearning/odd/perceive',
+        errorWords: [],
+        media: 'assets/images/toefl/list-vocab-1.jpg'
+      },
+      {
+        date: '2026-06-09', section: '超级学长 List 3', source: '课堂词汇表',
+        tested: 39, correct: 39, accuracy: 100,
+        status: 'perfect',
+        note: 'transmit/collapse/ineffectively/incidentally/alarm/criticize/agile/debate/gravitation/magnify/infirm/distract/accompany/attraction/given/eccentric/heir/confirm/advise/ornamentation/endow/malleable/contentious/urbane/focus/paradoxical/functional/opposing/survive/residence/substantial/juncture/description/parallel/delegate/typical/counterpart/bureaucrat/expel',
+        errorWords: [],
+        media: 'assets/images/toefl/list3-dictation.jpg'
+      },
+      {
+        date: '2026-06-09', section: '听力单词 List 1 默写', source: '课堂默写',
+        tested: 27, correct: 27, accuracy: 100,
+        status: 'perfect',
+        note: '老师评语：全部正确，继续保持～ 词汇涵盖: group project/optional course/intermediate/procedure/equipment/precaution/microscope/field work/expense/tuition/grant/regulation/notification/dorm/stressed out/side effect/immune system/facility/ceremony/appointment/flyer/tough/accessible/career fair/corporation/opportunity/application form',
+        errorWords: [],
+        media: 'assets/images/toefl/listening-list1-dictation.jpg'
       }
     ],
 
