@@ -7,7 +7,7 @@ const SITE_DATA = {
   // ========== 基本档案 ==========
   profile: {
     birthday: '2011.05',
-    height: '182.5 cm',
+    height: '183 cm',
     school: '光华剑桥美高',
     gpa: '3.91',
     toefl: '3.5 / 6.0',
