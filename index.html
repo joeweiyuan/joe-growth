@@ -575,7 +575,7 @@ a:hover{text-decoration:underline}
     </div>
     <div class="expense-big">
       <div class="label">💰 累计投入</div>
-      <div class="num">¥275 <small>万+</small></div>
+      <div class="num" id="expense-grand-total">¥278<small>万+</small></div>
     </div>
   </div>
 
@@ -590,7 +590,7 @@ a:hover{text-decoration:underline}
     <div class="expense-row"><span class="cat">ROW-C</span><span class="item">🇺🇸 藤校赛艇合练+夏令营</span><span class="amt">¥61,061</span></div>
     <div class="expense-row"><span class="cat">TEST</span><span class="item">📚 8月托福集训</span><span class="amt">TBD</span></div>
     <div class="expense-row" style="border-top:1px solid var(--gold);margin-top:6px;padding-top:8px">
-      <span></span><span class="item" style="font-weight:600">本年已记录（不含学费）</span><span class="amt" style="color:var(--gold)">¥306,261+</span>
+      <span></span><span class="item" style="font-weight:600">本年已记录</span><span class="amt" style="color:var(--gold)" id="expense-year-2026">¥306,261+</span>
     </div>
   </div>
 
@@ -600,7 +600,7 @@ a:hover{text-decoration:underline}
     <div class="expense-row"><span class="cat">TU</span><span class="item">光华剑桥美高 9年级学费</span><span class="amt">¥250,000</span></div>
     <div class="expense-row"><span class="cat">ROW-C</span><span class="item">🇺🇸 波士顿大学赛艇教练训练营（11/11·5天）</span><span class="amt">¥20,000</span></div>
     <div class="expense-row" style="border-top:1px solid var(--card2);margin-top:4px;padding-top:6px">
-      <span></span><span class="item" style="font-weight:600">年度合计</span><span class="amt">¥278,400</span>
+      <span></span><span class="item" style="font-weight:600">年度合计</span><span class="amt" id="expense-year-2025">¥278,400</span>
     </div>
   </div>
 
@@ -609,7 +609,7 @@ a:hover{text-decoration:underline}
     <div class="expense-row"><span class="cat">TU</span><span class="item">初中学费</span><span class="amt">¥300,000</span></div>
     <div class="expense-row"><span class="cat">STEM</span><span class="item">🇺🇸 匹兹堡国际发明大会（银奖+最佳创意奖）</span><span class="amt">¥100,000</span></div>
     <div class="expense-row" style="border-top:1px solid var(--card2);margin-top:4px;padding-top:6px">
-      <span></span><span class="item" style="font-weight:600">年度合计</span><span class="amt">¥400,000</span>
+      <span></span><span class="item" style="font-weight:600">年度合计</span><span class="amt" id="expense-year-2024">¥400,000</span>
     </div>
   </div>
 
@@ -617,7 +617,7 @@ a:hover{text-decoration:underline}
     <div class="expense-year-title">🏫 2023年（初一）</div>
     <div class="expense-row"><span class="cat">TU</span><span class="item">初中学费</span><span class="amt">¥300,000</span></div>
     <div class="expense-row" style="border-top:1px solid var(--card2);margin-top:4px;padding-top:6px">
-      <span></span><span class="item" style="font-weight:600">年度合计</span><span class="amt">¥300,000</span>
+      <span></span><span class="item" style="font-weight:600">年度合计</span><span class="amt" id="expense-year-2023">¥300,000</span>
     </div>
   </div>
 
@@ -626,7 +626,7 @@ a:hover{text-decoration:underline}
     <div class="expense-row"><span class="cat">TU</span><span class="item">小学学费（每年¥200,000 × 4年）</span><span class="amt">¥800,000</span></div>
     <div class="expense-row"><span class="cat">HOBBY</span><span class="item">🛶 桨板训练（4年，三年级起）</span><span class="amt">¥80,000</span></div>
     <div class="expense-row" style="border-top:1px solid var(--card2);margin-top:4px;padding-top:6px">
-      <span></span><span class="item" style="font-weight:600">4年合计</span><span class="amt">¥880,000</span>
+      <span></span><span class="item" style="font-weight:600">4年合计</span><span class="amt" id="expense-year-2019-2022">¥880,000</span>
     </div>
   </div>
 
@@ -1467,9 +1467,23 @@ function toggleWordList(name) {
   // 培养投入
   const expenseTotalEls = [
     document.getElementById('stat-expense-total'),
-    document.getElementById('badge-expense-total')
+    document.getElementById('badge-expense-total'),
+    document.getElementById('expense-grand-total')
   ];
   expenseTotalEls.forEach(el => { if (el) el.textContent = d.expenses.display; });
+
+  // 各年度小计自动填充
+  const yearMap = {
+    'expense-year-2026': d.expenses.years[2026],
+    'expense-year-2025': d.expenses.years[2025],
+    'expense-year-2024': d.expenses.years[2024],
+    'expense-year-2023': d.expenses.years[2023],
+    'expense-year-2019-2022': d.expenses.years[2019] + d.expenses.years[2020] + d.expenses.years[2021] + d.expenses.years[2022]
+  };
+  Object.entries(yearMap).forEach(([id, val]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = '¥' + val.toLocaleString();
+  });
 
   // 档案
   const map = {

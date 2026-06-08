@@ -7,6 +7,11 @@
  *   2. 如果有错词，加到 errorWords 数组
  *   3. 更新 totalWordsTested 和 totalErrors 计数
  *   ✅ HTML自动更新
+ *
+ * 如何添加一笔新花销：
+ *   1. 在 expenses.years 对象中更新对应年份的数值
+ *   2. 同时在 expense-ledger.md 中添加明细记录
+ *   ✅ 首页和详情页的总金额自动更新
  */
 
 const SITE_DATA = {
