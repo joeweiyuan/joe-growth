@@ -1,7 +1,14 @@
 {
   "version": "1.0",
-  "last_updated": "2026-05-24",
+  "last_updated": "2026-06-08",
   "daily_logs": [
+    {
+      "date": "2026-06-08",
+      "file": "daily-logs/2026-06-08.md",
+      "summary": "🚣 赛艇校队团建聚餐 16:20~20:30 @新田360 · 小卷罗姆串串自助",
+      "tags": ["rowing", "team", "social"],
+      "recorder": "爸爸"
+    },
     {
       "date": "2026-05-16",
       "file": "daily-logs/2026-05-16.md",
@@ -54,7 +61,7 @@
     }
   ],
   "stats": {
-    "total_logs": 4,
+    "total_logs": 5,
     "total_words": 3046,
     "total_themes_extracted": 5
   }
