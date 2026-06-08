@@ -79,6 +79,14 @@ const SITE_DATA = {
         media: 'assets/images/toefl/list1-dictation.jpg'
       },
       {
+        date: '2026-05-22', section: '阅读 List 2 默写', source: '课堂默写',
+        tested: 22, correct: 22, accuracy: 100,
+        status: 'perfect',
+        note: '词汇: exceptional/collect/appeal/array/valid/exploit/unfortunate/err/reformer/approach/verbal/schedule/phenomena/propulsion/inaccurate/bombard/interact/federal/celebrate/attain/incentive/occupy',
+        errorWords: [],
+        media: 'assets/images/toefl/list2-dictation-100.jpg'
+      },
+      {
         date: '2026-05-24', section: '酒店话题词汇', source: '默写',
         tested: 27, correct: 27, accuracy: 100,
         status: 'perfect',
@@ -277,7 +285,7 @@ const SITE_DATA = {
         totalCorrect: s.reduce((sum, p) => sum + p.correct, 0),
         totalErrors: s.reduce((sum, p) => sum + p.errorWords.length, 0),
         accuracyRate: s.length > 0 ? (s.reduce((sum, p) => sum + p.correct, 0) / s.reduce((sum, p) => sum + p.tested, 0) * 100).toFixed(1) : 0,
-        wordCompletionPct: Math.round(701 / 6846 * 100)
+        wordCompletionPct: Math.round(801 / 6846 * 100)
       };
     },
 
@@ -294,7 +302,7 @@ const SITE_DATA = {
 
     /** 词库进度 */
     wordLists: {
-      reading: { label: '阅读高频词 List 1~30', total: 30, completed: [1, 3, 4, 5, 6, 7, 30] },
+      reading: { label: '阅读高频词 List 1~30', total: 30, completed: [1, 2, 3, 4, 5, 6, 7, 30] },
       listening: { label: '听力话题词汇 List 31~49', total: 19, completed: ['银行金融', '图书馆/学术'] },
       subject: { label: '学科分类词汇（35学科）', total: 35, completed: [] },
       phrases: { label: '听力词组 200条', total: 200, completed: [] },
