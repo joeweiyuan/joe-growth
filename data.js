@@ -182,6 +182,15 @@ const SITE_DATA = {
         note: '老师评语：全部正确，继续保持～ 词汇涵盖: group project/optional course/intermediate/procedure/equipment/precaution/microscope/field work/expense/tuition/grant/regulation/notification/dorm/stressed out/side effect/immune system/facility/ceremony/appointment/flyer/tough/accessible/career fair/corporation/opportunity/application form',
         errorWords: [],
         media: 'assets/images/toefl/listening-list1-dictation.jpg'
+      },
+      {
+        date: '2026-06-09', section: '阅读 List 30 政府话题默写', source: '课堂默写',
+        tested: 100, correct: 98, accuracy: 98,
+        status: 'warning',
+        note: '老师评语：准确率98/100。政府话题词汇，稍微了解即可。institutionalize由institution(机构)动词化而来，和industrialize由industry变来同理',
+        errorWords: [
+          { word: 'institutionalize', correctMeaning: '使制度化', category: '词形变化' }
+        ]
       }
     ],
 
