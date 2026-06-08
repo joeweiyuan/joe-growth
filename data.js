@@ -68,6 +68,17 @@ const SITE_DATA = {
     /** 全部练习履历——加一条新练习就是在这里加 */
     practiceSessions: [
       {
+        date: '2026-05-20', section: '托福阅读 List 1 默写', source: '课堂默写',
+        tested: 40, correct: 38, accuracy: 95,
+        status: 'warning',
+        note: '老师评语：准确率94/100。错词: domesticate↔domestic混淆, abandon↔abandoned混淆。catas-前缀表示"不好的事情"，帮助记忆catastrophic',
+        errorWords: [
+          { word: 'domesticate', correctMeaning: '驯养，驯化', wrongAnswer: '国内的(domestic)', category: '形近词混淆' },
+          { word: 'abandon', correctMeaning: '放弃，遗弃', wrongAnswer: '被抛弃的(abandoned)', category: '形近词混淆' }
+        ],
+        media: 'assets/images/toefl/list1-dictation.jpg'
+      },
+      {
         date: '2026-05-24', section: '酒店话题词汇', source: '默写',
         tested: 27, correct: 27, accuracy: 100,
         status: 'perfect',
@@ -132,6 +143,20 @@ const SITE_DATA = {
         tested: 77, correct: 77, accuracy: 100,
         status: 'perfect',
         note: '环境/生物/物理学科词汇全覆盖',
+        errorWords: []
+      },
+      {
+        date: '2026-06-08', section: '超级学长 补充词汇(List 1补充)', source: '默写纸',
+        tested: 22, correct: 22, accuracy: 100,
+        status: 'perfect',
+        note: 'exceptional/collect/appeal/array/valid/exploit/unfortunate/err/reformer/approach/verbal/schedule/phenomena/propulsion/inaccurate/bombard/interact/federal/celebration/attain/incentive/occupy',
+        errorWords: []
+      },
+      {
+        date: '2026-06-08', section: '阅读词汇(List 2延伸)', source: '默写纸',
+        tested: 14, correct: 14, accuracy: 100,
+        status: 'perfect',
+        note: 'vegetable/infant/principal/neighborhood/pinnacle/obligatory/omit/from time to time/anchor/echo/remarkable/ally/visible/domesticate',
         errorWords: []
       }
     ],
