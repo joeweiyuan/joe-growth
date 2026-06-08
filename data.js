@@ -191,6 +191,22 @@ const SITE_DATA = {
         errorWords: [
           { word: 'institutionalize', correctMeaning: '使制度化', category: '词形变化' }
         ]
+      },
+      {
+        date: '2026-06-10', section: '阅读 List 30 政府词汇(二)', source: '默写纸',
+        tested: 25, correct: 25, accuracy: 100,
+        status: 'perfect',
+        note: 'moderate growth/definite market/orientation/adapt to/fluctuation/prosperity/civilian population/rebellion/economic exchange/hereditary/citizenship/auxiliary soldiers/emperor/frontier/pardon/accusation/welfare/patronage/House of Representative/unionization/Monarchy/Industrial Revolution/steam/revolutionary/transform/fuel consumption/manufacturer',
+        errorWords: [],
+        media: 'assets/images/toefl/list30-dictation-2.jpg'
+      },
+      {
+        date: '2026-06-10', section: '阅读学科词汇 · 政治历史', source: '词汇表自学',
+        tested: 75, correct: 75, accuracy: 100,
+        status: 'perfect',
+        note: '涵盖: 美国政治(共和党/宪法/国会/参议院/修正案等)、古代文明(希腊/罗马/埃及/苏美尔等)、经济贸易(关税/汇票/商人/资本等)',
+        errorWords: [],
+        media: 'assets/images/toefl/subject-political-history.jpg'
       }
     ],
 
