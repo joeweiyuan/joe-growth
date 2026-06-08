@@ -19,6 +19,8 @@
   --quality: #f472b6;
   --expense: #fb923c;
   --award: #facc15;
+  --entrepreneur: #f472b6;
+  --tech: #38bdf8;
   --text: #e2e8f0;
   --text2: #94a3b8;
   --text3: #64748b;
@@ -213,6 +215,7 @@ a:hover{text-decoration:underline}
       <button class="nav-btn" onclick="switchPage('milestones')">⭐ 里程碑</button>
       <button class="nav-btn" onclick="switchPage('expenses')">💰 投入</button>
       <button class="nav-btn" onclick="switchPage('awards')">🏆 获奖</button>
+      <button class="nav-btn" onclick="switchPage('offerpath')">🚀 Offer路书</button>
     </nav>
     <button class="menu-toggle" onclick="toggleMenu()" id="menuToggle">☰</button>
   </div>
@@ -224,6 +227,7 @@ a:hover{text-decoration:underline}
     <button class="nav-btn" onclick="switchPage('milestones')">⭐ 里程碑</button>
     <button class="nav-btn" onclick="switchPage('expenses')">💰 培养投入</button>
     <button class="nav-btn" onclick="switchPage('awards')">🏆 获奖总览</button>
+    <button class="nav-btn" onclick="switchPage('offerpath')">🚀 Offer路书</button>
   </div>
 </header>
 
@@ -248,6 +252,7 @@ a:hover{text-decoration:underline}
     <div class="profile-card" onclick="window.open('https://joeweiyuan.github.io/joe-academic-tracker/','_blank')" style="cursor:pointer"><div class="icon">📊</div><div class="label">GPA</div><div class="value" id="val-gpa">3.91 ↗</div></div>
     <div class="profile-card"><div class="icon">🎯</div><div class="label">托福</div><div class="value" id="val-toefl">3.5 / 6.0</div></div>
     <div class="profile-card"><div class="icon">🚣</div><div class="label">赛艇2km</div><div class="value" id="val-rowing">7'30"</div></div>
+    <div class="profile-card" onclick="switchPage('offerpath')" style="cursor:pointer"><div class="icon">💻</div><div class="label">创业项目</div><div class="value">Offer路书</div></div>
   </div>
 
   <!-- Quick Stats (clickable → detail pages) -->
@@ -256,6 +261,7 @@ a:hover{text-decoration:underline}
     <div class="qs-card" onclick="switchPage('expenses')" style="cursor:pointer"><div class="num" id="stat-expense-total">¥278万+</div><div class="label">💰 累计投入</div></div>
     <div class="qs-card" onclick="switchPage('awards')" style="cursor:pointer"><div class="num">4</div><div class="label">🌍 国际奖项</div></div>
     <div class="qs-card" onclick="switchPage('milestones')" style="cursor:pointer"><div class="num">🥇</div><div class="label">🚣 赛艇冠军</div></div>
+    <div class="qs-card" onclick="switchPage('offerpath')" style="cursor:pointer"><div class="num">🛠️</div><div class="label">💻 Offer路书</div></div>
   </div>
 
   <!-- Section Entry Cards -->
@@ -298,6 +304,12 @@ a:hover{text-decoration:underline}
       <div class="e-badge">38项</div>
       <div class="e-arrow">→</div>
     </div>
+    <div class="entry-card" style="border-left:3px solid var(--tech)" onclick="switchPage('offerpath')">
+      <div class="e-icon">💻</div>
+      <div class="e-title">Offer路书</div>
+      <div class="e-desc">父子创业 · 119所大学录取数据 · AI升学评估 · 真实产品上线</div>
+      <div class="e-arrow">→</div>
+    </div>
   </div>
 
   <!-- External Links -->
@@ -306,6 +318,12 @@ a:hover{text-decoration:underline}
     <div style="display:flex;flex-wrap:wrap;gap:8px">
       <a href="https://joeweiyuan.github.io/joe-academic-tracker/" target="_blank" style="display:inline-flex;align-items:center;gap:4px;font-size:.82rem;padding:6px 14px;border-radius:8px;background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.2)">
         📊 GPA/成绩详情首页 → Joe Academic Tracker
+      </a>
+      <a href="http://43.162.92.9:3000/" target="_blank" style="display:inline-flex;align-items:center;gap:4px;font-size:.82rem;padding:6px 14px;border-radius:8px;background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.2)">
+        💻 Offer路书 · OfferPath → 查看产品
+      </a>
+      <a href="strategy-mit-stanford.md" target="_blank" style="display:inline-flex;align-items:center;gap:4px;font-size:.82rem;padding:6px 14px;border-radius:8px;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.2)">
+        🎯 MIT/斯坦福爬藤战略总规划 → 查看
       </a>
     </div>
   </div>
@@ -476,6 +494,11 @@ a:hover{text-decoration:underline}
     <p>从"不想去训练"到主动补课，从比赛巅峰回到日常坚持。在赢与输、强与弱之间认识真实的自己，学会系统化自我管理。</p>
   </div>
 
+  <div class="theme-card" style="border-left:3px solid var(--tech)">
+    <h3 style="color:var(--tech)">💻 创业精神 · 产品思维</h3>
+    <p>发现留学信息不透明的真实痛点，与父亲一起创立Offer路书（OfferPath）。从测试员到产品参与者，从数据采集到功能评审，亲手打造一个有真实用户的产品。用技术解决真实问题，用创业思维面对挑战。</p>
+  </div>
+
   <div class="back-home-btn"><a href="#" onclick="switchPage('home');return false">← 返回首页</a></div>
 </div>
 
@@ -519,6 +542,11 @@ a:hover{text-decoration:underline}
       <div class="dot" style="background:var(--gold)"></div>
       <div class="m-date">2026-05-16</div>
       <div class="m-event">🏮 子焘记成长档案系统上线</div>
+    </div>
+    <div class="milestone-row">
+      <div class="dot" style="background:var(--tech)"></div>
+      <div class="m-date">2026.06</div>
+      <div class="m-event">💻 Offer路书 · Joe正式加入父子创业项目</div>
     </div>
   </div>
 
@@ -719,6 +747,192 @@ a:hover{text-decoration:underline}
       <div style="display:flex;align-items:center;gap:4px"><span style="font-size:.65rem;color:var(--text2)">1项</span></div>
       <div style="display:flex;align-items:center;gap:4px"><span style="font-size:.65rem;color:var(--accent)">11项🚀</span></div>
       <div style="display:flex;align-items:center;gap:4px"><span style="font-size:.65rem;color:var(--expense)">14项🔥</span></div>
+    </div>
+  </div>
+
+  <div class="back-home-btn"><a href="#" onclick="switchPage('home');return false">← 返回首页</a></div>
+</div>
+
+<!-- ================================================================ -->
+<!-- =================== PAGE: OFFERPATH ============================ -->
+<!-- ================================================================ -->
+<div id="page-offerpath" class="page">
+  <div class="back-bar">
+    <button class="back-btn" onclick="switchPage('home')"><span class="arrow">←</span> 返回首页</button>
+    <span class="page-title">💻 Offer路书 · 父子创业计划</span>
+  </div>
+
+  <div style="margin-bottom:20px">
+    <p style="font-size:.85rem;color:var(--text2);margin-bottom:12px">Offer路书（OfferPath）是少爷和家主共同创立的微信小程序项目——聚合藤校、美本Top50、QS100大学在中国的录取数据，为留学家庭提供信息透明化和AI升学评估。这不仅是创业，更是少爷为自身爬藤亲手打造的"实战级科创背景"。</p>
+  </div>
+
+  <!-- Product Stats -->
+  <div class="quick-stats" style="margin-bottom:16px">
+    <div class="qs-card"><div class="num">119</div><div class="label">🏛️ 收录大学</div></div>
+    <div class="qs-card"><div class="num">4,709</div><div class="label">📊 录取记录</div></div>
+    <div class="qs-card"><div class="num">308</div><div class="label">🏫 覆盖高中</div></div>
+    <div class="qs-card"><div class="num">v0.3</div><div class="label">🔄 当前版本</div></div>
+  </div>
+
+  <!-- ===== Vision ===== -->
+  <div class="theme-card" style="border-left:3px solid var(--gold)">
+    <h3 style="color:var(--gold)">🎯 愿景：为什么做 OfferPath？</h3>
+    <p>「我自己就是留学大军中的一员。我发现每个家庭都在黑暗中摸索——这个大学录了多少中国人？哪个高中去了多少人？我有没有机会？这些问题没有现成的答案，只有零散的数据。所以我决定和爸爸一起，亲手建一个透明的数据平台。」</p>
+    <p style="margin-top:8px;font-size:.82rem;color:var(--text2)">—— Joe 魏源</p>
+  </div>
+
+  <!-- ===== Strategic Value ===== -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🚀 对MIT/斯坦福申请的独特价值</h2>
+    <table class="data-table">
+      <tr><th>传统竞赛路线</th><th>→</th><th>OfferPath实战路线</th></tr>
+      <tr><td style="color:var(--text3)">"我设计了一个项目，拿了X奖"</td><td>→</td><td style="color:var(--tech)">"我发现了真实问题，和父亲一起造了一个产品，服务了真实用户"</td></tr>
+      <tr><td style="color:var(--text3)">比赛结束即停止，无后续影响</td><td>→</td><td style="color:var(--tech)">产品持续迭代，用户越来越多，影响力一直在增长</td></tr>
+      <tr><td style="color:var(--text3)">科创班学了再参赛，技能单一</td><td>→</td><td style="color:var(--tech)">全栈能力：产品×数据×技术×商业×项目管理</td></tr>
+      <tr><td style="color:var(--text3)">每年数万中国学生有竞赛奖</td><td>→</td><td style="color:var(--tech)">极少高中生有上线产品+真实用户+父子创业故事</td></tr>
+    </table>
+  </div>
+
+  <!-- ===== 4-Phase Roadmap ===== -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:16px">🗺️ Joe的参与路线图 · 4阶段</h2>
+
+    <!-- Phase 1 -->
+    <div style="background:var(--bg2);border-radius:12px;padding:16px;margin-bottom:12px;border-left:3px solid var(--accent)">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-weight:600;font-size:.95rem">阶段一 · 起步期</span>
+        <span style="font-size:.78rem;color:var(--accent);background:rgba(96,165,250,.15);padding:2px 10px;border-radius:8px">2026年6月 → 8月</span>
+      </div>
+      <table class="data-table" style="margin-bottom:8px">
+        <tr><th style="width:80px">角色</th><td>QA测试员 · 用户代言人</td></tr>
+        <tr><th>具体任务</th><td>① 每天使用产品，找bug、提改进意见<br>② 参与数据清洗：核对录取数字、高中名称规范<br>③ 从"用户"视角给产品提需求（作业中和同学的交流）<br>④ 学习产品架构：前端/后端/数据库是怎么协作的</td></tr>
+        <tr><th>可量成果</th><td>找到≥10个可用bug/优化点 · 参与≥50条数据校对 · 提交≥3条有效需求</td></tr>
+        <tr><th>爬藤价值</th><td style="color:var(--gold)">⭐⭐ (建立ownership的起点)</td></tr>
+      </table>
+      <div style="font-size:.78rem;color:var(--text2);background:rgba(251,191,36,.08);padding:8px 12px;border-radius:8px">
+        💡 家主提示：这个阶段的重点是"被动参与→主动发现"。不是等爸爸分配任务，而是自己找到问题。
+      </div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div style="background:var(--bg2);border-radius:12px;padding:16px;margin-bottom:12px;border-left:3px solid var(--sports)">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-weight:600;font-size:.95rem">阶段二 · 成长期</span>
+        <span style="font-size:.78rem;color:var(--sports);background:rgba(52,211,153,.15);padding:2px 10px;border-radius:8px">2026年9月 → 2027年6月</span>
+      </div>
+      <table class="data-table" style="margin-bottom:8px">
+        <tr><th style="width:80px">角色</th><td>初级产品经理 · 数据工程师</td></tr>
+        <tr><th>具体任务</th><td>① 负责1-2个页面/功能的UI/UX评审（如评估页的输入流程）<br>② 参与数据采集：用Brave Search搜索特定大学的录取数据<br>③ 参与产品需求讨论：哪些功能对用户最有用？<br>④ 学习Git协作：了解代码提交、版本管理<br>⑤ 在子焘记记录OfferPath的成长日志</td></tr>
+        <tr><th>可量成果</th><td>主导≥2次产品改版提案 · 参与采集≥200条数据 · 写出≥5篇开发日志文章</td></tr>
+        <tr><th>爬腾价值</th><td style="color:var(--gold)">⭐⭐⭐⭐ (从边缘到核心，展示学习速度)</td></tr>
+      </table>
+      <div style="font-size:.78rem;color:var(--text2);background:rgba(251,191,36,.08);padding:8px 12px;border-radius:8px">
+        💡 家主提示：2027年1-2月申请MIT RSI/Stanford SIMR等顶级夏校时，OfferPath可以作为"已有项目"写进申请材料。
+      </div>
+    </div>
+
+    <!-- Phase 3 -->
+    <div style="background:var(--bg2);border-radius:12px;padding:16px;margin-bottom:12px;border-left:3px solid var(--expense)">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-weight:600;font-size:.95rem">阶段三 · 加速期</span>
+        <span style="font-size:.78rem;color:var(--expense);background:rgba(251,146,60,.15);padding:2px 10px;border-radius:8px">2027年7月 → 2028年6月</span>
+      </div>
+      <table class="data-table" style="margin-bottom:8px">
+        <tr><th style="width:80px">角色</th><td>独立模块负责人 · 社区运营者</td></tr>
+        <tr><th>具体任务</th><td>① 独立负责一个完整模块（如"我的评估报告"或"录取趋势"）<br>② 撰写技术博客：分享项目搭建过程中的技术收获<br>③ 在同学/学校中推广OfferPath，收集真实反馈<br>④ 参与产品战略讨论：下一个重要功能是什么？<br>⑤ 创建GitHub上的个人项目展示页面</td></tr>
+        <tr><th>可量成果</th><td>独立交付≥1个完整功能 · GitHub≥3篇技术博文 · ≥50个真实用户反馈</td></tr>
+        <tr><th>爬藤价值</th><td style="color:var(--gold)">⭐⭐⭐⭐⭐ (展现领导力+技术执行力)</td></tr>
+      </table>
+      <div style="font-size:.78rem;color:var(--text2);background:rgba(251,191,36,.08);padding:8px 12px;border-radius:8px">
+        💡 家主提示：2028年3-6月是考SAT+赛艇巅峰赛季，优先级可能需调整。OfferPath以"持续参与"为主，不追求高强度投入。
+      </div>
+    </div>
+
+    <!-- Phase 4 -->
+    <div style="background:var(--bg2);border-radius:12px;padding:16px;margin-bottom:0;border-left:3px solid var(--gold)">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-weight:600;font-size:.95rem">阶段四 · 收获期</span>
+        <span style="font-size:.78rem;color:var(--gold);background:rgba(251,191,36,.15);padding:2px 10px;border-radius:8px">2028年7月 → 11月（申请季）</span>
+      </div>
+      <table class="data-table" style="margin-bottom:8px">
+        <tr><th style="width:80px">角色</th><td>创业者 · 故事讲述者</td></tr>
+        <tr><th>具体任务</th><td>① 完成OfferPath项目的总结文档，用于申请材料<br>② 在Common App活动列表中梳理OfferPath条目<br>③ 准备面试策略：用OfferPath故事串联赛艇+创业+学术<br>④ 如有技术博客/视频，整理展示链接<br>⑤ 父子一起录制一段关于OfferPath的简短介绍（可选）</td></tr>
+        <tr><th>可量成果</th><td>1份项目总结 · 1段故事线 · 1个活的产品还在运行</td></tr>
+        <tr><th>爬藤价值</th><td style="color:var(--gold)">💎💎💎 (决定性的差异化材料)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== Weekly Time Commitment ===== -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">⏰ 时间投入规划</h2>
+    <table class="data-table">
+      <tr><th>阶段</th><th>每周投入</th><th>优先级</th><th>与赛艇/学业的关系</th></tr>
+      <tr><td>起步期 (2026夏)</td><td>3-5小时</td><td>🟡 中等</td><td>暑假期间，时间充裕</td></tr>
+      <tr><td>成长期 (2026秋-2027春)</td><td>2-3小时</td><td>🟢 低</td><td>与学业/赛艇不冲突</td></tr>
+      <tr><td>加速期 (2027夏-2028春)</td><td>3-5小时</td><td>🟡 中等</td><td>兼顾SAT冲刺+赛艇巅峰</td></tr>
+      <tr><td>收获期 (2028秋)</td><td>集中处理</td><td>🔴 高</td><td>申请季核心素材</td></tr>
+    </table>
+  </div>
+
+  <!-- ===== Skills Matrix ===== -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🧰 通过OfferPathget到的技能</h2>
+    <table class="data-table">
+      <tr><th>技能领域</th><th>具体技能</th><th>爬藤展示方式</th></tr>
+      <tr><td>📊 数据工程</td><td>数据采集、清洗、结构化、验证</td><td>活动列表：参与4,709条录取数据整理</td></tr>
+      <tr><td>💻 全栈基础</td><td>理解前后端协作、API调用、界面设计</td><td>GitHub可见的commit记录</td></tr>
+      <tr><td>📱 产品思维</td><td>用户需求分析、功能优先级、交互设计</td><td>面试中讲述产品决策故事</td></tr>
+      <tr><td>🤖 AI应用</td><td>LLM驱动的AI评估引擎</td><td>文书：用AI帮助留学家庭做出更明智的决策</td></tr>
+      <tr><td>👨‍👦 团队协作</td><td>父子创业（跨代际合作）</td><td>独一无二的亲子协作叙事</td></tr>
+      <tr><td>📈 持续迭代</td><td>从v0.1到v0.3，产品不断进化</td><td>展示长期commitment（2026-2028）</td></tr>
+    </table>
+  </div>
+
+  <!-- ===== Key Milestones ===== -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🏁 OfferPath关键里程碑（待达成）</h2>
+    <div class="milestone-grid">
+      <div class="milestone-row">
+        <div class="dot" style="background:var(--accent)"></div>
+        <div class="m-date">2026.06</div>
+        <div class="m-event">🎯 Joe正式加入OfferPath · 完成首次产品测试报告</div>
+      </div>
+      <div class="milestone-row">
+        <div class="dot" style="background:var(--accent)"></div>
+        <div class="m-date">2026.07-08</div>
+        <div class="m-event">🎯 美国藤校合练期间收集留学生对OfferPath的真实需求</div>
+      </div>
+      <div class="milestone-row">
+        <div class="dot" style="background:var(--sports)"></div>
+        <div class="m-date">2026.09</div>
+        <div class="m-event">🎯 开学后在学校推广OfferPath · 收集≥20位同学/家长反馈</div>
+      </div>
+      <div class="milestone-row">
+        <div class="dot" style="background:var(--gold)"></div>
+        <div class="m-date">2027.01-02</div>
+        <div class="m-event">🎯 申请MIT RSI/Stanford SIMR夏校 · OfferPath作为已有项目写入简历</div>
+      </div>
+      <div class="milestone-row">
+        <div class="dot" style="background:var(--expense)"></div>
+        <div class="m-date">2027.06</div>
+        <div class="m-event">🎯 独立交付1个完整功能 · 在GitHub发布第1篇技术博客</div>
+      </div>
+      <div class="milestone-row">
+        <div class="dot" style="background:var(--gold)"></div>
+        <div class="m-date">2028.09</div>
+        <div class="m-event">🎯 申请季 · OfferPath核心叙事完成 · 产品仍在运行</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Narrative ===== -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:12px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">📝 申请叙事框架（供参考）</h2>
+    <div style="font-style:italic;color:var(--text2);font-size:.82rem;line-height:1.8;padding:12px;background:var(--bg2);border-radius:8px">
+      "My story isn't about winning competitions. It's about building something that matters. <br><br>
+      When I began my own college journey, I saw how opaque the admissions landscape was for Chinese families. So I didn't wait for someone else to fix it — I built OfferPath with my father. A real product, with real users, solving a real problem. <br><br>
+      On the water, I row. In front of a screen, I build. Both require the same thing: not giving up when it's hard."
     </div>
   </div>
 

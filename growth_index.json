@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-05-24",
+  "daily_logs": [
+    {
+      "date": "2026-05-16",
+      "file": "daily-logs/2026-05-16.md",
+      "summary": "🥇 平湖赛艇公开赛500m混双冠军！第4→第1，领先0.46秒绝杀首冠！",
+      "tags": ["competition", "sports", "milestone"],
+      "recorder": "爸爸"
+    },
+    {
+      "date": "2026-05-23",
+      "file": "daily-logs/2026-05-23.md",
+      "summary": "补托福课 + 4.5小时托福课，为上周比赛耽误的课程还债",
+      "tags": ["academic", "toefl"],
+      "recorder": "爸爸"
+    },
+    {
+      "date": "2026-05-24",
+      "file": "daily-logs/2026-05-24.md",
+      "summary": "全满的一天：07:10出门上托福→下午赛艇(雨改室内)→作业写到19:40才吃饭",
+      "tags": ["academic", "sports", "reflection", "rowing", "toefl"],
+      "recorder": "爸爸"
+    },
+    {
+      "date": "2026-05-24",
+      "file": "daily-logs/2026-05-24.md",
+      "summary": "星辰记基线录入 — 少爷完整档案建立",
+      "tags": ["baseline", "milestone"],
+      "recorder": "爸爸"
+    }
+  ],
+  "monthly_narratives": [],
+  "themes": ["resilience", "academic-growth", "sportsmanship", "self-discovery"],
+  "milestones": [
+    {
+      "date": "2026-05-16",
+      "title": "🥇 平湖赛艇公开赛500m混双冠军",
+      "category": "竞赛",
+      "detail": "人生首赛！第4→第1，领先0.46秒绝杀"
+    },
+    {
+      "date": "2026-05-24",
+      "title": "星辰记建立",
+      "category": "系统",
+      "detail": "少爷成长轨迹记录系统正式启用"
+    },
+    {
+      "date": "2026-05-24",
+      "title": "作业写完才吃饭（19:40）",
+      "category": "品质",
+      "detail": "主母摆好饭后坚持先完成作业"
+    }
+  ],
+  "stats": {
+    "total_logs": 4,
+    "total_words": 3046,
+    "total_themes_extracted": 5
+  }
+}

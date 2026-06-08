@@ -11,7 +11,11 @@ const SITE_DATA = {
     school: '光华剑桥美高',
     gpa: '3.91',
     toefl: '3.5 / 6.0',
-    rowing2k: "7'30\""
+    rowing2k: "7'30\"",
+    offerpath: '🚀 Offer路书',
+    offerpathUnis: 119,
+    offerpathRecords: 4709,
+    offerpathHs: 308
   },
 
   // ========== 获奖统计 ==========
