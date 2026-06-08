@@ -341,5 +341,37 @@ const SITE_DATA = {
       { date: '2027春', label: '🎯 US Youth Nationals', target: '全国性赛事拿名次', note: '进入招募关注名单' },
       { date: '2028春', label: '💎 巅峰赛季', target: '7:00以内', note: 'MIT招募标准' }
     ]
+  },
+
+  // ================================================================
+  // 🚀 Offer路书（科创项目）
+  // ================================================================
+  offerpath: {
+    status: '🚀 进行中',
+    product: 'Offer路书 — 海外大学录取数据平台',
+    url: 'http://43.162.92.9:3000/',
+    stats: {
+      unis: 119,
+      records: 4709,
+      hs: 308
+    },
+    role: {
+      title: '产品设计 · 测试 · AI Agent 开发者（Vibe Coding）',
+      description: '与爸爸（老板/创始人）一起从0到1打造Offer路书产品',
+      contributions: [
+        { phase: '产品定位', detail: '参与 Value Proposition 讨论，从用户视角提出产品定位建议' },
+        { phase: '产品设计', detail: '参与产品功能设计，与老板一起设计用户体验和交互流程' },
+        { phase: '测试', detail: '作为核心内测用户，持续测试产品功能并反馈bug' },
+        { phase: 'Bug修复（Vibe Coding）', detail: '通过 AI Agent（Vibe Coding）方式修复产品bug，与老板协作完成代码修改' },
+        { phase: '持续迭代', detail: '前期以测试/反馈为主，后期逐步增加编码开发参与度' }
+      ],
+      skills: ['产品思维', '用户测试', 'AI Agent协作', 'Vibe Coding', '产品设计', 'Bug追踪与修复'],
+      vibeCoding: true
+    },
+    timeline: [
+      { date: '2026前期', event: '加入项目', detail: '作为内测用户和产品顾问参与Offer路书' },
+      { date: '2026中', event: '功能设计参与', detail: '与老板一起设计产品功能，提供青少年用户视角' },
+      { date: '2026中', event: 'Vibe Coding 修复Bug', detail: '通过AI Agent方式参与代码级Bug修复，体验现代AI协作编程' }
+    ]
   }
 };
