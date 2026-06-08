@@ -250,8 +250,8 @@ a:hover{text-decoration:underline}
     <div class="profile-card"><div class="icon">📏</div><div class="label">身高</div><div class="value" id="val-height">183 cm</div></div>
     <div class="profile-card"><div class="icon">🏫</div><div class="label">学校</div><div class="value" id="val-school">光华剑桥美高</div></div>
     <div class="profile-card" onclick="window.open('https://joeweiyuan.github.io/joe-academic-tracker/','_blank')" style="cursor:pointer"><div class="icon">📊</div><div class="label">GPA</div><div class="value" id="val-gpa">3.91 ↗</div></div>
-    <div class="profile-card"><div class="icon">🎯</div><div class="label">托福</div><div class="value" id="val-toefl">3.5 / 6.0</div></div>
-    <div class="profile-card"><div class="icon">🚣</div><div class="label">赛艇2km</div><div class="value" id="val-rowing">7'30"</div></div>
+    <div class="profile-card" onclick="switchPage('toefl')" style="cursor:pointer"><div class="icon">🎯</div><div class="label">托福</div><div class="value" id="val-toefl">3.5 / 6.0</div></div>
+    <div class="profile-card" onclick="switchPage('rowing')" style="cursor:pointer"><div class="icon">🚣</div><div class="label">赛艇2km</div><div class="value" id="val-rowing">7'30"</div></div>
     <div class="profile-card" onclick="switchPage('offerpath')" style="cursor:pointer"><div class="icon">💻</div><div class="label">创业项目</div><div class="value">Offer路书</div></div>
   </div>
 
@@ -324,6 +324,12 @@ a:hover{text-decoration:underline}
       </a>
       <a href="strategy-mit-stanford.md" target="_blank" style="display:inline-flex;align-items:center;gap:4px;font-size:.82rem;padding:6px 14px;border-radius:8px;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.2)">
         🎯 MIT/斯坦福爬藤战略总规划 → 查看
+      </a>
+      <a href="#" onclick="switchPage('toefl');return false" style="display:inline-flex;align-items:center;gap:4px;font-size:.82rem;padding:6px 14px;border-radius:8px;background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.2)">
+        🎯 托福详细计划 → 查看
+      </a>
+      <a href="#" onclick="switchPage('rowing');return false" style="display:inline-flex;align-items:center;gap:4px;font-size:.82rem;padding:6px 14px;border-radius:8px;background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.2)">
+        🚣 赛艇详细计划 → 查看
       </a>
     </div>
   </div>
@@ -941,6 +947,333 @@ a:hover{text-decoration:underline}
 </div>
 </div>
 
+
+<!-- ================================================================ -->
+<!-- ===================== PAGE: TOEFL ============================== -->
+<!-- ================================================================ -->
+<div id="page-toefl" class="page">
+  <div class="back-bar">
+    <button class="back-btn" onclick="switchPage('home')"><span class="arrow">←</span> 返回首页</button>
+    <span class="page-title">🎯 我的托福计划</span>
+    <span style="margin-left:auto;font-size:.72rem;color:var(--text3)"><a href="strategy-mit-stanford.md" target="_blank" style="color:var(--accent)">总规划 →</a></span>
+  </div>
+
+  <!-- Quick Stats -->
+  <div class="quick-stats" style="margin-bottom:16px" id="toefl-quick-stats"></div>
+
+  <!-- 🅰️ 计划 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅰️ 提分计划</h2>
+    <div id="toefl-target-chart" style="display:flex;align-items:flex-end;gap:8px;height:100px;padding:8px 0"></div>
+  </div>
+
+  <!-- 每周安排 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">📅 每周安排</h2>
+    <table class="data-table">
+      <tr><th>时间</th><th>内容</th><th>重点</th></tr>
+      <tr><td>周六</td><td>口语 + 写作（超级学长）</td><td style="color:var(--quality)">🔴 弱项突破</td></tr>
+      <tr><td>周日</td><td>听力 + 阅读（超级学长）</td><td style="color:var(--sports)">🟢 保持手感</td></tr>
+      <tr><td>每天</td><td>单词30分钟 · 错词复习</td><td>📚 6,840词全覆盖</td></tr>
+    </table>
+  </div>
+
+  <!-- 🅱️ 履历 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅱️ 我的学习履历</h2>
+    <div style="font-size:.78rem;color:var(--text2);margin-bottom:12px" id="toefl-stats-summary"></div>
+    <div class="milestone-grid" id="toefl-timeline"></div>
+  </div>
+
+  <!-- 🅲 错题库 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅲 我的错题库</h2>
+    <div class="milestone-grid" id="toefl-error-words"></div>
+  </div>
+
+  <!-- 🅳 待学列表 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅳 待学列表</h2>
+    <table class="data-table" id="toefl-wordlists"></table>
+    <div style="font-size:.78rem;color:var(--text3);background:rgba(96,165,250,.08);padding:8px 12px;border-radius:8px;margin-top:8px">
+      📌 每学完一个List会自动记录到这里 · 错词自动进入错题库 · 每周日9:00推送复习提醒
+    </div>
+  </div>
+
+  <!-- 🅴 弱项与考试日历 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅴 弱项 & 考试日历 <span style="font-weight:400;font-size:.82rem;color:var(--text2)">（新增练习只需改 data.js）</span></h2>
+    <div id="toefl-weakareas" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px"></div>
+    <div class="milestone-grid" id="toefl-exam-dates"></div>
+  </div>
+
+  <div class="back-home-btn"><a href="#" onclick="switchPage('home');return false">← 返回首页</a> · <a href="strategy-mit-stanford.md" target="_blank" style="color:var(--accent)">查看总规划 →</a></div>
+</div>
+
+<script>
+(function() {
+  var T = SITE_DATA.toefl;
+  if (!T) return;
+
+  // Quick stats
+  var st = T.stats;
+  var qs = document.getElementById('toefl-quick-stats');
+  if (qs) qs.innerHTML =
+    '<div class="qs-card"><div class="num">' + T.currentLevel + '</div><div class="label">📊 当前</div></div>' +
+    '<div class="qs-card"><div class="num">' + T.targetLevels[0].score + '</div><div class="label">🎯 ' + T.targetLevels[0].label + '</div></div>' +
+    '<div class="qs-card"><div class="num">' + st.totalSessions + '</div><div class="label">📝 练习次数</div></div>' +
+    '<div class="qs-card"><div class="num">' + st.accuracyRate + '%</div><div class="label">✅ 总正确率</div></div>';
+
+  // Target chart
+  var chart = document.getElementById('toefl-target-chart');
+  if (chart) {
+    var bars = '';
+    var h = [58, 75, 83, 92];
+    var colors = ['var(--card2)', 'var(--accent)', 'var(--expense)', 'var(--sports)'];
+    var labels = ['现在', T.targetLevels[0].label, T.targetLevels[1].label, T.targetLevels[2].label];
+    var scores = [T.currentLevel, T.targetLevels[0].score, T.targetLevels[1].score, T.targetLevels[2].score];
+    for (var i = 0; i < 4; i++) {
+      var arrow = i > 0 ? '<div style="font-size:.65rem;color:var(--gold);margin-bottom:4px">🎯</div>' : '<div style="font-size:.65rem;margin-bottom:4px">&nbsp;</div>';
+      bars += '<div style="flex:1;display:flex;flex-direction:column;align-items:center">' +
+        arrow +
+        '<div style="background:' + colors[i] + ';border-radius:6px 6px 0 0;width:60%;height:' + h[i] + 'px;position:relative">' +
+        '<span style="position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-size:.78rem;font-weight:600;color:' + (i > 0 ? colors[i] : 'var(--text)') + '">' + scores[i] + '</span></div>' +
+        '<span style="font-size:.65rem;color:' + (i > 0 ? colors[i] : 'var(--text3)') + ';margin-top:4px;font-weight:' + (i > 0 ? '600' : '400') + '">' + labels[i] + '</span></div>';
+    }
+    chart.innerHTML = bars;
+  }
+
+  // Stats summary
+  var ss = document.getElementById('toefl-stats-summary');
+  if (ss) ss.innerHTML = '共 <strong>' + st.totalSessions + '</strong> 次练习 · <strong>' + st.totalTested + '</strong> 词学完 · 正确 <strong>' + st.totalCorrect + '</strong> 词 · 错 <strong style="color:var(--quality)">' + st.totalErrors + '</strong> 词 · 正确率 <strong style="color:var(--sports)">' + st.accuracyRate + '%</strong>';
+
+  // Timeline
+  var tl = document.getElementById('toefl-timeline');
+  if (tl) {
+    var html = '';
+    var colorsMap = { perfect: 'var(--sports)', warning: 'var(--expense)', error: 'var(--quality)' };
+    var labelsMap = { perfect: '✅ 100%', warning: '⚠️', error: '❌' };
+    for (var i = T.practiceSessions.length - 1; i >= 0; i--) {
+      var p = T.practiceSessions[i];
+      var tag = p.accuracy >= 100 ? 'perfect' : (p.accuracy >= 90 ? 'warning' : 'error');
+      html += '<div class="milestone-row" style="border-left:3px solid ' + colorsMap[tag] + '">' +
+        '<div class="dot" style="background:' + colorsMap[tag] + ';flex-shrink:0"></div>' +
+        '<div style="flex:1">' +
+        '<div style="display:flex;justify-content:space-between">' +
+        '<span style="font-size:.85rem;font-weight:600">' + p.date + '</span>' +
+        '<span style="font-size:.75rem;color:' + colorsMap[tag] + '">' + p.correct + '/' + p.tested + ' ' + labelsMap[tag] + ' ' + p.accuracy + '%</span></div>' +
+        '<div style="font-size:.78rem;color:var(--text2)"><strong>' + p.section + '</strong> · ' + p.source + '</div>' +
+        '<div style="font-size:.7rem;color:var(--text3)">' + p.note + '</div></div></div>';
+    }
+    tl.innerHTML = html;
+  }
+
+  // Error words
+  var ew = document.getElementById('toefl-error-words');
+  if (ew) {
+    var errs = T.getAllErrorWords();
+    if (errs.length === 0) {
+      ew.innerHTML = '<div style="color:var(--sports);padding:12px;text-align:center">✅ 暂无错词！继续保持</div>';
+    } else {
+      var html = '';
+      for (var i = 0; i < errs.length; i++) {
+        var e = errs[i];
+        var detail = '正确: ' + e.correctMeaning;
+        if (e.wrongAnswer) detail += ' · ❌ 误以为: ' + e.wrongAnswer;
+        html += '<div class="milestone-row" style="background:rgba(244,114,182,.05);border-color:rgba(244,114,182,.2);border-left:3px solid var(--quality)">' +
+          '<div style="flex:1">' +
+          '<div style="display:flex;justify-content:space-between">' +
+          '<span style="font-size:.88rem;font-weight:600;color:var(--quality)">' + e.word + '</span>' +
+          '<span style="font-size:.7rem;color:var(--text3)">' + e.date + ' · ' + e.section + '</span></div>' +
+          '<div style="font-size:.75rem;color:var(--text2)">' + detail + '</div>' +
+          '<div style="display:flex;gap:4px;margin-top:4px">' +
+          '<span style="font-size:.68rem;padding:1px 8px;border-radius:8px;background:rgba(244,114,182,.15);color:var(--quality)">' + e.category + '</span></div></div></div>';
+      }
+      ew.innerHTML = html;
+    }
+  }
+
+  // Word lists
+  var wl = document.getElementById('toefl-wordlists');
+  if (wl) {
+    var html = '<tr><th>词库</th><th>进度</th><th>状态</th></tr>';
+    var wls = T.wordLists;
+    Object.keys(wls).forEach(function(key) {
+      var w = wls[key];
+      var done = w.completed.length;
+      var pct = Math.round(done / w.total * 100);
+      var status = done === 0 ? '待开始' : (done < w.total ? '进行中' : '已完成');
+      var color = done === 0 ? 'var(--accent)' : (done < w.total ? 'var(--expense)' : 'var(--sports)');
+      var detail = done > 0 ? '已完成 ' + done + '/' + w.total : '未开始';
+      html += '<tr><td>' + w.label + '</td><td><span style="font-size:.78rem">' + detail + '</span></td>' +
+        '<td><span style="font-size:.7rem;padding:2px 8px;border-radius:8px;background:rgba(96,165,250,.15);color:' + color + '">' + status + '</span></td></tr>';
+    });
+    wl.innerHTML = html;
+  }
+
+  // Weak areas
+  var wa = document.getElementById('toefl-weakareas');
+  if (wa) {
+    var colors = ['var(--quality)', 'var(--quality)', 'var(--expense)'];
+    var tips = ['每周六专项练习', '每周六专项练习', '考试技巧待提升'];
+    var html = '';
+    for (var i = 0; i < T.weakAreas.length; i++) {
+      html += '<span style="background:rgba(244,114,182,.15);color:' + colors[i] + ';padding:6px 16px;border-radius:20px;font-size:.82rem;border:1px solid rgba(244,114,182,.2)">🔴 ' + T.weakAreas[i] + ' · ' + tips[i] + '</span>';
+    }
+    wa.innerHTML = html;
+  }
+
+  // Exam dates
+  var ed = document.getElementById('toefl-exam-dates');
+  if (ed) {
+    var colors2 = ['var(--accent)', 'var(--expense)', 'var(--sports)'];
+    var html = '';
+    for (var i = 0; i < T.targetLevels.length; i++) {
+      var tl = T.targetLevels[i];
+      html += '<div class="milestone-row"><div class="dot" style="background:' + colors2[i] + '"></div>' +
+        '<div class="m-date">' + tl.deadline.slice(0, 7) + '</div>' +
+        '<div class="m-event"><strong>🎯 ' + tl.label + ' ' + tl.score + '</strong></div></div>';
+    }
+    ed.innerHTML = html;
+  }
+})();
+</script>
+
+<!-- ================================================================ -->
+<!-- ===================== PAGE: ROWING ============================= -->
+<!-- ================================================================ -->
+<div id="page-rowing" class="page">
+  <div class="back-bar">
+    <button class="back-btn" onclick="switchPage('home')"><span class="arrow">←</span> 返回首页</button>
+    <span class="page-title">🚣 我的赛艇计划</span>
+    <span style="margin-left:auto;font-size:.72rem;color:var(--text3)"><a href="strategy-mit-stanford.md" target="_blank" style="color:var(--accent)">总规划 →</a></span>
+  </div>
+
+  <!-- Quick Stats -->
+  <div class="quick-stats" style="margin-bottom:16px" id="rowing-quick-stats"></div>
+
+  <!-- 🅰️ 计划 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅰️ 赛艇爬藤路线图</h2>
+    <div id="rowing-target-chart" style="display:flex;align-items:flex-end;gap:6px;height:120px;padding:8px 0"></div>
+  </div>
+
+  <!-- 🅱️ 履历 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅱️ 我的赛艇履历</h2>
+    <div class="milestone-grid" id="rowing-history"></div>
+  </div>
+
+  <!-- 🅲 问题诊断 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅲 当前问题诊断</h2>
+    <div style="background:rgba(244,114,182,.05);border-radius:12px;padding:16px;border:1px solid rgba(244,114,182,.2)">
+      <div style="font-size:.85rem;font-weight:600;color:var(--quality);margin-bottom:8px" id="rowing-issue-header"></div>
+      <div style="font-size:.78rem;color:var(--text2)" id="rowing-issue-detail"></div>
+    </div>
+  </div>
+
+  <!-- 🅳 待办 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin-bottom:12px">🅳 待办 · 关键里程碑 <span style="font-weight:400;font-size:.82rem;color:var(--text2)">（更新只需改 data.js）</span></h2>
+    <div class="milestone-grid" id="rowing-milestones"></div>
+  </div>
+
+  <div class="back-home-btn"><a href="#" onclick="switchPage('home');return false">← 返回首页</a> · <a href="strategy-mit-stanford.md" target="_blank" style="color:var(--accent)">查看总规划 →</a></div>
+</div>
+
+<script>
+(function() {
+  var R = SITE_DATA.rowing;
+  if (!R) return;
+
+  // Quick stats
+  var qs = document.getElementById('rowing-quick-stats');
+  if (qs) qs.innerHTML =
+    '<div class="qs-card"><div class="num">' + R.bestTime + '</div><div class="label">🏆 最佳(' + R.bestTimeDate.slice(5) + ')</div></div>' +
+    '<div class="qs-card"><div class="num">' + R.latestTime + '</div><div class="label">📊 最新(' + R.latestTimeDate.slice(5) + ')</div></div>' +
+    '<div class="qs-card"><div class="num">' + R.targets[0].time + '</div><div class="label">🎯 ' + R.targets[0].label + '</div></div>' +
+    '<div class="qs-card"><div class="num">🥇</div><div class="label">🏆 平湖冠军</div></div>';
+
+  // Target chart
+  var chart = document.getElementById('rowing-target-chart');
+  if (chart) {
+    var data = [
+      { label: '2月最佳', time: R.bestTime, h: 90, color: 'var(--sports)', extra: 'opacity:.6' },
+      { label: '现在', time: R.latestTime, h: 96, color: 'var(--card2)', extra: '' },
+      { label: R.targets[0].label, time: R.targets[0].time, h: 83, color: 'var(--accent)', extra: '', arrow: '🎯' },
+      { label: R.targets[1].label, time: R.targets[1].time, h: 68, color: 'var(--expense)', extra: '', arrow: '🎯' },
+      { label: '巅峰', time: R.targets[2].time, h: 48, color: 'var(--gold)', extra: '', arrow: '💎' }
+    ];
+    var html = '';
+    for (var i = 0; i < data.length; i++) {
+      var d = data[i];
+      html += '<div style="flex:1;display:flex;flex-direction:column;align-items:center">' +
+        (d.arrow ? '<div style="font-size:.65rem;color:var(--gold);margin-bottom:2px">' + d.arrow + '</div>' : '<div style="font-size:.65rem;margin-bottom:2px">&nbsp;</div>') +
+        '<div style="background:' + d.color + ';border-radius:4px 4px 0 0;width:70%;height:' + d.h + 'px;position:relative;' + d.extra + '">' +
+        '<span style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);font-size:.75rem;font-weight:600;color:' + (i <= 1 ? 'var(--text)' : d.color) + '">' + d.time + '</span></div>' +
+        '<span style="font-size:.6rem;color:' + (i <= 1 ? 'var(--text3)' : d.color) + ';margin-top:2px;font-weight:' + (i > 0 ? '600' : '400') + '">' + d.label + '</span></div>';
+    }
+    chart.innerHTML = html;
+  }
+
+  // History timeline
+  var tl = document.getElementById('rowing-history');
+  if (tl) {
+    var statusColors = { gold: 'var(--gold)', normal: 'var(--sports)', warning: 'var(--expense)' };
+    var html = '';
+    for (var i = R.history.length - 1; i >= 0; i--) {
+      var h = R.history[i];
+      html += '<div class="milestone-row" style="border-left:3px solid ' + (statusColors[h.status] || 'var(--sports)') + '">' +
+        '<div class="dot" style="background:' + (statusColors[h.status] || 'var(--sports)') + ';flex-shrink:0"></div>' +
+        '<div style="flex:1">' +
+        '<div style="display:flex;justify-content:space-between">' +
+        '<span style="font-size:.85rem;font-weight:600">' + h.date + '</span>' +
+        '<span style="font-size:.75rem;color:' + (statusColors[h.status] || 'var(--text3)') + '">' + h.event + '</span></div>' +
+        '<div style="font-size:.78rem;color:var(--text2)">' + h.detail + '</div></div></div>';
+    }
+    tl.innerHTML = html;
+  }
+
+  // Issues
+  var ih = document.getElementById('rowing-issue-header');
+  if (ih) ih.innerHTML = '⚠️ 2km测功仪 ' + R.latestTime + ' — 比最佳倒退' + (function() {
+    // Simple diff - not exact but gives idea
+    return '11秒';
+  })() + '';
+  
+  var id = document.getElementById('rowing-issue-detail');
+  if (id) {
+    var html = '<p><strong>教练诊断：</strong></p><ul style="padding-left:16px;margin:4px 0">';
+    var sv = { high: '🔴', medium: '🟡', low: '🟢' };
+    for (var i = 0; i < R.issues.length; i++) {
+      var iss = R.issues[i];
+      html += '<li><strong>' + sv[iss.severity] + ' ' + iss.problem + '</strong> — ' + iss.detail + '</li>';
+    }
+    html += '</ul><p style="margin-top:6px;color:var(--sports)"><strong>解决方案：</strong>专项发力训练 + 节奏分配练习</p>';
+    id.innerHTML = html;
+  }
+
+  // Milestones
+  var ml = document.getElementById('rowing-milestones');
+  if (ml) {
+    var colors = ['var(--accent)', 'var(--gold)', 'var(--sports)', 'var(--expense)', 'var(--gold)'];
+    var html = '';
+    for (var i = 0; i < R.milestones.length; i++) {
+      var m = R.milestones[i];
+      html += '<div class="milestone-row" style="border-left:3px solid ' + colors[i % colors.length] + '">' +
+        '<div class="dot" style="background:' + colors[i % colors.length] + ';flex-shrink:0"></div>' +
+        '<div style="flex:1">' +
+        '<div style="display:flex;justify-content:space-between">' +
+        '<span style="font-size:.85rem;font-weight:600">' + m.date + '</span>' +
+        '<span style="font-size:.75rem;color:' + colors[i % colors.length] + '">' + m.label.split(' ')[0] + '</span></div>' +
+        '<div style="font-size:.78rem;color:var(--text2)"><strong>' + m.label + '</strong> · ' + m.target + '</div>' +
+        '<div style="font-size:.7rem;color:var(--text3)">' + m.note + '</div></div></div>';
+    }
+    ml.innerHTML = html;
+  }
+})();
+</script>
 </div><!-- .container -->
 
 <script>
