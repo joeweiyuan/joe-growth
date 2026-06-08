@@ -996,7 +996,7 @@ a:hover{text-decoration:underline}
     <h2 style="font-size:.95rem;margin-bottom:12px">🅳 待学列表</h2>
     <table class="data-table" id="toefl-wordlists"></table>
     <div style="font-size:.78rem;color:var(--text3);background:rgba(96,165,250,.08);padding:8px 12px;border-radius:8px;margin-top:8px">
-      📌 每学完一个List会自动记录到这里 · 错词自动进入错题库 · 每周日9:00推送复习提醒
+      📌 每学完一个List会自动记录到这里 · 错词自动进入错题库 · 每周日9:00推送复习提醒<br>👉 <a href="#" onclick="switchPage('toefl-words');return false" style="color:var(--accent);text-decoration:underline">查看全部90个词库详情 →</a>
     </div>
   </div>
 
@@ -1137,6 +1137,173 @@ a:hover{text-decoration:underline}
     ed.innerHTML = html;
   }
 })();
+
+<!-- ================================================================ -->
+<!-- ================= PAGE: TOEFL WORD LISTS ====================== -->
+<!-- ================================================================ -->
+<div id="page-toefl-words" class="page">
+  <div class="back-bar">
+    <button class="back-btn" onclick="switchPage('toefl')"><span class="arrow">←</span> 返回托福计划</button>
+    <span class="page-title">📖 我的托福词库（6,846词）</span>
+  </div>
+
+  <div style="margin-bottom:16px;font-size:.82rem;color:var(--text2)">
+    共 <strong id="tw-total-lists">0</strong> 个列表 · <strong id="tw-total-words">0</strong> 词 · 已学 <strong id="tw-learned-words" style="color:var(--sports)">0</strong> 词 · 待学 <strong id="tw-pending-words" style="color:var(--expense)">0</strong> 词
+  </div>
+
+  <div id="tw-loading" style="text-align:center;padding:40px;color:var(--text2)">⏳ 加载词库中...</div>
+  <div id="tw-content" style="display:none"></div>
+
+  <div class="back-home-btn"><a href="#" onclick="switchPage('toefl');return false">← 返回托福计划</a></div>
+</div>
+
+<script>
+(function() {
+  // Collect all practiced words from TOEFL practice sessions
+  var practiced = {};
+  var T = SITE_DATA.toefl;
+  if (T && T.practiceSessions) {
+    T.practiceSessions.forEach(function(s) {
+      // For List 6 and 7, we know they have test_words
+      // For others, we approximate by section name
+      var key = s.section;
+      // Map section name to list name
+      if (key.indexOf('List 6') >= 0) {
+        practiced['list_6'] = (practiced['list_6'] || 0) + s.tested;
+      } else if (key.indexOf('List 7') >= 0) {
+        practiced['list_7'] = (practiced['list_7'] || 0) + s.tested;
+      } else if (key.indexOf('银行金融') >= 0) {
+        practiced['listening_finance'] = (practiced['listening_finance'] || 0) + s.tested;
+      } else if (key.indexOf('图书馆') >= 0 || key.indexOf('学术') >= 0) {
+        practiced['listening_library'] = (practiced['listening_library'] || 0) + s.tested;
+      } else if (key.indexOf('酒店') >= 0) {
+        practiced['listening_hotel'] = (practiced['listening_hotel'] || 0) + s.tested;
+      } else if (key.indexOf('人际') >= 0) {
+        practiced['listening_social'] = (practiced['listening_social'] || 0) + s.tested;
+      } else if (key.indexOf('日程') >= 0) {
+        practiced['listening_schedule'] = (practiced['listening_schedule'] || 0) + s.tested;
+      } else if (key.indexOf('单词表') >= 0) {
+        practiced['list_misc'] = (practiced['list_misc'] || 0) + s.tested;
+      }
+    });
+  }
+
+  // List categories and display names
+  var CATEGORIES = [
+    { label: '📖 阅读高频词 (List 1~30)', lists: [], from: 1, to: 30, prefix: 'list_' },
+    { label: '👂 听力话题词汇 (List 31~49)', lists: [], from: 31, to: 49, prefix: 'list_' },
+    { label: '🔬 阅读学科词汇', lists: [], prefix: 'subject_reading_' },
+    { label: '🔬 听力学科词汇', lists: [], prefix: 'subject_listening_' },
+    { label: '📝 听力词组', lists: [], prefix: 'listening_phrases' },
+    { label: '🎧 听力场景高频', lists: [], prefix: 'hf_listening_' }
+  ];
+
+  var container = document.getElementById('tw-content');
+  var loading = document.getElementById('tw-loading');
+  
+  // Fetch vocabulary data
+  fetch('vocabulary_data.json')
+    .then(function(r) { return r.json(); })
+    .then(function(vocab) {
+      loading.style.display = 'none';
+      container.style.display = 'block';
+
+      // Count stats
+      var totalLists = 0;
+      var totalWords = 0;
+      var learnedWords = 0;
+      var pendingWords = 0;
+
+      var html = '';
+      var allListNames = Object.keys(vocab).sort();
+
+      CATEGORIES.forEach(function(cat) {
+        // Filter lists for this category
+        var catLists = [];
+        if (cat.prefix === 'list_' && cat.from) {
+          for (var i = cat.from; i <= cat.to; i++) {
+            var name = cat.prefix + i;
+            if (vocab[name]) catLists.push(name);
+          }
+        } else if (cat.prefix === 'listening_phrases') {
+          if (vocab['listening_phrases']) catLists.push('listening_phrases');
+        } else {
+          allListNames.forEach(function(name) {
+            if (name.indexOf(cat.prefix) === 0) catLists.push(name);
+          });
+        }
+
+        if (catLists.length === 0) return;
+        totalLists += catLists.length;
+
+        html += '<div style="background:var(--card);border-radius:var(--radius);padding:16px;border:1px solid var(--card2);margin-bottom:12px">';
+        html += '<h3 style="font-size:.88rem;margin-bottom:10px">' + cat.label + ' <span style="font-weight:400;font-size:.75rem;color:var(--text2)">' + catLists.length + '个列表</span></h3>';
+
+        catLists.forEach(function(name) {
+          var words = vocab[name];
+          totalWords += words.length;
+
+          // Check if this list has been practiced
+          var practicedCount = 0;
+          var listKey = name;
+          if (practiced[listKey]) practicedCount = Math.min(practiced[listKey], words.length);
+          // Also check by partial name match
+          Object.keys(practiced).forEach(function(k) {
+            if (name.indexOf(k) >= 0 || k.indexOf(name) >= 0) {
+              practicedCount = Math.max(practicedCount, Math.min(practiced[k], words.length));
+            }
+          });
+
+          learnedWords += practicedCount;
+          var pct = Math.round(practicedCount / words.length * 100);
+          var statusClass = practicedCount === 0 ? '待学' : (practicedCount < words.length ? '进行中' : '已完成');
+          var statusColor = practicedCount === 0 ? 'var(--accent)' : (practicedCount < words.length ? 'var(--expense)' : 'var(--sports)');
+
+          html += '<div style="margin-bottom:6px;border-bottom:1px solid rgba(51,65,85,.3);padding-bottom:6px">';
+          html += '<div style="display:flex;justify-content:space-between;align-items:center;cursor:pointer" onclick="toggleWordList(\'' + name + '\')">';
+          html += '<span style="font-size:.82rem;font-weight:500">' + name + ' <span style="font-weight:400;font-size:.72rem;color:var(--text2)">(' + words.length + '词)</span></span>';
+          html += '<span style="font-size:.7rem;padding:2px 10px;border-radius:10px;background:rgba(96,165,250,.15);color:' + statusColor + '">' + statusClass + ' ' + pct + '%</span>';
+          html += '</div>';
+          // Hidden word list (expandable)
+          html += '<div id="wl-' + name + '" style="display:none;margin-top:6px;padding:8px;background:var(--bg2);border-radius:8px;max-height:300px;overflow-y:auto;font-size:.75rem">';
+          html += '<table style="width:100%;border-collapse:collapse">';
+          html += '<tr><th style="text-align:left;padding:2px 6px;color:var(--text2);font-weight:400">单词</th><th style="text-align:left;padding:2px 6px;color:var(--text2);font-weight:400">释义</th><th style="text-align:center;padding:2px 6px;color:var(--text2);font-weight:400;width:50px">状态</th></tr>';
+          words.forEach(function(w) {
+            var wordStatus = '📖 待学';
+            var wordColor = 'var(--accent)';
+            // In a real system we'd check per-word status from practice data
+            html += '<tr><td style="padding:2px 6px">' + w.word + '</td><td style="padding:2px 6px;color:var(--text2)">' + w.meaning + '</td><td style="padding:2px 6px;text-align:center;font-size:.68rem;color:' + wordColor + '">' + wordStatus + '</td></tr>';
+          });
+          html += '</table></div>';
+          html += '</div>';
+        });
+
+        html += '</div>';
+      });
+
+      pendingWords = totalWords - learnedWords;
+      
+      document.getElementById('tw-total-lists').textContent = totalLists;
+      document.getElementById('tw-total-words').textContent = totalWords;
+      document.getElementById('tw-learned-words').textContent = learnedWords;
+      document.getElementById('tw-pending-words').textContent = pendingWords;
+
+      container.innerHTML = html;
+    })
+    .catch(function(err) {
+      loading.innerHTML = '❌ 加载失败: ' + err.message;
+    });
+})();
+
+function toggleWordList(name) {
+  var el = document.getElementById('wl-' + name);
+  if (el) {
+    el.style.display = el.style.display === 'none' ? 'block' : 'none';
+  }
+}
+</script>
+
+
 </script>
 
 <!-- ================================================================ -->
