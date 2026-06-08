@@ -207,6 +207,16 @@ const SITE_DATA = {
         note: '涵盖: 美国政治(共和党/宪法/国会/参议院/修正案等)、古代文明(希腊/罗马/埃及/苏美尔等)、经济贸易(关税/汇票/商人/资本等)',
         errorWords: [],
         media: 'assets/images/toefl/subject-political-history.jpg'
+      },
+      {
+        date: '2026-06-10', section: '听力 List 3 人际话题', source: '课堂默写',
+        tested: 26, correct: 20, accuracy: 77,
+        status: 'error',
+        note: '老师评语：20/26。部分单词元音出现错误，订正之后能够完全背诵正确。词汇: acquaintance/roommate/neighbour/companion/ally/rival/extrovert/hostile/deceitful/generous/honest/untrustworthy/motivate/console/forgive/apologize/negotiate/cooperate/gossip/flatter/overpraised/grateful',
+        errorWords: [
+          { word: '(元音错误6词)', correctMeaning: '待确认具体词汇', category: '元音拼写' }
+        ],
+        media: 'assets/images/toefl/listening-list3-dictation.jpg'
       }
     ],
 
