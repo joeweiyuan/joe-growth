@@ -1047,12 +1047,12 @@ a:hover{text-decoration:underline}
     var scores = [T.currentLevel, T.targetLevels[0].score, T.targetLevels[1].score, T.targetLevels[2].score];
     for (var i = 0; i < 4; i++) {
       bars += '<div style="flex:1;display:flex;flex-direction:column;align-items:center;min-width:0;overflow:visible">' +
-        '<span style="font-size:.85rem;font-weight:700;color:' + (i > 0 ? colors[i] : 'var(--text)') + ';margin-bottom:6px;white-space:nowrap">' + scores[i] + '</span>' +
-        '<div style="font-size:.7rem;color:var(--gold);margin-bottom:6px;min-height:18px;line-height:1.2">' + (i > 0 ? '🎯' : '') + '</div>' +
-        '<div style="background:' + colors[i] + ';border-radius:6px 6px 0 0;width:65%;height:' + h[i] + 'px;min-width:28px"></div>' +
-        '<span style="font-size:.68rem;color:' + (i > 0 ? colors[i] : 'var(--text3)') + ';margin-top:6px;font-weight:' + (i > 0 ? '600' : '400') + ';text-align:center;line-height:1.3">' + labels[i] + '</span></div>';
+        '<span style="font-size:.78rem;font-weight:600;color:' + (i > 0 ? colors[i] : 'var(--text)') + ';margin-bottom:3px;white-space:nowrap">' + scores[i] + '</span>' +
+        '<div style="font-size:.65rem;color:var(--gold);margin-bottom:4px;min-height:14px;line-height:1">' + (i > 0 ? '🎯' : '') + '</div>' +
+        '<div style="background:' + colors[i] + ';border-radius:4px 4px 0 0;width:60%;height:' + h[i] + 'px;min-width:24px"></div>' +
+        '<span style="font-size:.65rem;color:' + (i > 0 ? colors[i] : 'var(--text3)') + ';margin-top:4px;font-weight:' + (i > 0 ? '600' : '400') + ';text-align:center;line-height:1.2">' + labels[i] + '</span></div>';
     }
-    chart.style.gap = '8px';
+    chart.style.gap = '4px';
     chart.innerHTML = bars;
   }
 
