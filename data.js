@@ -299,9 +299,9 @@ const SITE_DATA = {
         date: '2026-06-14', section: '词霸 200 We\'re not pressed for time', source: '课堂默写',
         tested: 25, correct: 24, accuracy: 96,
         status: 'warning',
-        note: '准确率24/25。学术研究类词汇（提出假设/数据分析/论文撰写/文献引用等）。右侧有questionnaire ×3红笔纠拼，疑似拼写错误',
+        note: '准确率24/25。学术研究类词汇（提出假设/数据分析/论文撰写/文献引用等）。错词: questionnaire(问卷) 拼写错误',
         errorWords: [
-          { word: 'questionnaire', correctMeaning: '问卷，调查表', category: '拼写（待确认）' }
+          { word: 'questionnaire', correctMeaning: '问卷，调查表', category: '拼写' }
         ],
         media: 'assets/images/toefl/list200-academic-research-24-25.jpg'
       }
