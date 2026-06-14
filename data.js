@@ -289,9 +289,9 @@ const SITE_DATA = {
         date: '2026-06-14', section: '超级学子 List 29 社会心理词汇', source: '课堂默写',
         tested: 100, correct: 99, accuracy: 99,
         status: 'warning',
-        note: '准确率99/100。社会心理学词汇（反思/认知/脑电波/感知/意识等），全部印刷词条均正确，具体错词待老师确认',
+        note: '准确率99/100。社会心理学词汇（反思/认知/脑电波/感知/意识等）。错词: perceivable(可感知的)',
         errorWords: [
-          { word: '(待确认)', correctMeaning: '待确认具体词汇', category: '待确认' }
+          { word: 'perceivable', correctMeaning: '可感知的，可认知的', category: '拼写' }
         ],
         media: 'assets/images/toefl/list29-social-psychology-99-100.jpg'
       },
