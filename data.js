@@ -286,7 +286,7 @@ const SITE_DATA = {
         media: 'assets/images/toefl/tpo1-conversationD-dictation-20260607.jpg'
       },
       {
-        date: '2026-06-14', section: '超级学子 List 29 社会心理词汇', source: '词汇表自测',
+        date: '2026-06-14', section: '超级学子 List 29 社会心理词汇', source: '课堂默写',
         tested: 100, correct: 99, accuracy: 99,
         status: 'warning',
         note: '准确率99/100。社会心理学词汇（反思/认知/脑电波/感知/意识等），全部印刷词条均正确，具体错词待老师确认',
