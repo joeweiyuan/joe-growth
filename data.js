@@ -284,6 +284,26 @@ const SITE_DATA = {
           { word: 'assignment', correctMeaning: '任务，作业', wrongAnswer: 'now', category: '听辨错误' }
         ],
         media: 'assets/images/toefl/tpo1-conversationD-dictation-20260607.jpg'
+      },
+      {
+        date: '2026-06-14', section: '超级学子 List 29 社会心理词汇', source: '词汇表自测',
+        tested: 100, correct: 99, accuracy: 99,
+        status: 'warning',
+        note: '准确率99/100。社会心理学词汇（反思/认知/脑电波/感知/意识等），全部印刷词条均正确，具体错词待老师确认',
+        errorWords: [
+          { word: '(待确认)', correctMeaning: '待确认具体词汇', category: '待确认' }
+        ],
+        media: 'assets/images/toefl/list29-social-psychology-99-100.jpg'
+      },
+      {
+        date: '2026-06-14', section: '词霸 200 We\'re not pressed for time', source: '课堂默写',
+        tested: 25, correct: 24, accuracy: 96,
+        status: 'warning',
+        note: '准确率24/25。学术研究类词汇（提出假设/数据分析/论文撰写/文献引用等）。右侧有questionnaire ×3红笔纠拼，疑似拼写错误',
+        errorWords: [
+          { word: 'questionnaire', correctMeaning: '问卷，调查表', category: '拼写（待确认）' }
+        ],
+        media: 'assets/images/toefl/list200-academic-research-24-25.jpg'
       }
     ],
 
@@ -296,7 +316,7 @@ const SITE_DATA = {
         totalCorrect: s.reduce((sum, p) => sum + p.correct, 0),
         totalErrors: s.reduce((sum, p) => sum + p.errorWords.length, 0),
         accuracyRate: s.length > 0 ? (s.reduce((sum, p) => sum + p.correct, 0) / s.reduce((sum, p) => sum + p.tested, 0) * 100).toFixed(1) : 0,
-        wordCompletionPct: Math.round(801 / 6846 * 100)
+        wordCompletionPct: Math.round(780 / 6846 * 100)
       };
     },
 
