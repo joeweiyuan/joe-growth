@@ -21,6 +21,7 @@ const SITE_DATA = {
     height: '183 cm',
     school: '光华剑桥美高',
     gpa: '3.91',
+    gpaTerm: '2024-2025学年下学期期末',
     toefl: '3.5 / 6.0',
     toeflTarget: '≥4.5 (6月底)',
     rowing2k: "7'30\" (best)",
