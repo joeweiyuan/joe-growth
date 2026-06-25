@@ -19,7 +19,7 @@ const SITE_DATA = {
   profile: {
     birthday: '2011.05',
     height: '183 cm',
-    school: '光华剑桥美高',
+    school: '光华剑桥',
     gpa: '3.91',
     gpaTerm: '2024-2025学年下学期期末',
     toefl: '3.5 / 6.0',
