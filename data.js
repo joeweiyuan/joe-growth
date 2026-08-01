@@ -369,6 +369,7 @@ const SITE_DATA = {
       { date: '2026-07-19', event: '✈️ 赴美赛艇合练启程', detail: 'PVG→JFK · 人生首次独自赴美', status: 'normal' },
       { date: '2026-07-21~23', event: '🚣 耶鲁大学赛艇夏校', detail: 'Gilder Boathouse, Derby CT', status: 'normal' },
       { date: '2026-07-27~30', event: '🚣 MIT赛艇夏校', detail: 'Richard J Resch Boathouse, Cambridge MA', status: 'normal' },
+      { date: '2026-07-31', event: '🥇 MIT夏校收官赛夺冠！', detail: '搭档美国队友 · 最后时刻反超 · 国际首胜', status: 'gold' },
       { date: '2026-08-03~05', event: '🚣 达特茅斯赛艇夏校', detail: 'Friends of Dartmouth Rowing Boathouse', status: 'normal' },
       { date: '2026-08-09~11', event: '🚣 宾大(UPenn)赛艇夏校', detail: 'Burk-Bergman Boathouse, Philadelphia', status: 'normal' },
     ],
