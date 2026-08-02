@@ -1,14 +1,7 @@
 {
   "version": "1.0",
-  "last_updated": "2026-06-08",
+  "last_updated": "2026-05-24",
   "daily_logs": [
-    {
-      "date": "2026-06-08",
-      "file": "daily-logs/2026-06-08.md",
-      "summary": "🚣 赛艇校队团建聚餐 16:20~20:30 @新田360 · 小卷罗姆串串自助",
-      "tags": ["rowing", "team", "social"],
-      "recorder": "爸爸"
-    },
     {
       "date": "2026-05-16",
       "file": "daily-logs/2026-05-16.md",
@@ -36,6 +29,27 @@
       "summary": "星辰记基线录入 — 少爷完整档案建立",
       "tags": ["baseline", "milestone"],
       "recorder": "爸爸"
+    },
+    {
+      "date": "2026-07-27",
+      "file": "daily-logs/2026-07-27.md",
+      "summary": "🚣 MIT赛艇夏校报到日！泳测100码+踩水10分钟，藤校第二站开营",
+      "tags": ["sports", "rowing", "milestone", "usa"],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-07-31",
+      "file": "daily-logs/2026-07-31.md",
+      "summary": "🥇 MIT夏校收官赛冠军！最后时刻反超美国本土组合——国际赛场首胜！",
+      "tags": ["competition", "sports", "rowing", "milestone", "usa"],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-08-02",
+      "file": "daily-logs/2026-08-02.md",
+      "summary": "⭐ 第31周周记：MIT夏校完训+收官赛夺冠 → Hanover休整 → 达特茅斯蓄势待发",
+      "tags": ["weekly", "rowing", "milestone", "usa"],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -61,7 +75,7 @@
     }
   ],
   "stats": {
-    "total_logs": 5,
+    "total_logs": 4,
     "total_words": 3046,
     "total_themes_extracted": 5
   }
