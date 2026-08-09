@@ -421,5 +421,41 @@ const SITE_DATA = {
       { date: '2026中', event: '功能设计参与', detail: '与老板一起设计产品功能，提供青少年用户视角' },
       { date: '2026中', event: 'Vibe Coding 修复Bug', detail: '通过AI Agent方式参与代码级Bug修复，体验现代AI协作编程' }
     ]
+
+  },
+
+  // ================================================================
+  // 🗺️ 2026 暑假旅程（泰州集训 + 美国四藤校合练）
+  // ================================================================
+  summerJourney: {
+    title: '2026 暑假旅程 · 动态路线图',
+    subtitle: '泰州25天集训 → 美国四藤校+MIT合练 → 凯旋返沪',
+    mapUrl: 'maps/joe-usa-summer-camp-map.html',
+    overview: [
+      { label: '总天数', value: '58天', detail: '6/18 出发 → 8/15 抵沪' },
+      { label: '集训天数', value: '25天', detail: '泰州封闭集训 · 全勤' },
+      { label: '藤校站', value: '4+1', detail: '耶鲁·MIT·达特茅斯·宾大' },
+      { label: '2km PB', value: "7'24\"1", detail: '泰州收官 · 全新生涯纪录' },
+      { label: '冠军', value: '🥇×1', detail: 'MIT收官赛国际首胜' },
+      { label: '跨洋飞行', value: '2段', detail: 'MU587 去 · CX841+CX380 回' }
+    ],
+    stops: [
+      { n: 1, date: '6/18', name: '上海', icon: '🚌', note: '出发 · 赴泰州集训', color: '#b9770e' },
+      { n: 2, date: '6/18-7/12', name: '泰州 · 水上训练基地', icon: '🚣', note: '25天封闭集训 · 2km PB 7:24.1', color: '#d4ac0d' },
+      { n: 3, date: '7/12-7/19', name: '上海', icon: '🏠', note: '返沪休整 · 赴美准备', color: '#b9770e' },
+      { n: 4, date: '7/19', name: '上海浦东 PVG', icon: '✈️', note: 'MU587 出发赴美', color: '#1a5276' },
+      { n: 5, date: '7/19-21', name: '纽约 JFK', icon: '🛬', note: '落地美国 · 第一晚酒店', color: '#1a5276' },
+      { n: 6, date: '7/20', name: '纽约曼哈顿', icon: '🗽', note: '华尔街·自由女神·帝国大厦', color: '#5d6d7e' },
+      { n: 7, date: '7/21-24', name: '耶鲁大学', icon: '🚣', note: '🟦 藤校第①站 · Gilder Boathouse', color: '#2471a3' },
+      { n: 8, date: '7/24-27', name: '波士顿 Saugus', icon: '🏙️', note: '哈佛·自由之路·昆西市场', color: '#5d6d7e' },
+      { n: 9, date: '7/27-31', name: 'MIT', icon: '🚣', note: '🟥 藤校第②站 · 收官赛🥇冠军', color: '#c0392b' },
+      { n: 10, date: '7/31-8/2', name: 'Hanover NH', icon: '🏞️', note: '转场休整蓄力', color: '#5d6d7e' },
+      { n: 11, date: '8/3-5', name: '达特茅斯学院', icon: '🚣', note: '🟩 藤校第③站 · 招生宣讲', color: '#1e8449' },
+      { n: 12, date: '8/6-7', name: '费城 King of Prussia', icon: '🚗', note: '6小时大转场', color: '#5d6d7e' },
+      { n: 13, date: '8/8', name: '费城独立宫', icon: '🏛️', note: '独立宫·自由钟·旧国会大厦', color: '#5d6d7e' },
+      { n: 14, date: '8/9-11', name: '宾夕法尼亚大学', icon: '🚣', note: '🟪 藤校第④站·收官 · Burk-Bergman', color: '#6c3483' },
+      { n: 15, date: '8/12-13', name: '纽约 Hasbrouck', icon: '🗽', note: '收官回纽约 · 休整购物', color: '#1a5276' },
+      { n: 16, date: '8/14', name: '纽约 → 返沪', icon: '✈️', note: 'CX841香港转CX380 · 8/15抵沪', color: '#1a5276' }
+    ]
   }
 };

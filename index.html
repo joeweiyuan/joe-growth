@@ -210,6 +210,7 @@ a:hover{text-decoration:underline}
     <nav class="header-nav" id="mainNav">
       <button class="nav-btn active" onclick="switchPage('home')">🏠 首页</button>
       <button class="nav-btn" onclick="switchPage('timeline')">📅 时间线</button>
+      <button class="nav-btn" onclick="switchPage('summer')">🗺️ 暑假旅程</button>
       <button class="nav-btn" onclick="switchPage('monthly')">📖 月度</button>
       <button class="nav-btn" onclick="switchPage('themes')">🌱 主题</button>
       <button class="nav-btn" onclick="switchPage('milestones')">⭐ 里程碑</button>
@@ -222,6 +223,7 @@ a:hover{text-decoration:underline}
   <div class="menu-dropdown" id="menuDropdown">
     <button class="nav-btn active" onclick="switchPage('home')">🏠 首页</button>
     <button class="nav-btn" onclick="switchPage('timeline')">📅 时间线</button>
+    <button class="nav-btn" onclick="switchPage('summer')">🗺️ 暑假旅程</button>
     <button class="nav-btn" onclick="switchPage('monthly')">📖 月度叙事</button>
     <button class="nav-btn" onclick="switchPage('themes')">🌱 成长主题</button>
     <button class="nav-btn" onclick="switchPage('milestones')">⭐ 里程碑</button>
@@ -270,6 +272,13 @@ a:hover{text-decoration:underline}
       <div class="e-icon">📅</div>
       <div class="e-title">成长时间线</div>
       <div class="e-desc">每一天都在积累 — 夺冠、补课、训练、系统上线…</div>
+      <div class="e-arrow">→</div>
+    </div>
+    <div class="entry-card" style="border-left:3px solid var(--gold)" onclick="switchPage('summer')">
+      <div class="e-icon">🗺️</div>
+      <div class="e-title">2026 暑假旅程</div>
+      <div class="e-desc">泰州25天集训 → 美国四藤校合练 · 动态路线图</div>
+      <div class="e-badge">▶ 动画</div>
       <div class="e-arrow">→</div>
     </div>
     <div class="entry-card academic" onclick="switchPage('monthly')">
@@ -337,6 +346,37 @@ a:hover{text-decoration:underline}
   <!-- Bottom nav hint -->
   <div style="text-align:center;padding:8px 0 4px">
     <div style="font-size:.72rem;color:var(--text3)">点击下方导航栏进入详情页 · 每个详情页都可返回首页</div>
+  </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- ===================== PAGE: SUMMER JOURNEY ===================== -->
+<!-- ================================================================ -->
+<div id="page-summer" class="page">
+  <div class="back-bar">
+    <button class="back-btn" onclick="switchPage('home')"><span class="arrow">←</span> 返回首页</button>
+    <span class="page-title">🗺️ 2026 暑假旅程 · 动态路线图</span>
+  </div>
+
+  <div class="subtitle" style="margin-bottom:14px;color:var(--text2);font-size:.82rem">
+    泰州25天集训 → 美国四藤校+MIT合练 → 凯旋返沪 · 点击地图「▶ 播放行程动画」查看交通工具沿路线移动
+  </div>
+
+  <!-- 动态地图 iframe -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:10px;border:1px solid var(--card2);margin-bottom:16px">
+    <iframe src="maps/joe-usa-summer-camp-map.html" style="width:100%;height:640px;border:none;border-radius:8px;background:#fff" loading="lazy" title="2026暑假旅程动态路线图"></iframe>
+  </div>
+
+  <!-- 行程摘要 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin:0 0 12px 0">📌 旅程总览</h2>
+    <div class="milestone-grid" id="summer-journey-overview"></div>
+  </div>
+
+  <!-- 站点卡片 -->
+  <div style="background:var(--card);border-radius:var(--radius);padding:20px;border:1px solid var(--card2);margin-bottom:16px">
+    <h2 style="font-size:.95rem;margin:0 0 12px 0">📍 16 站 · 全程轨迹</h2>
+    <div class="milestone-grid" id="summer-journey-stops"></div>
   </div>
 </div>
 
@@ -1539,6 +1579,42 @@ function toggleWordList(name) {
 
 <!-- ============ SCRIPT ============ -->
 <script>
+(function() {
+  // 🗺️ Summer journey page renderer
+  var SJ = SITE_DATA.summerJourney;
+  if (SJ) {
+    var ov = document.getElementById('summer-journey-overview');
+    if (ov) {
+      var html = '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">';
+      for (var i = 0; i < SJ.overview.length; i++) {
+        var o = SJ.overview[i];
+        html += '<div style="background:var(--bg2);border-radius:12px;padding:10px 8px;text-align:center">' +
+          '<div style="font-size:1rem;font-weight:700;color:var(--gold)">' + o.value + '</div>' +
+          '<div style="font-size:.68rem;color:var(--text2);margin-top:2px">' + o.label + '</div>' +
+          '<div style="font-size:.62rem;color:var(--text3);margin-top:2px">' + o.detail + '</div></div>';
+      }
+      html += '</div>';
+      ov.innerHTML = html;
+    }
+
+    var st = document.getElementById('summer-journey-stops');
+    if (st) {
+      var html = '';
+      for (var i = 0; i < SJ.stops.length; i++) {
+        var s = SJ.stops[i];
+        html += '<div class="milestone-row" style="border-left:3px solid ' + s.color + '">' +
+          '<div class="dot" style="background:' + s.color + ';flex-shrink:0"></div>' +
+          '<div style="flex:1">' +
+          '<div style="display:flex;justify-content:space-between;align-items:center">' +
+          '<span style="font-size:.85rem;font-weight:600">' + s.icon + ' ' + s.name + '</span>' +
+          '<span style="font-size:.72rem;color:var(--text3)">' + s.date + '</span></div>' +
+          '<div style="font-size:.78rem;color:var(--text2)">第' + s.n + '站 · ' + s.note + '</div></div></div>';
+      }
+      st.innerHTML = html;
+    }
+  }
+})();
+
 function switchPage(id) {
   // Hide all pages
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
