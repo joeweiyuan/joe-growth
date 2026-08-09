@@ -24,9 +24,9 @@ const SITE_DATA = {
     gpaTerm: '2024-2025学年下学期期末',
     toefl: '3.5 / 6.0',
     toeflTarget: '≥4.5 (6月底)',
-    rowing2k: "7'30\" (best)",
-    rowing2kLatest: "7'41\" (Jun)",
-    rowingTarget: "7'20\" (7.12)",
+    rowing2k: "7'24\"1 (PB 🚀)",
+    rowing2kLatest: "7'24\"1 (Jul 🚀)",
+    rowingTarget: "✅ 7'24\"1 · 目标已超",
     offerpath: '🚀 Offer路书',
     offerpathUnis: 119,
     offerpathRecords: 4709,
@@ -347,12 +347,12 @@ const SITE_DATA = {
   // 🚣 赛艇全部数据
   // ================================================================
   rowing: {
-    bestTime: "7'30\"",
-    bestTimeDate: '2026-02-28',
-    latestTime: "7'41\"",
-    latestTimeDate: '2026-06-02',
+    bestTime: "7'24\"1",
+    bestTimeDate: '2026-07-12',
+    latestTime: "7'24\"1",
+    latestTimeDate: '2026-07-12',
     targets: [
-      { time: "7'20\"", deadline: '2026-07-12', label: '泰州集训末测试' },
+      { time: "7'24\"1", deadline: '2026-07-12', label: '✅ 泰州集训末测试·PB！' },
       { time: '7:10', deadline: '2026-12', label: '年底目标' },
       { time: '7:00', deadline: '2028', label: '巅峰目标·MIT招募标准' }
     ],
@@ -364,7 +364,14 @@ const SITE_DATA = {
       { date: '2026-04', event: '训练出勤', detail: '15天（出勤率50%）', status: 'normal' },
       { date: '2026-05-16', event: '🥇平湖公开赛500m混双夺冠', detail: '第4→第1 · 0.46秒绝杀 · 人生首赛', status: 'gold' },
       { date: '2026-05-24', event: '室内测功仪2小时训练', detail: '从抗拒到快乐 · 练完满身大汗', status: 'normal' },
-      { date: '2026-06-02', event: '⚠️ 2km测功仪', detail: "7'41\" · 比2月倒退11秒", status: 'warning' }
+      { date: '2026-06-02', event: '⚠️ 2km测功仪', detail: "7'41\" · 比2月倒退11秒", status: 'warning' },
+      { date: '2026-07-12', event: '🚀 泰州集训收官 · 2km全新PB！', detail: "7'24\"1 · 比6月↑17.4秒！", status: 'gold' },
+      { date: '2026-07-19', event: '✈️ 赴美赛艇合练启程', detail: 'PVG→JFK · 人生首次独自赴美', status: 'normal' },
+      { date: '2026-07-21~23', event: '🚣 耶鲁大学赛艇夏校', detail: 'Gilder Boathouse, Derby CT', status: 'normal' },
+      { date: '2026-07-27~30', event: '🚣 MIT赛艇夏校', detail: 'Richard J Resch Boathouse, Cambridge MA', status: 'normal' },
+      { date: '2026-07-31', event: '🥇 MIT夏校收官赛夺冠！', detail: '搭档美国队友 · 最后时刻反超 · 国际首胜', status: 'gold' },
+      { date: '2026-08-03~05', event: '🚣 达特茅斯赛艇夏校', detail: 'Friends of Dartmouth Rowing Boathouse', status: 'normal' },
+      { date: '2026-08-09~11', event: '🚣 宾大(UPenn)赛艇夏校', detail: 'Burk-Bergman Boathouse, Philadelphia', status: 'normal' },
     ],
 
     /** 当前问题诊断 */

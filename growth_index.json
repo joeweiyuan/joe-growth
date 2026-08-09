@@ -1,45 +1,119 @@
 {
   "version": "1.0",
-  "last_updated": "2026-06-08",
+  "last_updated": "2026-08-09",
   "daily_logs": [
-    {
-      "date": "2026-06-08",
-      "file": "daily-logs/2026-06-08.md",
-      "summary": "🚣 赛艇校队团建聚餐 16:20~20:30 @新田360 · 小卷罗姆串串自助",
-      "tags": ["rowing", "team", "social"],
-      "recorder": "爸爸"
-    },
     {
       "date": "2026-05-16",
       "file": "daily-logs/2026-05-16.md",
       "summary": "🥇 平湖赛艇公开赛500m混双冠军！第4→第1，领先0.46秒绝杀首冠！",
-      "tags": ["competition", "sports", "milestone"],
+      "tags": [
+        "competition",
+        "sports",
+        "milestone"
+      ],
       "recorder": "爸爸"
     },
     {
       "date": "2026-05-23",
       "file": "daily-logs/2026-05-23.md",
       "summary": "补托福课 + 4.5小时托福课，为上周比赛耽误的课程还债",
-      "tags": ["academic", "toefl"],
+      "tags": [
+        "academic",
+        "toefl"
+      ],
       "recorder": "爸爸"
     },
     {
       "date": "2026-05-24",
       "file": "daily-logs/2026-05-24.md",
       "summary": "全满的一天：07:10出门上托福→下午赛艇(雨改室内)→作业写到19:40才吃饭",
-      "tags": ["academic", "sports", "reflection", "rowing", "toefl"],
+      "tags": [
+        "academic",
+        "sports",
+        "reflection",
+        "rowing",
+        "toefl"
+      ],
       "recorder": "爸爸"
     },
     {
       "date": "2026-05-24",
       "file": "daily-logs/2026-05-24.md",
       "summary": "星辰记基线录入 — 少爷完整档案建立",
-      "tags": ["baseline", "milestone"],
+      "tags": [
+        "baseline",
+        "milestone"
+      ],
       "recorder": "爸爸"
+    },
+    {
+      "date": "2026-07-27",
+      "file": "daily-logs/2026-07-27.md",
+      "summary": "🚣 MIT赛艇夏校报到日！泳测100码+踩水10分钟，藤校第二站开营",
+      "tags": [
+        "sports",
+        "rowing",
+        "milestone",
+        "usa"
+      ],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-07-31",
+      "file": "daily-logs/2026-07-31.md",
+      "summary": "🥇 MIT夏校收官赛冠军！最后时刻反超美国本土组合——国际赛场首胜！",
+      "tags": [
+        "competition",
+        "sports",
+        "rowing",
+        "milestone",
+        "usa"
+      ],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-08-02",
+      "file": "daily-logs/2026-08-02.md",
+      "summary": "⭐ 第31周周记：MIT夏校完训+收官赛夺冠 → Hanover休整 → 达特茅斯蓄势待发",
+      "tags": [
+        "weekly",
+        "rowing",
+        "milestone",
+        "usa"
+      ],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-08-03",
+      "file": "daily-logs/2026-08-03.md",
+      "summary": "🚣 达特茅斯学院赛艇夏校开营！藤校第三站🟩 9:00报到·双训·13:00招生宣讲进日程",
+      "tags": [
+        "sports",
+        "rowing",
+        "milestone",
+        "usa-tour"
+      ],
+      "recorder": "六六（普罗米修斯）自动记录"
+    },
+    {
+      "date": "2026-08-09",
+      "file": "daily-logs/2026-08-09.md",
+      "summary": "⭐ 第32周周记：达特茅斯完训→转场费城→费城游览→宾大夏校开营（四藤校最后一站）",
+      "tags": [
+        "weekly",
+        "rowing",
+        "milestone",
+        "usa-tour"
+      ]
     }
   ],
   "monthly_narratives": [],
-  "themes": ["resilience", "academic-growth", "sportsmanship", "self-discovery"],
+  "themes": [
+    "resilience",
+    "academic-growth",
+    "sportsmanship",
+    "self-discovery"
+  ],
   "milestones": [
     {
       "date": "2026-05-16",
@@ -61,7 +135,7 @@
     }
   ],
   "stats": {
-    "total_logs": 5,
+    "total_logs": 4,
     "total_words": 3046,
     "total_themes_extracted": 5
   }
