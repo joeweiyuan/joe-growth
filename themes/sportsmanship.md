@@ -33,7 +33,7 @@
 | 7/31 | 13 | 🚗 转场至Hanover NH (2.5h) | Best Western 7晚住宿 |
 | 8/3-5 | 16-18 | 🚣 **达特茅斯学院赛艇夏校** 🟩 | Friends of Dartmouth Rowing Boathouse |
 | 8/7 | 20 | 🚗 转场至费城 (6h) | Hampton Inn King of Prussia 5晚 |
-| 8/9-11 | 22-24 | 🚣 **宾夕法尼亚大学赛艇夏校** 🟪 | Burk-Bergman Boathouse, Philadelphia |
+| 8/9-11 | 22-24 | 🚣 **宾夕法尼亚大学赛艇夏校** 🟪 | Burk-Bergman Boathouse, Philadelphia<br>🕣 8:30报到 → 8:45破冰+热身(Taylor Brown/Allyson Baker) → 9:10测功仪讲解 → 9:30水训1 → 11:15复盘 → 11:30午餐 → 12:00一对一 → 13:00测功仪/视频 → 14:00水训2 → 16:00复盘 → 16:15放学<br>📌 Day1抓水Catch → Day2收桨Finish+回桨Recovery → Day3完美划桨+水上1km → Day4结营<br>👨‍🏫 教练团：Taylor Brown/Allyson Baker/Fergal Barry/Phil Brunner |
 | 8/14 | 27 | ✈️ JFK→HKG→PVG 返沪 | CX841→CX380, 8/15抵上海 |
 
 > 赛艇可以用在：
