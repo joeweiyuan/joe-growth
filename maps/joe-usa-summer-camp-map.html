@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_207ccddcb43c619f919fcbbef9f5d35b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div id="anim_controls" style="position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:1000;
+  background:rgba(255,255,255,.95);border-radius:12px;padding:10px 18px;box-shadow:0 2px 12px rgba(0,0,0,.25);
+  font-family:'PingFang SC','Microsoft YaHei',sans-serif;text-align:center;">
+  <div style="font-size:15px;font-weight:700;color:#1a5276;">🚣 子焘记 · 27天美国名校赛艇之旅</div>
+  <div style="font-size:11px;color:#777;margin-top:2px;">7/19 上海 → 耶鲁 → MIT → 达特茅斯 → 宾大 → 8/14 返沪</div>
+  <div style="margin-top:8px;">
+    <button id="btn_play" onclick="animPlay()" style="cursor:pointer;background:#2471a3;color:#fff;border:none;
+      border-radius:8px;padding:6px 16px;font-size:13px;font-weight:600;">▶ 播放行程动画</button>
+    <button id="btn_reset" onclick="animReset()" style="cursor:pointer;background:#eee;color:#333;border:none;
+      border-radius:8px;padding:6px 12px;font-size:13px;margin-left:6px;">↺ 重置</button>
+  </div>
+  <div id="anim_status" style="font-size:12px;color:#c0392b;margin-top:6px;font-weight:600;">第 1 / 13 站 · 上海浦东 PVG</div>
+</div>
+    
+<script>
+var STOPS = [{"n": 1, "d": "7/19", "name": "上海浦东 PVG", "sub": "✈️ MU587 出发", "lat": 31.1443, "lng": 121.8083, "note": "Day1 · 11:30起飞 → 纽约JFK 14:25"}, {"n": 2, "d": "7/19-21", "name": "纽约 JFK", "sub": "🛬 落地美国", "lat": 40.6413, "lng": -73.7781, "note": "Day1-3 · 第一晚 Holiday Inn South Plainfield"}, {"n": 3, "d": "7/20", "name": "纽约曼哈顿", "sub": "🗽 纽约一日游", "lat": 40.758, "lng": -73.9855, "note": "Day2 · 华尔街→自由女神→Katz's→帝国大厦→时代广场"}, {"n": 4, "d": "7/21-24", "name": "耶鲁大学 Gilder Boathouse", "sub": "🟦 藤校第①站", "lat": 41.3205, "lng": -73.0765, "note": "Day3-6 · Derby CT · 融入校队8人艇体系"}, {"n": 5, "d": "7/24-27", "name": "波士顿 Saugus", "sub": "🏙️ 转场+游览", "lat": 42.4648, "lng": -71.0106, "note": "Day6-9 · 哈佛/自由之路/昆西市场"}, {"n": 6, "d": "7/27-31", "name": "MIT Resch Boathouse", "sub": "🟥 藤校第②站", "lat": 42.3655, "lng": -71.0805, "note": "Day9-13 · Cambridge MA · Sculling+泳测+收官赛🥇冠军"}, {"n": 7, "d": "7/31-8/2", "name": "Hanover NH", "sub": "🚗 转场休整", "lat": 43.7022, "lng": -72.2894, "note": "Day13-15 · 2.5h车程 · 休整蓄力"}, {"n": 8, "d": "8/3-5", "name": "达特茅斯学院 Boathouse", "sub": "🟩 藤校第③站", "lat": 43.705, "lng": -72.285, "note": "Day16-18 · 招生宣讲进日程（前两站没有！）"}, {"n": 9, "d": "8/6-7", "name": "费城 King of Prussia", "sub": "🚗 6小时大转场", "lat": 40.0907, "lng": -75.3796, "note": "Day19-20 · 8/6结营 8/7转场 · Hampton Inn 5晚"}, {"n": 10, "d": "8/8", "name": "费城独立宫", "sub": "🏛️ 费城游览", "lat": 39.9489, "lng": -75.15, "note": "Day21 · 独立宫/自由钟/旧国会大厦"}, {"n": 11, "d": "8/9-11", "name": "宾大 Burk-Bergman Boathouse", "sub": "🟪 藤校第④站·收官", "lat": 39.9506, "lng": -75.183, "note": "Day22-24 · Boathouse Row · 最后一站"}, {"n": 12, "d": "8/12-13", "name": "纽约 Hasbrouck Heights", "sub": "🗽 收官回纽约", "lat": 40.8536, "lng": -74.0824, "note": "Day25-26 · 结营回纽约 · 休整购物"}, {"n": 13, "d": "8/14", "name": "纽约 JFK → 返沪", "sub": "✈️ 凯旋返程", "lat": 40.6413, "lng": -73.7781, "note": "Day27 · CX841香港转CX380 · 8/15抵沪"}];
+var MAP_VAR = 'map_207ccddcb43c619f919fcbbef9f5d35b';
+function getMap() { return window[MAP_VAR]; }
+var animIdx = -1;
+var animTimer = null;
+var traveller = null;
+
+function makeTraveller() {
+    var el = L.divIcon({
+        html: '<div style="font-size:34px;text-align:center;line-height:1;'
+            + 'filter:drop-shadow(0 2px 4px rgba(0,0,0,.4));">🚣</div>',
+        className: '', iconSize: [40, 40], iconAnchor: [20, 20]
+    });
+    if (traveller) { getMap().removeLayer(traveller); }
+    traveller = L.marker([STOPS[0].lat, STOPS[0].lng], { icon: el, zIndexOffset: 1000 }).addTo(getMap());
+}
+
+function flyToStop(i) {
+    animIdx = i;
+    var s = STOPS[i];
+    document.getElementById('anim_status').innerHTML =
+        '第 ' + (i+1) + ' / ' + STOPS.length + ' 站 · ' + s.name;
+    traveller.setLatLng([s.lat, s.lng]);
+    getMap().flyTo([s.lat, s.lng], i < 2 ? 4 : 10, { duration: 0.8 });
+    getMap(); L.popup({ closeButton: false, className: 'anim-popup' })
+        .setLatLng([s.lat, s.lng])
+        .setContent('<b>' + s.name + '</b><br>' + s.d + '<br>' + s.sub)
+        .openOn(getMap());
+}
+
+function animPlay() {
+    if (animTimer) { clearInterval(animTimer); }
+    if (animIdx >= STOPS.length - 1) { animReset(); }
+    makeTraveller();
+    flyToStop(0);
+    var i = 1;
+    animTimer = setInterval(function() {
+        if (i >= STOPS.length) {
+            clearInterval(animTimer);
+            animTimer = null;
+            document.getElementById('anim_status').innerHTML =
+                '🎉 27天 · 4站藤校 + MIT · 全程完成！凯旋返沪 ✈️';
+            getMap().flyTo([39.0, -84.0], 4, { duration: 1.5 });
+            return;
+        }
+        flyToStop(i);
+        i++;
+    }, 1800);
+}
+
+function animReset() {
+    if (animTimer) { clearInterval(animTimer); animTimer = null; }
+    animIdx = -1;
+    if (traveller) { getMap().removeLayer(traveller); traveller = null; }
+    document.getElementById('anim_status').innerHTML = '第 1 / ' + STOPS.length + ' 站 · 上海浦东 PVG';
+    getMap().flyTo([39.0, -84.0], 4, { duration: 1.0 });
+}
+</script>
+    
+<div style="position:absolute;bottom:20px;left:10px;z-index:1000;background:rgba(255,255,255,.94);
+  border-radius:10px;padding:10px 14px;box-shadow:0 2px 10px rgba(0,0,0,.2);
+  font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:12px;line-height:1.8;">
+  <b style="color:#1a5276;">🏆 藤校赛艇之旅 · 图例</b><br>
+  <span style="color:#e67e22;">━</span> 美东行程主路线（陆路+转场）<br>
+  <span style="color:#1a5276;opacity:.5;">┅</span> 跨洋航线（上海↔纽约）<br>
+  🟦 耶鲁 &nbsp; 🟥 MIT &nbsp; 🟩 达特茅斯 &nbsp; 🟪 宾大<br>
+  <span style="color:#c0392b;font-size:11px;">🎬 点击上方「播放行程动画」查看动态路线</span>
+</div>
+    
+            <div class="folium-map" id="map_207ccddcb43c619f919fcbbef9f5d35b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_207ccddcb43c619f919fcbbef9f5d35b = L.map(
+                "map_207ccddcb43c619f919fcbbef9f5d35b",
+                {
+                    center: [39.0, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+
+            
+
+        
+    
+            var tile_layer_e468be5d41444149dff2a8446d9cf43f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e468be5d41444149dff2a8446d9cf43f.addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var poly_line_67c16719acd10b62b3739e342a1ff446 = L.polyline(
+                [[31.1443, 121.8083], [40.6413, -73.7781]],
+                {"bubblingMouseEvents": true, "color": "#1a5276", "dashArray": "8,6", "dashOffset": null, "fill": false, "fillColor": "#1a5276", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.35, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            poly_line_67c16719acd10b62b3739e342a1ff446.bindTooltip(
+                `<div>
+                     ✈️ 上海 ↔ 纽约 跨洋航线 (MU587 / CX841+CX380)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2278d7b870c226ee84ad844efe446110 = L.polyline(
+                [[40.6413, -73.7781], [40.758, -73.9855], [41.3205, -73.0765], [42.4648, -71.0106], [42.3655, -71.0805], [43.7022, -72.2894], [43.705, -72.285], [40.0907, -75.3796], [39.9489, -75.15], [39.9506, -75.183], [40.8536, -74.0824], [40.6413, -73.7781]],
+                {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#e67e22", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            poly_line_2278d7b870c226ee84ad844efe446110.bindTooltip(
+                `<div>
+                     🚗 美东名校赛艇之旅 · 主路线
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_262a2f22eace55c250961b8a532846fc = L.marker(
+                [31.1443, 121.8083],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_b04ff42b736dc9fe731ce6938746a6f3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\u2708\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_ff1adae2695bbe828c0430e09107a89c = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_d368f1cdd5c067e61c2ae5ca396dfedc = $(`<div id="html_d368f1cdd5c067e61c2ae5ca396dfedc" style="width: 100.0%; height: 100.0%;"><b>📍 上海浦东 PVG</b><br><span style='color:#888'>7/19</span><br><b>✈️ MU587 出发</b><br>Day1 · 11:30起飞 → 纽约JFK 14:25</div>`)[0];
+                popup_ff1adae2695bbe828c0430e09107a89c.setContent(html_d368f1cdd5c067e61c2ae5ca396dfedc);
+            
+        
+
+        marker_262a2f22eace55c250961b8a532846fc.bindPopup(popup_ff1adae2695bbe828c0430e09107a89c)
+        ;
+
+        
+    
+    
+            marker_262a2f22eace55c250961b8a532846fc.bindTooltip(
+                `<div>
+                     1. 上海浦东 PVG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_262a2f22eace55c250961b8a532846fc.setIcon(div_icon_b04ff42b736dc9fe731ce6938746a6f3);
+            
+    
+            var marker_1001b70b7766200c84a1584faa1a05c5 = L.marker(
+                [40.6413, -73.7781],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_6c611cf6ad50748cea90d36823da2fdb = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83d\udeec\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_d0ed470c3151e44e4b53a6ab2629d395 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_8872b407936fc94200c1dc5ffe66a1c0 = $(`<div id="html_8872b407936fc94200c1dc5ffe66a1c0" style="width: 100.0%; height: 100.0%;"><b>📍 纽约 JFK</b><br><span style='color:#888'>7/19-21</span><br><b>🛬 落地美国</b><br>Day1-3 · 第一晚 Holiday Inn South Plainfield</div>`)[0];
+                popup_d0ed470c3151e44e4b53a6ab2629d395.setContent(html_8872b407936fc94200c1dc5ffe66a1c0);
+            
+        
+
+        marker_1001b70b7766200c84a1584faa1a05c5.bindPopup(popup_d0ed470c3151e44e4b53a6ab2629d395)
+        ;
+
+        
+    
+    
+            marker_1001b70b7766200c84a1584faa1a05c5.bindTooltip(
+                `<div>
+                     2. 纽约 JFK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1001b70b7766200c84a1584faa1a05c5.setIcon(div_icon_6c611cf6ad50748cea90d36823da2fdb);
+            
+    
+            var marker_06a7ae176830ae91cc384424ec2e360a = L.marker(
+                [40.758, -73.9855],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_baeed784fe29ab3a2939467bafef0919 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83d\uddfd\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f2b0d7f36da7756a4e260f0d4e18f4bf = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_f0002370f48c91d87b6c2ab198d5407e = $(`<div id="html_f0002370f48c91d87b6c2ab198d5407e" style="width: 100.0%; height: 100.0%;"><b>📍 纽约曼哈顿</b><br><span style='color:#888'>7/20</span><br><b>🗽 纽约一日游</b><br>Day2 · 华尔街→自由女神→Katz's→帝国大厦→时代广场</div>`)[0];
+                popup_f2b0d7f36da7756a4e260f0d4e18f4bf.setContent(html_f0002370f48c91d87b6c2ab198d5407e);
+            
+        
+
+        marker_06a7ae176830ae91cc384424ec2e360a.bindPopup(popup_f2b0d7f36da7756a4e260f0d4e18f4bf)
+        ;
+
+        
+    
+    
+            marker_06a7ae176830ae91cc384424ec2e360a.bindTooltip(
+                `<div>
+                     3. 纽约曼哈顿
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06a7ae176830ae91cc384424ec2e360a.setIcon(div_icon_baeed784fe29ab3a2939467bafef0919);
+            
+    
+            var marker_27a1c73c4dfa192be92bfce44164b9fa = L.marker(
+                [41.3205, -73.0765],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_27fb8945e6f7e826937d24485802fb85 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83d\udea3\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_bd20162f746db99f0d260da3be985fcc = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_0990cdedfa3d4251afb7f210daf237af = $(`<div id="html_0990cdedfa3d4251afb7f210daf237af" style="width: 100.0%; height: 100.0%;"><b>📍 耶鲁大学 Gilder Boathouse</b><br><span style='color:#888'>7/21-24</span><br><b>🟦 藤校第①站</b><br>Day3-6 · Derby CT · 融入校队8人艇体系</div>`)[0];
+                popup_bd20162f746db99f0d260da3be985fcc.setContent(html_0990cdedfa3d4251afb7f210daf237af);
+            
+        
+
+        marker_27a1c73c4dfa192be92bfce44164b9fa.bindPopup(popup_bd20162f746db99f0d260da3be985fcc)
+        ;
+
+        
+    
+    
+            marker_27a1c73c4dfa192be92bfce44164b9fa.bindTooltip(
+                `<div>
+                     4. 耶鲁大学 Gilder Boathouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_27a1c73c4dfa192be92bfce44164b9fa.setIcon(div_icon_27fb8945e6f7e826937d24485802fb85);
+            
+    
+            var marker_8a7a14b4872e0dafc7455b760ebeacd1 = L.marker(
+                [42.4648, -71.0106],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_3d3c8b1d3a0c7611b07887ccce312423 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83c\udfd9\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_0bb452c421a3055c79e9a9964042a8a1 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_dd7883317b6200f555b8c279d9aeb68a = $(`<div id="html_dd7883317b6200f555b8c279d9aeb68a" style="width: 100.0%; height: 100.0%;"><b>📍 波士顿 Saugus</b><br><span style='color:#888'>7/24-27</span><br><b>🏙️ 转场+游览</b><br>Day6-9 · 哈佛/自由之路/昆西市场</div>`)[0];
+                popup_0bb452c421a3055c79e9a9964042a8a1.setContent(html_dd7883317b6200f555b8c279d9aeb68a);
+            
+        
+
+        marker_8a7a14b4872e0dafc7455b760ebeacd1.bindPopup(popup_0bb452c421a3055c79e9a9964042a8a1)
+        ;
+
+        
+    
+    
+            marker_8a7a14b4872e0dafc7455b760ebeacd1.bindTooltip(
+                `<div>
+                     5. 波士顿 Saugus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a7a14b4872e0dafc7455b760ebeacd1.setIcon(div_icon_3d3c8b1d3a0c7611b07887ccce312423);
+            
+    
+            var marker_0578e34363011319d12859d5a4a1e9cd = L.marker(
+                [42.3655, -71.0805],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_e65c850bc330410a48bb43da0531fab8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83d\udea3\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_b3e527066bad67148a604685ce5f51dc = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_6813b3efad0055516df35e174c30aa33 = $(`<div id="html_6813b3efad0055516df35e174c30aa33" style="width: 100.0%; height: 100.0%;"><b>📍 MIT Resch Boathouse</b><br><span style='color:#888'>7/27-31</span><br><b>🟥 藤校第②站</b><br>Day9-13 · Cambridge MA · Sculling+泳测+收官赛🥇冠军</div>`)[0];
+                popup_b3e527066bad67148a604685ce5f51dc.setContent(html_6813b3efad0055516df35e174c30aa33);
+            
+        
+
+        marker_0578e34363011319d12859d5a4a1e9cd.bindPopup(popup_b3e527066bad67148a604685ce5f51dc)
+        ;
+
+        
+    
+    
+            marker_0578e34363011319d12859d5a4a1e9cd.bindTooltip(
+                `<div>
+                     6. MIT Resch Boathouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0578e34363011319d12859d5a4a1e9cd.setIcon(div_icon_e65c850bc330410a48bb43da0531fab8);
+            
+    
+            var marker_15328dd18ab2f10d1a2f007ad46ba744 = L.marker(
+                [43.7022, -72.2894],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_899b5176644c74ee6f759282362dd4ab = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83c\udfde\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_eb72d8211e1107c0c4f8b771fb7a5ae3 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_13b18454bf522fcf35413c03c34e6916 = $(`<div id="html_13b18454bf522fcf35413c03c34e6916" style="width: 100.0%; height: 100.0%;"><b>📍 Hanover NH</b><br><span style='color:#888'>7/31-8/2</span><br><b>🚗 转场休整</b><br>Day13-15 · 2.5h车程 · 休整蓄力</div>`)[0];
+                popup_eb72d8211e1107c0c4f8b771fb7a5ae3.setContent(html_13b18454bf522fcf35413c03c34e6916);
+            
+        
+
+        marker_15328dd18ab2f10d1a2f007ad46ba744.bindPopup(popup_eb72d8211e1107c0c4f8b771fb7a5ae3)
+        ;
+
+        
+    
+    
+            marker_15328dd18ab2f10d1a2f007ad46ba744.bindTooltip(
+                `<div>
+                     7. Hanover NH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15328dd18ab2f10d1a2f007ad46ba744.setIcon(div_icon_899b5176644c74ee6f759282362dd4ab);
+            
+    
+            var marker_9021e060a03c475ee001c5f30a3fb8c9 = L.marker(
+                [43.705, -72.285],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_25e0e2689399f05656927c7be3985e6e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83d\udea3\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_aaec92102f42593fdf09f72d8e17fd8d = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_56c5cd646c9d78a9366cf89451c5cec8 = $(`<div id="html_56c5cd646c9d78a9366cf89451c5cec8" style="width: 100.0%; height: 100.0%;"><b>📍 达特茅斯学院 Boathouse</b><br><span style='color:#888'>8/3-5</span><br><b>🟩 藤校第③站</b><br>Day16-18 · 招生宣讲进日程（前两站没有！）</div>`)[0];
+                popup_aaec92102f42593fdf09f72d8e17fd8d.setContent(html_56c5cd646c9d78a9366cf89451c5cec8);
+            
+        
+
+        marker_9021e060a03c475ee001c5f30a3fb8c9.bindPopup(popup_aaec92102f42593fdf09f72d8e17fd8d)
+        ;
+
+        
+    
+    
+            marker_9021e060a03c475ee001c5f30a3fb8c9.bindTooltip(
+                `<div>
+                     8. 达特茅斯学院 Boathouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9021e060a03c475ee001c5f30a3fb8c9.setIcon(div_icon_25e0e2689399f05656927c7be3985e6e);
+            
+    
+            var marker_203eb7a98fd95cd399acf9eb7abd9842 = L.marker(
+                [40.0907, -75.3796],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_b519ac86ecf186efefc298984f6a5e43 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83d\ude97\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_6207236e5f1663bbc384ec6ff540a656 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_ce1b926965020809d6d4cfb7e15e69c3 = $(`<div id="html_ce1b926965020809d6d4cfb7e15e69c3" style="width: 100.0%; height: 100.0%;"><b>📍 费城 King of Prussia</b><br><span style='color:#888'>8/6-7</span><br><b>🚗 6小时大转场</b><br>Day19-20 · 8/6结营 8/7转场 · Hampton Inn 5晚</div>`)[0];
+                popup_6207236e5f1663bbc384ec6ff540a656.setContent(html_ce1b926965020809d6d4cfb7e15e69c3);
+            
+        
+
+        marker_203eb7a98fd95cd399acf9eb7abd9842.bindPopup(popup_6207236e5f1663bbc384ec6ff540a656)
+        ;
+
+        
+    
+    
+            marker_203eb7a98fd95cd399acf9eb7abd9842.bindTooltip(
+                `<div>
+                     9. 费城 King of Prussia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_203eb7a98fd95cd399acf9eb7abd9842.setIcon(div_icon_b519ac86ecf186efefc298984f6a5e43);
+            
+    
+            var marker_ae29d0d6d871d755af8b3da7832aa5e0 = L.marker(
+                [39.9489, -75.15],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_cbfafbbe58511a8a5c3e4fd1577f54f5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83c\udfdb\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_5d6df6f654216275642b624f3e63e28d = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_aee7cdf42b71f07f61826ad39c199eca = $(`<div id="html_aee7cdf42b71f07f61826ad39c199eca" style="width: 100.0%; height: 100.0%;"><b>📍 费城独立宫</b><br><span style='color:#888'>8/8</span><br><b>🏛️ 费城游览</b><br>Day21 · 独立宫/自由钟/旧国会大厦</div>`)[0];
+                popup_5d6df6f654216275642b624f3e63e28d.setContent(html_aee7cdf42b71f07f61826ad39c199eca);
+            
+        
+
+        marker_ae29d0d6d871d755af8b3da7832aa5e0.bindPopup(popup_5d6df6f654216275642b624f3e63e28d)
+        ;
+
+        
+    
+    
+            marker_ae29d0d6d871d755af8b3da7832aa5e0.bindTooltip(
+                `<div>
+                     10. 费城独立宫
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae29d0d6d871d755af8b3da7832aa5e0.setIcon(div_icon_cbfafbbe58511a8a5c3e4fd1577f54f5);
+            
+    
+            var marker_09552c11d0a02541bff81d92293ef9e4 = L.marker(
+                [39.9506, -75.183],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_154e06a35c64d0d06cb210b97506cb4b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83d\udea3\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_3d1c48eb7d591064e486fc2c8c71418f = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_2b44c1ed56240933bec45b4660bfe757 = $(`<div id="html_2b44c1ed56240933bec45b4660bfe757" style="width: 100.0%; height: 100.0%;"><b>📍 宾大 Burk-Bergman Boathouse</b><br><span style='color:#888'>8/9-11</span><br><b>🟪 藤校第④站·收官</b><br>Day22-24 · Boathouse Row · 最后一站</div>`)[0];
+                popup_3d1c48eb7d591064e486fc2c8c71418f.setContent(html_2b44c1ed56240933bec45b4660bfe757);
+            
+        
+
+        marker_09552c11d0a02541bff81d92293ef9e4.bindPopup(popup_3d1c48eb7d591064e486fc2c8c71418f)
+        ;
+
+        
+    
+    
+            marker_09552c11d0a02541bff81d92293ef9e4.bindTooltip(
+                `<div>
+                     11. 宾大 Burk-Bergman Boathouse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09552c11d0a02541bff81d92293ef9e4.setIcon(div_icon_154e06a35c64d0d06cb210b97506cb4b);
+            
+    
+            var marker_fece560633705daef887c39dd4b39ec7 = L.marker(
+                [40.8536, -74.0824],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_757583776b91552f3d942429103cda06 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\ud83d\uddfd\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_9dde45db641f6e141f131257c4dbb0f4 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_9288ca9ae4167262241e1e1b5504bedf = $(`<div id="html_9288ca9ae4167262241e1e1b5504bedf" style="width: 100.0%; height: 100.0%;"><b>📍 纽约 Hasbrouck Heights</b><br><span style='color:#888'>8/12-13</span><br><b>🗽 收官回纽约</b><br>Day25-26 · 结营回纽约 · 休整购物</div>`)[0];
+                popup_9dde45db641f6e141f131257c4dbb0f4.setContent(html_9288ca9ae4167262241e1e1b5504bedf);
+            
+        
+
+        marker_fece560633705daef887c39dd4b39ec7.bindPopup(popup_9dde45db641f6e141f131257c4dbb0f4)
+        ;
+
+        
+    
+    
+            marker_fece560633705daef887c39dd4b39ec7.bindTooltip(
+                `<div>
+                     12. 纽约 Hasbrouck Heights
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fece560633705daef887c39dd4b39ec7.setIcon(div_icon_757583776b91552f3d942429103cda06);
+            
+    
+            var marker_83734da23d4582e86e529bb3186f2822 = L.marker(
+                [40.6413, -73.7781],
+                {
+}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+            var div_icon_7d971d3bf288709c406f00fd1c26a53d = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:26px;text-align:center;line-height:1;\"\u003e\u2708\ufe0f\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_b34833d63903b41bef785f3b322d3c94 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_89c339dfcc41b79d4d74a3456b0e6f34 = $(`<div id="html_89c339dfcc41b79d4d74a3456b0e6f34" style="width: 100.0%; height: 100.0%;"><b>📍 纽约 JFK → 返沪</b><br><span style='color:#888'>8/14</span><br><b>✈️ 凯旋返程</b><br>Day27 · CX841香港转CX380 · 8/15抵沪</div>`)[0];
+                popup_b34833d63903b41bef785f3b322d3c94.setContent(html_89c339dfcc41b79d4d74a3456b0e6f34);
+            
+        
+
+        marker_83734da23d4582e86e529bb3186f2822.bindPopup(popup_b34833d63903b41bef785f3b322d3c94)
+        ;
+
+        
+    
+    
+            marker_83734da23d4582e86e529bb3186f2822.bindTooltip(
+                `<div>
+                     13. 纽约 JFK → 返沪
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83734da23d4582e86e529bb3186f2822.setIcon(div_icon_7d971d3bf288709c406f00fd1c26a53d);
+            
+    
+            var circle_marker_7b5b19d025310170e28f0c52094df822 = L.circleMarker(
+                [31.1443, 121.8083],
+                {"bubblingMouseEvents": true, "color": "#1a5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a5276", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_215a232043b7bd356534f0cd37cfe868 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ae076fbe87c543267eb69261390aef2a = $(`<div id="html_ae076fbe87c543267eb69261390aef2a" style="width: 100.0%; height: 100.0%;"><b>第1站 · 上海浦东 PVG</b><br>Day1 · 11:30起飞 → 纽约JFK 14:25</div>`)[0];
+                popup_215a232043b7bd356534f0cd37cfe868.setContent(html_ae076fbe87c543267eb69261390aef2a);
+            
+        
+
+        circle_marker_7b5b19d025310170e28f0c52094df822.bindPopup(popup_215a232043b7bd356534f0cd37cfe868)
+        ;
+
+        
+    
+    
+            var circle_marker_0c00d43466433d23dc554dee0fbbad4e = L.circleMarker(
+                [40.6413, -73.7781],
+                {"bubblingMouseEvents": true, "color": "#1a5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a5276", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_4f9b855be287b97370efa6c8d11b5576 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e21938d7f94856d576a04ac77bc5d837 = $(`<div id="html_e21938d7f94856d576a04ac77bc5d837" style="width: 100.0%; height: 100.0%;"><b>第2站 · 纽约 JFK</b><br>Day1-3 · 第一晚 Holiday Inn South Plainfield</div>`)[0];
+                popup_4f9b855be287b97370efa6c8d11b5576.setContent(html_e21938d7f94856d576a04ac77bc5d837);
+            
+        
+
+        circle_marker_0c00d43466433d23dc554dee0fbbad4e.bindPopup(popup_4f9b855be287b97370efa6c8d11b5576)
+        ;
+
+        
+    
+    
+            var circle_marker_260edba0a7d134c676385818a9b9f6e6 = L.circleMarker(
+                [40.758, -73.9855],
+                {"bubblingMouseEvents": true, "color": "#5d6d7e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5d6d7e", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_1c9f3679d87f3076b55d0bb63584527e = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d8255b892221f186bdd0b21abeb8a168 = $(`<div id="html_d8255b892221f186bdd0b21abeb8a168" style="width: 100.0%; height: 100.0%;"><b>第3站 · 纽约曼哈顿</b><br>Day2 · 华尔街→自由女神→Katz's→帝国大厦→时代广场</div>`)[0];
+                popup_1c9f3679d87f3076b55d0bb63584527e.setContent(html_d8255b892221f186bdd0b21abeb8a168);
+            
+        
+
+        circle_marker_260edba0a7d134c676385818a9b9f6e6.bindPopup(popup_1c9f3679d87f3076b55d0bb63584527e)
+        ;
+
+        
+    
+    
+            var circle_marker_088e3c6deeb30f665de072bdcfb2ff5b = L.circleMarker(
+                [41.3205, -73.0765],
+                {"bubblingMouseEvents": true, "color": "#2471a3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2471a3", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_a06df7cf67809d9e3770890ef8115ae6 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_61b171168f210081280af12000c8c09a = $(`<div id="html_61b171168f210081280af12000c8c09a" style="width: 100.0%; height: 100.0%;"><b>第4站 · 耶鲁大学 Gilder Boathouse</b><br>Day3-6 · Derby CT · 融入校队8人艇体系</div>`)[0];
+                popup_a06df7cf67809d9e3770890ef8115ae6.setContent(html_61b171168f210081280af12000c8c09a);
+            
+        
+
+        circle_marker_088e3c6deeb30f665de072bdcfb2ff5b.bindPopup(popup_a06df7cf67809d9e3770890ef8115ae6)
+        ;
+
+        
+    
+    
+            var circle_marker_11880a44065937ccef12b4891e3651ef = L.circleMarker(
+                [42.4648, -71.0106],
+                {"bubblingMouseEvents": true, "color": "#5d6d7e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5d6d7e", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_791816bde42ad433fe97abff5b3a6123 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_8db00615781539042a58ee96df833d9c = $(`<div id="html_8db00615781539042a58ee96df833d9c" style="width: 100.0%; height: 100.0%;"><b>第5站 · 波士顿 Saugus</b><br>Day6-9 · 哈佛/自由之路/昆西市场</div>`)[0];
+                popup_791816bde42ad433fe97abff5b3a6123.setContent(html_8db00615781539042a58ee96df833d9c);
+            
+        
+
+        circle_marker_11880a44065937ccef12b4891e3651ef.bindPopup(popup_791816bde42ad433fe97abff5b3a6123)
+        ;
+
+        
+    
+    
+            var circle_marker_a672118fc501e0c4d236c4b39e8e038f = L.circleMarker(
+                [42.3655, -71.0805],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_e6c820279db5cfe2b56c13be79a7379f = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_9a41ff0594afe7ade7806176e6828e65 = $(`<div id="html_9a41ff0594afe7ade7806176e6828e65" style="width: 100.0%; height: 100.0%;"><b>第6站 · MIT Resch Boathouse</b><br>Day9-13 · Cambridge MA · Sculling+泳测+收官赛🥇冠军</div>`)[0];
+                popup_e6c820279db5cfe2b56c13be79a7379f.setContent(html_9a41ff0594afe7ade7806176e6828e65);
+            
+        
+
+        circle_marker_a672118fc501e0c4d236c4b39e8e038f.bindPopup(popup_e6c820279db5cfe2b56c13be79a7379f)
+        ;
+
+        
+    
+    
+            var circle_marker_7fcb32e024051c417c81e5fac712e65f = L.circleMarker(
+                [43.7022, -72.2894],
+                {"bubblingMouseEvents": true, "color": "#5d6d7e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5d6d7e", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_ec6e9bba3e468eba6a72cc9de7ad0e46 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0f8c4b6b8a5683e01986840a090ec0b7 = $(`<div id="html_0f8c4b6b8a5683e01986840a090ec0b7" style="width: 100.0%; height: 100.0%;"><b>第7站 · Hanover NH</b><br>Day13-15 · 2.5h车程 · 休整蓄力</div>`)[0];
+                popup_ec6e9bba3e468eba6a72cc9de7ad0e46.setContent(html_0f8c4b6b8a5683e01986840a090ec0b7);
+            
+        
+
+        circle_marker_7fcb32e024051c417c81e5fac712e65f.bindPopup(popup_ec6e9bba3e468eba6a72cc9de7ad0e46)
+        ;
+
+        
+    
+    
+            var circle_marker_cbc0d4789b2fa472f36d6ac72f3916bc = L.circleMarker(
+                [43.705, -72.285],
+                {"bubblingMouseEvents": true, "color": "#1e8449", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e8449", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_1de77221e4703b2001b159dc119bec01 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_aaeb6c9fd4ad3d638fd476885c455647 = $(`<div id="html_aaeb6c9fd4ad3d638fd476885c455647" style="width: 100.0%; height: 100.0%;"><b>第8站 · 达特茅斯学院 Boathouse</b><br>Day16-18 · 招生宣讲进日程（前两站没有！）</div>`)[0];
+                popup_1de77221e4703b2001b159dc119bec01.setContent(html_aaeb6c9fd4ad3d638fd476885c455647);
+            
+        
+
+        circle_marker_cbc0d4789b2fa472f36d6ac72f3916bc.bindPopup(popup_1de77221e4703b2001b159dc119bec01)
+        ;
+
+        
+    
+    
+            var circle_marker_70e3781e50ba9ca3985f91f1a22048f5 = L.circleMarker(
+                [40.0907, -75.3796],
+                {"bubblingMouseEvents": true, "color": "#5d6d7e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5d6d7e", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_1de05e5d1dd5b56e80fee9920e13ebb1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_04eb103bd78ee1d838906aa0e139d4a9 = $(`<div id="html_04eb103bd78ee1d838906aa0e139d4a9" style="width: 100.0%; height: 100.0%;"><b>第9站 · 费城 King of Prussia</b><br>Day19-20 · 8/6结营 8/7转场 · Hampton Inn 5晚</div>`)[0];
+                popup_1de05e5d1dd5b56e80fee9920e13ebb1.setContent(html_04eb103bd78ee1d838906aa0e139d4a9);
+            
+        
+
+        circle_marker_70e3781e50ba9ca3985f91f1a22048f5.bindPopup(popup_1de05e5d1dd5b56e80fee9920e13ebb1)
+        ;
+
+        
+    
+    
+            var circle_marker_8cb3e03ce9032cb51da16da6257cb5ea = L.circleMarker(
+                [39.9489, -75.15],
+                {"bubblingMouseEvents": true, "color": "#5d6d7e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5d6d7e", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_20684d6b0f7f7288fadc9602deca19dc = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_850a5e7a14256f6a6dd7eca3ed0dd7a5 = $(`<div id="html_850a5e7a14256f6a6dd7eca3ed0dd7a5" style="width: 100.0%; height: 100.0%;"><b>第10站 · 费城独立宫</b><br>Day21 · 独立宫/自由钟/旧国会大厦</div>`)[0];
+                popup_20684d6b0f7f7288fadc9602deca19dc.setContent(html_850a5e7a14256f6a6dd7eca3ed0dd7a5);
+            
+        
+
+        circle_marker_8cb3e03ce9032cb51da16da6257cb5ea.bindPopup(popup_20684d6b0f7f7288fadc9602deca19dc)
+        ;
+
+        
+    
+    
+            var circle_marker_b84daa5cdf9e67332ebd6206f5ac3774 = L.circleMarker(
+                [39.9506, -75.183],
+                {"bubblingMouseEvents": true, "color": "#6c3483", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6c3483", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_0fb8cb6a64b9d92bdbc5b0ac19f73c66 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ce401394468b4e8789292891a9ecf374 = $(`<div id="html_ce401394468b4e8789292891a9ecf374" style="width: 100.0%; height: 100.0%;"><b>第11站 · 宾大 Burk-Bergman Boathouse</b><br>Day22-24 · Boathouse Row · 最后一站</div>`)[0];
+                popup_0fb8cb6a64b9d92bdbc5b0ac19f73c66.setContent(html_ce401394468b4e8789292891a9ecf374);
+            
+        
+
+        circle_marker_b84daa5cdf9e67332ebd6206f5ac3774.bindPopup(popup_0fb8cb6a64b9d92bdbc5b0ac19f73c66)
+        ;
+
+        
+    
+    
+            var circle_marker_0266a0701f2a815dcae004a5ab4b71c1 = L.circleMarker(
+                [40.8536, -74.0824],
+                {"bubblingMouseEvents": true, "color": "#1a5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a5276", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_7d2c5b28101449d7db26248e98444a6b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2b1b2f5059f7a447b3d509ca8c7a67bb = $(`<div id="html_2b1b2f5059f7a447b3d509ca8c7a67bb" style="width: 100.0%; height: 100.0%;"><b>第12站 · 纽约 Hasbrouck Heights</b><br>Day25-26 · 结营回纽约 · 休整购物</div>`)[0];
+                popup_7d2c5b28101449d7db26248e98444a6b.setContent(html_2b1b2f5059f7a447b3d509ca8c7a67bb);
+            
+        
+
+        circle_marker_0266a0701f2a815dcae004a5ab4b71c1.bindPopup(popup_7d2c5b28101449d7db26248e98444a6b)
+        ;
+
+        
+    
+    
+            var circle_marker_6d601248c2baaabcc3ca2e9cc0732218 = L.circleMarker(
+                [40.6413, -73.7781],
+                {"bubblingMouseEvents": true, "color": "#1a5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a5276", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 2}
+            ).addTo(map_207ccddcb43c619f919fcbbef9f5d35b);
+        
+    
+        var popup_d8e8623cc2c401b03030b8feb395d6d1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0772b04ed956ffbdf7666b3afa91d8fc = $(`<div id="html_0772b04ed956ffbdf7666b3afa91d8fc" style="width: 100.0%; height: 100.0%;"><b>第13站 · 纽约 JFK → 返沪</b><br>Day27 · CX841香港转CX380 · 8/15抵沪</div>`)[0];
+                popup_d8e8623cc2c401b03030b8feb395d6d1.setContent(html_0772b04ed956ffbdf7666b3afa91d8fc);
+            
+        
+
+        circle_marker_6d601248c2baaabcc3ca2e9cc0732218.bindPopup(popup_d8e8623cc2c401b03030b8feb395d6d1)
+        ;
+
+        
+    
+</script>
+</html>
