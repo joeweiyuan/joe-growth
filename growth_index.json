@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-08-09",
+  "last_updated": "2026-08-13",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -104,7 +104,20 @@
         "rowing",
         "milestone",
         "usa-tour"
-      ]
+      ],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-08-12",
+      "file": "daily-logs/2026-08-12.md",
+      "summary": "🟪 宾大夏校结营——四藤校合练收官！返纽约途中顺访普林斯顿 Nassau Hall 青铜虎打卡（影像补录4件）",
+      "tags": [
+        "sports",
+        "rowing",
+        "milestone",
+        "usa"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
