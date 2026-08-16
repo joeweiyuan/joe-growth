@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-08-13",
+  "last_updated": "2026-08-16",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -118,6 +118,29 @@
         "usa"
       ],
       "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-08-15",
+      "file": "daily-logs/2026-08-15.md",
+      "summary": "✈️ 美国行27天正式收官！CX380 17:36落地浦东T2（比计划早14分钟），瘦5-6斤晒黑一圈——27天全勤的物理证据",
+      "tags": [
+        "sports",
+        "rowing",
+        "milestone",
+        "usa-tour"
+      ],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-08-16",
+      "file": "daily-logs/2026-08-16.md",
+      "summary": "🔥 托福冲刺重启！返沪Day1：听力1+模考1开课（金桥台儿庄宾馆暂住，杨胜源水痘），8/22首考倒计时6天",
+      "tags": [
+        "academic",
+        "toefl",
+        "milestone"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -148,8 +171,8 @@
     }
   ],
   "stats": {
-    "total_logs": 4,
-    "total_words": 3046,
+    "total_logs": 12,
+    "total_words": 7691,
     "total_themes_extracted": 5
   }
 }
