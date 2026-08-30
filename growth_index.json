@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-08-23 20:12",
+  "last_updated": "2026-08-30 20:10",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -166,6 +166,29 @@
         "milestone"
       ],
       "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-08-29",
+      "file": "daily-logs/2026-08-29.md",
+      "summary": "🏫 开学前夜·住校生活启程：六维建议（生活自理/宿舍人际/学业节奏/心理情绪/健康安全/与家连接）+给少爷的话——把住校当主场不是客场",
+      "tags": [
+        "life",
+        "school",
+        "milestone"
+      ],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-08-30",
+      "file": "daily-logs/2026-08-30.md",
+      "summary": "⭐ 第35周周记：首考后等成绩完整一周（每日提醒7次全勤）→8/29开学前夜六维建议→8/30开学·首次住校（光华美高高一）；错词三钉子户连续第5次上榜",
+      "tags": [
+        "weekly",
+        "toefl",
+        "school",
+        "milestone"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -196,8 +219,8 @@
     }
   ],
   "stats": {
-    "total_logs": 14,
-    "total_words": 7691,
-    "total_themes_extracted": 5
+    "total_logs": 16,
+    "total_words": 26976,
+    "total_themes_extracted": 6
   }
 }
