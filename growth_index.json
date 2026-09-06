@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-08-30 20:10",
+  "last_updated": "2026-09-06 20:10",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -189,6 +189,17 @@
         "milestone"
       ],
       "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-09-06",
+      "file": "daily-logs/2026-09-06.md",
+      "summary": "⭐ 第36周周记：开学住校第二周（住校第2-8天·每日提醒7次全勤）→出分窗口9/3开启本周进行中（9/6窗口第4天，首考成绩仍未出⏳）→错词三钉子户连续第6次上榜（9/6周报口径已校正+巡检行补录）",
+      "tags": [
+        "weekly",
+        "toefl",
+        "school"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -219,8 +230,8 @@
     }
   ],
   "stats": {
-    "total_logs": 16,
-    "total_words": 26976,
+    "total_logs": 17,
+    "total_words": 29840,
     "total_themes_extracted": 6
   }
 }
