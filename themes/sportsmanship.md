@@ -31,10 +31,10 @@
 | 7/25-26 | 7-8 | 🏙️ 波士顿游览 | 哈佛大学/波士顿公园/自由之路/昆西市场 |
 || 7/27-30 | 9-12 | 🚣 **MIT赛艇夏校** 🟥 ✅ **完训！7/31收官赛夺冠** 🥇 | Richard J Resch Boathouse, Cambridge MA<br>🏊 首日泳测100码+踩水10min（✅一次通过）<br>🚣 每日：水上+陆上双训练<br>📹 视频分析/力量/心理/奥运讲座<br>👨‍🏫 主教练Will Oliver-Milchman<br>🥇 **收官赛：搭档美国队友，终点线前反超夺冠——国际首胜！** |
 | 7/31 | 13 | 🚗 转场至Hanover NH (2.5h) | Best Western 7晚住宿 |
-| 8/3-5 | 16-18 | 🚣 **达特茅斯学院赛艇夏校** 🟩 | Friends of Dartmouth Rowing Boathouse |
+| 8/3-5 | 16-18 | 🚣 **达特茅斯学院赛艇夏校** 🟩 | Friends of Dartmouth Rowing Boathouse<br>🕘9:00到 \| 9:30🚣水训 \| 11:30午餐 \| **13:00🎓招生宣讲/赛事复盘/柔韧** \| 14:45🚣水训 \| 16:30接 |
 | 8/7 | 20 | 🚗 转场至费城 (6h) | Hampton Inn King of Prussia 5晚 |
-| 8/9-11 | 22-24 | 🚣 **宾夕法尼亚大学赛艇夏校** 🟪 | Burk-Bergman Boathouse, Philadelphia<br>🕣 8:30报到 → 8:45破冰+热身(Taylor Brown/Allyson Baker) → 9:10测功仪讲解 → 9:30水训1 → 11:15复盘 → 11:30午餐 → 12:00一对一 → 13:00测功仪/视频 → 14:00水训2 → 16:00复盘 → 16:15放学<br>📌 Day1抓水Catch → Day2收桨Finish+回桨Recovery → Day3完美划桨+水上1km → Day4结营<br>👨‍🏫 教练团：Taylor Brown/Allyson Baker/Fergal Barry/Phil Brunner |
-| 8/14 | 27 | ✈️ JFK→HKG→PVG 返沪 | CX841→CX380, 8/15抵上海 |
+| 8/9-11 | 22-24 | 🚣 **宾夕法尼亚大学赛艇夏校** 🟪 ✅ **完训！8/12结营** | Burk-Bergman Boathouse, Philadelphia<br>📌 技术主线：抓水→驱动→收桨→回桨→完美划桨→**2k Race Plan**<br>🤝 每日12:00**一对一交流**（四站独有）<br>🏁 8/12结营：营内对抗赛+Pizza party+教练致辞 → 🐯顺访普林斯顿Nassau Hall |
+| 8/14-15 | 27 | ✈️ JFK→HKG→PVG 返沪 **8/15 17:36落地浦东T2** ✅ | CX841→CX380，**27天正式收官**！瘦5-6斤黑一圈=全勤物理证据 |
 
 > 赛艇可以用在：
 > - 文书：自律、团队协作、身体力行
