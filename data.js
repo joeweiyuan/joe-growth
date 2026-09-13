@@ -312,13 +312,17 @@ const SITE_DATA = {
     /** 累计统计（JS自动算，也可手动覆盖） */
     get stats() {
       const s = this.practiceSessions;
+      // 词库进度：口径 = vocabulary_data.json 中 status==='mastered' 的词数（canonical，脚本 check-consistency.py 校验）
+      const wordDone = 780, wordTotal = 6846;
       return {
         totalSessions: s.length,
         totalTested: s.reduce((sum, p) => sum + p.tested, 0),
         totalCorrect: s.reduce((sum, p) => sum + p.correct, 0),
         totalErrors: s.reduce((sum, p) => sum + p.errorWords.length, 0),
         accuracyRate: s.length > 0 ? (s.reduce((sum, p) => sum + p.correct, 0) / s.reduce((sum, p) => sum + p.tested, 0) * 100).toFixed(1) : 0,
-        wordCompletionPct: Math.round(780 / 6846 * 100)
+        wordCompletionCount: wordDone,
+        wordTotalCount: wordTotal,
+        wordCompletionPct: Math.round(wordDone / wordTotal * 100)
       };
     },
 
@@ -335,7 +339,7 @@ const SITE_DATA = {
 
     /** 词库进度 */
     wordLists: {
-      reading: { label: '阅读高频词 List 1~30', total: 30, completed: [1, 2, 3, 4, 5, 6, 7, 30] },
+      reading: { label: '阅读高频词 List 1~30', total: 30, completed: [1, 3, 4, 5, 6, 7, 29, 30] },
       listening: { label: '听力话题词汇 List 31~49', total: 19, completed: ['银行金融', '图书馆/学术'] },
       subject: { label: '学科分类词汇（35学科）', total: 35, completed: [] },
       phrases: { label: '听力词组 200条', total: 200, completed: [] },
