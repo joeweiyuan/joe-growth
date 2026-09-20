@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-09-13 20:00",
+  "last_updated": "2026-09-20 20:00",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -213,6 +213,28 @@
         "system"
       ],
       "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-09-17",
+      "file": "daily-logs/2026-09-17.md",
+      "summary": "🎽 新赛事落档：上海国际赛艇公开赛 9/22-9/25（参赛项目 4人双混）；暂定赛程 9/23试划→9/24计时轮+8进4→9/25半决赛+决赛。全链路落档（STATE/赛艇总档案/日历6事件/日志/家庭群）｜⏳ 赛果待确认",
+      "tags": [
+        "rowing",
+        "competition"
+      ],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-09-20",
+      "file": "daily-logs/2026-09-20.md",
+      "summary": "⭐ 第38周周记：秋季赛季首战落档——上海国际赛艇公开赛9/22-25（4人双混，倒计时2天）→ 秋季常规训练开训首周5单元推进 → 托福首考成绩第29天仍未落地（十度请家主核实）→ 错词三钉子户连续第8次上榜 + 发现数据源分叉（7个6月遗留错词长期不上周报）",
+      "tags": [
+        "weekly",
+        "rowing",
+        "toefl",
+        "system"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -243,8 +265,8 @@
     }
   ],
   "stats": {
-    "total_logs": 18,
-    "total_words": 29840,
+    "total_logs": 20,
+    "total_words": 34266,
     "total_themes_extracted": 6
   }
 }
