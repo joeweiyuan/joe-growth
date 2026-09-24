@@ -376,13 +376,15 @@ const SITE_DATA = {
       { date: '2026-07-31', event: '🥇 MIT夏校收官赛夺冠！', detail: '搭档美国队友 · 最后时刻反超 · 国际首胜', status: 'gold' },
       { date: '2026-08-03~05', event: '🚣 达特茅斯赛艇夏校', detail: 'Friends of Dartmouth Rowing Boathouse', status: 'normal' },
       { date: '2026-08-09~11', event: '🚣 宾大(UPenn)赛艇夏校', detail: 'Burk-Bergman Boathouse, Philadelphia', status: 'normal' },
+      { date: '2026-09-24', event: '🎽 上海赛艇公开赛（暨世界赛艇联合会上海冲刺赛）· 四人混合双桨', detail: "淘汰赛 1'57\"77 · 第7名/8队（计时赛冲出赛道失误 >2'00\"）· 国际级城市冲刺赛首秀", status: 'normal' },
     ],
 
     /** 当前问题诊断 */
     issues: [
       { problem: '发力顺序不对', detail: '第3段掉速至1\'59"5', severity: 'high' },
       { problem: '体力分配不合理', detail: '前后半程差8.4秒', severity: 'high' },
-      { problem: '情绪控制', detail: '急了反而更慢', severity: 'medium' }
+      { problem: '情绪控制', detail: '急了反而更慢', severity: 'medium' },
+      { problem: '航向控制/偏航打板', detail: '9/24公开赛：计时赛冲出赛道、淘汰赛偏航+打板', severity: 'high' }
     ],
 
     /** 待办里程碑 */
