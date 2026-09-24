@@ -244,7 +244,7 @@ UID:rowing-race-shopen-2026@liuliu-agent
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260926
 SUMMARY:🎽 上海国际赛艇公开赛（9/22-9/25）
-DESCRIPTION:上海国际赛艇公开赛｜参赛项目：4人双混｜暂定赛程：9/23上午试划 → 9/24上午计时轮 → 9/24下午8进4 → 9/25上午半决赛 → 9/25下午决赛（以赛会公布为准）
+DESCRIPTION:上海赛艇公开赛（暨世界赛艇联合会上海冲刺赛）｜参赛项目：四人混合双桨｜**赛果：第7名/8队（淘汰赛1:57.77）**｜赛程：9/23上午试划 → 9/24上午计时轮 → 9/24下午8进4 → 9/25上午半决赛 → 9/25下午决赛（以赛会公布为准）
 LOCATION:上海
 STATUS:CONFIRMED
 BEGIN:VALARM
@@ -277,7 +277,7 @@ UID:rowing-race-d2a@liuliu-agent
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 SUMMARY:🚣 公开赛·计时轮（上午）
-DESCRIPTION:上海国际赛艇公开赛 第2天：上午计时轮（暂定｜4人双混）
+DESCRIPTION:上海赛艇公开赛 第2天·上午计时赛：因冲出赛道失误 >2:00（⚠️航向控制）
 LOCATION:上海
 STATUS:CONFIRMED
 BEGIN:VALARM
@@ -291,7 +291,7 @@ UID:rowing-race-d2b@liuliu-agent
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 SUMMARY:🚣 公开赛·8进4（下午）
-DESCRIPTION:上海国际赛艇公开赛 第2天：下午8进4（暂定｜4人双混）
+DESCRIPTION:上海赛艇公开赛 第2天·下午淘汰赛：vs 上海包玉刚队 → 1:57.77 · 第7名（8队）
 LOCATION:上海
 STATUS:CONFIRMED
 BEGIN:VALARM
@@ -304,7 +304,7 @@ BEGIN:VEVENT
 UID:rowing-race-d3a@liuliu-agent
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
-SUMMARY:🚣 公开赛·半决赛（上午）
+SUMMARY:🚣 公开赛·半决赛（未晋级·第7名收官）
 DESCRIPTION:上海国际赛艇公开赛 第3天：上午半决赛（暂定｜4人双混）
 LOCATION:上海
 STATUS:CONFIRMED
@@ -318,7 +318,7 @@ BEGIN:VEVENT
 UID:rowing-race-d3b@liuliu-agent
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
-SUMMARY:🚣 公开赛·决赛（下午）
+SUMMARY:🚣 公开赛·决赛（未晋级·第7名收官）
 DESCRIPTION:上海国际赛艇公开赛 第3天：下午决赛（暂定｜4人双混）｜加油！
 LOCATION:上海
 STATUS:CONFIRMED
