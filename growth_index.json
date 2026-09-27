@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-09-20 20:00",
+  "last_updated": "2026-09-27 20:00",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -235,6 +235,29 @@
         "system"
       ],
       "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-09-24",
+      "file": "daily-logs/2026-09-24.md",
+      "summary": "🎽 首次出战上海赛艇公开赛（暨FISA上海冲刺赛）· 四人混合双桨 — 计时赛冲出赛道 >2'00\" → 淘汰赛 1'57\"77 · 第7名/8队（未晋级）；国际级城市冲刺赛首秀 + 四人双桨首赛，两场均暴露航向控制短板",
+      "tags": [
+        "rowing",
+        "competition",
+        "milestone"
+      ],
+      "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-09-27",
+      "file": "daily-logs/2026-09-27.md",
+      "summary": "⭐ 第39周周记：秋季赛季首战完赛（上海公开赛 9/24 · 1'57\"77 第7名/8队，航向控制=最大短板）→ 秋季训练第2周（Day 8-14）按表推进 → 托福首考成绩第36天仍未落地（十七度请家主核实）→ 错词三钉子户连续第9次上榜（周报计数差错11分钟内更正闭环）",
+      "tags": [
+        "weekly",
+        "rowing",
+        "toefl",
+        "system"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -265,8 +288,8 @@
     }
   ],
   "stats": {
-    "total_logs": 20,
-    "total_words": 34266,
+    "total_logs": 22,
+    "total_words": 39502,
     "total_themes_extracted": 6
   }
 }
