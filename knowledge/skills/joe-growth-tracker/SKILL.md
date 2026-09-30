@@ -1636,6 +1636,13 @@ date = base + datetime.timedelta(days=int(num))
 - 不同视角的记录更有价值
 - 每条记录标注记录人
 
+### 6. 网页/一页图 PNG 渲染：必须用脚本，禁止手写 chromium 参数（2026-09-30 事故）
+- **事故**：`mit-roadmap.html` 的 CSS 里 `body { width: 1680px }`，但手写命令用了 `--window-size=1280,...` → **页面右侧 400px（约 24%）整块被裁掉**，图发到群里才发现，且已提交/上线（错的 PNG 3360×5513 被当"完整图"推了 4 小时）。
+- **根因**：headless chromium 的截图宽度 = 窗口宽 × 像素密度，窗口宽 < 页面固定 body 宽时右侧直接消失；`--hide-scrollbars` 让"有内容被裁"更难肉眼发现。
+- **铁律**：渲染一页图**只用** `python3 scripts/render_page_png.py <html> <out.png> --min-width <页面CSS宽>`。脚本会自动从 CSS 解析 body 宽度、按该宽度渲染、裁掉空白，并**物理校验**：右/左边缘列必须纯背景、内容右侧留白 ≥10px、宽度 == body宽×dsf —— 任一不过即退出码非 0 + 报错，**禁止发布**。校验已有图：`--check-only <png>`。
+- **snap 坑**：`--screenshot=` 只能传 `/tmp/xxx.png`（snap 内 /tmp 被映射到 `/tmp/snap-private-tmp/snap.chromium/tmp/`；传私有 tmp 绝对路径会静默不写文件）。
+- **收尾三问**（发图前自查）：① 图宽是否 = 页面 CSS 宽 × dsf？② 最右列是否纯背景？③ 发出去前是否至少读过底部/右侧局部？
+
 ---
 
 ## 🚀 使用方法
