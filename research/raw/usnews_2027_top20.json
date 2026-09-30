@@ -1,0 +1,132 @@
+{
+  "edition": "2027 U.S. News Best National Universities",
+  "captured": "2026-09-30",
+  "sources": [
+    "https://www.usnews.com/best-colleges/rankings/national-universities",
+    "https://www.usnews.com/education/best-colleges/articles/slideshows/us-news-best-national-universities?onepage",
+    "https://vanderbilthustler.com/2026/09/25/vanderbilt-ranks-no-16-in-2027-u-s-news-rankings-up-one-spot-from-last-year/"
+  ],
+  "note": "官方页面为 JS 渲染/Access Denied，本数据取自 US News 官方页面的搜索引擎索引内容 + 校方媒体交叉印证；使用前建议二次核对",
+  "top20": [
+    {
+      "rank": 1,
+      "school": "MIT",
+      "already_verified": true
+    },
+    {
+      "rank": 2,
+      "school": "Princeton",
+      "already_verified": true
+    },
+    {
+      "rank": 3,
+      "school": "Harvard",
+      "already_verified": true
+    },
+    {
+      "rank": 4,
+      "school": "Yale",
+      "already_verified": true
+    },
+    {
+      "rank": 5,
+      "school": "Caltech",
+      "already_verified": false
+    },
+    {
+      "rank": 5,
+      "school": "Stanford",
+      "already_verified": true
+    },
+    {
+      "rank": 7,
+      "school": "Penn",
+      "already_verified": true
+    },
+    {
+      "rank": 8,
+      "school": "Duke",
+      "already_verified": false
+    },
+    {
+      "rank": 9,
+      "school": "Johns Hopkins",
+      "already_verified": false
+    },
+    {
+      "rank": 9,
+      "school": "Northwestern",
+      "already_verified": false
+    },
+    {
+      "rank": 9,
+      "school": "UChicago",
+      "already_verified": false
+    },
+    {
+      "rank": 12,
+      "school": "Columbia",
+      "already_verified": true
+    },
+    {
+      "rank": 12,
+      "school": "Dartmouth",
+      "already_verified": true
+    },
+    {
+      "rank": 14,
+      "school": "Carnegie Mellon",
+      "already_verified": false
+    },
+    {
+      "rank": 14,
+      "school": "Cornell",
+      "already_verified": true
+    },
+    {
+      "rank": 16,
+      "school": "Brown",
+      "already_verified": true
+    },
+    {
+      "rank": 16,
+      "school": "Rice",
+      "already_verified": false
+    },
+    {
+      "rank": 16,
+      "school": "Vanderbilt",
+      "already_verified": false
+    },
+    {
+      "rank": 16,
+      "school": "WashU (St. Louis)",
+      "already_verified": false
+    },
+    {
+      "rank": 20,
+      "school": "UC Berkeley",
+      "already_verified": false
+    },
+    {
+      "rank": 20,
+      "school": "UCLA",
+      "already_verified": false
+    },
+    {
+      "rank": 20,
+      "school": "Notre Dame",
+      "already_verified": false
+    }
+  ],
+  "australia_top3": [
+    "University of Melbourne",
+    "University of Sydney",
+    "UNSW Sydney"
+  ],
+  "hongkong_top3": [
+    "HKU",
+    "CUHK",
+    "HKUST"
+  ]
+}
