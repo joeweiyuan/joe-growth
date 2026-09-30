@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "task": "核实墨尔本大学 + 悉尼大学 + UNSW 三校官方本科招生要求与赛艇信息",
+    "student_context": "Joe (魏源)，上海光剑美高学生，男子赛艇校队（2km 测功仪 PB 7:24.1）；家庭兜底方案澳洲前三（不含澳国立）",
+    "scope": "本科国际生入学 (international undergraduate entry) + 官方体育/赛艇入口",
+    "source_policy": "仅采信官方域名 unimelb.edu.au / sydney.edu.au / unsw.edu.au 及其官方 PDF、官方俱乐部官网(mubc.asn.au/subc.com.au/unswrowing.com.au)",
+    "verified_at": "2026-09-30",
+    "fields": ["test_policy", "deadlines", "supplements", "rowing_recruiting"],
+    "completeness": "3 校 × 4 字段 = 12 字段全部有结论（其中 Gaokao/AP 等少量细分标注‘待核’并附官方入口）"
+  },
+  "schools": [
+    {
+      "name": "University of Melbourne (墨尔本大学)",
+      "admission_cycle": {
+        "most_recent_published": "2027 入学（2026/2027 intake）",
+        "main_intakes": ["Semester 1 / start year (Feb–Mar)", "Semester 2 / mid-year (Jul)"]
+      },
+      "test_policy": {
+        "summary": "英语（官方 English Level 1 为多数本科标准）：IELTS 6.5 overall 且各单项≥6.0；TOEFL iBT 81 overall（写作≥19/口语≥19/阅读≥16/听力≥16）；PTE Academic 64；部分专业等级更高（Level 1a/1b/2/2a/3）。学术资格：接受 GCE A-Level（至少 3 门 A-Level，先修科目≥C）、IB Diploma、澳洲 Year 12；接受 A-Level/IB 的 predicted/forecast 成绩。中国高考：官方‘认可国际资格’清单仅列 A-Level/IB/澳洲Year12/Trinity 预科，未含中国高考 → 高考生通常需先读 Trinity College Foundation Studies 预科，直录与否待核官方 China 页 FAQ。AP：官方本科资格清单未列 AP，待核实。",
+        "sources": [
+          "https://study.unimelb.edu.au/how-to-apply/english-language-requirements/undergraduate-english-language-requirements",
+          "https://study.unimelb.edu.au/how-to-apply/english-language-requirements",
+          "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/entry-requirements/recognised-international-qualifications",
+          "https://study.unimelb.edu.au/connect-with-us/international/china"
+        ]
+      },
+      "deadlines": {
+        "summary": "国际生直接经大学在线 portal 申请。官方关闭日期：Semester 2 2026 (mid-year) = 2026-05-31；Semester 1 2027 (start year) = 2026-11-30；Semester 2 2027 = 2027-05-31。部分课程（含 audition/interview，如 Fine Arts、Music）关闭更早、需提前在 9 月前提交。澳洲 Year 12 及澳/新 IB 申请者 start year 需经 VTAC。",
+        "sources": [
+          "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/entry-requirements/important-dates",
+          "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/applications"
+        ]
+      },
+      "supplements": {
+        "summary": "大多数本科课程无需额外文书/推荐信；仅部分课程要求额外材料（audition 试演 / interview 面试 / portfolio 作品集），例如美术、音乐类；所有课程须满足先修科目要求。",
+        "sources": [
+          "https://study.unimelb.edu.au/how-to-apply/undergraduate-study/international-applications/entry-requirements"
+        ]
+      },
+      "rowing_recruiting": {
+        "summary": "官方入口：Melbourne University Boat Club (MUBC)，经 Melbourne University Sport 的 Boat Club 页 (sport.unimelb.edu.au/clubs/boat)；大学划船项目 University Rowing 用官方 Google 表单报名（名额有限），入队后注册 Melbourne University Sport Elite Athlete Program；会费约 A$240/学期；官方联系 directorofrowing@mubc.asn.au。属俱乐部制，未见竞技特招/体育奖学金（待核是否有体育奖学金）。",
+        "sources": [
+          "https://sport.unimelb.edu.au/clubs/boat",
+          "https://www.mubc.asn.au/mubc-squads/university-rowing"
+        ]
+      }
+    },
+    {
+      "name": "University of Sydney (悉尼大学)",
+      "admission_cycle": {
+        "most_recent_published": "International Guide 2026（2026 入学）",
+        "main_intakes": ["Semester 1 (Feb)", "Semester 2 (Aug)"]
+      },
+      "test_policy": {
+        "summary": "英语：标准为 IELTS 6.5 overall 且各单项≥6.0（部分院系/课程更高，如建筑7.0、法律/医学/教育7.0–7.5）；接受 TOEFL iBT（仅 TOEFL Australia 版本，0–120 分制，Home Edition 不接受）、PTE Academic、LanguageCert 等，按官方 concordance 表换算（TOEFL 精确值以官方换算表为准）。学术资格：官方 International Guide 2026 列明接受 GCE A-Level、IB Diploma、中国高考 Gaokao（按省满分百分比计，多数省满分750/上海660）、加拿大BC、印度等；澳洲 IB 需经 UAC。美国高中：接受 GPA+SAT/ACT，AP（4–5分）可替代部分 A-Level。",
+        "sources": [
+          "https://sydney.edu.au/study/how-to-apply/international-students/english-language-requirements.html",
+          "https://www.sydney.edu.au/content/dam/corporate/documents/study/how-to-apply/usyd-international-guide-explanation-of-admission-scores.pdf.coredownload.pdf",
+          "https://sydney.edu.au/content/dam/corporate/documents/study/how-to-apply/international-admission-guide.pdf"
+        ]
+      },
+      "deadlines": {
+        "summary": "国际生一般直接申请。官方关闭日期：Semester 1 (Feb) = 前一年 12 月 1 日；Semester 2 (Aug) = 当年 5 月 29 日。例外：若正在读澳洲 Year 12（澳境内外）或澳洲境内 IB Diploma，须经 UAC 并按其关键日期申请。",
+        "sources": [
+          "https://www.sydney.edu.au/study/applying/application-dates.html"
+        ]
+      },
+      "supplements": {
+        "summary": "部分课程要求额外材料（补充申请表 / 个人陈述 / 作品集）；个别课程（如医学相关、Sciences Po 双学位）在官方 Guide 中以三角标记，要求额外录取标准且可能需 panel interview（线上面试）。多数普通本科课程无需额外文书。",
+        "sources": [
+          "https://www.sydney.edu.au/study/applying/how-to-apply/international-students.html",
+          "https://sydney.edu.au/content/dam/corporate/documents/study/how-to-apply/international-admission-guide.pdf"
+        ]
+      },
+      "rowing_recruiting": {
+        "summary": "官方入口：Sydney University Boat Club (SUBC)（成立于1860，varsity 赛艇俱乐部），经 Sydney Uni Sport & Fitness；入口 https://susf.com.au/rowing/ 及俱乐部官网 https://www.subc.com.au/（Programs 页）。项目含 Competitive / Club / Learn-to-Row / School Winter / Masters。设有面向 SUBC 赛艇手的 Jane Spring AM 奖学金（见官方 Student Athlete Prospectus）。俱乐部制，未见 NCAA 式竞技特招（体育奖学金详情待核）。",
+        "sources": [
+          "https://susf.com.au/rowing/",
+          "https://www.subc.com.au/",
+          "https://susf.com.au/high-performance-programs/"
+        ]
+      }
+    },
+    {
+      "name": "UNSW Sydney (新南威尔士大学)",
+      "admission_cycle": {
+        "most_recent_published": "2027 入学（2027 intakes / 2026 undergraduate guide）",
+        "main_intakes": ["Term 1 (Feb)", "Term 2", "Term 3 (Sep)"]
+      },
+      "test_policy": {
+        "summary": "英语（按学院分档，官方 ELP 页）：本科 TOEFL iBT —— Arts/Design & Architecture、Engineering、Science、Medicine & Health = 90 overall（写作≥23；读/听/说≥22）；Business、Law & Justice = 94 overall（写作≥25，其余≥23）。IELTS 标准 6.5 overall（各单项≥6.0），商/法 7.0（各单项≥6.5）——IELTS 精确值以官方 ELP 页为准。学术资格：接受 IB Diploma、GCE A-Level、澳/NZ/海外中学资格（按 international ATAR 换算）、Go8 预科、UNSW College Diploma；SAT/ACT 需配高中完成证明，AP（4–5分）可降低所需 SAT（最多2门）。中国高考：UNSW 接受海外中学资格按 international ATAR 换算，2027 entry table 列明；高考具体百分比对照待核官方表。",
+        "sources": [
+          "https://www.unsw.edu.au/study/how-to-apply/english-language-requirements",
+          "https://www.unsw.edu.au/study/how-to-apply/accepted-qualifications",
+          "https://www.unsw.edu.au/content/dam/pdfs/future-students/2027-int-ug-entry-table.pdf"
+        ]
+      },
+      "deadlines": {
+        "summary": "国际生经 UNSW Applicant Portal 按 offer round 申请（无单一截止日）。主要入学轮次 Term 1（2月）、Term 2、Term 3（9月）。Term 1 2027 本科 offer round 完成申请截止：2026-05-14 / 2026-07-16 / 2026-08-20 / 2026-09-24（对应 offer 放出 2026-08-13 / 09-10 / 10-15 / 11-19，接受截止 2026-10-08 / 11-05 / 12-10 / 12-24）。2027 全年申请已开放，建议尽早申请；ISA 合格国家按周出 offer。",
+        "sources": [
+          "https://www.unsw.edu.au/study/international-students/admissions-info",
+          "https://www.unsw.edu.au/study/how-to-apply/application-deadline-dates"
+        ]
+      },
+      "supplements": {
+        "summary": "大多数本科课程按学术成绩录取，无需额外文书/面试；例外——医学（Bachelor of Medical Studies / Doctor of Medicine）需 UCAT + 面试；设计/美术等可走 Portfolio Entry（作品集）。国际生在接受 offer/发无条件 offer 前须完成 Genuine Student (GS) 真实学生要求（GS 声明/评估）。",
+        "sources": [
+          "https://www.unsw.edu.au/study/how-to-apply/accepted-qualifications",
+          "https://www.unsw.edu.au/study/international-students/admissions-info",
+          "https://www.unsw.edu.au/study/how-to-apply/international/gs-requirement"
+        ]
+      },
+      "rowing_recruiting": {
+        "summary": "官方入口：UNSW Rowing Club (UNSWRC)（1952 年成立，student & community 赛艇俱乐部，隶属 UNSW），官网 https://www.unswrowing.com.au/（含 'Join Us' 页面）；船屋位于 Huntleys Cove（Waruda Place）；官方联系 unswrowing@gmail.com。俱乐部制，未见竞技特招/体育奖学金信息（待核）。",
+        "sources": [
+          "https://www.unswrowing.com.au/"
+        ]
+      }
+    }
+  ]
+}

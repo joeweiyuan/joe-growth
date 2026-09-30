@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "task": "核实 Johns Hopkins / Northwestern / Rice 官方招生要求与赛艇招募信息",
+    "generated_at": "2026-09-30 Asia/Shanghai",
+    "source_policy": "仅使用官方招生官网 + 官方 athletics 站点；禁中介/百科/论坛",
+    "application_cycle": "以下均为官网当前公布的 2026-2027 申请季（2027 秋季入学 / Class of 2031）数据"
+  },
+  "schools": [
+    {
+      "name": "Johns Hopkins University",
+      "name_cn": "约翰霍普金斯大学",
+      "test_policy": {
+        "status": "Required（必须提交 SAT 或 ACT）",
+        "detail": "JHU 要求所有一年级申请者提交 SAT（Math + Evidence-Based Reading and Writing）或 ACT（Math + Reading + English）成绩。可先自报（self-report），录取后入学前需补送官方成绩。实行 Score-Choice：SAT 与 ACT 均可取各次考试单科最高分组合（superscore），可选 ACT Science/Writing 不参与 superscore。转学申请者无需提交。送分代码：SAT 5332 / ACT 1704 / TOEFL 5332。",
+        "source_url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+        "source_secondary": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/"
+      },
+      "deadlines": {
+        "cycle": "2026-2027（官网注明：每年 8 月更新公布）",
+        "early_decision_1": {"application": "2026-11-01", "financial_aid": "2026-11-15", "decision_release": "2026-12-11", "reply_by": "2027-01-15"},
+        "early_decision_2": {"application": "2027-01-02", "financial_aid": "2027-01-15", "decision_release": "2027-02-12", "reply_by": "2027-02-26"},
+        "regular_decision": {"application": "2027-01-02", "financial_aid": "2027-01-15", "decision_release": "2027-03-24", "reply_by": "2027-05-01"},
+        "transfer": {"application": "2027-03-01", "financial_aid": "2027-03-15", "decision_release": "2027-05-14", "reply_by": "2027-06-01"},
+        "notes": "无 Early Action、无 rolling——仅 ED I / ED II / RD 三种方案。ED I 可 defer 到 RD；ED II 不 defer。",
+        "source_url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/"
+      },
+      "supplements": {
+        "detail": "需通过 Common Application 或 Coalition on Scoir 提交 Hopkins supplement，含 1 篇必需补充文书（supplemental essay）。个人陈述（personal statement）随申请一并提交。",
+        "prompt_2026_2027": "以「跨差异沟通 / 搭桥、增进社区、与他人协作」为主题，讲述你自己的相关经历与思考，350 词以内。",
+        "other": "若申请 BME（生物医学工程），需在第一志愿专业中勾选，无单独申请流程。可选 Direct Matriculation Programs 需额外短文。",
+        "source_url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/"
+      },
+      "rowing_recruiting": {
+        "varsity_status": "无 varsity 赛艇（No varsity rowing）",
+        "detail": "JHU 男子/女子赛艇曾为 varsity，但已于 2009 年春赛季结束后停办，校方当年明确表示也不会设立 club 队伍。核实：hopkinssports.com 仍留有 legacy 的 /sports/mens-crew 与 /sports/womens-crew 页面，但无现役名单/赛程（空模板页）；JHU 官方 Sports Clubs 名单（约 30+ 个项目）中无 Rowing/Crew。",
+        "recruiting_pathway": "无官方赛艇招募通道（既无 varsity 也无 club 赛艇）",
+        "coach_email": "不适用（无官方赛艇项目）",
+        "source_url": "https://students.jhu.edu/student-life/get-involved/oconnor-center-for-recreation-well-being/sports-clubs/",
+        "source_secondary": "https://hopkinssports.com/sports/mens-crew"
+      },
+      "unverified": [
+        "JHU 官方 athletics 站未提供 /sports/mens-crew 现役队伍页内容（仅为空模板）——已以 Sports Clubs 官方名单交叉验证「无赛艇」，非编造。"
+      ]
+    },
+    {
+      "name": "Northwestern University",
+      "name_cn": "西北大学",
+      "test_policy": {
+        "status": "Test-optional（不强制提交 SAT/ACT）",
+        "detail": "西北对一年级与转学申请者实行 test-optional，不要求 ACT 或 SAT。若提交，两种考试无偏好。SAT 自动计算 superscore；2025-26 周期西北不为 ACT 平台自动算 superscore（但接受官方 ACT superscore）。送分代码：SAT 1565 / ACT 1106。可自报，入学前补官方成绩。",
+        "cycle": "2025-2026 及 2026-2027 周期均 test-optional（顾问通报与 catalog 确认）",
+        "source_url": "https://admissions.northwestern.edu/apply/requirements.html",
+        "source_secondary": "https://admissions.northwestern.edu/faqs/standardized-testing-policy/"
+      },
+      "deadlines": {
+        "cycle": "2026-2027",
+        "questbridge": {"application": "2026-10-01", "financial_aid": "2026-10-01", "decision_release": "2026-12"},
+        "early_decision_first_year": {"application": "2026-11-01", "financial_aid": "2026-12-01", "decision_release": "2026-12"},
+        "regular_decision_first_year": {"application": "2027-01-04", "financial_aid": "2027-02-01", "decision_release": "2027-03"},
+        "early_decision_transfer": {"application": "2027-03-01", "financial_aid": "2027-03-01", "decision_release": "2027-04"},
+        "regular_decision_transfer": {"application": "2027-04-01", "financial_aid": "2027-04-01", "decision_release": "2027-05 中下旬"},
+        "notes": "仅秋季（fall quarter）入学；无春季转学。Bienen 音乐学院转学优先截止 2027-01-04。",
+        "source_url": "https://admissions.northwestern.edu/apply/application-deadlines.html"
+      },
+      "supplements": {
+        "detail": "西北补充文书含 1 篇必需短答（300 词以内）+ 至多 2 篇可选短答（每篇 200 词以内，从 5 个题目中选）。重要变化：Common/Coalition 个人陈述（personal essay）已变为可选（no longer required）。QuestBridge 申请者所有短答均为可选。",
+        "required_prompt_2026_2027": "「我们希望在个人经历背景下审视你的申请：你的背景（身份、学校环境、社区、家庭等）中，哪些方面最能塑造你如何看待自己在西北社区中的参与（学业、课外、文化、政治、社交等）？」300 词以内。",
+        "optional_prompts": [
+          "The Rock 传统：你会在 The Rock 上画什么，为什么？",
+          "跨学科：若能自创一门本科课程/研究项目/创作（创业、原型、表演等），会是什么？理想同学/合作者是谁？",
+          "社区与归属：你希望在校内连接哪些社区/网络/学生团体？",
+          "地理位置：坐拥密歇根湖畔、紧邻 Evanston 市中心、距芝加哥数英里——哪些方面最吸引你？",
+          "多元视角：你的个体背景如何为西北课堂与校园的多元观点做贡献？"
+        ],
+        "source_url": "https://admissions.northwestern.edu/apply/requirements.html",
+        "source_secondary": "https://admissions.northwestern.edu/faqs/writing-supplements/"
+      },
+      "rowing_recruiting": {
+        "varsity_status": "无 varsity 赛艇（No varsity rowing）",
+        "detail": "西北官方 athletics（nusports.com）无赛艇 varsity 项目：/sports/womens-rowing 与 /sports/rowing 均返回 404「Sport not found」；官方 All Sports 下拉列表共 19 个 varsity 项目（男子 8：棒球/橄榄球/男篮/男高/男足/男游/男网/摔跤；女子 11：曲棍球/垒球/女篮/越野田径/击剑/女高/女长曲棍/女足/女游/女网/排球），不含 rowing。存在学生 club 赛艇「Northwestern Crew」——男子+女子，参加俱乐部全国赛 ACRA（American Collegiate Rowing Association），非官方 athletics varsity 招募。",
+        "recruiting_pathway": "无 varsity 招募通道；仅 club 层面（Northwestern Crew，需自行通过 club 渠道加入）",
+        "coach_email": "官网（nusports.com）不适用；club 站 northwesterncrew.com/coaches 列为 head coach Colin Darnton 但未公布官方邮箱",
+        "source_url": "https://nusports.com/sports/womens-rowing",
+        "source_secondary": "https://www.northwestern.edu/campus-experience/athletics.html"
+      },
+      "unverified": [
+        "Northwestern Crew（club）教练正式邮箱未在 club 站公布，故不填。"
+      ]
+    },
+    {
+      "name": "Rice University",
+      "name_cn": "莱斯大学",
+      "test_policy": {
+        "status": "Recommended, not required（建议但非必需；实质 test-optional）",
+        "detail": "莱斯「建议」本科一年级与转学申请者提交 SAT 或 ACT（如可得）；无法或不愿提交者仍获完整考量。两种考试无偏好；若同时提交，委员会取对申请最有利的一项。使用单科最高分 superscore。可自报（美国境内高中），入学前补官方成绩。可选提交 AP/IB/AICE。送分代码：College Board 6609（含 TOEFL）/ ACT 4152。",
+        "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+        "source_secondary": "https://admission.rice.edu/apply/questbridge-applicants"
+      },
+      "deadlines": {
+        "cycle": "2026-2027",
+        "early_decision_1": {"application": "2026-11-01", "interview_request": "2026-11-03", "last_sat": "2026-10", "last_act": "2026-09"},
+        "early_decision_2": {"application": "2027-01-04", "interview_request": "2027-01-06"},
+        "regular_decision": {"application": "2027-01-04", "interview_request": "2027-01-06", "decision_release": "2027-04-01 前", "last_sat": "2026-12", "last_act": "2026-12"},
+        "transfer": {"application": "2027-03-15", "decision": "2027-06 rolling"},
+        "notes": "ED I 录取者须于 1 月 4 日前交押金；ED II 于 2 月中。RD 需补交 12 年级中期成绩。",
+        "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants"
+      },
+      "supplements": {
+        "detail": "通过 Common App 提交，需 Rice writing supplement（2026-2027）：2 篇短文，每篇 150 词上限，外加 Common App 个人陈述。",
+        "prompts_2026_2027": [
+          "请说明所选学术领域为何吸引你，以及你希望在莱斯如何探索它们。（150 词）",
+          "基于你对莱斯的了解，莱斯体验中的哪些元素吸引你？（150 词）"
+        ],
+        "questbridge_extra": "QuestBridge 申请者第 3 题为可选（如何为莱斯社区做贡献）。",
+        "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants"
+      },
+      "rowing_recruiting": {
+        "varsity_status": "无 varsity 赛艇（Rice 未设 NCAA/varsity rowing）",
+        "detail": "莱斯官方 athletics（riceowls.com）不含赛艇项目。存在学生 club 赛艇「Rice Crew」，其官方 FAQ 明确自述「Is Rice Crew a NCAA program? We are not.」——非 NCAA、非校方资助，无奖学金、不能协助录取。队伍含男女及研究生，通过 Student Club 渠道招募。",
+        "recruiting_pathway": "无 varsity 招募通道；仅 club 层面（Rice Crew，通过 ricecrew.org 招募）",
+        "coach_email": "官网不适用；club 站（ricecrew.org）提供联系渠道但未公布正式教练邮箱",
+        "source_url": "https://www.ricecrew.org/faq",
+        "source_secondary": "https://www.rice.edu/athletics"
+      },
+      "unverified": [
+        "Rice Crew（club）教练正式邮箱未公布，故不填。"
+      ]
+    }
+  ],
+  "summary": {
+    "completion": "3 校 × 4 字段 = 12/12 均有官方来源结论",
+    "key_finding": "三校均无 varsity 赛艇项目：JHU 赛艇 2009 年停办且无 club；Northwestern 仅有学生 club（ACRA）；Rice 仅有学生 club（非 NCAA，无招募协助）。故三校均无赛艇运动员招募（recruited athlete）通道。",
+    "test_policy_diff": "JHU = 必须提交（Required）；Northwestern = Test-optional；Rice = Recommended/Test-optional。"
+  }
+}

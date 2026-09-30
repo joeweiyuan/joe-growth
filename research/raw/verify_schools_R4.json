@@ -1,0 +1,116 @@
+{
+  "task": "verify_schools_R4",
+  "student": "Joe (魏源)",
+  "generated_note": "仅官方来源；拿不到→待核实；禁编造",
+  "schools": [
+    {
+      "name": "UC Berkeley",
+      "official_admissions_domain": "admissions.berkeley.edu",
+      "test_policy": {
+        "value": "Test-free（标化免试）：不使用 SAT/ACT 分数用于评估/选拔/奖学金；AP/IB 等科目考试成绩可作为'增值'参考（非必需）。SAT/ACT 分数仅用于入学后分班/学分。",
+        "source_url": "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/first-year-policy-changes",
+        "secondary_source_url": "https://admissions.berkeley.edu/application-faqs"
+      },
+      "english_proficiency": {
+        "value": "国际生：TOEFL 最低 90（2026年1月新量程4.5+）/ IELTS 6.5 / Duolingo DET 115；有英语授课（LOI）3年以上可豁免。UC系统通用底线：TOEFL iBT（2026-01后新量程4.5+，此前80+）/ IELTS 6.5 / DET 115。",
+        "source_url": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+        "secondary_source_url": "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html"
+      },
+      "deadlines": {
+        "cycle": "Fall 2026（官网公布的最季年份）",
+        "value": "UC申请提交窗口 10月1日–12月1日；录取通知 3月；SIR确认 5月1日。无 ED/EA。",
+        "source_url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html"
+      },
+      "supplements": {
+        "value": "UC Personal Insight Questions（PIQ）：8题选4题，每题≤350词（全体UC通用，含Berkeley）。",
+        "source_url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/personal-insight-questions.html"
+      },
+      "rowing_recruiting": {
+        "program_type": "VARSITY（校内校际正式代表队，非俱乐部）",
+        "conference_level": "IRA（Intercollegiate Rowing Association）全国锦标赛级；男子赛艇为协会/新兴项目制（非NCAA锦标赛项目），项目作ACC关联参赛。官方athletics站点列为校队项目，配全职带薪教练组。",
+        "evidence": "Cal官方athletics站点设有男子赛艇代表队（2026 IRA全国赛Grand Final亚军、常年IRCA/IRA全国排名前列）。",
+        "coach_email": "主教练 Scott Frandsen — frandsen@berkeley.edu（官网Staff页公布）",
+        "recruiting_route": "Cal rowing 官网招募问卷（recruiting questionnaire）；教练组可提供Special Talent Recommendation/支持信（注：轻量级赛艇为独立学生组织，另行招募）。",
+        "source_url": "https://calbears.com/sports/mens-rowing/coaches",
+        "secondary_source_url": "https://calbears.com/sports/mens-rowing/roster/coaches/scott-frandsen/6292"
+      },
+      "unverified": [
+        "Cal男子赛艇'D1/ACC'的正式归类在不同官方页面表述不一（男子赛艇为IRA体系，非NCAA锦标赛项目）——已按官方athletics站点为准标为varsity/IRA级",
+        "招募问卷的当前直链URL（calbears.com站内进入，未逐一验证）"
+      ]
+    },
+    {
+      "name": "UCLA",
+      "official_admissions_domain": "admission.ucla.edu",
+      "test_policy": {
+        "value": "Test-free：UCLA不将 SAT/ACT 用于录取或奖学金。",
+        "source_url": "https://admission.ucla.edu/apply/international-applicants",
+        "secondary_source_url": "https://admission.ucla.edu/apply/freshman"
+      },
+      "english_proficiency": {
+        "value": "国际生（英语授课少于3年者）：TOEFL iBT 竞争力分 100（子项>24）；新量程（2026-01-21起）满分5，要求5+；IELTS 7.5+；Duolingo DET 135+。不接受 MyBest/拼分。",
+        "source_url": "https://admission.ucla.edu/apply/international-applicants",
+        "secondary_source_url": "https://admission.ucla.edu/sites/default/files/documents/UCLA-International-Admission-Guide-2026.pdf"
+      },
+      "deadlines": {
+        "cycle": "Fall 2026（官网公布的最季年份）",
+        "value": "UC申请提交窗口 10月1日–12月1日；录取通知 3月；SIR确认 5月1日。无 ED/EA。",
+        "source_url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html"
+      },
+      "supplements": {
+        "value": "UC Personal Insight Questions（PIQ）：8题选4题，每题≤350词（全体UC通用，含UCLA）。",
+        "source_url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/personal-insight-questions.html"
+      },
+      "rowing_recruiting": {
+        "program_type": "CLUB（俱乐部校队，非NCAA varsity）",
+        "conference_level": "ACRA（American Collegiate Rowing Association）+ 原Pac-12俱乐部体系；自述为'club varsity program fully recognized by both the Pac-12 and ACRA conferences'。",
+        "evidence": "UCLA官方俱乐部体育平台（uclaclubsports.com）列有男子赛艇；球队官网明确为club varsity。注意：uclabruins.com的'Rowing'为女子赛艇（NCAA），男子为俱乐部。",
+        "coach_email": "主教练 Marcel Stiffey（官网列名，未公布直邮）；球队公开邮箱 mensrowing@g.ucla.edu（UCLA社区官网公布）",
+        "recruiting_route": "俱乐部/ACRA体系招生，欢迎零基础（Learn to Row）；无NCAA招募、无运动奖学金、无教练招生支持信。",
+        "source_url": "https://www.uclamensrowing.com/about",
+        "secondary_source_url": "https://uclaclubsports.com/sports/mens-rowing"
+      },
+      "unverified": [
+        "主教练 Marcel Stiffey 的官方邮箱（官网未公布直邮，仅有球队通用邮箱 mensrowing@g.ucla.edu）"
+      ]
+    },
+    {
+      "name": "Carnegie Mellon University (CMU)",
+      "official_admissions_domain": "cmu.edu/admission",
+      "test_policy": {
+        "value": "按学院分档：计算机学院(SCS) 必须提交 SAT 或 ACT；工程学院/Dietrich人文社科学院/Heinz信息系统/Mellon理学院/Tepper商学院 为 Test Flexible（必须提交成绩但可自选类型：SAT/ACT/IB/AP/Cambridge A-Level/法国Bac）；美术学院 Test Optional（另需作品集/试镜）。SAT可拼分，ACT不可拼分。",
+        "source_url": "https://cmu.edu/admission/admission/standardized-testing"
+      },
+      "english_proficiency": {
+        "value": "非英语母语者必交：TOEFL iBT ≥102（子项25+）；IELTS ≥7.5；Cambridge ≥191；TOEFL Essentials ≥11；Duolingo DET ≥135（各子项135）。建议12月前完成考试。",
+        "source_url": "https://cmu.edu/admission/admission/standardized-testing"
+      },
+      "deadlines": {
+        "cycle": "官网公布的最季年份",
+        "value": "Early Decision（绑定）：截止 11月2日–3日（官网Application Plans页与首页/院系页标注不一致），12月15日前通知，2月1日前确认；Regular Decision：截止 1月4日–5日（官网标注不一致），4月1日前通知，5月1日前确认；戏剧/音乐RD：12月1日。",
+        "source_url": "https://cmu.edu/admission/admission/application-plans-deadlines",
+        "secondary_source_url": "https://cmu.edu/admission/admission",
+        "flag": "ED与RD具体日期在官网不同页面存在1天差异（Nov2/Nov3，Jan4/Jan5），以Application Plans & Deadlines页为准（Nov 3 / Jan 5）"
+      },
+      "supplements": {
+        "value": "CMU Writing Supplement：3道短答题（官方确认'three short-answer questions'）。题目：①选择该专业的热情/灵感来源；②你如何定义成功的大学学习体验；③强调申请中未展示的重要信息（Tell us, don't show us）。",
+        "word_limit": "每题≤300词（来自第三方整理，官方页面未直接列明字数）",
+        "source_url": "https://cmu.edu/admission/admission/undergraduate-admission-requirements",
+        "source_note": "官方页仅确认'三题短答'；具体措辞与300词上限为第三方汇总，官方原文措辞待核实"
+      },
+      "rowing_recruiting": {
+        "program_type": "CLUB（Tartan Crew 赛艇俱乐部，非varsity）",
+        "conference_level": "俱乐部赛艇（自1987年起为校内club sport），参加东海岸各类赛艇会",
+        "evidence": "CMU官方athletics站点列有Rowing Club；CMU官方校友页明确'A club sport since 1987'；球队官网Tartan Crew。",
+        "coach_email": "主教练 Adam Herrick — headcoach@tartancrew.org；招募联系 recruitment@tartancrew.org；俱乐部主席 president@tartancrew.org（球队官网公布）",
+        "recruiting_route": "俱乐部招新（春秋开学初，欢迎零基础）；官方明确'不参与CMU录取过程'，无运动奖学金、无教练招生支持信。",
+        "source_url": "https://www.cmu.edu/engage/alumni/get-involved/networks/studentorgs/tartancrewalumni.html",
+        "secondary_source_url": "https://athletics.cmu.edu/recreation/clubs/RowingFeature14"
+      },
+      "unverified": [
+        "CMU补充文书的具体题目官方原文措辞与正式字数上限（官方页仅确认3道短答题）",
+        "ED/RD精确日期（官网标注存在Nov2/Nov3、Jan4/Jan5的1天差异）"
+      ]
+    }
+  ]
+}
