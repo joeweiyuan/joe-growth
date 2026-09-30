@@ -1,5 +1,14 @@
 # 📜 能力包升级日志
 
+## v1.2 — 2026-09-30
+**备份落地私有知识库 + 架构结论**
+
+- 📚 `scripts/backup_kb.sh` 升级为**三目的地**：① 本地 tar.gz ② public `knowledge/`（脱敏）③ **private `weiwuji-knowledge-base/08-个人成长/少爷/`（全量）**
+- 🏛️ **架构结论**（家主问"网站能否直接从 KB 取数"）：**不能** —— 私有仓库的内容无法被 public Pages 运行时读取（无凭据）；且即便能读也会把全量数据暴露到网页。方案：**本地主库 → 双推**（public 脱敏层 / private 全量），网站继续用自身仓库的 `data.js`
+- 🧭 KB 仓库归属：`corinwe/weiwuji-knowledge-base`（**私有**，API 404 证实）；本机路径 `/root/weiwuji-knowledge-base`
+- 🛡️ 推送纪律：KB 仓**只 add `08-个人成长/少爷`**，绝不 `git add -A`（避免卷入家主其他目录的未提交改动）；远端有新提交先 `git pull --rebase`
+- ⚠️ 前端坑：`git add` 后 push 若被拒（非快进）→ rebase 后重推（本轮实测：`80464a97..d5e8937e` 干净落地）
+
 ## v1.1 — 2026-09-30
 **新增两项机制**（家主指令："研究分析的数据每次都存档归纳好" + "每轮备份所有东西并推送知识库"）
 

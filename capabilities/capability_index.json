@@ -1,6 +1,6 @@
 {
   "name": "joe-growth-capability-pack",
-  "version": "1.1",
+  "version": "1.2",
   "updated": "2026-09-30",
   "owner": "Corin（家主）",
   "maintainer": "六六（普罗米修斯）",
@@ -339,9 +339,12 @@
   "knowledge_base_backup": {
     "script": "scripts/backup_kb.sh",
     "cadence": "每轮/每次交付后执行",
-    "local_full": "/root/backups/joe/joe_backup_YYYYMMDD_HHMM.tar.gz（全量，含敏感信息，仅本地，保留最近 20 份）",
-    "kb_push": "knowledge/（STATE 脱敏快照 + 12 个专属技能副本 + README）→ 同步推送 main & gh-pages",
-    "privacy_rule": "joe-growth 仓库为 public：禁止推送含 token/手机号/邮箱/chatID 的内容；全量备份只留本地",
-    "pending": "「所有东西」（含完整技能库/配置）的异地备份需【私有仓库】，待家主授权创建"
+    "destinations": {
+      "local_full": "/root/backups/joe/joe_backup_YYYYMMDD_HHMM.tar.gz（全量 tar.gz，保留最近 20 份）",
+      "public_layer": "joe-growth/knowledge/（STATE **脱敏**快照 + 专属技能副本）→ 网站/OfferPath 可公开参考",
+      "private_full": "corinwe/weiwuji-knowledge-base → 08-个人成长/少爷/（**全量**：STATE 原文 + 能力包 + research + admissions + daily-logs + 技能 12）"
+    },
+    "architecture_decision": "public 网站**不能**从私有 KB 取数（运行时无凭据）→ 采用「本地主库 → 双推」：主库在 /root/joe-growth + profile；public 推脱敏层，private 推全量。网站数据仍由自身仓库提供（同源 data.js）",
+    "push_discipline": "KB 仓库只 `git add 08-个人成长/少爷`（不碰家主其他目录）；远端有更新时 `git pull --rebase` 后再推"
   }
 }
