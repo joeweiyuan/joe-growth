@@ -1,0 +1,139 @@
+{
+  "checked": [
+    {
+      "school": "Johns Hopkins University",
+      "field": "rowing_recruiting.varsity_status",
+      "claim": "无 varsity 赛艇（2009 停办），亦无 club 赛艇",
+      "source": "https://students.jhu.edu/student-life/get-involved/oconnor-center-for-recreation-well-being/sports-clubs/ ; https://hopkinssports.com/sports/mens-crew",
+      "verdict": "无法验证",
+      "actual": "students.jhu.edu sports-clubs 页在无头浏览器中返回 Cloudflare 挑战页（仅 'Cloudflare' 链接，684 字符），无法读取社团名单；hopkinssports.com/sports/mens-crew 为空模板页（无现役名单/赛程）",
+      "note": "'无 varsity'部分与空模板页一致；但'无 club'所引官方社团名单源被 Cloudflare 拦截，无法独立确认。原 JSON 已自注该源为交叉验证，非编造。"
+    },
+    {
+      "school": "UChicago",
+      "field": "rowing_recruiting.programs",
+      "claim": "Crew (M & W) — 学生体育俱乐部（club，非 varsity）",
+      "source": "https://athletics.uchicago.edu/sports/2023/6/12/clubs-active-clubs.aspx",
+      "verdict": "一致",
+      "actual": "页面标题为 '2026-27 Active Sport Clubs'，名单中列出 'Crew (M & W)'，属 Active Sport Clubs（学生体育俱乐部），非校际 varsity",
+      "note": "确认为 club，非 varsity"
+    },
+    {
+      "school": "Northwestern University",
+      "field": "rowing_recruiting.varsity_status",
+      "claim": "无 varsity 赛艇（/sports/womens-rowing 返回 404），仅有学生 club（Northwestern Crew/ACRA）",
+      "source": "https://nusports.com/sports/womens-rowing",
+      "verdict": "一致",
+      "actual": "nusports.com/sports/womens-rowing 返回 '### 404  Sport not found'，官网 All Sports 菜单 19 项 varsity 项目中无 Rowing",
+      "note": "无 varsity rowing 确认；club 层面（ACRA）与自述一致"
+    },
+    {
+      "school": "Rice University",
+      "field": "rowing_recruiting.detail",
+      "claim": "无 NCAA/varsity rowing；Rice Crew 自述非 NCAA",
+      "source": "https://www.ricecrew.org/faq",
+      "verdict": "一致",
+      "actual": "Rice Crew FAQ 原文：'Is Rice Crew a NCAA program? We are not.'（并说明 NCAA 身份需 Rice 全额资助队伍）",
+      "note": "确认为 club，非 NCAA varsity"
+    },
+    {
+      "school": "Vanderbilt University",
+      "field": "rowing_recruiting.program_type",
+      "claim": "无 varsity 赛艇（男女均无）；赛艇仅作为 club 队伍存在",
+      "source": "https://vucommodores.com/ (All Sports 菜单)",
+      "verdict": "一致",
+      "actual": "vucommodores.com All Sports 菜单为：Volleyball / W-Track & Field / W-Tennis / Swimming / Soccer / Lacrosse / W-Golf / W-Cross Country / Bowling / W-Basketball / M-Tennis / M-Golf / M-Cross Country / M-Basketball / Football / Baseball —— 无 Rowing/Crew",
+      "note": "无 varsity rowing 确认"
+    },
+    {
+      "school": "Duke University",
+      "field": "rowing_recruiting.programs",
+      "claim": "Women's Rowing = varsity (NCAA D-I ACC)；Men's Rowing = club（2020 起 coed）",
+      "source": "https://goduke.com/sports/rowing ; https://dukeclubrowing.com/",
+      "verdict": "一致",
+      "actual": "goduke.com 官方运动项目筛选中含 'Rowing'（varsity，@DukeROW，ACC 赛事）；Duke Club Rowing 官网自述 'We are a co-ed crew at Duke University'",
+      "note": "女子 varsity + 男子/coed club 的拆分确认"
+    },
+    {
+      "school": "University of Notre Dame",
+      "field": "rowing_recruiting.program_type",
+      "claim": "女子赛艇 = varsity (NCAA D-I ACC)；男子赛艇 = club（非 varsity，ACRA）",
+      "source": "https://fightingirish.com/sports/wrow/ ; http://www.ndmensrowing.com/recruiting",
+      "verdict": "一致",
+      "actual": "fightingirish.com 有独立 'Women's Rowing' 板块；ndmensrowing.com 自述 'Notre Dame Men's Rowing is ... club sports on campus. We are a club in name, but we operate with a varsity mindset'，全年参赛目标为 ACRA National Championships",
+      "note": "确认男子为 club、女子为 varsity，原 JSON 的『纠正任务背景假设』成立"
+    },
+    {
+      "school": "UC Berkeley",
+      "field": "rowing_recruiting.program_type",
+      "claim": "男子赛艇 = VARSITY（IRA 级，配全职带薪教练组；主教练 Scott Frandsen）",
+      "source": "https://calbears.com/sports/mens-rowing/coaches",
+      "verdict": "一致",
+      "actual": "calbears.com 设 '2025-26 Men's Rowing Coaching Staff'：Head Coach Scott Frandsen (frandsen@berkeley.edu)，另有 Associate/Assistant 教练 4 人、Boatrigger —— 完整带薪教练组，属官方校际项目",
+      "note": "确认为 varsity（IRA 级）。注：男子赛艇属 IRA 体系而非 NCAA 锦标赛项目，原 JSON 亦已标注此点"
+    },
+    {
+      "school": "UCLA",
+      "field": "rowing_recruiting.program_type",
+      "claim": "男子赛艇 = CLUB（非 NCAA varsity），ACRA/Pac-12 club 体系",
+      "source": "https://www.uclamensrowing.com/about ; https://uclaclubsports.com/sports/mens-rowing",
+      "verdict": "一致",
+      "actual": "uclamensrowing.com/about 原文：'The UCLA Men's Rowing team is a club varsity program fully recognized by both the Pac-12 and ACRA conferences'；uclaclubsports.com 列为俱乐部体育",
+      "note": "确认为 club（球队自述 'club varsity'，非 NCAA varsity）"
+    },
+    {
+      "school": "Carnegie Mellon University (CMU)",
+      "field": "rowing_recruiting.program_type",
+      "claim": "CLUB（Tartan Crew，非 varsity，自 1987 年为 club sport）",
+      "source": "https://www.cmu.edu/engage/alumni/get-involved/networks/studentorgs/tartancrewalumni.html ; https://athletics.cmu.edu/recreation/clubs/RowingFeature14",
+      "verdict": "一致",
+      "actual": "CMU 官方校友页原文：'A club sport since 1987'；athletics.cmu.edu 页称 'Carnegie Mellon University Rowing Club'，1987 年 9 月 26 日成立",
+      "note": "确认为 club，非 varsity"
+    },
+    {
+      "school": "HKU",
+      "field": "test_policy.english_requirement",
+      "claim": "IELTS Academic 6.5（写作与口语各≥6.0，同一次考试）；TOEFL iBT 95（旧制）/ 5.0（2026-01-21 起新制）",
+      "source": "https://admissions.hku.hk/apply/international-qualifications/english-language-requirement",
+      "verdict": "一致",
+      "actual": "官方页表格原文：'IELTS | An overall band score of 6.5 or above ... with no less than 6.0 in both the Writing and Speaking components, achieved in the same attempt'；'For tests taken before January 21, 2026: An overall score of 95 or above in the TOEFL iBT ... For tests taken on or after January 21, 2026: An overall score of 5.0 or above'",
+      "note": "分数逐字一致"
+    },
+    {
+      "school": "UCLA",
+      "field": "english_proficiency.value",
+      "claim": "TOEFL iBT 100（子项>24）；新制 5+；IELTS 7.5+；DET 135+",
+      "source": "https://admission.ucla.edu/apply/international-applicants",
+      "verdict": "一致",
+      "actual": "官方页原文：'a TOEFL iBT score of 5 or higher (with sub-scores of 5 or higher) on the revised scale (effective January 21, 2026), or above 100 (with sub-scores above 24) on the previous 120-point scale, as well as 7.5 or above on the IELTS or 135 or higher on the Duolingo English Test (DET)'",
+      "note": "分数逐字一致"
+    }
+  ],
+  "rowing_type_audit": [
+    {"school": "Johns Hopkins University", "claimed": "none", "verified": "无 varsity 确认（hopkinssports 空模板）；club 缺失无法验证（源被 Cloudflare 拦截）", "ok": true},
+    {"school": "UChicago", "claimed": "club", "verified": "club（Active Sport Clubs 名单含 Crew M&W）", "ok": true},
+    {"school": "Northwestern University", "claimed": "club", "verified": "无 varsity（womens-rowing 404）+ club", "ok": true},
+    {"school": "Rice University", "claimed": "club", "verified": "club，非 NCAA（ricecrew.org/faq 原文）", "ok": true},
+    {"school": "Vanderbilt University", "claimed": "none", "verified": "无 varsity（All Sports 菜单无 Rowing），仅 club", "ok": true},
+    {"school": "Duke University", "claimed": "varsity", "verified": "女子 varsity（NCAA D1 ACC）+ 男子/coed club（dukeclubrowing.com）", "ok": true},
+    {"school": "University of Notre Dame", "claimed": "varsity", "verified": "女子 varsity（W-Rowing 独立板块）+ 男子 club（ndmensrowing.com 自述 club）", "ok": true},
+    {"school": "UC Berkeley", "claimed": "varsity", "verified": "varsity/IRA（calbears.com 全职带薪教练组，Head Coach Scott Frandsen）", "ok": true},
+    {"school": "UCLA", "claimed": "club", "verified": "club（自述 'club varsity program ... Pac-12 and ACRA'，非 NCAA varsity）", "ok": true},
+    {"school": "Carnegie Mellon University (CMU)", "claimed": "club", "verified": "club（'A club sport since 1987'）", "ok": true}
+  ],
+  "summary": {
+    "total": 12,
+    "consistent": 11,
+    "inconsistent": 0,
+    "unverifiable": 1
+  },
+  "risk_flags": [
+    "【无法验证】JHU『无 club 赛艇』的官方来源 students.jhu.edu/sports-clubs 被 Cloudflare 拦截，本次无法独立读取社团名单复核；仅『无 varsity』部分（hopkinssports 空模板 + 2009 停办）可得佐证。结论方向合理但该条未完全闭环。",
+    "【附加核对·一致】Vanderbilt 截止日期：官方 admissions.vanderbilt.edu/apply 确认 ED I 'November 1, 2026 — Deadline for completed application'，与 R3 声称 2026-11-01 一致；同页确认 test 政策 'fall 2027 and 2028 optional / fall 2029 required'，与 R3 一致。",
+    "【附加核对·无法验证】CMU 英语门槛声称 TOEFL iBT ≥102（子项25+）：官方页 cmu.edu/admission/admission/standardized-testing 仅渲染出 tab 标题（'TOEFL, IELTS, Cambridge or Duolingo English Test'），具体分数字段未在无头浏览器展开；确认为『要求提交』但 102 具体数值本次未在官方页核对到。",
+    "【来源纪律】本次复核未发现任何断言引用中介/百科/论坛等非官方来源；所有引用均为官方 admissions.*/athletics.* 站点或球队自建官方俱乐部站（dukeclubrowing.com、ndmensrowing.com、uclamensrowing.com、tartancrew.org 等）。",
+    "【club/varsity 未发现互换】未发现把 club 当 varsity（或反之）的情况：Berkeley 正确判为 varsity；UCLA/CMU/UChicago/Northwestern/Rice/Vanderbilt 正确判为 club；Duke/ND 正确拆分『女子 varsity + 男子 club』。",
+    "【波次A关键结论已抽样验证】『非藤校 Top20 几乎都无男子 varsity 赛艇』：本次独立核对 UChicago / Northwestern / Rice / Vanderbilt / CMU / UCLA 共 6 校，均确认为无男子 varsity（club 或 none），≥3 条采样要求已满足且结论成立。",
+    "【未抽到/范围外】Caltech（R1）赛艇、HKU/CUHK/HKUST 及澳洲三校（R5/R6）的赛艇类型未纳入本轮抽样：R5/R6 以俱乐部制为主，未见 varsity 声明，无红旗；如需可下轮补验。"
+  ]
+}

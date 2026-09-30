@@ -47,8 +47,13 @@
         "多校 test-optional 有终止年份（Vanderbilt 2029 起恢复、ND 2027-28 起恢复）；UC 系 Test-free；CMU 按学院分档",
         "港校英语门槛：HKU IELTS 6.5/TOEFL 95(5.0新制)；CUHK/HKUST IELTS 6.0/TOEFL 80(4.5新制)",
         "澳洲：墨尔本 IELTS 6.5/TOEFL 81；悉尼 IELTS 6.5（接受中国高考）；UNSW TOEFL 90–94",
-        "Checker 复核：批次1 10 条 9 一致/1 已更正；批次2 进行中"
-      ]
+        "Checker 复核：批次1 10 条 9 一致/1 已更正；批次2 进行中",
+        "Checker 复核全部完成：批次1 10条(9一致/1已更正) + 批次2 12条(11一致/1无法验证)；赛艇 club/varsity 判定零错判"
+      ],
+      "checker": {
+        "batch1": "10 checked: 9 consistent, 1 inconsistent(corrected)",
+        "batch2": "12 checked: 11 consistent, 0 inconsistent, 1 unverifiable(JHU cloudflare)"
+      }
     },
     {
       "id": "2026-09-30-toefl-score-analysis",
