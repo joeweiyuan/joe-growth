@@ -1,0 +1,235 @@
+{
+  "school": "Stanford",
+  "cases": [
+    {
+      "year": "2022(入学)",
+      "student": "Christine Ye",
+      "background": "美国(华盛顿州)高中;Regeneron STS 2022",
+      "innovation_type": "理论科研",
+      "project": "STS 2022 第一名($250k):用引力波数据分析中子星-黑洞并合;已在《Astrophysical Journal》发表论文;斯坦福物理(天体物理)专业",
+      "other_dims": "长期天体物理科研;获奖学金入读斯坦福",
+      "source": "https://digikey.com/en/blog/inside-the-super-bowl-of-science",
+      "source_nature": "媒体报道(DigiKey官方博客)"
+    },
+    {
+      "year": "2024(入学)",
+      "student": "Sarang Goel",
+      "background": "美国德州数学与科学学院(TAMS);Stanford Class of 2028",
+      "innovation_type": "工程实践",
+      "project": "2× ISEF Grand Prize;2024 STS Top40;RSI 2023;斯坦福QI-AI实验室做OCT图像分割;MIT Media Lab做帕金森冻结步态可穿戴设备;自研低成本助盲眼镜",
+      "other_dims": "IOAI 2024 Team USA 金牌",
+      "source": "https://www.usaaio.org/_files/ugd/87b792_d322b0a240b04924842dc58b61117a9b.pdf",
+      "source_nature": "官方可证(竞赛队官方名单/自传)"
+    },
+    {
+      "year": "2024(入学)",
+      "student": "Ella Lan",
+      "background": "美国加州Harker School;Stanford Class of 2028",
+      "innovation_type": "工程实践",
+      "project": "2× ISEF Grand Award(2022/2023);RSI 2023;Regeneron STS Scholar 2024;S.-T. Yau金奖(CS);Davidson Fellows HM;用AI做心血管/糖尿病检测与可穿戴硬件",
+      "other_dims": "学生自治会副主席;研究社团联合主席;舞蹈;IOAI 2024 Team USA 铜牌",
+      "source": "https://www.usaaio.org/_files/ugd/87b792_c480490701eb4ed5882d32c0969b165f.pdf",
+      "source_nature": "官方可证(竞赛队官方名单/自传)"
+    },
+    {
+      "year": "2024(入学)",
+      "student": "Shraman Kar",
+      "background": "美国肯塔基duPont Manual高中;Stanford Class of 2028",
+      "innovation_type": "工程实践",
+      "project": "IOAI 2024(国际人工智能奥赛)Team USA 队员(铜牌);AI方向长线训练",
+      "other_dims": "—",
+      "source": "https://usaaio.org/2024-ioai",
+      "source_nature": "官方可证(竞赛队官方页面)"
+    },
+    {
+      "year": "2023(入学)",
+      "student": "Moitri (Oviedo高中,姓氏未公开报道)",
+      "background": "美国佛州Oviedo高中毕业致辞生(salutatorian)",
+      "innovation_type": "工程实践",
+      "project": "ISEF 2023第一名Grand Award(植物科学,$6k);入选Top14代表ISEF赴德国EU Contest for Young Scientists;入读斯坦福材料科学与工程(生物应用方向)",
+      "other_dims": "年级第二",
+      "source": "https://lakemarylife.com/features/they-blinded-us-with-science",
+      "source_nature": "媒体报道(地方媒体)"
+    },
+    {
+      "year": "2019(入学)",
+      "student": "Audrey Wisch & Alec Katz",
+      "background": "美国;Stanford 2019级(后休学创业)",
+      "innovation_type": "创业",
+      "project": "联合创立教育科技公司Curious Cardinals(大学生导师网络);获种子轮$4.25M;Forbes 30 Under 30(2022)",
+      "other_dims": "AW:长跑队队长+辩论队主席;AK:高中创办Soles4Good非营利、塞内加尔微贷实习、斯坦福学航天工程",
+      "source": "https://stanforddaily.com/2022/01/09/qa-with-forbes-30-under-30-winners-audrey-wisch-and-alec-katz",
+      "source_nature": "媒体报道(斯坦福校报Stanford Daily)"
+    },
+    {
+      "year": "2022(入学)",
+      "student": "Atman Jahagirdar, Ananth Veluvali, Soham Govande, Peter Alisky (’26)",
+      "background": "美国;Stanford 2026级本科新生",
+      "innovation_type": "创业",
+      "project": "入学当年创立大学申请信息平台AdmitYogi(展示已录取学生的申请档案+导师1对1);快速在TikTok获量",
+      "other_dims": "—",
+      "source": "https://stanforddaily.com/2022/10/10/frosh-found-start-up-aims-to-shift-college-admissions-industry",
+      "source_nature": "媒体报道(斯坦福校报Stanford Daily)"
+    },
+    {
+      "year": "2022(入学)",
+      "student": "Vihaan Agarwal",
+      "background": "印度/国际生;Stanford Class of 2026",
+      "innovation_type": "创业",
+      "project": "创立OneStepGreener(印度首个获国际气候奖Children's Climate Prize的废弃物回收+城市造林社会企业);累计回收超10万公斤废弃物",
+      "other_dims": "International Children's Climate Prize 2019;The Diana Award 2019;公众演讲",
+      "source": "https://www.linkedin.com/in/vihaanagarwal",
+      "source_nature": "第三方汇总(本人LinkedIn自述,未校方核实)"
+    },
+    {
+      "year": "2023前后(入学)",
+      "student": "Adhi Daiv",
+      "background": "印度;Stanford 2023级(EE+CS)",
+      "innovation_type": "创业",
+      "project": "2019年创立社会企业Urvara,用'每棵树仅1升水'旱地农法把30英亩沙漠变绿地;B.Science Association CREST Gold",
+      "other_dims": "斯坦福CS本科研究(CURIS);机器人/嵌入式方向",
+      "source": "https://www.linkedin.com/in/adhi-daiv-b06bb1215",
+      "source_nature": "第三方汇总(本人LinkedIn自述)"
+    },
+    {
+      "year": "2024(入学)",
+      "student": "Amy Zheng",
+      "background": "美国;加州青年交响乐团小提琴手",
+      "innovation_type": "创业",
+      "project": "Diamond Challenge(特拉华大学创业赛)大奖:研发'无障碍灾后响应系统'并原型化专利待批的静电太阳能板清洁器(跨国团队);入读斯坦福物理与电子工程",
+      "other_dims": "小提琴(加州青年交响乐团);2024 Coca-Cola Scholar;Elks Most Valuable Student",
+      "source": "https://cys.org/media/artist_profiles/amy-zheng-violin.html",
+      "source_nature": "机构官网(加州青年交响乐团)"
+    },
+    {
+      "year": "2021(转学入学)",
+      "student": "Sophia Kianni",
+      "background": "美国/伊朗裔;先在印第安纳大学,2021转学斯坦福,主修Science,Technology & Society",
+      "innovation_type": "跨学科",
+      "project": "创立Climate Cardinals(全球青年气候翻译/倡导组织);联合国青年顾问;Forbes 30 Under 30 2023(气候行动)",
+      "other_dims": "气候倡导/政策;非实验科学路线",
+      "source": "https://en.wikipedia.org/wiki/Sophia_Kianni",
+      "source_nature": "第三方汇总(维基百科,含官方职务引用)"
+    },
+    {
+      "year": "2022(入学)",
+      "student": "Milo Golding",
+      "background": "美国肯塔基;Stanford 2022级(Bioengineering)",
+      "innovation_type": "跨学科",
+      "project": "2019年创立非营利Sanguine Path(获肯塔基州长认可);斯坦福医学院Helms Lab肝移植/干细胞研究;Bio-X本科暑期研究员",
+      "other_dims": "科研+公益双线;APAMSA/NSBE等",
+      "source": "https://www.linkedin.com/in/milogolding",
+      "source_nature": "第三方汇总(本人LinkedIn自述)"
+    },
+    {
+      "year": "2022(入学)",
+      "student": "Theo Baker",
+      "background": "美国;2022年入学斯坦福(新生)",
+      "innovation_type": "无科创(新闻调查)",
+      "project": "斯坦福校报调查报道,促成斯坦福校长Marc Tessier-Lavigne于2023年辞职;首位获George Polk Award的学生记者",
+      "other_dims": "新闻写作/调查;父母为媒体人",
+      "source": "https://newstatesman.com/politics/education/2026/05/inside-silicon-valleys-get-rich-university",
+      "source_nature": "媒体报道(New Statesman书评)"
+    },
+    {
+      "year": "不明(自述)",
+      "student": "匿名(AdmitSee档案#111862)",
+      "background": "美国;自述'普通学生'",
+      "innovation_type": "无科创(其他维度)",
+      "project": "自述:'没有2400满分、没有ISEF、没有非营利'——靠文书与自主学习(Temple U、Alzar School、USGS研究)录取斯坦福,Duke等",
+      "other_dims": "求知欲/自学/文书",
+      "source": "https://www.admitsee.com/profile-detail/111862",
+      "source_nature": "第三方汇总(申请人自述,匿名,不可独立核实)"
+    }
+  ],
+  "distribution": {
+    "theory": 1,
+    "hands_on": 4,
+    "entrepreneurship": 5,
+    "interdisciplinary": 2
+  },
+  "pattern_conclusions": [
+    {
+      "conclusion": "案例中'动手/应用/创业'型科创占绝对多数:12个有科创类型的案例里,工程实践4个、创业5个、跨学科2个,纯理论科研仅1个。Stanford 公开可查的科创类录取者更常展示把想法变成实物/产品/组织(可穿戴硬件、AI医疗应用、社会企业),而非仅停留在理论论文。",
+      "supported_by": [
+        "Sarang Goel",
+        "Ella Lan",
+        "Shraman Kar",
+        "Moitri",
+        "Audrey Wisch/Alec Katz",
+        "AdmitYogi四人组",
+        "Vihaan Agarwal",
+        "Adhi Daiv",
+        "Amy Zheng",
+        "Sophia Kianni",
+        "Milo Golding"
+      ],
+      "confidence": "中(样本小、非随机、公开报道偏好'有故事'的项目)"
+    },
+    {
+      "conclusion": "Intellectual Vitality 在案例中的具体体现=从个人好奇心出发、自驱地把一个真实问题推进到'可被外部验证'的成果:Sarang 从软件转向自研助盲眼镜与帕金森可穿戴硬件;Ella 因祖辈/朋友的健康问题自建AI诊断模型;Adhi 用'1升水种一棵树'解决沙漠化;Amy Zheng 把灾后响应做成专利原型。共同点是问题驱动+实物/组织产出+跨校/跨国协作。",
+      "supported_by": [
+        "Sarang Goel",
+        "Ella Lan",
+        "Adhi Daiv",
+        "Amy Zheng",
+        "Milo Golding"
+      ],
+      "confidence": "中高(多案例一致出现'从好奇到实操到外部验证'的结构)"
+    },
+    {
+      "conclusion": "存在'无科创但其他维度突出也录取'的案例:新闻调查型(Theo Baker 因调查报道促成校长辞职)、倡导/政策型(Sophia Kianni 气候翻译组织)、以及自述'无ISEF无科研'的普通学生档案。说明 Stanford 是整体评估(holistic),科创并非唯一录取通道。",
+      "supported_by": [
+        "Theo Baker",
+        "Sophia Kianni",
+        "AdmitSee匿名档案#111862"
+      ],
+      "confidence": "中(前两例为可证录取;匿名档案例来源为申请人自述,不可独立核实)"
+    },
+    {
+      "conclusion": "顶尖科研竞赛(Regeneron STS / ISEF / RSI)是通往Stanford的重要但非唯一路径:本合集里 Sarang、Ella、Christine Ye、Moitri 等均由这类赛事被报道;据第三方汇总的STS期末生去向统计,Stanford 是 STS finalists 前三大去向之一(约19%),STS scholars 约11%。",
+      "supported_by": [
+        "Sarang Goel",
+        "Ella Lan",
+        "Christine Ye",
+        "Moitri",
+        "Reddit matriculation compilation(2020-2025)"
+      ],
+      "confidence": "中低(矩阵数据为第三方网友汇总,非官方发布)"
+    }
+  ],
+  "cannot_infer": [
+    "无法推出'Stanford 更偏好创业而非理论'的因果权重:招生办不公布偏好权重,且公开报道本身偏好有'故事张力'的创业/应用案例,存在明显幸存者偏差。",
+    "无法推出科创类型分布的量化比例:本研究样本仅约12-15例,非随机抽样;STS/ISEF官网主要披露'获奖',而非录取结果,绝大多数录取者不公开。",
+    "无法推出'无科创 = 劣势'或'有科创 = 加分':缺少对照组(未被录取者),无法比较。",
+    "无法推出国籍/家庭背景/标化分数对录取的边际影响:多数案例未公开标化与完整背景。",
+    "无法推出标签的精确边界:'理论/工程/创业/跨学科'为主观归类,一个案例常同时跨两类(如 Milo 既是科研也是公益),归类存在主观性。",
+    "LinkedIn 自述型案例(Vihaan/Adhi/Milo等)的'录取'与'成就'未经校方核实,只能作为弱证据。",
+    "无法推出时间趋势(2019-2026 偏好是否漂移):各年可查到的案例数量与口径不一致。"
+  ],
+  "sources": [
+    "https://www.usaaio.org/_files/ugd/87b792_d322b0a240b04924842dc58b61117a9b.pdf",
+    "https://www.usaaio.org/_files/ugd/87b792_c480490701eb4ed5882d32c0969b165f.pdf",
+    "https://usaaio.org/2024-ioai",
+    "https://stanforddaily.com/2022/01/09/qa-with-forbes-30-under-30-winners-audrey-wisch-and-alec-katz",
+    "https://stanforddaily.com/2022/10/10/frosh-found-start-up-aims-to-shift-college-admissions-industry",
+    "https://digikey.com/en/blog/inside-the-super-bowl-of-science",
+    "https://lakemarylife.com/features/they-blinded-us-with-science",
+    "https://cys.org/media/artist_profiles/amy-zheng-violin.html",
+    "https://en.wikipedia.org/wiki/Sophia_Kianni",
+    "https://www.linkedin.com/in/vihaanagarwal",
+    "https://www.linkedin.com/in/adhi-daiv-b06bb1215",
+    "https://www.linkedin.com/in/milogolding",
+    "https://newstatesman.com/politics/education/2026/05/inside-silicon-valleys-get-rich-university",
+    "https://www.admitsee.com/profile-detail/111862",
+    "https://news.stanford.edu/stories/2023/11/class-2027-snapshot",
+    "https://www.reddit.com/r/ApplyingToCollege/comments/1q8p920/matriculation_data_of_sts_scholars_finalists/",
+    "https://societyforscience.org/regeneron-sts/2025-sts-winners/"
+  ],
+  "sources_nature_legend": {
+    "官方可证": "校方/主办方(Stanford News/校报competition官方名单)页面",
+    "媒体报道": "有署名的媒体/机构报道",
+    "第三方汇总": "维基/LinkedIn自述/匿名申请档案等,不可独立核实"
+  },
+  "case_count": 14
+}
