@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "task": "核实哈佛/耶鲁/普林斯顿/哥伦比亚四校官方招生要求与赛艇招募信息",
+    "verification_date": "2026-09-30",
+    "student": "Joe (魏源) — 上海光华剑桥美高，男子赛艇，2km erg PB 7:24.1",
+    "source_policy": "仅使用学校官网 + 官方 athletics 官网；未找到官方来源的字段一律标『待核实（未找到官方来源）』，不编造",
+    "notes": "所有 URL 均为本次核实访问的官方页面；申请季年份按官网当前公布标注，未显式标注年份者在 cycle 字段注明"
+  },
+  "schools": [
+    {
+      "school": "Harvard",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "无需英语水平考试：first-year/transfer 申请人不要求 TOEFL/IELTS 等英语水平测试，可自愿提交；且 TOEFL/IELTS/Duolingo 不能替代标化要求（仅 Visiting Undergraduate Students 项目要求 TOEFL 或 IELTS）",
+        "sat_act": "必须提交 SAT 或 ACT（required）。仅在极特殊无法参加考试的情况下，可用 AP / IB（实考或预估）/ GCSE-A-Level（实考或预估）/ National Leaving Exams（外部评卷，实考或预估）替代；成绩可自报（self-report）",
+        "source": "https://college.harvard.edu/admissions/apply/application-requirements ; https://college.harvard.edu/admissions/apply/international-applicants ; https://college.harvard.edu/resources/faq/do-i-have-take-toefl"
+      },
+      "deadlines": {
+        "cycle": "官网当前公布轮次（页面未显式标注具体申请季年份；Common App 8/1 开放）",
+        "ED": "无（哈佛不设 ED）",
+        "EA": "无独立 EA（使用 REA）",
+        "REA": "Restrictive Early Action：11月1日截止（申请人材料，本土时间 23:59），mid-December 放榜；REA 标化成绩建议 10月底前送达，11月场次仍可赶上",
+        "RD": "Regular Decision：1月1日截止，end of March 放榜；REA 与 RD 均允许比较其他学校录取与奖助，5月1日前答复",
+        "source": "https://college.harvard.edu/admissions/apply/first-year-applicants ; https://college.harvard.edu/admissions/apply/application-requirements"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [],
+        "word_limit": "Harvard College Questions（Common App）：5 道必答短答题，每道 150 词上限",
+        "source": "https://college.harvard.edu/admissions/apply/first-year-applicants ; https://college.harvard.edu/admissions",
+        "note": "官网仅确认『五道必答短答题、每道150词』，未在官网页面逐条列出全部题目原文 → 题目全文列入 unverified"
+      },
+      "rowing_recruiting": {
+        "programs": [
+          "Men's Heavyweight Rowing（男子重量级，varsity / D-I）",
+          "Men's Lightweight Rowing（男子轻量级 Harvard Varsity Lights, HVL，varsity / D-I）"
+        ],
+        "official_page": "https://gocrimson.com/sports/2023/9/19/mens-lightweight-rowing-recruiting.aspx (轻量级招募页) ; https://gocrimson.com/sports/mens-heavyweight-rowing (重量级项目页) ; https://gocrimson.com/sports/2020/5/5/information-recruiting-Recruiting-Questionnaires.aspx (招募问卷总表)",
+        "process": "轻量级官网明确『招募优先级』：①学业（成绩单最重要，需上传成绩单；SAT 建议单项 700+、ACT 综合 32+，AP 5 分可上传；哈佛 SAT 可拼分、ACT 不拼分）②课外/简历 ③高中教练推荐 ④水上表现（目标春季 junior year 进主力艇；8+ 项目需进全国锦标赛 A 决赛）⑤测功仪：2K sub 6:30 / 6K sub 21 min（或 5K 按同配速更快）/ Max Watts 800+，需提供 C2 屏幕照片并随测随称体重。重量级官网未单独公布招募标准与流程页，需通过招募问卷/直接联系招募协调员；哈佛全局规则：无问卷的运动项目请直接联系教练",
+        "coach_contact": "男子重量级：Tom Siddall（Assistant Coach and Recruiting Coordinator）tsiddall@fas.harvard.edu；Charley Butt（The Bolles-Parker Head Coach）csbutt@fas.harvard.edu（来源 https://gocrimson.com/sports/mens-heavyweight-rowing/coaches ）。男子轻量级教练邮箱官网未列出 → 待核实",
+        "questionnaire_url": "男子重量级：https://questionnaires.armssoftware.com/ef9696299538 ；男子轻量级：https://www.gocrimson.com/sports/mcrew-lw/questionnaire",
+        "source": "https://gocrimson.com/sports/2023/9/19/mens-lightweight-rowing-recruiting.aspx ; https://gocrimson.com/sports/mens-heavyweight-rowing/coaches ; https://gocrimson.com/sports/2020/5/5/information-recruiting-Recruiting-Questionnaires.aspx"
+      },
+      "unverified": [
+        "Harvard 补充文书 5 道题目的完整原文（官网仅公布数量与 150 词上限，未逐条列题）",
+        "男子轻量级赛艇教练姓名/邮箱（gocrimson 轻量级教练页未获取到官方邮箱）",
+        "Harvard 当前公布轮次对应的具体申请季年份（官网页面未标注）"
+      ]
+    },
+    {
+      "school": "Yale",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "非英语母语且英文授课学校就读不足 2 年者，必须提交英语水平测试（同时仍需 ACT/SAT）。官网列出最具竞争力申请者参考分：TOEFL 100+（2026-01-21 之前考试）或 5+（2026-01-21 及之后考试）；IELTS 7+；Cambridge English 185+；DET 120+；InitialView 可选",
+        "sat_act": "所有 first-year 与 transfer 申请人必须提交 ACT 或 SAT（required，免考政策为 test-flexible/required testing）；可 self-report，录取后需补官方送分；可拼分（superscore SAT/ACT）；免考例外：Eli Whitney Students Program 不要求标化",
+        "source": "https://admissions.yale.edu/standardized-testing ; https://admissions.yale.edu/apply"
+      },
+      "deadlines": {
+        "cycle": "2026-2027（essay topics 页标注 2026-2027；deadlines/timelines 页未显式标注年份）",
+        "ED": "无（耶鲁不设 ED）",
+        "EA": "无独立 EA（使用 Single-Choice Early Action / REA）",
+        "REA": "Single-Choice (Restrictive) Early Action：11月1日截止，mid-December 放榜，非绑定；限制：不得同时申请其他学校的 EA/ED，例外为非绑定滚动录取、公立校非绑定早申、1月1日之后通知的 ED/EA（Round 2）、美国境外院校",
+        "RD": "Regular Decision：1月2日截止，late March 放榜；QuestBridge 匹配轮 11月1日截止（绑定）",
+        "source": "https://admissions.yale.edu/application-deadlines ; https://admissions.yale.edu/timelines"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "短答1：指出最多三个与你的兴趣/目标最契合的学术领域（从官网列表中选）",
+          "短答2：Tell us about a topic or idea that excites you and is related to one or more academic areas you selected above. Why are you drawn to it? (200 词以内)",
+          "Short takes（200 字符以内，约 35 词）①如果可以教任意一门大学课程/写一本书/创作任意原创艺术品，你会做什么？②你希望在大学期间成长或发展的自身的一个方面是什么？③有什么关于你、申请其他任何地方都没有体现的？",
+          "Essay（400 词以内，三选一）①回顾一次你与持相反观点者讨论重要议题的经历，为什么这次经历有意义？②回顾你所属并感到联结的一个社群，为什么这个社群对你重要（社群可自行定义）？③回顾你个人经历中能丰富大学社区的一个元素，它如何塑造了你？"
+        ],
+        "word_limit": "短答 200 词以内；Short takes 3 题各 200 字符（约 35 词）；Essay 400 词以内",
+        "source": "https://admissions.yale.edu/essay-topics"
+      },
+      "rowing_recruiting": {
+        "programs": [
+          "Men's Crew (Heavyweight)（男子重量级，varsity）",
+          "Men's Crew (Lightweight) / Y150（男子轻量级，varsity）"
+        ],
+        "official_page": "https://yalebulldogs.com/sports/mens-crew (重量级) ; https://yalebulldogs.com/sports/mens-rowing (轻量级) ; https://yalebulldogs.com/sports/2019/6/25/information-recruiting-form-selection.aspx?id=70 (招募表选择页)",
+        "process": "待核实（未找到官方来源）：yalebulldogs 未公布赛艇专项招募流程/成绩标准页面；官方招募表选择页仅指向各队主页，赛艇两个项目页的『Additional Links』内无招募表链接。官方路径仅体现为：可直接联系各项目教练（重量级设 Assistant Coach; Recruiting Coordinator 一职）",
+        "coach_contact": "重量级：Mike Gennaro（Craig W. Johnson '68 Head Coach of Heavyweight Crew）michael.gennaro@yale.edu；Dan Williamson（Assistant Coach; Recruiting Coordinator）daniel.williamson@yale.edu（来源 https://yalebulldogs.com/sports/mens-crew/coaches ）。轻量级：Andy Card（Y150 Alumni Head Coach of Lightweight Crew）andrew.card@yale.edu；Ned DelGuercio（Assistant Coach）edmund.delguercio@yale.edu（来源 https://yalebulldogs.com/sports/mens-rowing/coaches ）",
+        "questionnaire_url": "待核实（未找到官方来源）",
+        "source": "https://yalebulldogs.com/sports/mens-crew/coaches ; https://yalebulldogs.com/sports/mens-rowing/coaches ; https://yalebulldogs.com/sports/2019/6/25/information-recruiting-form-selection.aspx?id=70"
+      },
+      "unverified": [
+        "耶鲁赛艇官方招募流程/测功仪成绩标准（官网未公布赛艇专项招募页）",
+        "耶鲁赛艇官方招募问卷链接（项目页 Additional Links 内无招募表）",
+        "Yale 当前公布截止日期对应的申请季年份（timelines 页未显式标注）"
+      ]
+    },
+    {
+      "school": "Princeton",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "非英语母语且就读学校非英语授课者，必须提交 TOEFL / IELTS Academic / Duolingo (DET) / PTE Academic 之一；已在英语为主要授课语言的中学就读满 3 年可免；官网未公布最低分数线；TOEFL 送分代码 2672",
+        "sat_act": "2026-27 申请季（fall 2027 入学）仍为 test-optional，不提交不劣势；自 2027-28 申请季（fall 2028 入学）起恢复要求 SAT 或 ACT；如提交，需由考试机构直送，SAT 可 score choice、ACT 取最高综合分；SCEA 建议 10 月场、RD 建议 12 月场",
+        "source": "https://admission.princeton.edu/apply/standardized-testing ; https://admission.princeton.edu/apply/application-checklist"
+      },
+      "deadlines": {
+        "cycle": "2026-27 申请季（对应 fall 2027 入学；声明见 standardized-testing 页）",
+        "ED": "无（普林斯顿不设 ED）",
+        "EA": "无独立 EA（使用 Single-Choice Early Action）",
+        "REA": "Single-Choice Early Action（限制性、非绑定）：11月1日截止；限制：不得同时申请美国境内其他私立院校的早申项目（可申请公立/军校非绑定早申、境外非绑定早申、非绑定滚动录取）；mid-December 放榜；11月6日可选艺术补充材料截止、11月9日助学金申请截止",
+        "RD": "Regular Decision：1月1日截止，late March 放榜；1月8日可选艺术补充材料截止、2月1日助学金申请截止；5月1日答复截止",
+        "source": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines ; https://admission.princeton.edu/apply"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "学术题（A.B. 学位或未定专业者）：As a research institution that also prides itself on its liberal arts curriculum, Princeton allows students to explore areas across the humanities and the arts, the natural sciences, and the social sciences. What academic areas most pique your curiosity, and how do the programs offered at Princeton suit your particular interests?（250 词以内）",
+          "学术题（B.S.E. 学位申请者）：Please describe why you are interested in studying engineering at Princeton. Include any of your experiences in or exposure to engineering, and how you think the programs offered at the University suit your particular interests.（250 词以内）",
+          "Your Voice 1：Princeton values community and encourages students, faculty, staff and leadership to engage in respectful conversations that can expand their perspectives and challenge their ideas and beliefs... how has your lived experience shaped you?（400-500 词）",
+          "Your Voice 2：Princeton has a longstanding commitment to understanding our responsibility to society through service and civic engagement. How does your own story intersect with these ideals?（250 词以内）",
+          "More About You（各 50 词以内）：①What is a new skill you would like to learn in college? ②What brings you joy? ③What song represents the soundtrack of your life at this moment?",
+          "另需单独提交 Graded Written Paper（评分过的书面作业，建议英语/历史科目）"
+        ],
+        "word_limit": "学术题 250 词；Your Voice 1 = 400-500 词；Your Voice 2 = 250 词；More About You 每题 50 词以内",
+        "source": "https://admission.princeton.edu/apply/princeton-specific-questions ; https://admission.princeton.edu/apply/application-checklist"
+      },
+      "rowing_recruiting": {
+        "programs": [
+          "Men's Heavyweight Rowing（男子重量级，varsity）",
+          "Men's Lightweight Rowing（男子轻量级，varsity）"
+        ],
+        "official_page": "https://goprincetontigers.com/sports/2017/1/23/mens-recruiting-information",
+        "process": "官网公布的分流标准与流程：普林斯顿同时设有世界级重量级与轻量级赛艇队，两队列均全国排名并持续输送 U23/国家队/奥运选手；不确定适配项目者可同时填写两个问卷或先邮件联系教练；体重 >170 lbs/77 kg（或不确定）→ 填重量级问卷；体重 ≤169 lbs/77 kg → 填轻量级问卷；舵手（coxswain）建议两份问卷都填。项目定位：以学术+高强度竞技为目标、IRA 全国锦标赛为竞技平台",
+        "coach_contact": "重量级主教练 Greg Hughes gchughes@princeton.edu；重量级助理教练 Jason Elefant jelefant@princeton.edu；轻量级主教练 Matt Smith matthew.smith@princeton.edu；轻量级助理教练 David Burke david.burke@princeton.edu（全部来自官网招募页）",
+        "questionnaire_url": "重量级男子问卷：https://questionnaires.armssoftware.com/db616a35413c ；轻量级男子问卷：https://questionnaires.armssoftware.com/3d8c21ad2eb9",
+        "source": "https://goprincetontigers.com/sports/2017/1/23/mens-recruiting-information"
+      },
+      "unverified": [
+        "普林斯顿官方公布的最低英语水平分数线（官网未给出具体最低分）",
+        "招募页未公布测功仪（erg）成绩标准/招募时间线（官网未披露）"
+      ]
+    },
+    {
+      "school": "Columbia",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "英语水平证明为必需项（可用英语水平考试或满足豁免条件证明）。若不满足豁免：TOEFL iBT 最低 105（2026-01-20 及之前考试）或最低 5.5（2026-01-21 及之后考试），送分代码 2116，不接受 MyBest 拼分；IELTS Academic 最低 7.5；DET 最低 135；Cambridge C1 Advanced/C2 Proficiency 最低 191",
+        "sat_act": "2026-2027 申请季（fall 2027 入学）为 test-optional，不提交不劣势；自 2027-2028 申请季（2027年8月起）恢复要求 SAT 或 ACT，所有 first-year 与 transfer 适用，确有困难者可申请豁免（waiver）",
+        "source": "https://undergrad.admissions.columbia.edu/apply/process/testing ; https://undergrad.admissions.columbia.edu/english-proficiency ; https://undergrad.admissions.columbia.edu/apply/firstyear"
+      },
+      "deadlines": {
+        "cycle": "2026-2027 申请季（fall 2027 入学；官网明确标注）",
+        "ED": "8月1日申请开放；Early Decision（绑定性）11月1日（2026-11-01，周日）截止；11月15日 ED 助学金材料截止；mid-December ED 录取与奖助结果发布；mid-January 录取生答复截止",
+        "EA": "无",
+        "REA": "无（哥伦比亚使用绑定 ED，不设 REA/EA）",
+        "RD": "Regular Decision：1月1日（2027-01-01，周五）截止；2月15日 RD 助学金材料截止；late March 结果发布；5月1日答复截止；QuestBridge National College Match 亦于 11月1日 截止",
+        "source": "https://undergrad.admissions.columbia.edu/apply ; https://undergrad.admissions.columbia.edu/apply/firstyear ; https://undergrad.admissions.columbia.edu/apply/firstyear/early-decision"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "1. List the titles of texts, resources and outlets that have contributed to your intellectual development outside of academic courses...（100 词以内，逗号/分号分隔的清单）",
+          "2. Tell us about an aspect of your life so far or your lived experience that is important to you, and describe how it has shaped the way you would learn from and contribute to Columbia's multidimensional and collaborative environment.（150 词以内）",
+          "3. At Columbia, students representing a wide range of perspectives are invited to live and learn together... Please describe a time when you did not agree with someone and discuss how you engaged with them and what you took away from the interaction.（150 词以内）",
+          "4. In college/university, students are often challenged in ways that they could not anticipate. Please describe a situation in which you have navigated through adversity and discuss how you changed as a result.（150 词以内）",
+          "5. Why are you interested in attending Columbia University?（150 词以内）",
+          "6. What attracts you to your preferred areas of study at Columbia College or Columbia Engineering?（150 词以内）",
+          "另需提交 Common App / Coalition 个人陈述（Personal Essay）"
+        ],
+        "word_limit": "清单题 1 道 ≤100 词；其余每题 ≤150 词；页面更新日期 2026-07-28",
+        "source": "https://undergrad.admissions.columbia.edu/apply/process/columbia-questions"
+      },
+      "rowing_recruiting": {
+        "programs": [
+          "Men's Heavyweight Rowing（男子重量级，varsity；页面标题为 Heavyweight Rowing）",
+          "Men's Lightweight Rowing（男子轻量级，varsity；页面标题为 Lightweight Rowing）"
+        ],
+        "official_page": "https://gocolumbialions.com/sports/mens-rowing (重量级) ; https://gocolumbialions.com/sports/lightweight-rowing (轻量级) ; https://gocolumbialions.com/sports/mens-rowing/coaches ; https://gocolumbialions.com/sports/2019/9/10/columbia-university-mens-rowing-recruit-information",
+        "process": "待核实（未找到官方来源）：gocolumbialions.com 当前无赛艇招募流程/成绩标准专页；官网仅存 2006 年『Information for Prospective Student-athletes』页列出各项运动招募问卷（含 Men's Heavyweight Rowing / Men's Lightweight Rowing），该页年代久远、未标注当前招募季，链接有效性未获官网现行页面确认；现行官网可确认的是三个赛艇项目（男子重量级、男子轻量级、女子公开级）统一由 Director of Rowing Tom Terhaar oversee",
+        "coach_contact": "男子重量级/Director of Rowing：Tom Terhaar, Director of Rowing — tt2849@columbia.edu, 212-854-7155；Laurel Korholz（Assistant Head Coach）lvk2109@columbia.edu；Maggie Gavin（Assistant Coach）mld2168@columbia.edu（来源 https://gocolumbialions.com/sports/mens-rowing/coaches ）。男子轻量级主教练：Nich Lee Parker（Head Coach，官网日程稿与 staff directory 确认，来源 https://gocolumbialions.com/news/2026/3/12/general-rowing-programs-announce-2026-schedules ； https://gocolumbialions.com/staff-directory/nich-lee-parker/97 ）— 邮箱待核实",
+        "questionnaire_url": "男子重量级：https://questionnaires.armssoftware.com/23e5d2f1595a ；男子轻量级：https://questionnaires.armssoftware.com/1ba9cde07a37 （来源为官网2006年 Prospective Student-athlete 页面，当前是否仍有效待核实）",
+        "source": "https://gocolumbialions.com/sports/mens-rowing/coaches ; https://gocolumbialions.com/sports/lightweight-rowing ; https://gocolumbialions.com/news/2026/3/12/general-rowing-programs-announce-2026-schedules ; https://gocolumbialions.com/news/2006/7/7/325134"
+      },
+      "unverified": [
+        "哥伦比亚赛艇当前官方招募流程、测功仪标准与时间线（官网无现行招募专页）",
+        "男子轻量级主教练 Nich Lee Parker 的官方邮箱（coaches 页未渲染出邮箱）",
+        "两个赛艇招募问卷链接的当前有效性（仅见于官网 2006 年页面，未标注当前招募季）"
+      ]
+    }
+  ]
+}

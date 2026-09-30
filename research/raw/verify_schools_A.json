@@ -1,0 +1,89 @@
+{
+  "schools": [
+    {
+      "school": "MIT",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "非英语母语者：官网为‘英语能力考试’(English language tests)设定最低分与建议分（非强制提交，但强烈建议特定非英语母语申请者提交）。可选考试与分数：TOEFL（2026-01-21之前考试）最低90/建议100；TOEFL（2026-01-21及之后考试，ETS改为1–6分制）最低5/建议5.5；IELTS最低7/建议7.5；PTE Academic最低65/建议70；Cambridge C1/C2最低185/建议190；Duolingo(DET)最低120/建议125。RA申请者英语考试最晚须在1月31日前考完。",
+        "sat_act": "必须提交SAT或ACT（含转学申请者）。无需ACT写作/科学部分，也无需要SAT可选作文；接受纸笔与机考SAT。SAT/ACT无最低分或建议分（在申请人背景下综合评估），官网提供最近录取届分数统计。可自报分数，入学时核验。考试时间：EA须在11月30日前考试，RA须在12月31日前考试。",
+        "source": "https://mitadmissions.org/apply/firstyear/tests-scores/"
+      },
+      "deadlines": {
+        "cycle": "2026–2027 application cycle（官网essays页明确写‘For the 2026–2027 application’）",
+        "ED": "无（MIT不设ED）",
+        "EA": "Early Action：申请截止 11月1日，决定约12月中旬公布；EA资助申请截止11月30日",
+        "RD": "Regular Action（RA）：申请截止 1月4日，决定约3月中旬公布；RA资助申请截止2月15日。入学回复截止：5月1日",
+        "source": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "What field of study appeals to you the most right now? Reflect on what has led you to this interest.",
+          "While some reach their goals following well-trodden paths, others blaze their own trails achieving the unexpected. In what ways have you done something different than what was expected in your educational journey?",
+          "How have your personal and academic experiences influenced the types of problems you would want to tackle with an MIT education and the impact you aim to make on your community?",
+          "How did you manage a situation or challenge that you didn’t expect? What did you learn from it?",
+          "短回答(40–50词)：What do you do just for fun?",
+          "短回答(40–50词)：Who is someone you admire, whether you know them personally or look up to them from afar? Tell us why.",
+          "短回答(40–50词)：What’s a topic, academic or non-academic, that you could talk about for hours?",
+          "短回答(40–50词)：MIT values both “generalists” with varied interests and “specialists” who focus deeply on one or a few passions. Which do you think best describes you, and why?"
+        ],
+        "word_limit": "短文essay每题约100–200词（4题）；短回答每题40–50词（4题）；另有一个开放式additional-information文本框。",
+        "source": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/"
+      },
+      "rowing_recruiting": {
+        "official_page": "https://mitathletics.com/sports/2021/4/20/information-Recruiting-index.aspx （MIT Varsity Sport Recruiting 入口页）；问卷入口页：https://mitathletics.com/sports/2021/4/20/information-Recruiting-Team-Recruitment-Forms.aspx",
+        "process": "官网流程：①前往 MIT Athletics 招募页填交对应项目（赛艇按 Heavyweight / Lightweight / Openweight 分项目）的招募问卷（Recruiting Questionnaire），问卷信息直接发送给主教练；②通过 MIT Athletics Staff Directory 找到该项目教练，发邮件表达兴趣；③亦可参加 MIT Youth Rowing Camp。MIT官网另说明官方访问(official visit)规定：不得早于高三开课第一天，官方访问不超过48小时；教练可就邮件/电话/短信联系PSA，但高三结束前不得在校外与PSA及家长见面。注：女子赛艇有额外 NCAA Eligibility Center 要求（官方访问及参赛需认证）；男子赛艇（heavyweight/lightweight）官网页面未见同等申报要求。",
+        "coach_contact": "男子赛艇（男子 Heavyweight Crew）：主教练 Evan Thews-Wassell，etw@mit.edu，617-253-7986；助理教练/招募协调员 Hannah Woodruff，hwoodruf@mit.edu。男子轻量级赛艇（Men’s Lightweight Crew）：Will Oliver-Milchman，H.W. McCurdy '22 Director of Rowing 兼 Gerrit Zwart '62 男子轻量级主教练，w_oliver@mit.edu，617-253-9676；助理教练 Erika Sloan，easloan@mit.edu。注意：上述以官网 Staff Directory（按运动队分类）为准；官网项目子页 sports/mcrewhvy/coaches 仍列 Tony Kilbridge 为 Director of Rowing/Head Coach（coachk@mit.edu），与 Staff Directory 及2026-06-26官方新闻（Will Oliver-Milchman 任 Director of MIT Rowing、Evan Thews-Wassell 升任 heavyweight 主教练，2026-08-03生效）不一致，疑为子页未更新。",
+        "questionnaire_url": "男子 Heavyweight Crew：https://questionnaires.armssoftware.com/c9ba4bdab612 ；男子 Lightweight Crew：https://questionnaires.armssoftware.com/f4f483308fb8 （女子 Openweight：https://questionnaires.armssoftware.com/0722984dffc2 ；女子 Lightweight：https://questionnaires.armssoftware.com/5ce01e1b10b4）。均为官网 Team Recruitment Forms 页所列链接（Teamworks Compliance + Recruiting 平台，HTTP 200 可访问）。",
+        "source": "https://mitathletics.com/staff-directory （教练/邮箱）；https://mitathletics.com/sports/2021/4/20/information-Recruiting-Team-Recruitment-Forms.aspx （问卷链接）；https://mitathletics.com/sports/2021/4/21/information-Compliance-DIII-PSA.aspx （官方访问/联系规定）"
+      },
+      "unverified": [
+        "rowing_recruiting.coach_contact：官网存在两处不一致（Staff Directory vs 项目子页 coaches），已按 Staff Directory + 官方新闻取最新值并标注，未作为唯一来源确认",
+        "（补充说明）MIT 男子赛艇（heavyweight/lightweight）未见官网单独发布的‘赛艇专项招募流程/标准’长文页；上述流程来自 MIT Athletics 通用招募页与赛艇项目问卷页，均为官网"
+      ]
+    },
+    {
+      "school": "Stanford",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "本科申请不要求任何英语能力考试。官网原文：‘No, we do not require any English proficiency exams.’ 申请人可自愿自报任何英语考试成绩；若母语非英语和/或中学授课语言非英语，通常会被收到英语考试成绩。官网强调：英语流利是录取前提（fluency in English is a prerequisite for admission）。官网未公布本科TOEFL/IELTS最低分。",
+        "sat_act": "ACT或SAT必须提交（自2026年秋季入学申请季起恢复标化要求：‘beginning with the Fall 2026 entry term’）。可自报分数，录取并入学后需官方送分。无最低分、无保证录取分。Class of 2029（该届标化为可选）中间50%：ACT 34–36；SAT 1520–1570。接受ACT Superscore与SAT拼分。AP成绩（若考过）须全部自报。英式学制申请者须由学校官方提供GCSE成绩与预测A-Level成绩，一般至少三门完整A-Level课程。",
+        "source": "https://admission.stanford.edu/apply/first-year/testing.html ；https://admission.stanford.edu/apply/international/index.html"
+      },
+      "deadlines": {
+        "cycle": "2026–2027 cycle（对应2027年秋季入学；官网页面最近更新2026-09-10；页面未显式标注申请季年份）",
+        "ED": "无（斯坦福不设Early Decision，仅Restrictive Early Action）",
+        "EA": "Restrictive Early Action (REA)：Common App截止 11月1日（若含Optional Arts Portfolio则截止10月15日）；决定约12月中旬公布。注：REA限制——不得同时申请其他私立美校的EA/REA/ED/Early Notification，也不得申请公立校的绑定式早申（如ED）；官网明确不能同时申请 Stanford REA 与 MIT EA。",
+        "RD": "Regular Decision (RD)：Common App截止 1月5日（若含Optional Arts Portfolio则截止12月5日）；决定约次年4月初公布。入学回复截止：5月1日",
+        "source": "https://admission.stanford.edu/apply/first-year/ ；https://admission.stanford.edu/apply/first-year/decision_process.html"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "Short Questions(每题3–50词)：What is the most significant challenge that society faces today?",
+          "Short Questions：How did you spend your last two summers?",
+          "Short Questions：What historical moment or event do you wish you could have witnessed?",
+          "Short Questions：Briefly elaborate on one of your extracurricular activities, a job you hold, or responsibilities you have for your family.",
+          "Short Questions：List five things that are important to you.",
+          "Short Essays(100–250词)：The Stanford community is deeply curious and driven to learn in and out of the classroom. Reflect on an idea or experience that makes you genuinely excited about learning.",
+          "Short Essays(100–250词)：Virtually all of Stanford's undergraduates live on campus. Write a note to your future roommate that reveals something about you or that will help your roommate—and us—get to know you better.",
+          "Short Essays(100–250词)：Please describe what aspects of your life experiences, interests, and character would help you make a distinctive contribution as an undergraduate to Stanford University."
+        ],
+        "word_limit": "Short Questions每题3词最低、50词上限（5题）；Short Essays每题100词最低、250词上限（3题）。另需Common App主文书（personal essay）。Stanford Questions通过Common App提交。",
+        "source": "https://admission.stanford.edu/apply/first-year/apply.html"
+      },
+      "rowing_recruiting": {
+        "official_page": "https://gostanford.com/sports/mens-rowing （Stanford男子赛艇官方页，含 ‘Questionnaire’ 与 ‘Contact’ 招募入口）；女子赛艇招募信息页：https://gostanford.com/news/2020/8/27/recruit-info ；通用PSA问卷汇总页：https://gostanford.com/news/2013/4/17/prospective-student-athlete-questionnaire",
+        "process": "男子赛艇：在官方 Men’s Rowing 页面点击 Questionnaire 填交在线招募问卷，并可邮件联系教练补充材料。女子赛艇官网公布的招募步骤（Recruit Info 页）：①填写在线招募问卷；②邮件联系主教练及助理教练，可附划船视频、测功仪(erging)视频、非正式成绩单与标化成绩；③在 NCAA Clearinghouse 注册。官网 NCAA 规则提示：高三/高二暑假的6月15日至8月1日之间教练可电话/邮件联系PSA但不得当面接触、不允许访问；8月1日之后允许官方/非官方访问、可当面接触。",
+        "coach_contact": "男子赛艇：Ted Sobolewski，Farwell Family Director of Men’s Rowing，tsobolew@stanford.edu；Niles Garratt，Alben Family Assistant Men’s Rowing Coach，nilesg@stanford.edu，650.850.2551；John Pojednic，Assistant Coach，pojednic@stanford.edu。女子赛艇（供参考）：Derek Byrnes，Farwell Family Director of Women’s Rowing，dbyrnes@stanford.edu，510.219.4180；Molly Hamrick，Associate Head Coach，mhamrick@stanford.edu。",
+        "questionnaire_url": "男子赛艇：https://questionnaires.armssoftware.com/9d1cbf01410d ；女子赛艇：https://questionnaires.armssoftware.com/fdbdb01d679a （均为 gostanford.com 官方页所列链接，Teamworks Compliance + Recruiting 平台，HTTP 200 可访问）",
+        "source": "https://gostanford.com/staff-directory/department/mens-rowing （教练/邮箱）；https://gostanford.com/sports/mens-rowing （问卷/联系入口）；https://gostanford.com/news/2020/8/27/recruit-info （女子赛艇招募流程与NCAA规则）"
+      },
+      "unverified": [
+        "deadlines.cycle：官网页面未显式标注申请季年份，仅依据页面更新时间(2026-09-10)与内容推断为2026–2027 cycle",
+        "test_policy.toefl：斯坦福本科官网未公布TOEFL/IELTS最低分（明确‘不要求英语能力考试’），故无可核实的本科最低分",
+        "rowing_recruiting.process：男子赛艇无独立长文招募流程页，流程取自官方页面的 Questionnaire/Contact 入口；较完整的步骤描述来自女子赛艇 Recruit Info 页"
+      ]
+    }
+  ]
+}
