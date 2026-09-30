@@ -1,0 +1,241 @@
+{
+  "school": "MIT",
+  "cycle_note": "官方数据以 Class of 2029（2025秋入学）为主；文书题目为官方公布的 2026-2027 申请季。",
+  "official": [
+    {
+      "dimension": "1-学术硬指标-标化",
+      "finding": "MIT 要求所有本科新生与转学申请者提交 SAT 或 ACT（2022年恢复强制，取消 test-optional）。不设最低分或推荐分，'no cutoff or recommended scores'，分数在申请者个人背景(context)中评估。接受 superscore。可自报分数，入学时核验。ACT写作/科学、SAT可选作文不要求。",
+      "source": "https://mitadmissions.org/apply/firstyear/tests-scores/"
+    },
+    {
+      "dimension": "1-学术硬指标-标化区间",
+      "finding": "Class of 2029 录取学生中间50%区间：SAT Math [780,800]、SAT ERW [740,780]、ACT Math [34,36]、ACT Composite [34,36]。此为录取结果的统计，不是录取门槛。",
+      "source": "https://mitadmissions.org/apply/process/stats/"
+    },
+    {
+      "dimension": "1-学术硬指标-课程难度",
+      "finding": "官方不要求 AP/IB/高阶课作为硬性条件。评估三大类课程：①数学（含微积分，MIT所有学生必修18.01单变量+18.02多变量微积分）②科学（物理/化学/生物）③有挑战性的人文艺术社科课程。官方原文强调'context'：若学校不开设AP，不能因此要求申请人修AP。",
+      "source": "https://mitadmissions.org/apply/prepare/foundations/"
+    },
+    {
+      "dimension": "1-学术硬指标-GPA",
+      "finding": "无GPA门槛。官方称'we are not looking for perfection'，少量B不影响；但多门数学/科学课拿B'won't help your case'（不直接取消资格）。成绩在个人背景中评估。",
+      "source": "https://mitadmissions.org/blogs/entry/june_questions_omnibus_1/"
+    },
+    {
+      "dimension": "1-学术硬指标-录取率与班型",
+      "finding": "Class of 2029：29,281人申请，1,334人录取（4.6%），1,155人入学。国际生：6,926人申请，136人录取（约2.0%）。美国公民/绿卡：22,355申请，1,198录取。EA 12,052申请/721录取；RA录取含deferred共603；候补561人/录取10人。",
+      "source": "https://mitadmissions.org/apply/process/stats/"
+    },
+    {
+      "dimension": "1-学术硬指标-班级画像",
+      "finding": "Class of 2029：US公民/绿卡89%，国际生11%（56国）；男性52%/女性48%；68%公立高中；20%第一代大学生；27% Pell 资格；45% 免学费（家庭收入<20万美元）。",
+      "source": "https://mitadmissions.org/apply/process/profile/"
+    },
+    {
+      "dimension": "2-科创偏好-理论vs实践",
+      "finding": "官方将'Hands-on creativity（动手创造）'列为选拔关键要素之一。原文：'MIT is an active, hands-on place... you shouldn't just enjoy thinking about problems, you should be excited about doing something to help solve them.' 校训 Mens et Manus = Mind and Hand（手脑并用）。即理论与动手两条线都被官方认可，但'动手/做出东西'被明确点名。",
+      "source": "https://mitadmissions.org/apply/process/what-we-look-for/"
+    },
+    {
+      "dimension": "2-科创偏好-Maker Portfolio",
+      "finding": "MIT提供可选 Maker Portfolio（经 SlideRoom 提交），由 MIT 工程顾问委员会/教职与校友审阅。要求是'自己的设计、实质、原创、技术上有创意'的工程项目或手作；'更看重你的制作过程(build process)而非最终结果'；代码项目必须附代码库+可运行的演示；视频总计不超过2分钟。官方强调 portfolio 完全可选。",
+      "source": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/"
+    },
+    {
+      "dimension": "2-科创偏好-科研是否必须",
+      "finding": "官方明确：科研不是录取必需。'You do not have to have done research in high school to be admitted to MIT.' 直接反驳'没有科研/没听过ISEF、RSI、USAMO就没戏'的说法。官方看重的是 initiative、passion、社区影响、对学习与创造的兴奋。",
+      "source": "https://mitadmissions.org/blogs/entry/june_questions_omnibus_1/"
+    },
+    {
+      "dimension": "2-科创偏好-AO原话",
+      "finding": "招生办主任 Stu Schmill 谈 Maker Portfolio：'The hands-on learning that students participate in is central to the MIT experience... 我们想让学生展示他们的才能'；并称评估时看重 motivations、resourcefulness、collaboration、communication、willingness to take risk。",
+      "source": "https://slideroom.com/reimagining-college-access-with-slideroom-portfolios"
+    },
+    {
+      "dimension": "3-软技能与价值观",
+      "finding": "官方选拔关键要素（What we look for）：①Alignment with MIT's mission（用科技让世界更好）②Collaborative and cooperative spirit（协作精神；提到若'enjoy working alone all the time'可能不适合MIT）③Initiative（主动性）④Risk-taking（敢冒险、不怕失败）⑤Hands-on creativity ⑥Intensity, curiosity, and excitement（质量优于数量）⑦Ability to prioritize balance（会平衡工作与休息）。",
+      "source": "https://mitadmissions.org/apply/process/what-we-look-for/"
+    },
+    {
+      "dimension": "3-软技能与价值观-官方清单",
+      "finding": "MIT Facts 官方对'选拔依据'的表述：学术成就 + 与学校的匹配，包括：Alignment with mission、Collaborative and cooperative spirit、Initiative、Risk taking、Hands-on creativity、Intensity/curiosity/excitement、Balancing hard work with downtime。'不设学校/州/地区配额''不consider legacy/alumni relations'。",
+      "source": "https://facts.mit.edu/undergraduate-admissions"
+    },
+    {
+      "dimension": "3-软技能与价值观-社区影响定义",
+      "finding": "官方原文：'we're not looking for applicants to have cured all infectious diseases by the time they're 15. Tutoring a single kid in math changes the world. Advocating for change when something doesn't seem fair changes the world.' 即社区影响的门槛可以很小但真实。",
+      "source": "https://mitadmissions.org/apply/process/what-we-look-for/"
+    },
+    {
+      "dimension": "4-文书-当前官方题目",
+      "finding": "2026-2027申请季官方4道短文（每道约100-200词）：①最有兴趣的领域及你为何对此感兴趣（下拉选择+反思）②'另辟蹊径'：你在教育旅程中做过哪些与预期不同的事③你的个人与学业经历如何影响你想用MIT教育解决的问题类型及对社区的影响④你如何应对一个没预料到的情境/挑战，学到了什么。另有1个开放式 additional-information 文本框。",
+      "source": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/"
+    },
+    {
+      "dimension": "4-文书-短答与活动",
+      "finding": "另有4道40-50词短答：①只为乐趣做什么②你敬佩的一个人及原因③能聊上几个小时的话题（学术或非学术）④MIT同时看重generalists与specialists，你更接近哪种及原因。活动部分只有4个名额，要求用官方表格而非简历，选最重要的4项。",
+      "source": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/"
+    },
+    {
+      "dimension": "4-文书-官方态度",
+      "finding": "官方原文：'this is not a writing test. Be honest, be open, be authentic.' 并警告'over-strategizing about what makes you look best'是错误做法。申请结构是多个短答而非一篇长文书。",
+      "source": "https://mitadmissions.org/apply/firstyear/essays-activities-academics/"
+    },
+    {
+      "dimension": "4-面试-EC interview",
+      "finding": "由 MIT Educational Council（3,500+ MIT校友志愿者）进行，尽量线下、也可线上。EA面试多在11月、RA多在1月。通常约1小时（30分钟-2小时）。'若不提供面试则waived，不会对申请不利'。非正式场合，无需正装，'be yourself'。",
+      "source": "https://mitadmissions.org/apply/firstyear/interview/"
+    },
+    {
+      "dimension": "5-潜规则-legacy",
+      "finding": "官方明确'MIT doesn't consider legacy or alumni relations'。主任 Schmill 专文说明：2004-2008年CDS曾'错误'标注MIT有legacy偏好，实际至少半个世纪从未有过。",
+      "source": "https://mitadmissions.org/blogs/entry/just-to-be-clear-we-dont-do-legacy"
+    },
+    {
+      "dimension": "5-潜规则-录取机制",
+      "finding": "学生中心制，不按学校/地区横向比较，无学校/州/地区配额；'you are not at any disadvantage if other excellent students from your school are also applying'。每份档案由资深招生官整体(context)阅读，再由多名招生官评估、委员会集体讨论（至少12人参与一份档案）。",
+      "source": "https://mitadmissions.org/apply/process/"
+    },
+    {
+      "dimension": "6-体育-官方定位",
+      "finding": "MIT是NCAA Division III（全国最大D3项目，33个校队），但划船/赛艇(crew/rowing)是唯一按Division I参赛的项目；水球/帆船/田径/击剑等常年对阵D1对手。官网招聘岗位亦称'four Division I rowing programs'。约20%本科生参加至少一项校队。",
+      "source": "https://catalog.mit.edu/mit/campus-life/athletics"
+    },
+    {
+      "dimension": "6-体育-招募规则",
+      "finding": "官方：MIT不设运动员'名额(slots)'，不发'likely letters'，不做'signings'；教练可能为学生'advocate/写支持信'，招生办独立决定。所有运动员走同样严格的学术导向流程。所有资助need-based，无运动奖学金或任何merit奖学金。录取通知不绑定，5月1日前决定。",
+      "source": "https://mitadmissions.org/help/faq/does-mit-recruit-athletes"
+    },
+    {
+      "dimension": "6-体育-官方招募信",
+      "finding": "MIT官方 'Prospective MIT Student Athletes' 信（署 Dean Stu Schmill，邮箱 stucrew@mit.edu）逐条重申：招生委员会认可运动员的commitment/dedication/work ethic，但'no slots'、'只能录取学术与个人都强fit的运动员'、'无运动/merit奖学金、aid全按需'、'offer不绑定'。",
+      "source": "https://web.mit.edu/athletics/www/acs/Athletics_Admissions_Recruiting_Letter.pdf"
+    }
+  ],
+  "inferred": [
+    {
+      "dimension": "2-科创偏好-实践信号权重",
+      "finding": "'做出真实的东西'（项目、开源、原型、有用户的系统）在MIT申请中是可展示、可被教职/校友审阅的加分项（因为有专门的Maker Portfolio通道与'手脑并用'官方价值观），而纯理论/竞赛paper类成就则主要通过Research Portfolio与活动栏体现。两者都有效，但'动手创造'有专属评估通道。",
+      "basis": "官方 Maker/Research Portfolio 页面 + What we look for 中 hands-on creativity 条目综合推断",
+      "confidence": "中"
+    },
+    {
+      "dimension": "2-科创偏好-顶尖科研竞赛的实际影响",
+      "finding": "第三方顾问普遍认为 ISEF、Regeneron STS、RSI、USAMO/IMO、USACO 等国家级/国际级科研与竞赛成果，在MIT已高度同质化的申请池中'是区分录取与被拒的关键'。但官方明确否认其必要性——属'显著差异项'而非'基线门槛'。",
+      "basis": "Crimson Education 等第三方升学机构分析 + 官方反驳文对照",
+      "confidence": "中"
+    },
+    {
+      "dimension": "5-潜规则-录取者常见画像",
+      "finding": "从官方Class Profile反推：录取者多为公立高中(68%)背景、学业顶尖（SAT数学780-800）、且在某一领域有'深度'（spike）证据（竞赛/科研/动手项目/创业/社区影响之一）。国际生池极小(约2%)且竞争更激烈，通常需要更强的外部验证性成就。",
+      "basis": "官方 Class of 2029 profile/stats 数据 + 第三方对国际生池的描述",
+      "confidence": "中"
+    },
+    {
+      "dimension": "5-潜规则-地区阅读制度与'plus one'",
+      "finding": "第三方称MIT按地域(territory)分配招生官、招生官对辖区学校课程/评分体系熟悉，大奖项在档案首页即被看到；并存在极少量'plus one'评级给'文化契合度极高'的申请人。该机制细节官方未完整公开。",
+      "basis": "Crimson Education / 第三方招生分析（销售导向，需谨慎）",
+      "confidence": "低"
+    },
+    {
+      "dimension": "6-体育-赛艇对录取的实际增益",
+      "finding": "第三方与社群估计：有教练支持的recruited athlete录取率约25%-50%（对比整体4.6%、无hook约2.5-3%），即约5-10倍增益；但范围宽、不确定性大，因MIT无正式slot制度。划船(rowing)因是唯一D1项目，招募通道相对最结构化。",
+      "basis": "college-monte-carlo.com 与 Reddit r/Rowing 社群经验数据（均非官方，且部分年份较早）",
+      "confidence": "低"
+    },
+    {
+      "dimension": "6-体育-赛艇招募标准与walk-on",
+      "finding": "社群经验：男子重量级赛艇招募参考标准约为2k erg <6:40、SAT 2100+(旧制)/ACT 32+、修高阶数理课程；轻量级约需入校时潜力达sub-6:50。MIT赛艇walk-on文化很强，很多人是入学后才学划船；无教练advocacy的'会运动'本身不构成实质hook。",
+      "basis": "Reddit r/Rowing 帖子（约2016年，标准与分数制式已过时）+ readyallrow.org 教练访谈",
+      "confidence": "低"
+    }
+  ],
+  "docs": {
+    "supplements": [
+      {"prompt": "What field of study appeals to you the most right now? Reflect on what has led you to this interest.", "limit": "约100-200 words"},
+      {"prompt": "While some reach their goals following well-trodden paths, others blaze their own trails achieving the unexpected. In what ways have you done something different than what was expected in your educational journey?", "limit": "约100-200 words"},
+      {"prompt": "How have your personal and academic experiences influenced the types of problems you would want to tackle with an MIT education and the impact you aim to make on your community?", "limit": "约100-200 words"},
+      {"prompt": "How did you manage a situation or challenge that you didn't expect? What did you learn from it?", "limit": "约100-200 words"},
+      {"prompt": "Short answers: (a) What do you do just for fun? (b) Someone you admire, and why. (c) A topic you could talk about for hours. (d) MIT values both generalists and specialists — which best describes you, and why.", "limit": "每道40-50 words"},
+      {"prompt": "Open-ended additional-information text box (optional).", "limit": "开放字数"},
+      {"prompt": "Activities: list only FOUR activities via the official form (not a resume).", "limit": "4项"}
+    ],
+    "interview": "由 MIT Educational Council 的3,500+校友志愿者面试；EA多为11月、RA多为1月；约1小时（30分钟-2小时）。尽量线下、可线上。若未获面试则waived，不影响申请。非正式，无需正装，be yourself。"
+  },
+  "myths": [
+    {
+      "claim": "父母是MIT校友(legacy)会加分",
+      "reality": "MIT明确不consider legacy/alumni relations；2004-2008年CDS的legacy标注是错误，至少半个世纪无此偏好。",
+      "source": "https://mitadmissions.org/blogs/entry/just-to-be-clear-we-dont-do-legacy"
+    },
+    {
+      "claim": "必须有科研经历/进过ISEF、RSI、USAMO才有机会",
+      "reality": "官方：'You do not have to have done research in high school to be admitted to MIT.' 科研不是必需项。",
+      "source": "https://mitadmissions.org/blogs/entry/june_questions_omnibus_1/"
+    },
+    {
+      "claim": "必须修满AP/IB等高阶课",
+      "reality": "官方按context评估；若学校无法提供AP，不因此惩罚申请人。无必修课硬清单，只给'推荐'范围。",
+      "source": "https://mitadmissions.org/blogs/entry/june_questions_omnibus_1/"
+    },
+    {
+      "claim": "做出惊天成就（如自制核反应堆）就一定能进MIT",
+      "reality": "官方博文'Applying Sideways'：'There is nothing, literally nothing, that in and of itself will get you in to MIT.' 并举例当年那个造出功能核反应堆的学生并未被录取；没有'golden ticket'。",
+      "source": "https://mitadmissions.org/blogs/entry/applying_sideways/"
+    },
+    {
+      "claim": "标化必须满分/SAT必须有门槛分",
+      "reality": "官方不设最低分或推荐分，分数在context中评估；'we admit people, not numbers'。中间50%区间只是录取结果的统计，非门槛。",
+      "source": "https://mitadmissions.org/apply/process/stats/"
+    },
+    {
+      "claim": "MIT只看理工，不看文科/人文",
+      "reality": "所有本科生须修 HASS（人文、艺术、社科）要求与 Communication Requirement；文书题目明确以'为什么想用MIT教育解决某问题'考察广度和动机。",
+      "source": "https://mitadmissions.org/apply/prepare/foundations/"
+    },
+    {
+      "claim": "运动员有录取'名额'或运动奖学金",
+      "reality": "官方：无slots、无likely letters、无signings、无运动/merit奖学金；教练只能advocate，招生办独立决定；所有资助need-based。",
+      "source": "https://mitadmissions.org/help/faq/does-mit-recruit-athletes"
+    }
+  ],
+  "rowing_vs_admissions": {
+    "level": "Division I（MIT整体为NCAA Division III，赛艇/crew是唯一按D1参赛的项目）",
+    "impact": "赛艇属MIT招募最结构化的项目之一；但无'名额'、无运动奖学金，教练最多写支持信advocate，招生办独立决定，运动员走与所有人相同的学术导向流程。第三方估计有教练支持的recruit录取率约25-50%（非官方）。赛艇walk-on文化强，许多人入学后才学划船。",
+    "source": "https://catalog.mit.edu/mit/campus-life/athletics ; https://mitadmissions.org/help/faq/does-mit-recruit-athletes ; https://web.mit.edu/athletics/www/acs/Athletics_Admissions_Recruiting_Letter.pdf"
+  },
+  "sources": [
+    "https://mitadmissions.org/apply/firstyear/tests-scores/",
+    "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+    "https://mitadmissions.org/apply/process/stats/",
+    "https://mitadmissions.org/apply/process/profile/",
+    "https://mitadmissions.org/apply/process/what-we-look-for/",
+    "https://mitadmissions.org/apply/process/",
+    "https://mitadmissions.org/apply/prepare/foundations/",
+    "https://mitadmissions.org/apply/firstyear/essays-activities-academics/",
+    "https://mitadmissions.org/apply/firstyear/interview/",
+    "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/",
+    "https://mitadmissions.org/help/faq/maker-portfolio-slideroom/",
+    "https://mitadmissions.org/blogs/entry/faq-for-maker-portfolios/",
+    "https://mitadmissions.org/blogs/entry/applying_sideways/",
+    "https://mitadmissions.org/blogs/entry/june_questions_omnibus_1/",
+    "https://mitadmissions.org/blogs/entry/we-are-reinstating-our-sat-act-requirement-for-future-admissions-cycles/",
+    "https://mitadmissions.org/blogs/entry/just-to-be-clear-we-dont-do-legacy",
+    "https://mitadmissions.org/help/faq/legacy",
+    "https://mitadmissions.org/help/faq/does-mit-recruit-athletes",
+    "https://facts.mit.edu/undergraduate-admissions",
+    "https://web.mit.edu/athletics/www/acs/Athletics_Admissions_Recruiting_Letter.pdf",
+    "https://catalog.mit.edu/mit/campus-life/athletics",
+    "https://slideroom.com/reimagining-college-access-with-slideroom-portfolios",
+    "https://crimsoneducation.org/us/how-to-get-into/mit/admissions",
+    "https://college-monte-carlo.com/research2/mit_athletic_hooks.html",
+    "https://reddit.com/r/Rowing/comments/5n9hak/mit_recruiting"
+  ],
+  "unverified": [
+    "MIT从未官方公布 recruited athlete 的录取率（25-50%等均为第三方/社群估计）",
+    "赛艇招募的具体体能门槛（2k erg 6:40/sub-6:50）与SAT/ACT线，来源为约2016年Reddit帖与教练访谈，非官方且已过时",
+    "'plus one' 评级、地域阅读制度细节，仅见于第三方升学机构，官方未完整公开",
+    "官方未公布逐年录取者的竞赛/科研背景分布，因此'录取者常见画像'只能从班级统计与第三方观察推断"
+  ]
+}

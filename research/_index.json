@@ -132,6 +132,32 @@
           "2km 外推应给区间 7:00-7:15"
         ]
       }
+    },
+    {
+      "id": "2026-09-30-mit-stanford-deep-profile",
+      "title": "MIT/斯坦福 深度画像与潜规则（官方/推断/迷思三分）",
+      "date": "2026-09-30",
+      "type": "school-preference-research",
+      "file": "2026-09-30_MIT斯坦福深度画像与潜规则.md",
+      "sources": [
+        "mit.edu / mitadmissions.org 官方",
+        "stanford.edu / admission.stanford.edu 官方",
+        "Society for Science（STS/ISEF 资格）",
+        "第三方 CDS 转述（标注）"
+      ],
+      "key_findings": [
+        "MIT 官方区间：SAT Math 780-800 / ERW 740-780；ACT 34-36；国际生录取率≈2%（136/6926）",
+        "Stanford SAT 1510-1570（推断）；CDS 平均 GPA 3.94、98% 年级前 10%；重点看 10/11 年级",
+        "科创：MIT 设 Research + Maker 双 Portfolio（官方）；Stanford 核心是 Intellectual Vitality —— 官方无'实践>理论'表述",
+        "迷思澄清：legacy/必须科研/必须AP/满分必录/运动奖学金/刷访校 均被官方否认",
+        "赛艇：两校均无运动奖学金、非录取捷径（MIT 教练仅支持信；Stanford '本身绝不保证录取'）",
+        "文书：MIT 仅 4 项活动 + 8 道短答；Stanford 8 道必答、无 Why Stanford"
+      ],
+      "reusable_for_offerpath": [
+        "两校偏好画像（可作评估引擎的 school-fit 维度）",
+        "迷思清单（可用于内容/舆情）",
+        "官方分数区间（rankings/admissions 表可对账）"
+      ]
     }
   ]
 }
