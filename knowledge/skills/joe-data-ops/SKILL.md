@@ -88,6 +88,37 @@ GIT_SSH_COMMAND="ssh -i /root/.ssh/id_ed25519_github -o IdentitiesOnly=yes" git 
 ```
 若未来 config 恢复正常（不再报 corinwe denied），此步可省略——以报错为触发条件，不是永久规则。
 
+## 🌐 发布与线上验证（joe-growth 站点）
+
+- **双分支**：站点由 **gh-pages** 提供。每次推送后核对 `git diff origin/main origin/gh-pages --stat`
+  输出为空 —— **只推 main 线上看不到**（历史多次踩过）。
+- **`.nojekyll` 必须存在于仓库根**：否则 Jekyll 忽略下划线开头文件（如 `research/_index.json`）→ 线上 404。
+- **验证要等**：推送后 live URL 需 **~40–90 秒**重建；刚推完的 404 是重建延迟，**不是失败**。
+  复测用缓存破坏参数 `?v=$(date +%s)`；非 ASCII 路径先 URL-encode（`urllib.parse.quote`）。
+- 说"已推送"前给证据：**分支差异 0 + 目标 URL 逐个 HTTP 200**，不能只给 commit 号。
+
+## 🔒 私有备份目的地（知识库）
+
+全量备份推**私有** KB 仓库（`08-个人成长/少爷/`）；公开仓库只放**脱敏层**（STATE 快照 + 技能副本）。
+- **选择性 add**：`git add "08-个人成长/少爷"`，**绝不 `git add -A`** —— 该仓库同时被其他 agent 推送，
+  全局 add 会把别人的未提交改动一起卷进你的提交。
+- **推送前先 rebase**：`git pull --rebase origin main` 再 push（远端常有新提交，直接 push 被拒）。
+- **验证落盘**：`git ls-remote origin main` 的哈希 == 本地 `HEAD` 才叫"已推送"。
+- **公开层脱敏自检**：写公开仓库前扫一遍 token/手机号/邮箱/chatID，命中数必须为 0。
+- **不打印凭据值**：列远端一律脱敏 `git remote -v | sed -E 's#(https://)[^@]*@#\1<凭据已隐去>@#'`；
+  配置文件只读键名（`grep -oE '^[A-Z_]+=' .env`），绝不用 `cat` 整段输出。
+
+## ✏️ 全局纠正（改名/改口径）
+
+用户纠正名称或口径后：**全库 grep → 替换 → 复核残留计数**（STATE + 两个 repo 的档案/日志/账本/站点），
+并在台账里**只保留恰好一处**更正说明（写明"原记录 X 已全库更正"），其余残留必须为 0。
+
+## 🧩 脚本化改写 markdown 的两个固定坑
+
+- Python 拼表格行时写 `"…|\\n| 2026-…"` 会写出**字面量 `\n`**（不是换行）→ 两行粘成一行。用真实换行符。
+- `patch` 的 old_string 只锚定**行首片段**时，会留下原行的尾段（表格行被撑成两行）→ **锚定整行**；
+  脚本化改写后校验：目标行数、`|` 列数、残留计数。
+
 ## 完成标准
 
 ✅ STATE.md 读回确认 + growth_index 验证 PASS + `git status` 干净 + push 成功（`main -> main` 输出）
