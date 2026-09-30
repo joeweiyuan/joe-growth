@@ -1,0 +1,65 @@
+{
+  "archive": "joe-research-archive",
+  "version": "1.0",
+  "updated": "2026-09-30",
+  "purpose": "每次研究/分析归档归纳，供 OfferPath 参考复用",
+  "entries": [
+    {
+      "id": "2026-09-30-offerpath-survey",
+      "title": "OfferPath 数据库勘察：哪些数据可用于 Joe 升学",
+      "date": "2026-09-30",
+      "type": "data-survey",
+      "file": "2026-09-30_OfferPath数据勘察.md",
+      "sources": [
+        "PostgreSQL offerpath（本地，只读）"
+      ],
+      "key_findings": [
+        "admissions 405 行（2020-2026）；2026 年覆盖 124 校、中国录取 7,464",
+        "⚠️ 51/405 行为 estimated/projected_estimate（须带 confidence）",
+        "本地 universities/high_schools/admission_schools 为 0 行（生产数据不在此）",
+        "evaluations 字段 = 评估引擎输入形状（grade/gpa/toefl四单项/sat/act/ap/activities/target_major）",
+        "⚠️ 口径冲突：引擎 toefl 为 0-120 制，Joe 为六分制 4.0/6，需映射"
+      ],
+      "reusable_for_offerpath": [
+        "目标校中国录取趋势",
+        "中英校名对照",
+        "评估输入字段映射",
+        "数据质量规范（来源+置信度）"
+      ]
+    },
+    {
+      "id": "2026-09-30-school-verification",
+      "title": "逐校官方核实（MIT/Stanford/8藤校）：标化·DDL·文书·赛艇招募",
+      "date": "2026-09-30",
+      "type": "official-verification",
+      "status": "in-progress",
+      "file": "2026-09-30_逐校官方核实.md",
+      "sources": [
+        "各校招生官网 + 官方 athletics（逐字段附 URL）"
+      ],
+      "reusable_for_offerpath": [
+        "universities.admission_info 结构化填充"
+      ]
+    },
+    {
+      "id": "2026-09-30-toefl-score-analysis",
+      "title": "托福成绩分析：MyBest 4.0/6（8/22首考 + 8/30二战）",
+      "date": "2026-09-30",
+      "type": "assessment-analysis",
+      "file": "2026-09-30_托福成绩分析.md",
+      "sources": [
+        "MyBest 成绩单截图",
+        "8/19 模考双口径"
+      ],
+      "key_findings": [
+        "阅读4.0(8/22)·听力5.0·口语4.5·写作3.0(8/30)，总分4.0/6，CEFR B2",
+        "写作 3.0 = 最大短板（模考老师4/机评1.5 的压分风险印证）",
+        "听力超预期（模考4.5→实考5.0）"
+      ],
+      "reusable_for_offerpath": [
+        "标化口径映射（六分制↔CEFR↔120）",
+        "评估输入 toefl 四单项"
+      ]
+    }
+  ]
+}
