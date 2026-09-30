@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "task": "验证'标化占70-80% + 科创/体育/艺术占20-30%'假设是否成立",
+    "date": "2026-09-30",
+    "method": "只读公开官方来源（mitadmissions.org / admission.stanford.edu / ir.mit.edu / irds.stanford.edu / NACAC State of College Admission），未联系任何机构"
+  },
+  "mit_review": {
+    "dimensions": [
+      "Alignment with MIT's mission",
+      "Collaborative and cooperative spirit",
+      "Initiative",
+      "Risk-taking",
+      "Hands-on creativity",
+      "Intensity, curiosity, and excitement",
+      "The ability to prioritize balance",
+      "The character of the MIT community"
+    ],
+    "two_part_structure": "官方 What we look for 页面并非按 academic / personal 两大桶并列，而是列出上述 8 项特质；仅在 CDS C7 表格层面区分 Academic / Nonacademic，且 AO 口述（Chris Peterson）确实用 academic baseline + non-cognitive indicators 两段式描述。",
+    "weight_statements": [
+      {
+        "quote_or_paraphrase": "Ask any admissions officer at MIT, and they will tell you that while grades and scores are important in understanding your academic preparedness for MIT, it's really the match between the applicant and the Institute that drives our selection process.",
+        "source": "https://mitadmissions.org/apply/process/what-we-look-for/"
+      },
+      {
+        "quote_or_paraphrase": "We don't expect applicants to do a million things. Choose quality over quantity. Put your heart into a few things that you truly care about right now.",
+        "source": "https://mitadmissions.org/apply/process/what-we-look-for/"
+      },
+      {
+        "quote_or_paraphrase": "Once your application is complete, it will first be read by a senior admissions officer... Strong applications will then be evaluated by additional admissions officers... These summaries... go to the selection committee... At least a dozen people will significantly discuss and debate an application before it is placed in the admit pile. 全流程至少 5 个独立评审阶段。",
+        "source": "https://mitadmissions.org/apply/process/selection/"
+      },
+      {
+        "quote_or_paraphrase": "MIT CDS C7（2024-25 与 2025-26 官方 ir.mit.edu）：唯一评为 Very Important 的非学术项是 Character/personal qualities；Rigor、GPA、Standardized test scores、Essay、Recommendation、Extracurricular activities、Talent/ability、Interview 均评为 Important。没有任何百分比/权重数字。",
+        "source": "https://ir.mit.edu/projects/2025-26-common-data-set/"
+      }
+    ],
+    "spike_vs_wellrounded": "MIT 明确偏好深度而非广撒网（Choose quality over quantity，把心力投在少数真正在意的事上），但从不使用权重百分比语言；官方博客反复强调没有公式（There Is No Formula）。"
+  },
+  "stanford_review": {
+    "cds_c7": [
+      {"item": "Rigor of secondary school record", "rating": "Very Important"},
+      {"item": "Class rank", "rating": "Very Important"},
+      {"item": "Academic GPA", "rating": "Very Important"},
+      {"item": "Standardized test scores", "rating": "Very Important"},
+      {"item": "Application essay", "rating": "Very Important"},
+      {"item": "Recommendation(s)", "rating": "Very Important"},
+      {"item": "Extracurricular activities", "rating": "Very Important"},
+      {"item": "Talent/ability", "rating": "Very Important"},
+      {"item": "Character/personal qualities", "rating": "Very Important"},
+      {"item": "Interview", "rating": "Considered"},
+      {"item": "First generation", "rating": "Considered"},
+      {"item": "Alumni/ae relation", "rating": "Considered"},
+      {"item": "Geographical residence", "rating": "Considered"},
+      {"item": "Volunteer work", "rating": "Considered"},
+      {"item": "Work experience", "rating": "Considered"},
+      {"item": "State residency", "rating": "Not Considered"},
+      {"item": "Religious affiliation/commitment", "rating": "Not Considered"},
+      {"item": "Level of applicant's interest", "rating": "Not Considered"}
+    ],
+    "cds_c7_note": "来源为 Stanford CDS 2025-26 C7（irds.stanford.edu）。2024-25 版本在 Test-optional 期间曾将 Standardized test scores 评为 Considered（随送分比例与政策年份浮动），其余格局一致。CDS 只给等级（Very Important/Important/Considered/Not Considered），从不给百分比。",
+    "official_statements": [
+      {
+        "text": "Academic excellence is the primary criterion for admission to Stanford, which means flawless or nearly flawless grades in rigorous courses.",
+        "source": "https://admission.stanford.edu/apply/overview/"
+      },
+      {
+        "text": "each piece in your application is reviewed as part of an integrated and comprehensive whole",
+        "source": "https://admission.stanford.edu/apply/overview/"
+      },
+      {
+        "text": "an exceptional depth of experience in one or two activities may demonstrate your passion more than minimal participation in five or six clubs",
+        "source": "https://admission.stanford.edu/apply/overview/"
+      },
+      {
+        "text": "In some cases, exceptional abilities in athletics may influence our decision if the applicant is otherwise well-qualified, but such abilities never, by themselves, ensure admission to Stanford.",
+        "source": "https://admission.stanford.edu/apply/overview/"
+      },
+      {
+        "text": "The two most important criteria for admission to Stanford are distinguished academic achievement and significant potential to achieve at a high level during the undergraduate years.",
+        "source": "https://admission.stanford.edu/faqs/decision.html"
+      },
+      {
+        "text": "Academic excellence is our primary criterion for admission... no portion of the application is considered without the rest.",
+        "source": "https://irds.stanford.edu/sites/g/files/sbiybj23826/files/media/file/2024_ab_697_report_1.pdf"
+      }
+    ],
+    "depth_over_breadth": "斯坦福官方：exceptional depth of experience in one or two activities 优于五六项浅参与；核心是 Intellectual Vitality（求知活力）与 academic leadership，而非某类具体活动。"
+  },
+  "ao_quotes": [
+    {
+      "quote": "We're looking for a baseline of academic preparation... But it's also, and this is the second part of the equation, your non-cognitive indicators. It's your curiosity, it's your initiative, it's your resilience, it's your ability to take feedback...",
+      "source": "https://mitadmissions.org/blogs/entry/an-interview-with-aops (Chris Peterson, MIT 招生官)",
+      "nature": "官方"
+    },
+    {
+      "quote": "Of course you need good scores and good grades to get into MIT. But most people who apply to MIT have good grades and scores. Having bad grades or scores will certainly hurt you, but... having great grades and scores doesn't really help you – it just means that you're competitive with most of the rest of our applicants.",
+      "source": "https://mitadmissions.org/blogs/entry/there_is_no_formula (Ben Jones, 时任 MIT 招生传播主任)",
+      "nature": "官方"
+    },
+    {
+      "quote": "There is nothing, literally nothing, that in and of itself will get you in to MIT... do not do it because you think it's your ticket to MIT.",
+      "source": "https://mitadmissions.org/blogs/entry/applying_sideways/ (Chris Peterson, MIT)",
+      "nature": "官方"
+    },
+    {
+      "quote": "There are no absolutes... The common denominator is you have to be doing well in school... That's the springboard we use to move into the rest of the story... It's more than just meeting certain quantitative markers. We use the term 'intellectual vitality.'",
+      "source": "https://stanforddaily.com/2014/04/25/qa-with-richard-shaw-what-stanford-looks-for-in-an-applicant/ (Richard Shaw, 时任斯坦福本科招生院长)",
+      "nature": "媒体（转述 AO 原话）"
+    }
+  ],
+  "verdict": {
+    "supported": [
+      "标化/GPA/课程强度是门槛/基线性质：所有有竞争力的申请者都已达标，它决定能不能被认真读，但不构成区分度（MIT: great grades and scores... just means that you're competitive；Stanford: Academic excellence is the primary criterion 且是无例外的准入标准）。",
+      "达标之后，录取主要由整体（holistic）评审决定：非认知/个人特质 + 1-2 项体现深度的活动是主要区分因素（MIT: non-cognitive indicators；Stanford: depth in one or two activities / intellectual vitality / character 均列为 Very Important）。",
+      "深度 > 广度（MIT quality over quantity；Stanford exceptional depth... more than minimal participation in five or six clubs）。",
+      "科创/体育/艺术确实是可用来体现深度与特质的载体方向之一——斯坦福 CDS 甚至把 Talent/ability 单列为 Very Important，并明确体育特长可在学术已合格前提下影响决定。"
+    ],
+    "unsupported": [
+      "具体百分比 70-80% / 20-30%：无任何官方依据。CDS C7 只用四档等级（Very Important/Important/Considered/Not Considered），官方从不出具、也不承认百分比权重；MIT 招生办明确写 There Is No Formula，且用整体/在语境中评审语言。NACAC 报告同样是重要性档位的调查，不是百分比权重。任何标化占X%的具体数字都是外部推测。",
+      "三选一（科创/体育/艺术）补足另外20-30%的机械结构：官方机制不是学术桶+特长桶的固定配比；区分度可来自学术自身的深化（独立研究/奥赛）、也可来自性格/求知欲/文书/推荐信，体育艺术只是其中一类载体，且体育 never by itself ensures admission。",
+      "把标化视作可量化的七八成竞争力：与 AO 原话相悖——达标后标化的边际作用接近于零（MIT）；它是门槛而非分数大赛。"
+    ],
+    "refined_framing": "更准确的表述：标化/GPA/课程强度是准入门槛（baseline）而非竞争力分数——它决定你是否进入认真评审，但达标后几乎不再加分。录取由整体（holistic）评审决定，其中真正的区分度来自：①体现深度/投入的1-2项活动（科创/体育/艺术/学术深化皆可），②性格与求知欲（curiosity/initiative/resilience/intellectual vitality），③文书与推荐信，④你与学校的具体匹配度。官方从未设定标化与特长的百分比配比；任何具体百分比都属过度简化。",
+    "confidence": "高（机制与无百分比结论均有官方原文支撑）；唯一低置信点是 CDS C7 个别年份 Test scores 档位随 test-optional 政策浮动。"
+  },
+  "international_context": [
+    {
+      "finding": "斯坦福官方 FAQ：对国际生（需学生签证者）need for financial aid is a factor in the admission decision（美国本土学生 need-blind，国际生不是）——国际生赛道额外受财力考量影响，标化并非唯一/主要变量。",
+      "source": "https://admission.stanford.edu/faqs/decision.html"
+    },
+    {
+      "finding": "《The China Conundrum》(Chronicle of Higher Education)：中国申请者材料（代写文书、英语成绩与实际口语不符）令美国招生官难以区分优秀与优秀得可疑——佐证在标化高分普遍化的池子里，标化本身不再具区分度。",
+      "source": "https://cfde.emory.edu/_includes/documents/sections/resources/resourcehubarticle/China_Conundrum_Global.pdf"
+    },
+    {
+      "finding": "2024 Opportunity Insights（Raj Chetty 团队）研究：Ivy-Plus 学校中家庭收入前 1% 学生录取概率显著高于同等分数中产学生，说明 holistic 因素（legacy/捐赠/昂贵课外）事实上影响结果——即区分度来源并非标化本身。",
+      "source": "https://unireview.net/university-admission-fairness-review-diversity-and-holistic-admissions-feedback（转述研究；建议以 Opportunity Insights 原始报告复核）"
+    }
+  ],
+  "unverified": [
+    "未找到 MIT/斯坦福官方任何形式的标化占比 X%、特长占比 Y% 的公开表述——若存在，属外部机构推测而非官方。",
+    "MIT CDS C7 官方表格将多数项目列为 Important、仅 Character 为 Very Important；部分第三方站点（goodgoblin/riseglobal 等）称 MIT 把 rigor/GPA/essay 列为 Very Important，与官方 IR 页面不一致，以 ir.mit.edu 官方为准。",
+    "斯坦福官方未针对国际生/中国学生给出任何量化区分度说明。",
+    "NACAC 数据为全美四年制大学汇总，非专门针对 top-20；其 considerable importance 百分比是认为该项重要的院校比例，不是该项在单份申请中的权重占比，不可直接换算成个人竞争力百分比。"
+  ]
+}

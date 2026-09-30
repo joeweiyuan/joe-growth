@@ -182,6 +182,30 @@
         "案例库结构（year/type/project/source_nature）可作录取案例库 schema",
         "机构调研的'真实性验证'方法可复用于其他服务类数据"
       ]
+    },
+    {
+      "id": "2026-09-30-rowing-and-mechanism",
+      "title": "赛艇 6:40 竞争力评估 + 录取机制验证（标化/特长的真实权重）",
+      "date": "2026-09-30",
+      "type": "benchmark-and-mechanism",
+      "file": "2026-09-30_赛艇基准与录取机制验证.md",
+      "sources": [
+        "mitathletics.com / gostanford.com（官方，无 erg 数值）",
+        "NCSA / Sparks / Crew Connection（第三方基准）",
+        "MIT/Stanford 官方招生页 + CDS C7",
+        "AO 公开言论"
+      ],
+      "key_findings": [
+        "MIT/Stanford 官方均未公布 2k erg 基准；仅 Harvard 轻量级公开（2K sub 6:30）",
+        "第三方一致：6:40 ≈ D1 中下/强 club 上沿；Stanford 招募线约 6:20（6:40 慢约 20s）；MIT 个案自述门槛约 6:40",
+        "两校赛艇通道力度有限：MIT 教练仅支持信+无奖学金；Stanford 'never by itself'",
+        "假设裁定：'标化=门槛'✅成立；'70-80%/20-30% 百分比'❌无官方依据（MIT: There Is No Formula）；'三选一机械配比'不成立",
+        "替代表述：门槛达标 → 区分度来自 深度1-2项活动 + 性格 + 文书推荐信 + 匹配度"
+      ],
+      "reusable_for_offerpath": [
+        "评审机制官方原话库（可用于评估引擎的'非量化'说明）",
+        "赛艇 benchmark 表（体育模块）"
+      ]
     }
   ]
 }

@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "topic": "Men's 2k ergometer 6:40 competitiveness vs MIT / Stanford (heavyweight, intl recruit)",
+    "student": "Chinese national, Shanghai Guanghua (美高), rising sophomore, 2029 fall entry, current 2k PB 7:24.1, 183cm/79kg (heavyweight)",
+    "research_date": "2026-09-30",
+    "note": "Read-only desk research. Ergs quoted are men's heavyweight 2k unless noted. Program tiers from third-party recruiting services are NOT official coach thresholds."
+  },
+  "schools": [
+    {
+      "school": "MIT",
+      "program": "Men's Heavyweight Crew (D1/IRA; only D1 sport at MIT; no athletic scholarships)",
+      "official_standard": "官方未公布数值基准。mitathletics.com 仅提供招募问卷（'recruit me'）与教练联系（Head Coach Tony Kilbridge coachk@mit.edu; Recruiting Coordinator Evan Thews-Wassell etw@mit.edu 617-253-7986）。未找到校方公开的 2k erg 门槛。",
+      "mechanism": "support_letter",
+      "source": "https://mitathletics.com/sports/mcrewhvy/coaches ; https://mitathletics.com/sports/general/roster/coaches/evan-thews-wassell/922",
+      "source_nature": "官方"
+    },
+    {
+      "school": "MIT",
+      "program": "Men's Heavyweight Crew (recruiting standard as reported by athletes)",
+      "official_standard": "第三方/个案例证转述 MIT 招募页历史文字：heavyweight '2k erg scores under 6:40, SAT 2100+ / ACT 32+, and a transcript with high level math and science classes'。注：SAT 2100 为旧制（约合新 SAT ~1500+）。",
+      "mechanism": "support_letter",
+      "source": "https://www.reddit.com/r/Rowing/comments/5n9hak/mit_recruiting/",
+      "source_nature": "个案"
+    },
+    {
+      "school": "Stanford",
+      "program": "Men's Rowing (D1, IRA/Pac-12→ACC; varsity, offers athletic scholarships)",
+      "official_standard": "官方未公布 2k erg 基准。gostanford.com 仅提供招募问卷与教练联系（Head Coach Ted Sobolewski; Recruiting Coordinator Niles Garratt）。",
+      "mechanism": "slot|support_letter",
+      "source": "https://gostanford.com/sports/mens-rowing/roster",
+      "source_nature": "官方"
+    },
+    {
+      "school": "Stanford",
+      "program": "Men's Rowing — walk-on / novice pathway",
+      "official_standard": "官方明确描述 walk-on 文化：'Any student, even one with no prior rowing experience, has the opportunity to walk onto the team'。2025 教练组报告确认 novice walk-ons 通过 walk-on 试训成为正式队员。",
+      "mechanism": "walk_on",
+      "source": "https://stanforddaily.com/2020/08/25/upstream-battle-rowers-stress-unique-team-opportunities-culture ; https://therowingassociation.com/boathouse-of-champions/fall-25-coaches-report-men",
+      "source_nature": "官方"
+    },
+    {
+      "school": "Harvard",
+      "program": "Men's Lightweight Rowing (参照；藤校中唯一公布具体 erg 基准的男子赛艇项目)",
+      "official_standard": "官方公布：'our rough erg standards for recruitment are: 2K sub 6:30; 6K sub 21 min; max watts 800+'。优先级顺序：Academic #1 > Extracurriculars #2 > Coach endorsement #3 > On-water performance #4 > Erg standards 最后。（此为 lightweight，非 heavyweight）",
+      "mechanism": "slot|support_letter",
+      "source": "https://gocrimson.com/sports/2023/9/19/mens-lightweight-rowing-recruiting.aspx",
+      "source_nature": "官方"
+    },
+    {
+      "school": "Princeton",
+      "program": "Men's Heavyweight & Lightweight Rowing",
+      "official_standard": "官方未公布数值基准。招募页指导 heavyweight >170 lbs 填 HW 问卷、≤169 lbs 填 LW 问卷，仅提供 armssoftware 问卷链接。",
+      "mechanism": "slot|support_letter",
+      "source": "https://goprincetontigers.com/sports/2017/1/23/mens-recruiting-information",
+      "source_nature": "官方"
+    },
+    {
+      "school": "Yale",
+      "program": "Men's Lightweight Crew (招募+walk-on)",
+      "official_standard": "官方未公布 2k 基准。公布 walk-on 门槛：'All athletic males of the Yale undergraduate population under 165 pounds ... No experience necessary'。",
+      "mechanism": "walk_on",
+      "source": "https://rowing.yale.edu/come-join-y150 ; https://rowing.yale.edu/recruits",
+      "source_nature": "官方"
+    },
+    {
+      "school": "Penn / Cornell / Brown / Dartmouth",
+      "program": "Men's Heavyweight Crew",
+      "official_standard": "未公布（检索未找到各校官方公开的 2k erg 数值基准）",
+      "mechanism": "slot|support_letter",
+      "source": "未找到官方来源",
+      "source_nature": "官方(未公布)"
+    }
+  ],
+  "third_party_tiers": [
+    {
+      "tier": "NCSA Tier 1 (Elite varsity / IRA finalists)",
+      "range": "2k ≤ 6:10 (heavyweight)",
+      "source": "https://www.ncsasports.org/mens-rowing/college-rowing-times"
+    },
+    {
+      "tier": "NCSA Tier 2 (strong varsity / IRA qualifiers: Wisconsin, Navy, Syracuse, Penn)",
+      "range": "6:10 – mid 6:20",
+      "source": "https://www.ncsasports.org/mens-rowing/college-rowing-times"
+    },
+    {
+      "tier": "NCSA Tier 3 (competitive varsity / elite club: Colgate, Drexel, Hobart, Temple)",
+      "range": "mid 6:20 – 6:40 (6'0\"+, 185+ lbs)",
+      "source": "https://www.ncsasports.org/mens-rowing/college-rowing-times"
+    },
+    {
+      "tier": "NCSA Tier 4 (D1 lower / top club: Jacksonville, UCSB, Michigan, Trinity)",
+      "range": "6:30 – 6:40 (5'11\"+, 180+ lbs)",
+      "source": "https://www.ncsasports.org/mens-rowing/college-rowing-times"
+    },
+    {
+      "tier": "NCSA Tier 5 (average club: Georgia Tech, Purdue, Bucknell)",
+      "range": "6:40+",
+      "source": "https://austinrowing.org/wp-content/uploads/2020/10/Rowing-in-College-Packet.pdf"
+    },
+    {
+      "tier": "Sparks.net — Top-tier (Cal, Washington, Harvard, Yale, Princeton, Brown)",
+      "range": "recruit sub-6:15 (top 6:05–6:12); 'minimum threshold to begin a conversation ~6:20'",
+      "source": "https://www.sparks.net/blog/college-rowing-erg-score-standards"
+    },
+    {
+      "tier": "Sparks.net — Strong varsity (Wisconsin, Navy, Syracuse, Penn, Notre Dame, Virginia)",
+      "range": "6:10s–mid 6:20s; minimum consideration ~6:25–6:30",
+      "source": "https://www.sparks.net/blog/college-rowing-erg-score-standards"
+    },
+    {
+      "tier": "Sparks.net — Competitive varsity / Dad Vail (Colgate, Drexel, Hobart, Lehigh, GWU)",
+      "range": "mid 6:20s–6:40; minimum consideration ~6:35–6:40",
+      "source": "https://www.sparks.net/blog/college-rowing-erg-score-standards"
+    },
+    {
+      "tier": "Sparks.net — Lower D1 / competitive club",
+      "range": "6:30s–6:40s; 'scholarship-granting programs generally want 6:40 or faster for athletic aid consideration'",
+      "source": "https://www.sparks.net/blog/college-rowing-erg-score-standards"
+    },
+    {
+      "tier": "Spark Admissions — Men's Heavyweight",
+      "range": "sub-6:15 elite IRA; sub-6:25 broad D1; 'walk-on candidates typically fall 10 to 15 seconds above these thresholds'",
+      "source": "https://sparkadmissions.com/college-rowing-recruiting"
+    },
+    {
+      "tier": "Rower Academy — HW Tier 3 (competitive varsity/club)",
+      "range": "6:25–6:40 'will generate serious interest'",
+      "source": "https://roweracademy.com/rowers/motivation/the-truth-about-2k-erg-scores-what-college-coaches-really-want"
+    },
+    {
+      "tier": "Crew Connection (UK) — Ivy HW / D1 HW",
+      "range": "Ivy League Heavyweight Men ~6:20; Division I Heavyweight Men ~6:20 (Stanford nearer 10 recruits/yr); scholarship level below 6:10",
+      "source": "https://crewconnection.co.uk/free-recruiting-guide"
+    }
+  ],
+  "mechanism_notes": {
+    "slot_likely_letter": "正式招募名额/意向信：藤校及部分D1可给教练名额，教练在录取中有实质权重（男子赛艇为IRA/非NCAA项目）。经检索，MIT 与 Stanford 均无公开确认的'likely letter'机制文字。",
+    "support_letter": "教练支持信：教练向招生办推荐，但不保证录取。多名现任/前任 MIT 队员自述：MIT 不给 likely letters，教练支持能显著提升录取概率（自述 '20%→90-100%'），但前提是学术本身达标。来源：Reddit r/Rowing 个案。",
+    "walk_on": "免招募进队：无需被招募，进校后参加试训。Stanford 官方明确 walk-on（无经验亦可）；Yale lightweight 官方明确 walk-on（<165 lbs, 无经验亦可）。"
+  },
+  "assessment": {
+    "six_forty": "6:40（男子 heavyweight 2k）落在第三方分档的 D1 中下/强 club 区间边缘：NCSA Tier 3/4 分界为 6:40；Sparks.net 将其列为'competitive varsity / Dad Vail 层'的上沿（该层最低考虑线 ~6:35–6:40）与'scholarship 层最低线'。对 top D1/藤校 heavyweight（阈值 ~6:20 起谈）明显偏慢。",
+    "vs_mit": "边缘可谈（borderline）。MIT 未官方公布基准；唯一可得的数值来自队员转述的招募页文字'heavyweight 2k under 6:40'——即 6:40 恰为'能否被纳入招募视野'的门槛线，且需配合强学术（旧制 SAT 2100+/ACT 32+）。因 MIT 无法给 likely letter、录取最终由招生办定，6:40 属'可能获得教练交谈与支持'而非'稳被招募'。",
+    "vs_stanford": "低于被招募（recruited）门槛。Stanford heavyweight 属 D1 强队档，第三方一致给出'开始对话线 ~6:20'，6:40 约慢 20s。但 Stanford 有官方背书的 walk-on/novice 通道（无需经验），6:40 走 walk-on 路径竞争力足够；且 walk-on 可后续争取奖学金。",
+    "confidence": "中",
+    "reason": "MIT/Stanford 均未官方公布 2k erg 数值基准（官方页仅问卷+教练联系），因此核心数值判断依赖第三方分档与队员自述，非官方确证。第三方来源（NCSA、Sparks.net、Spark Admissions、Crew Connection）对'D1 强队/藤校 heavy 约 6:20 起谈、6:40 为 D1 中下/强 club 上沿'高度一致，故对'6:40 相对 Stanford 招募线偏慢、相对 MIT 招募门槛恰在边界'的判断有中等把握；MIT 的 6:40 具体门槛为个案自述，置信度低。"
+  },
+  "unverified": [
+    "MIT 官方是否曾/现仍公布 heavyweight '2k under 6:40' 标准（仅见队员转述，未见现存活官方页）",
+    "Stanford 官方对 recruited heavyweight 的 2k 数值基准（官方未公布）",
+    "Penn/Cornell/Brown/Dartmouth 官方 heavy 2k 基准（未找到官方公开）",
+    "各校'likely letter'/名额的确切数量与 mechanic（男子赛艇非 NCAA 项目，规则由 IRA/校方掌握）",
+    "第三方分档的样本年份与统计方法（多为 2019–2020 前后整理的行业经验值，非逐届公布数据）"
+  ],
+  "sources": [
+    "https://mitathletics.com/sports/mcrewhvy/coaches",
+    "https://mitathletics.com/sports/general/roster/coaches/evan-thews-wassell/922",
+    "https://www.reddit.com/r/Rowing/comments/5n9hak/mit_recruiting/",
+    "https://gostanford.com/sports/mens-rowing/roster",
+    "https://stanforddaily.com/2020/08/25/upstream-battle-rowers-stress-unique-team-opportunities-culture",
+    "https://therowingassociation.com/boathouse-of-champions/fall-25-coaches-report-men",
+    "https://gocrimson.com/sports/2023/9/19/mens-lightweight-rowing-recruiting.aspx",
+    "https://goprincetontigers.com/sports/2017/1/23/mens-recruiting-information",
+    "https://rowing.yale.edu/come-join-y150",
+    "https://rowing.yale.edu/recruits",
+    "https://www.ncsasports.org/mens-rowing/college-rowing-times",
+    "https://austinrowing.org/wp-content/uploads/2020/10/Rowing-in-College-Packet.pdf",
+    "https://www.sparks.net/blog/college-rowing-erg-score-standards",
+    "https://sparkadmissions.com/college-rowing-recruiting",
+    "https://roweracademy.com/rowers/motivation/the-truth-about-2k-erg-scores-what-college-coaches-really-want",
+    "https://crewconnection.co.uk/free-recruiting-guide",
+    "https://asmsports.co/sports/rowing",
+    "https://readyallrow.org/college-recruiting-contacting-coaches-pt-2-what-do-coaches-want-to-see-in-an-email"
+  ],
+  "gap_math": {
+    "current_pb": "7:24.1",
+    "target_6_40": "6:40.0",
+    "improvement_needed_seconds": "44.1",
+    "sec_above_stanford_conversation_line_6_20": "20",
+    "note": "per-500 average at 6:40 ≈ 1:40.0; at 7:24.1 ≈ 1:51.0"
+  }
+}
