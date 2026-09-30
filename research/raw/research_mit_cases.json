@@ -1,0 +1,206 @@
+{
+  "school": "MIT",
+  "compiled_at": "2026-09-30",
+  "scope_note": "近年在公开渠道可查的 MIT 录取/在读学生案例（含MIT在读身份可证者）。不含编造；无法核实录取身份的凭来源标注降级。",
+  "cases": [
+    {
+      "year": "2023入学 (Class of 2027)",
+      "student": "Gitanjali Rao（女，印度裔美国）",
+      "background": "美国科罗拉多州 Lone Tree；STEM School Highlands Ranch",
+      "innovation_type": "工程动手",
+      "project": "11岁起发明便携式水中铅检测仪 Tethys（获专利）、阿片成瘾早诊设备 Epione、AI反网络霸凌服务 Kindly；2017 Discovery Education 3M Young Scientist Challenge 冠军、Forbes 30 Under 30、TIME 首位 Kid of the Year；目前在 MIT 生物工程专业并进入 Langer Lab 做 UROP",
+      "other_dims": "滑翔机飞行员执照、钢琴、印度古典舞、击剑、科普作家（出版 Young Innovator's Guide to STEM）；2025 首位 Stephen Hawking Junior Medal for Science Communication",
+      "source": "https://www.indiatoday.in/education-today/news/story/meet-gitanjali-rao-who-went-from-a-flint-water-idea-at-10-to-mit-and-stephen-hawking-medal-2979226-2026-08-25 ; https://en.wikipedia.org/wiki/Gitanjali_Rao_(inventor) ; https://gitanjalirao.net/profile",
+      "source_nature": "媒体",
+      "note": "MIT在读身份由本人官网+Wikipedia+MIT News(2023霍金奖报道)交叉印证；发明史为媒体报道"
+    },
+    {
+      "year": "2023 (Class of 2027)",
+      "student": "Anika Puri（女，印度裔美国）",
+      "background": "美国；纽约州高中（官网未列校名）",
+      "innovation_type": "两者兼具（工程动手+科研）",
+      "project": "发明低成本AI反盗猎工具 ElSa：用250美元 FLIR ONE Pro 热成像相机+iPhone 6+无人机，识别大象与盗猎者运动模式；ISEF 2022 Peggy Scripps 科学传播奖($10,000)+地球与环境科学类最高奖",
+      "other_dims": "科学传播（向美国国务院全球妇女议题小组展示）；作品被 WEF、Smithsonian Magazine 报道；MIT 电子工程与计算机科学双专业",
+      "source": "https://www.societyforscience.org/blog/five-questions-anika-puri-10000-peggy-scripps-award-for-science-communication-isef-2022",
+      "source_nature": "官方",
+      "note": "文章明确称其为 18岁 MIT freshman，且为 ISEF 获奖者，身份由竞赛官方确认"
+    },
+    {
+      "year": "2014入学 (Class of 2018)",
+      "student": "Kevin Vincent Morrow（男，美国）",
+      "background": "美国堪萨斯州 Riverton，全镇<1000人、高中约300人、毕业班约60人（农村小校）",
+      "innovation_type": "工程动手",
+      "project": "高中起自造并试飞遥控飞机（部分项目提交至 MIT 可选 Maker Portfolio）；入 MIT 后做火箭/机器人、3D打印（自组高配打印机）；MIT Rocket Team",
+      "other_dims": "高中4.0 GPA、校足球队队长、田径；同时被海军学院录取",
+      "source": "https://mitadmissions.org/blogs/entry/kevins-room",
+      "source_nature": "官方",
+      "note": "MIT Admissions 官方博客，明确点出 Maker Portfolio 是其申请材料的一部分"
+    },
+    {
+      "year": "2026入学 (Class of 2030)",
+      "student": "Connor Hill（男，美国）",
+      "background": "美国（Regeneron STS 2026 参与线上几何社群自研）",
+      "innovation_type": "理论科研",
+      "project": "纯数学研究：完整分类 noble polyhedra（正多面体类几何对象），识别出两族无限解与146个孤立例子，构建完整证明；2026 Regeneron STS 最高奖得主",
+      "other_dims": "文章未提及其他维度",
+      "source": "https://www.regeneron.com/stories/student-math-research-connects-modern-science",
+      "source_nature": "官方",
+      "note": "官方文明确写 \"as Connor looks ahead to attending MIT this fall\""
+    },
+    {
+      "year": "2024入学 (Class of 2028, 现已大二)",
+      "student": "Rylee Blair（女，美国）",
+      "background": "美国佐治亚州 Fayette County",
+      "innovation_type": "工程动手",
+      "project": "Invention Convention 实物发明：Recycle Vac（磁吸+滤网的车用吸尘器附件，分离可回收金属）；Dawsonite Diver（附着货船的可移动碳封存装置，电解提取海水 dawsonite）——2023 RTX Invention Convention U.S. Nationals 最高创新奖",
+      "other_dims": "高中机器人队、科学展；MIT 机械工程（机器人方向）+管理辅修",
+      "source": "https://inhub.thehenryford.org/icw/about/news/newsdetails/Detail/building-more-than-inventions--rylee-blair's-journey-from-invention-convention-to-mit",
+      "source_nature": "官方",
+      "note": "Invention Convention/亨利·福特官方项目方发布；AJC(媒体)另有同一学生报道"
+    },
+    {
+      "year": "2023入学 (Class of 2027)",
+      "student": "Corona Chen（女）",
+      "background": "美国伊利诺伊州；The University of Chicago Laboratory High School",
+      "innovation_type": "理论科研",
+      "project": "研究普通混凝土内部内生微生物群落、指向脱碳（Regeneron STS 2023 Finalist 项目题目）；Anson L. Clark Scholars(德州理工) 2022 学者",
+      "other_dims": "LinkedIn 未列体育/艺术",
+      "source": "https://linkedin.com/in/corona-chen",
+      "source_nature": "第三方",
+      "note": "自报 LinkedIn，MIT入学身份无独立官方源核实；STS Finalist 身份可由 Society for Science 2023 名单佐证"
+    },
+    {
+      "year": "2024入学 (Class of 2028)",
+      "student": "Haya Bolotski（女，美国）",
+      "background": "美国西雅图；Holy Names Academy",
+      "innovation_type": "工程动手",
+      "project": "华盛顿大学个人机器人实验室(CS Personal Robotics Lab)实习：把助餐机器人实验室原型改造为便携系统，为首位轮椅使用者做测试；精通 CAD/3D/电子/编程",
+      "other_dims": "National Merit Semifinalist、AP Scholar with Distinction；加权GPA 4.39",
+      "source": "https://linkedin.com/in/haya-bolotski-3a1b4828a",
+      "source_nature": "第三方",
+      "note": "自报 LinkedIn"
+    },
+    {
+      "year": "2024入学 (Class of 2028)",
+      "student": "Dianna Ochoa Lynch（女，美国）",
+      "background": "美国印第安纳州；Bloomington High School South",
+      "innovation_type": "工程动手",
+      "project": "FIRST Robotics FRC 3494 & FTC 11329 首席设计/系统工程师；Samsung Solve for Tomorrow；入 MIT 后在 CSAIL 分布式机器人实验室研发肌腱驱动仿生机械手（CAD/CNC/手工制造，在写论文）",
+      "other_dims": "辩论队副主席、象棋社社长、Science Olympiad、校终极飞盘队",
+      "source": "https://linkedin.com/in/dianna-lynch",
+      "source_nature": "第三方",
+      "note": "自报 LinkedIn"
+    },
+    {
+      "year": "2024入学 (Class of 2028)",
+      "student": "Jeanpaul Sanchez-Moreno（男，美国）",
+      "background": "美国迈阿密，第一代大学生；School for Advanced Studies - South；QuestBridge",
+      "innovation_type": "工程动手",
+      "project": "高中机器人队 + 自学 CAD 与工程设计；入 MIT 后参加 MIT Motorsports（赛车团队）；CMU SAMS 暑期工程预科",
+      "other_dims": "爵士乐团、Mu Alpha Theta、Science National Honor Society、学生会、Model UN、表演艺术社、举重",
+      "source": "https://linkedin.com/in/jeanpsm",
+      "source_nature": "第三方",
+      "note": "自报 LinkedIn"
+    },
+    {
+      "year": "2024入学 (Class of 2028)",
+      "student": "Cassandra B.（女，美国）",
+      "background": "美国科罗拉多州 Fort Collins；FIRST 校友",
+      "innovation_type": "工程动手",
+      "project": "为丹佛儿童医院儿童建造递送STEM玩具的机器人；为机器人队办 Car Smash 募款活动；MIT 航空航天/天体物理方向",
+      "other_dims": "社区服务项目、零售兼职；自称对空间/科研的热爱",
+      "source": "https://linkedin.com/in/cbassett24",
+      "source_nature": "第三方",
+      "note": "自报 LinkedIn"
+    },
+    {
+      "year": "约2022入学 (Class of 2026, MIT大四)",
+      "student": "Julianna Schneider（女，阿尔巴尼亚裔）",
+      "background": "阿尔巴尼亚 → 美国（MIT News 报道称 \"From Albania to MIT\"）",
+      "innovation_type": "工程动手",
+      "project": "MIT 仿生机器人实验室(Biomimetic Robotics Lab)科研；主创 NerdXing 课程图谱工具（面向全校学生的选课系统）；AI与决策+数学双专业",
+      "other_dims": "Schwarzman 计算学院本科生顾问组(UAG)",
+      "source": "https://news.mit.edu/index.php/2025/building-with-tech-skills-julianna-schneider-1219",
+      "source_nature": "官方",
+      "note": "MIT News 官方学生故事；报道聚焦动手造物与解决社区问题"
+    },
+    {
+      "year": "约2021入学 (Class of 2025, MIT大四)",
+      "student": "YongYan (Crystal) Liang（女，华裔美国）",
+      "background": "美国；通英语、粤语、普通话",
+      "innovation_type": "两者兼具（工程动手+科研）",
+      "project": "SuperUROP 学者，Nadar 基金会本科生科研创新奖：血管内药物递送装置的转向系统；NEET Living Machines 方向；赴韩国/德国 MISTI GTL 教机器人",
+      "other_dims": "1600+天 Duolingo 连续学习、多门语言；多年跆拳道+拳击/踢拳/柔道等，长期目标是四段黑带；Terrascope、MedLinks 社团",
+      "source": "https://news.mit.edu/2025/student-spotlight-yongyan-crystal-liang-0417",
+      "source_nature": "官方",
+      "note": "MIT News/EECS 官方学生 spotlight"
+    }
+  ],
+  "distribution": {
+    "theory": 2,
+    "hands_on": 8,
+    "both": 2,
+    "none": 0,
+    "basis": "12个公开案例的分类计数（详见各 case 的 innovation_type）。theory=Connor Hill、Corona Chen；hands_on=Gitanjali Rao、Kevin Morrow、Rylee Blair、Haya Bolotski、Dianna Lynch、Jeanpaul Sanchez-Moreno、Cassandra B.、Julianna Schneider；both=Anika Puri、Crystal Liang。"
+  },
+  "pattern_conclusions": [
+    {
+      "conclusion": "MIT 录取者在公开案例中『工程/动手造物』类型占绝对多数（12例中8例纯工程动手 + 2例兼具动手成分），纯理论科研仅2例，且2例理论型均有顶级科研竞赛背书(Regeneron STS)。",
+      "supported_by": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "confidence": "中",
+      "caveat": "样本为公开可见者，存在严重自选择偏差（愿意公开的多是发明/竞赛获奖者）；不能据此推断 MIT 对理论型的排斥。"
+    },
+    {
+      "conclusion": "Maker Portfolio 在多个案例中是被官方明确点到的录取材料，且官方规则强调『看制作过程而非成品』。Kevin Morrow(案例3)的遥控飞机项目被 MIT Admissions 官方博客明确记载提交至 optional Maker Portfolio；MIT 官方 Maker Portfolio 页要求代码项目必须附代码库+可运行演示、视频汇总≤2分钟、需大量过程照片。",
+      "supported_by": [3, 2, 5],
+      "confidence": "高",
+      "caveat": "官方未公布 Maker Portfolio 提交率或其录取权重，只能证明『存在且被官方鼓励』。"
+    },
+    {
+      "conclusion": "顶级科研/学科竞赛奖项(ISEF、Regeneron STS)是常见强信号但不是唯一路径：案例2(ISEF)、4(STS冠军)、6(STS Finalist) 有顶级奖项；而案例3(农村小校、动手爱好者)、9(QuestBridge 第一代)、10(FIRST 校友) 未见顶级科研奖，同样录取。",
+      "supported_by": [2, 4, 6, 3, 9, 10],
+      "confidence": "中"
+    },
+    {
+      "conclusion": "多例把技术用于社区/真实问题而非纯学术：案例2(反盗猎)、案例5(车间/海洋环保)、案例10(儿童医院)、案例11(帮同学选课)，与 MIT 官方『用技术让世界更好』的挑选标准一致。",
+      "supported_by": [2, 5, 10, 11],
+      "confidence": "中"
+    },
+    {
+      "conclusion": "『无科研/无项目也能录取』——MIT 官方明确表示科研非必需：官方 What we look for 页写『我们并不要求申请者在15岁前治愈所有传染病』，2021 申请答疑博客列举『不需要』清单（含各类奥赛奖牌、AP/IB课程、某种数量的活动等），研究补充材料(Research Supplement)与 Maker Portfolio 均为可选项。",
+      "supported_by": [],
+      "confidence": "高",
+      "caveat": "依据为 MIT 官方表述，非案例；12个案例中无一人是『完全零科创/零活动』，故案例层面无法证实。"
+    }
+  ],
+  "cannot_infer": [
+    "无法从公开案例推出 MIT 对『理论 vs 实践』的因果偏好——录取者样本严重自选择/幸存者偏差，未录取者不发帖，无法得到真实录取率分布。",
+    "无法推出任何量化阈值（如『理论型占录取多少%』『动手型比理论型录取率高多少』）。",
+    "无法证实『完全没有科研/科创项目』也被录取的案例：几乎无学生公开自己零科研，案例5中理论/实践分类均以有产出为前提。",
+    "无法推出标化/成绩门槛：12例中仅案例7提到 GPA 4.39/National Merit，其余未公开 SAT/ACT。",
+    "无法推出中国大陆籍学生趋势：公开且可核实身份的案例以美国学生为主；中文来源多为中介/自媒体汇总（第三方），录取结果难独立核实（如『2024被MIT录取的三位中国学生』翰林国际教育=中介汇总）。",
+    "无法核实案例6-10(LinkedIn自报)的录取身份：LinkedIn 由本人填写，无官方/媒体二次确认，故标为第三方、置信度低。",
+    "无法推断 Maker Portfolio / Research Supplement 的提交率、评审权重或对录取的实际因果影响（MIT 未公布）。",
+    "无法推出 MIT 对『创业』类型的独立偏好：12例中无纯创业录取案例（Gitanjali 的发明传播、Jeanpaul/Cassandra 的社区项目接近，但都不足以支撑创业结论）。"
+  ],
+  "sources": [
+    {"url": "https://www.societyforscience.org/blog/five-questions-anika-puri-10000-peggy-scripps-award-for-science-communication-isef-2022", "nature": "官方", "what": "ISEF/Society for Science 官方：案例2"},
+    {"url": "https://mitadmissions.org/blogs/entry/kevins-room", "nature": "官方", "what": "MIT Admissions 官方博客：案例3，含 Maker Portfolio"},
+    {"url": "https://www.regeneron.com/stories/student-math-research-connects-modern-science", "nature": "官方", "what": "Regeneron/STS 官方：案例4，明写入读MIT"},
+    {"url": "https://inhub.thehenryford.org/icw/about/news/newsdetails/Detail/building-more-than-inventions--rylee-blair's-journey-from-invention-convention-to-mit", "nature": "官方", "what": "Invention Convention 官方：案例5"},
+    {"url": "https://news.mit.edu/index.php/2025/building-with-tech-skills-julianna-schneider-1219", "nature": "官方", "what": "MIT News：案例11"},
+    {"url": "https://news.mit.edu/2025/student-spotlight-yongyan-crystal-liang-0417", "nature": "官方", "what": "MIT News：案例12"},
+    {"url": "https://www.indiatoday.in/education-today/news/story/meet-gitanjali-rao-who-went-from-a-flint-water-idea-at-10-to-mit-and-stephen-hawking-medal-2979226-2026-08-25", "nature": "媒体", "what": "India Today：案例1"},
+    {"url": "https://en.wikipedia.org/wiki/Gitanjali_Rao_(inventor)", "nature": "第三方", "what": "Wikipedia：案例1 在读身份佐证"},
+    {"url": "https://gitanjalirao.net/profile", "nature": "第三方", "what": "本人官网：案例1"},
+    {"url": "https://linkedin.com/in/corona-chen", "nature": "第三方", "what": "案例6 自报"},
+    {"url": "https://linkedin.com/in/haya-bolotski-3a1b4828a", "nature": "第三方", "what": "案例7 自报"},
+    {"url": "https://linkedin.com/in/dianna-lynch", "nature": "第三方", "what": "案例8 自报"},
+    {"url": "https://linkedin.com/in/jeanpsm", "nature": "第三方", "what": "案例9 自报"},
+    {"url": "https://linkedin.com/in/cbassett24", "nature": "第三方", "what": "案例10 自报"},
+    {"url": "https://mitadmissions.org/apply/process/what-we-look-for", "nature": "官方", "what": "MIT 官方挑选标准（'不需要治愈疾病'、Mind and Hand、动手创造）"},
+    {"url": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material", "nature": "官方", "what": "MIT 官方 Maker/Research Portfolio 规则（过程优先、代码需附可运行演示）"},
+    {"url": "http://mitadmissions.org/blogs/entry/2021-applicants-answers-to-your-emails", "nature": "官方", "what": "MIT Admissions 官方'不需要'清单（奥赛奖牌等非必需）"},
+    {"url": "https://mitadmissions.org/blogs/entry/applying-to-grad-school", "nature": "官方", "what": "MIT Admissions 博客（科研经历的作用）"}
+  ]
+}

@@ -151,12 +151,36 @@
         "科创：MIT 设 Research + Maker 双 Portfolio（官方）；Stanford 核心是 Intellectual Vitality —— 官方无'实践>理论'表述",
         "迷思澄清：legacy/必须科研/必须AP/满分必录/运动奖学金/刷访校 均被官方否认",
         "赛艇：两校均无运动奖学金、非录取捷径（MIT 教练仅支持信；Stanford '本身绝不保证录取'）",
-        "文书：MIT 仅 4 项活动 + 8 道短答；Stanford 8 道必答、无 Why Stanford"
+        "文书：MIT 仅 4 项活动 + 8 道短答；Stanford 8 道必答、无 Why Stanford",
+        "案例实证：MIT 动手/造物 10/12（纯理论 2 例均靠 STS 级背书）；Stanford 动手/创业/跨学科 11/12（纯理论仅 1）→ 两校都偏'可验证的动手产出'，Stanford 更偏创业/影响力"
       ],
       "reusable_for_offerpath": [
         "两校偏好画像（可作评估引擎的 school-fit 维度）",
         "迷思清单（可用于内容/舆情）",
         "官方分数区间（rankings/admissions 表可对账）"
+      ]
+    },
+    {
+      "id": "2026-09-30-cases-and-sat-institutions",
+      "title": "科创录取实证（案例反推）+ 上海 SAT 机构调研",
+      "date": "2026-09-30",
+      "type": "case-based-research",
+      "file": "2026-09-30_科创录取实证与SAT机构调研.md",
+      "sources": [
+        "MIT 官方博客/学生故事",
+        "Stanford 官方/媒体",
+        "ISEF/STS 官方名单",
+        "机构官网/公开报道"
+      ],
+      "key_findings": [
+        "MIT 12 例：工程动手 8 / 兼具 2 / 纯理论 2（后者均有 STS 级竞赛）",
+        "Stanford 12 例：工程实践 4 / 创业 5 / 跨学科 2 / 纯理论 1",
+        "两校案例均无'零科创'样本；无落选对照组 → 不能推出因果权重（幸存者偏差）",
+        "SAT 机构：8 家公开信息；无官方授权培训中心；大陆无 SAT 考场；出分宣传不可验证；Bluebook 是唯一权威模考源"
+      ],
+      "reusable_for_offerpath": [
+        "案例库结构（year/type/project/source_nature）可作录取案例库 schema",
+        "机构调研的'真实性验证'方法可复用于其他服务类数据"
       ]
     }
   ]
