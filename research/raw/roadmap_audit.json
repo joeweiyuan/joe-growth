@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "audited_file": "/root/joe-growth/admissions/10-MIT斯坦福冲刺路线图.md",
+    "audit_date": "2026-09-30",
+    "role": "Checker（只审查，未修改任何文件）",
+    "sources_examined": [
+      "/root/.hermes/profiles/joe/STATE.md",
+      "/root/joe-growth/data.js",
+      "/root/joe-growth/admissions/09-官方核实台账.md",
+      "/root/joe-growth/admissions/02-时间线.md",
+      "/root/joe-growth/references/rowing-master-profile.md（赛艇总档案 canonical）"
+    ]
+  },
+  "claims": [
+    {
+      "section": "一、目标校门槛 / MIT 标化",
+      "claim": "SAT/ACT 必须（无最低分公布）",
+      "verdict": "一致",
+      "actual": "台账：SAT/ACT 必须提交（含转学），无最低分或建议分。",
+      "source": "09-官方核实台账.md:86"
+    },
+    {
+      "section": "一、目标校门槛 / MIT 标化",
+      "claim": "实际录取者 1520+",
+      "verdict": "无法核实",
+      "actual": "台账仅写『官网提供最近录取届分数统计』，未给出任何 MIT 录取者分数数值；该 1520+ 数值在所给来源中无出处。",
+      "source": "09-官方核实台账.md:86（无该数值）"
+    },
+    {
+      "section": "一、目标校门槛 / MIT 英语",
+      "claim": "TOEFL 90 / 建议 100（2026-01 起新制 5 / 5.5）",
+      "verdict": "一致",
+      "actual": "台账：TOEFL（2026-01-21 之前）最低90/建议100；新制（2026-01-21 及之后，1–6分制）最低5/建议5.5。日期精度略有简化（2026-01 vs 2026-01-21）。",
+      "source": "09-官方核实台账.md:86"
+    },
+    {
+      "section": "一、目标校门槛 / MIT 英语",
+      "claim": "非英语母语者【需】英语考试",
+      "verdict": "不一致",
+      "actual": "台账原文为『(English language tests)……非强制提交，但强烈建议特定非英语母语申请者提交』——即非强制/强烈建议，而非『需/必须』。roadmap 第122行再次表述为『MIT 明确要求 ……英语考试』，同样偏强。",
+      "source": "09-官方核实台账.md:86（对照 roadmap:14, :122）"
+    },
+    {
+      "section": "一、目标校门槛 / Stanford 英语",
+      "claim": "本科不要求任何英语能力考试",
+      "verdict": "一致",
+      "actual": "台账原文：『No, we do not require any English proficiency exams.』",
+      "source": "09-官方核实台账.md:98"
+    },
+    {
+      "section": "一、目标校门槛 / Stanford 标化",
+      "claim": "SAT/ACT 必须（2026 秋起恢复）；Class of 2029 中位 SAT 1520-1570 / ACT 34-36",
+      "verdict": "一致",
+      "actual": "台账：自2026年秋季入学申请季起恢复标化要求；Class of 2029 中间50%：ACT 34–36；SAT 1520–1570。",
+      "source": "09-官方核实台账.md:98"
+    },
+    {
+      "section": "一、目标校门槛 / MIT 轮次",
+      "claim": "EA 11/1 · RA 1/4（无 ED）",
+      "verdict": "一致",
+      "actual": "台账：EA 截止 11月1日；RA（Regular Action）截止 1月4日；无 ED。",
+      "source": "09-官方核实台账.md:87"
+    },
+    {
+      "section": "一、目标校门槛 / Stanford 轮次",
+      "claim": "REA 11/1 · RD 1/5（无 ED；REA 单选限制）",
+      "verdict": "一致",
+      "actual": "台账：REA 11月1日；RD 1月5日；无 ED；REA 为限制性且『官网明确不能同时申请 Stanford REA 与 MIT EA』。",
+      "source": "09-官方核实台账.md:99"
+    },
+    {
+      "section": "一、招募联系 / MIT",
+      "claim": "主教练 Evan Thews-Wassell etw@mit.edu；招募协调 Hannah Woodruff hwoodruf@mit.edu",
+      "verdict": "一致",
+      "actual": "台账值与 roadmap 完全一致。⚠️ 但台账将 MIT coach_contact 标注为『⏳待核实』（Staff Directory 与项目子页 coaches 两处不一致，取 Staff Directory + 官方新闻最新值，未作唯一来源确认）。roadmap 以『（官网公布）』确定性呈现，未继承该不确定性标注。",
+      "source": "09-官方核实台账.md:89, :96"
+    },
+    {
+      "section": "一、招募联系 / Stanford",
+      "claim": "男队总监 Ted Sobolewski tsobolew@stanford.edu",
+      "verdict": "一致",
+      "actual": "台账：男子赛艇 Ted Sobolewski（Farwell Family Director of Men's Rowing）tsobolew@stanford.edu。",
+      "source": "09-官方核实台账.md:101"
+    },
+    {
+      "section": "二、Joe现状 / 年级学制",
+      "claim": "光华美高 高一 / 10 年级（2026-08-30 开学起）",
+      "verdict": "一致",
+      "actual": "STATE：『8/30开学·首次正式住校（光华美高高一/10年级）』；赛艇总档案同。注：data.js profile.school 记『光华剑桥』（旧值，与路线图/STATE 不一致）。",
+      "source": ".hermes/profiles/joe/STATE.md:58；references/rowing-master-profile.md:15（对照 data.js:22）"
+    },
+    {
+      "section": "二、Joe现状 / 申请季",
+      "claim": "申请季 = 2028 秋，2029 秋入学",
+      "verdict": "一致",
+      "actual": "由10年级2026秋入学推算：12年级=2028-2029学年→申请季2028秋、2029秋入学；与 02-时间线.md 阶段表一致。",
+      "source": "02-时间线.md:15；STATE.md:58"
+    },
+    {
+      "section": "二、Joe现状 / GPA",
+      "claim": "GPA 3.91（2024-2025 学年下学期期末）",
+      "verdict": "一致",
+      "actual": "data.js profile.gpa='3.91'，gpaTerm='2024-2025学年下学期期末'。",
+      "source": "data.js:23-24"
+    },
+    {
+      "section": "二、Joe现状 / 托福",
+      "claim": "MyBest 4.0 / 6（阅读4.0·听力5.0·口语4.5·写作3.0）",
+      "verdict": "一致",
+      "actual": "STATE『MyBest 4.0/6」（R4.0/L5.0/S4.5/W3.0）』；data.js profile.toefl='4.0 / 6.0'、currentLevel=4.0。",
+      "source": ".hermes/profiles/joe/STATE.md:5, :29, :49；data.js:25, :71"
+    },
+    {
+      "section": "二、Joe现状 / 标化",
+      "claim": "SAT/ACT 未开始（无记录）",
+      "verdict": "一致",
+      "actual": "STATE 无任何 SAT/ACT 记录（台账中亦无 Joe 的标化）。",
+      "source": ".hermes/profiles/joe/STATE.md（无 SAT 条目）"
+    },
+    {
+      "section": "二、Joe现状 / 赛艇 2km",
+      "claim": "2km 测功仪 7:24.1（PB，2026-07-12）",
+      "verdict": "一致",
+      "actual": "STATE『2km测功仪全新PB：7:24.1（2026-07-12泰州集训收官）』；data.js bestTime 7'24\"1 / bestTimeDate 2026-07-12；赛艇总档案同。",
+      "source": ".hermes/profiles/joe/STATE.md:61；data.js:354-357；references/rowing-master-profile.md:27"
+    },
+    {
+      "section": "二、Joe现状 / 赛艇目标",
+      "claim": "12 月队内目标 7:20.0",
+      "verdict": "一致",
+      "actual": "STATE『12月测功仪目标 7:20.0（队会 9/9 公布）』；赛艇总档案同。注：队会口径 7月队测7:27.2→7:20.0；若按PB口径=再快4.1s，路线图未披露该口径差异。",
+      "source": ".hermes/profiles/joe/STATE.md:7, :56；references/rowing-master-profile.md:41-45"
+    },
+    {
+      "section": "二、Joe现状 / 体格",
+      "claim": "183cm",
+      "verdict": "一致",
+      "actual": "data.js profile.height='183 cm'；赛艇总档案『183cm / ~79kg（158斤）』。",
+      "source": "data.js:21；references/rowing-master-profile.md:14"
+    },
+    {
+      "section": "二、Joe现状 / 体格",
+      "claim": "79kg（heavyweight 体重区间）",
+      "verdict": "一致",
+      "actual": "赛艇总档案『183cm / ~79kg（158斤）』，来源标注为『用户档案』（自报，非实测）。",
+      "source": "references/rowing-master-profile.md:14, :122"
+    },
+    {
+      "section": "二、Joe现状 / 战绩",
+      "claim": "平湖500m混双冠军（5/16）· MIT夏校收官赛冠军（7/31）· 上海公开赛第7/8（9/24）",
+      "verdict": "一致",
+      "actual": "data.js history 三条同：2026-05-16 平湖夺冠、2026-07-31 MIT夺冠、2026-09-24 淘汰赛1'57\"77 第7名/8队；STATE 亦确认。",
+      "source": "data.js:369, :376, :379；.hermes/profiles/joe/STATE.md:55, :62"
+    },
+    {
+      "section": "二、Joe现状 / 科创",
+      "claim": "省/市/国家/国际奖项数十个",
+      "verdict": "一致",
+      "actual": "data.js awards.total=38（国家8/省14/国际4/校6），『数十个』≈38，成立。",
+      "source": "data.js:37-43"
+    },
+    {
+      "section": "三、差距表 / 六、风险 / heavyweight 门槛",
+      "claim": "heavyweight 招募常见 2km ≤6:40（顶尖 ≤6:30）",
+      "verdict": "无法核实",
+      "actual": "所给官方来源均无该基准：台账仅见 Harvard 男子轻量级官方标准『2K sub 6:30』（属轻量级，非 heavyweight）。赛艇总档案明确『长期目标：持续逼近名校 recruit 2km 区间（具体标准值未设——以教练评估+后续赛事为准，不虚构）』——与本基准的引入相矛盾。第三方招募机构（如 NCSA）确有 heavyweight tier 表（Tier1 ≤6:10 / Tier3 mid6:20s–6:40），但属机构估算、标注为『recruiting benchmarks, not top varsity standards』，非校方官方门槛。",
+      "source": "09-官方核实台账.md:113（仅轻量级6:30）；references/rowing-master-profile.md:47；NCSA/CaptainU（第三方机构，非官方）"
+    },
+    {
+      "section": "六、风险 / 进步速度",
+      "claim": "2026-02 7:30 → 2026-07 7:24.1（5 个月 -5.9 秒）",
+      "verdict": "一致",
+      "actual": "data.js history 2026-02-28 7'30\"；STATE『比2月PB快5.9秒』；赛艇总档案同。算术正确（30-24.1=5.9）。",
+      "source": "data.js:366；.hermes/profiles/joe/STATE.md:61；references/rowing-master-profile.md:25, :27"
+    }
+  ],
+  "extrapolation_review": {
+    "verdict": "不合理（方法过简、基线被高估，结论方向或成立但锚点值不可靠）",
+    "reason": "①样本量：仅用单一 5 个月窗口（2026-02→2026-07）的两点拟合成一条直线，直线外推 23 个月到 2028 年中，自由度极低，未给区间/置信度。②忽略历史非单调：data.js 记录 2026-02 7:30 → 2026-06-02 7:41.5（倒退11秒）→ 2026-07-12 7:24.1；用『最低-最高』两点会掩盖 6 月倒退，系统性高估斜率。③忽略训练量的季节性：这 -5.9s 发生在泰州 25 天封闭集训（全天双练）期间；而学期内 Joe 仅约 5 个训练单元/周 + 晚间拉伸（赛艇总档案/STATE 队会课表），训练量显著下降，进步速率不可线性维持。④忽略年龄/生理：Joe 生于 2011.05（约15岁，发育期），2km 提升一般随水平接近极限而边际递减，青少年增益受成长/成熟驱动呈非线性。⑤忽略出勤波动：2026 3-6月出勤 14/15/17/5 天，6月因期末回落——出勤与成绩强相关（教练口径），训练一致性无法保证。→ 建议把『2028年中约7:00』改为区间（如 7:00–7:15）并显式标注『经验外推/非承诺值』。"
+  },
+  "timeline_conflicts": [
+    {
+      "issue": "MIT EA 与 Stanford REA 同日双申（2028-11-01）",
+      "severity": "高",
+      "detail": "roadmap §四阶段4（行90『MIT EA / Stanford REA（11/1）』）与 §五KPI（行110『MIT EA / Stanford REA 提交』）计划在 2028-11-01 同时提交 MIT EA 和 Stanford REA。但 Stanford REA 为单选限制，台账明确『官网明确不能同时申请 Stanford REA 与 MIT EA』。二者只能二选一。这是硬性冲突，直接冲击 Joe 的两个主攻目标校策略（建议：早申只选一所，另一所走 RD）。"
+    },
+    {
+      "issue": "2026-12 单月多线过载",
+      "severity": "高",
+      "detail": "12 月同时要求：光华美高首学期期末 GPA 建立 + 队内测功仪测试冲 7:20.0 + 托福冲 ≥5.0（实考/模考）+ 科创社团落地 + 季度检查。叠加每周约 5 个赛艇训练单元（一/二/三/四/六）+ 每日晚间拉伸（20:30-21:00）。学业+赛艇+托福+社团四线在期末考试周共振，过载风险最高。"
+    },
+    {
+      "issue": "2027 全年多线并发（SAT+托福+夏校/科研+赛季+GPA）",
+      "severity": "中",
+      "detail": "2027-01~06：SAT 系统学习 + 托福冲5.5 + 夏校/科研调研与申请（RSI/MITES/SIMR）+ 赛艇赛季 + GPA 保持 五线并行；2027-07~08：SAT 首考 + 夏校执行 + 赛艇夏季集训（2km≤7:00）三线叠加。SAT 与托福同为英语标化，同期抢时间；且 SAT 首考与赛艇夏训同在暑期。"
+    },
+    {
+      "issue": "2028 上半年（冲刺学期）过载",
+      "severity": "中",
+      "detail": "2028-01~06 同时：SAT 终考 1520+ + 招募视频/pre-read 教练联系 + 赛艇巅峰期(6:55-7:05) + 活动/奖项收口 + 推荐信确认 + Story Bank 定稿。全部压在 12 年级下学期，与 GPA 收尾冲突。"
+    },
+    {
+      "issue": "赛艇巅峰目标口径在 02-时间线 与 路线图 之间冲突",
+      "severity": "中",
+      "detail": "02-时间线.md 阶段3 记『2028 上半年 赛艇巅峰期（2km 6:40-7:00）』；路线图 §四阶段3（行82）与 §五KPI（行108）记『2km 目标 6:55-7:05』。两文档对同一里程碑给出不同目标区间（且 6:40 又与其自身 §六 的『达不到经典招募线(≤6:40)』逻辑矛盾）。"
+    },
+    {
+      "issue": "SAT 决策月份在两文档间不一致",
+      "severity": "低",
+      "detail": "02-时间线.md（行23）把 SAT 机构/时间/目标决策放在『2026-10』；路线图（行60/130）放在『2026-11 定、2027-01 启动』。同一决策的时点相差一个月。"
+    },
+    {
+      "issue": "Vincent 托福课（周日 20:30-22:30）与住校作息未排布",
+      "severity": "低",
+      "detail": "STATE 记录新课为每周日 20:30-22:30（10 节）。周日为赛艇队会规定的休息日（无训练），故不与训练冲突；但 Joe 为住校生，22:30 结束的课程可能撞住校晚自习/熄灯（文档未说明该课是否线上）。赛艇总档案亦列出待办的『训练×托福周时间冲突表』，说明此类排布尚未完成。"
+    }
+  ],
+  "summary": {
+    "total": 23,
+    "consistent": 20,
+    "inconsistent": 1,
+    "unverifiable": 2
+  },
+  "top_risks": [
+    "【硬伤·高】MIT EA 与 Stanford REA 无法同时申请（Stanford REA 单选限制）——路线图却把二者并列作为 11/1 双提交目标，必须改为早申二选一。",
+    "【来源缺口·高】heavyweight 招募门槛『2km ≤6:40（顶尖≤6:30）』无官方来源，且与赛艇总档案『具体标准值未设—不虚构』纪律相矛盾；应补官方/教练来源，或显式标注为『经验值（第三方招募机构基准，如NCSA/CaptainU）』。",
+    "【表述失准·中】MIT 英语考试被路线图表述为『需/要求』，而台账原文为『非强制提交（强烈建议）』；会误导备考优先级判断。",
+    "【过载·高/中】2026-12 与 2027 全年、2028H1 三处多线并发（学业+赛艇+托福+SAT+科研+创业同压），无优先级/降载方案。",
+    "【方法·中】赛艇 2km『线性外推→2028年中约7:00』过简（单窗口两点、忽略6月倒退、忽略学期/集训训练量差、忽略年龄），锚点值不可靠，宜改区间。",
+    "【沿袭不确定·中】MIT 教练邮箱在台账被标『⏳待核实』（Staff Directory 与项目子页不一致），路线图以『官网公布』确定性呈现，未继承该标注。",
+    "【口径未统一·低】赛艇 2km 存在 7:24.1(PB) 与 教练7月队测 7:27.2 两个口径（差3.1s），路线图只用 PB，未披露或说明差异。",
+    "【溯源偏移·低】183cm/79kg 路线图标源『赛艇总档案 + 队会9/9』，实际赛艇总档案记为『用户档案（自报）』；另『实际录取者1520+』在所给台账中无出处。"
+  ]
+}
