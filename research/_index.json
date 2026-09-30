@@ -68,6 +68,26 @@
         "标化口径映射（六分制↔CEFR↔120）",
         "评估输入 toefl 四单项"
       ]
+    },
+    {
+      "id": "2026-09-30-usnews-2027-top20",
+      "title": "2027 版 US News 美本 Top20 榜单（家主口径）",
+      "date": "2026-09-30",
+      "type": "ranking-reference",
+      "file": "raw/usnews_2027_top20.json",
+      "sources": [
+        "usnews.com 官方榜单",
+        "Vanderbilt Hustler 交叉印证"
+      ],
+      "key_findings": [
+        "MIT 登顶（Princeton 保持 15 年后首次让位）；Caltech #11→#5；CMU→#14；UC Berkeley→#20；Michigan 跌出 Top20",
+        "22 校占 Top20 名位（并列）；10 校已官方核实、12 校核实中",
+        "澳洲前三口径确认：墨尔本/悉尼/新南威尔士（不含澳国立）"
+      ],
+      "reusable_for_offerpath": [
+        "rankings 表：year/rank/school",
+        "与 admissions 表的中国录取趋势交叉"
+      ]
     }
   ]
 }
