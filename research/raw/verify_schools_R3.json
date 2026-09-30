@@ -1,0 +1,168 @@
+{
+  "batch": "R3",
+  "generated": "2026-09-30",
+  "scope": "Vanderbilt University / Washington University in St. Louis (WashU) / University of Notre Dame",
+  "source_discipline": "仅官方第一手来源（招生官网 admissions.* + 官方 athletics vucommodores.com / washubears.com / fightingirish.com）。未核实字段标 '待核实（原因）'，禁编造。只读调研，未联系任何人。",
+  "schools": [
+    {
+      "name": "Vanderbilt University",
+      "domains": ["vanderbilt.edu", "admissions.vanderbilt.edu", "vucommodores.com"],
+      "test_policy": {
+        "value": "SAT/ACT 可选（test-optional）——适用于申请 2027 秋 与 2028 秋 入学的学生；自 2029 秋 入学起恢复为必须提交。官网未采用 GPA/标化硬性分数线（整体评估）。",
+        "season": "官方当前公布：Fall 2027 & Fall 2028 optional；Fall 2029 required",
+        "source": "https://admissions.vanderbilt.edu/apply/",
+        "source_note": "申请页末段：'For students applying for fall 2027 and 2028 entry, SAT or ACT scores are optional. For students applying for fall 2029 entry, test scores will be required.'"
+      },
+      "deadlines": {
+        "value": {
+          "Early Decision I": "2026-11-01",
+          "Early Decision II": "2027-01-01",
+          "Regular Decision": "2027-01-01",
+          "Transfer (priority)": "2027-02-15",
+          "Merit Scholarship application": "2026-12-01",
+          "ED I deposit": "2026-12-31",
+          "ED II deposit": "2027-03-01",
+          "RD deposit": "2027-05-01"
+        },
+        "season": "官方当前公布季（对应 Fall 2027 入学）",
+        "source": "https://admissions.vanderbilt.edu/apply/",
+        "source_note": "官网'Decision Plans'三段列出 ED I / ED II / RD 各节点日期。"
+      },
+      "supplements": {
+        "value": "1 篇 short-answer essay（约 250 词），题目全文：Vanderbilt University's motto, Crescere aude, is Latin for “dare to grow.” In your response, reflect on how one or more aspects of your identity, culture, or background has played a role in your personal growth, and how it will contribute to our campus community as you dare to grow at Vanderbilt.（first-year 与 transfer 通用）",
+        "season": "官方当前公布（未标注具体季年，随申请季更新）",
+        "source": "https://admissions.vanderbilt.edu/apply/personal-essay-and-short-answer-prompts/",
+        "source_note": "另有 Common App 主文（非本校补充）；官网该页仅列此 1 篇 short answer。"
+      },
+      "rowing_recruiting": {
+        "program_type": "无 varsity 赛艇（男女均无）；赛艇仅作为 club 队伍存在",
+        "value": "Vanderbilt 官方 athletics（vucommodores.com）运动项目列表中不含 Rowing，即学校不设 varsity 赛艇（男子、女子均无）。校内赛艇为社团/club 队伍 'Vanderbilt Rowing'。",
+        "club_team": {
+          "name": "Vanderbilt Rowing (club)",
+          "site": "https://www.vanderbiltrowing.org/",
+          "recruiting_page": "https://www.vanderbiltrowing.org/recruiting",
+          "contact_email": "vandyrowing@gmail.com",
+          "contact_source": "https://www.vanderbiltrowing.org/",
+          "contact_note": "该邮箱为俱乐部自列 'Coaching Staff' 邮箱，来自club队自己的官网（非学校 athletics 发布）。"
+        },
+        "source": "https://vucommodores.com/ (All Sports 菜单无 Rowing) + https://www.vanderbiltrowing.org/recruiting",
+        "source_note": "确认无 varsity rowing：官方 athletics 全项目下拉菜单列出 Volleyball/W-Track/W-Tennis/Swimming/Soccer/Lacrosse/W-Golf/W-Cross Country/Bowling/W-Basketball/M-Tennis/M-Golf/M-Cross Country/M-Basketball/Football/Baseball，均无 Rowing。"
+      },
+      "unverified": []
+    },
+    {
+      "name": "Washington University in St. Louis (WashU)",
+      "domains": ["wustl.edu", "admissions.wustl.edu", "washubears.com", "washurowing.org"],
+      "test_policy": {
+        "value": "Test-optional（不强制 SAT/ACT）。若提交：接受 SAT 或 ACT；接受 Common/Coalition App 自报分（self-reported）；ACT Science 为选考，取含/不含 Science 的 ACT Superscore 更高者；不要求 SAT Essay 或 ACT Writing；对 SAT/ACT 无偏好；任一年份考试成绩均可。",
+        "season": "官方当前公布（Fall 2027 申请季起持续 test-optional；WashU 'has adopted a test optional policy'）",
+        "source": "https://admissions.wustl.edu/common-questions/",
+        "source_note": "另见 https://admissions.washu.edu/how-to-apply/what-were-looking-for/ ：'While WashU is test-optional...'"
+      },
+      "deadlines": {
+        "value": {
+          "QuestBridge": "Nov 1",
+          "Early Action": "Nov 2",
+          "Early Decision I": "Nov 2",
+          "Early Decision II": "Jan 4",
+          "Regular Decision": "Jan 4",
+          "Spring Transfer": "Oct 15",
+          "Fall Transfer": "Mar 1",
+          "Financial aid deadlines": "QuestBridge/EA/ED I Nov 17；ED II Jan 11；RD Feb 1；Transfer 与申请同月同截止"
+        },
+        "season": "官方当前公布季（页面标注 'Important updates for fall 2027'）",
+        "source": "https://admissions.wustl.edu/how-to-apply/",
+        "source_note": "官网 'Important dates at a glance' 表，含申请截止/助学金截止/放榜日期。"
+      },
+      "supplements": {
+        "value": "必答 1 篇 WashU 专属 essay：主题为『你想在大学学什么、为何』（官网原文：'WashU has one required essay that is specific to us, where we ask you what you'd like to study and why'）。官网另提及可用 90 秒视频/若干 optional 题目补充，但 exact prompt 全文官网未在本页列出。",
+        "season": "官方当前公布（Fall 2027）",
+        "source": "https://admissions.washu.edu/how-to-apply/what-were-looking-for/",
+        "source_note": "官网仅确认『一篇必答、主题为所学与原因』；补充题的完整题干文字未在官方页给出——第三方常见转述为 'Please tell us what you are interested in studying at college and why'（约 200-250 词），此题干文字标注为未经官方页直接核对。"
+      },
+      "rowing_recruiting": {
+        "program_type": "club（非 varsity）；WashU athletics 无 varsity 赛艇",
+        "value": "WashU 官方 athletics（washubears.com）运动项目中 Rowing 无 varsity 队伍；赛艇为校内规模最大的学生运营 club 队伍（student-run 501(c)(3)），参加 intercollegiate club rowing。",
+        "club_team": {
+          "name": "Washington University Rowing (club)",
+          "site": "https://www.washurowing.org/",
+          "description_source": "https://www.washurowing.org/",
+          "contact_email": "待核实（官网首页/recruiting 未公布具体教练邮箱，仅提供 Donate/News/Instagram 等入口）"
+        },
+        "source": "https://www.washurowing.org/ + https://washubears.com/sports/rowing/（无 varsity rowing 项目内容）",
+        "source_note": "washurowing.org 自述：'the largest student-run 501(c)(3) sports organization on campus... compete at the highest level of intercollegiate club rowing'。"
+      },
+      "unverified": [
+        "补充文书完整题干文字（官方 what-we're-looking-for 页未列全文，仅确认主题）",
+        "WashU 赛艇 club 教练联系邮箱（官网未公布）"
+      ]
+    },
+    {
+      "name": "University of Notre Dame",
+      "domains": ["nd.edu", "admissions.nd.edu", "fightingirish.com", "ndmensrowing.com"],
+      "test_policy": {
+        "value": "Test-optional 至 2026-2027 申请季（含首年与转学，即申请 2027 秋入学不需提交）；自 2027-2028 申请季（申请 2028 秋入学）起恢复必须提交 ACT 或 SAT。",
+        "season": "官方当前公布：test-optional through 2026-2027 cycle；required beginning 2027-2028 cycle (Fall 2028 enrollment)",
+        "source": "https://admissions.nd.edu/apply/application-overview/",
+        "source_note": "另见 https://admissions.nd.edu/apply/ ：'Notre Dame is test-optional through the 2026/2027 application cycle... will reinstate a standardized testing requirement... beginning with the 2027-2028 admissions cycle.'"
+      },
+      "deadlines": {
+        "value": {
+          "Applications available": "Aug 1",
+          "Restrictive Early Action (REA)": "Nov 1",
+          "Regular Decision (RD)": "Jan 4",
+          "REA supporting documents": "Nov 15",
+          "RD supporting documents": "Jan 15",
+          "SlideRoom (REA)": "Nov 15",
+          "SlideRoom (RD)": "Jan 15",
+          "REA financial aid priority": "Nov 15",
+          "RD financial aid priority": "Jan 15",
+          "Confirmation deadline": "May 1"
+        },
+        "season": "官方当前公布季（REA Nov 1 / RD Jan 4）",
+        "source": "https://admissions.nd.edu/apply/",
+        "source_note": "官网 'Don't Lose These Dates' 与 application-overview 双处一致。"
+      },
+      "supplements": {
+        "value": "Notre Dame Writing Supplement（需另行提交，随 Common/Coalition App 提交）：①必答 short essay，最多 150 词，题目全文：'Everyone has different priorities when considering their higher education options and building their college or university list. Tell us about your “non-negotiable” factor(s) when searching for your future college home.'；②从 4 题中选答 2 题，每题 50-100 词：1) How does faith influence the decisions you make? 2) What is distinctive about your personal experiences and development (eg, family support, culture, disability, personal background, community)? Why are these experiences important to you and how will you enrich the Notre Dame community? 3) Notre Dame's undergraduate experience is characterized by a collective sense of care for every person. How do you foster service to others in your community? 4) What would you fight for?；③另有 Academic 区 100 词题 'Briefly share what draws you to the area(s) of study you listed.'（仅在部分官方页提及）。",
+        "season": "官方当前公布（对应 2026-2027 申请季）",
+        "source": "https://admissions.nd.edu/apply/application-overview/",
+        "source_note": "官网原文确认：'one (1) required short essay question and two (2) short-answer responses...'；③ academic 100 词题出现在第三方转述的 Academics 区，官方 application-overview 页未列该题，标注为部分核实。"
+      },
+      "rowing_recruiting": {
+        "program_type": "女子赛艇 = varsity（NCAA D-I, ACC）；男子赛艇 = club（非 varsity）",
+        "value": "纠正任务背景假设：Notre Dame 男子赛艇为 CLUB 队伍，而非 varsity heavyweight。官方 athletics（fightingirish.com）全项目菜单中的 'Rowing' 为女子 varsity 队（NCAA D-I，ACC 联盟）；男子赛艇不在 varsity 项目内，为社团/club 队，参加 club 级别赛事（ACRA）。",
+        "varsity_womens": {
+          "name": "Notre Dame Women's Rowing (varsity, NCAA D-I ACC)",
+          "site": "https://fightingirish.com/sports/wrow/",
+          "recruiting_contact_email": "ndrowing.ndrowing.1@nd.edu",
+          "contact_source": "https://fightingirish.com/sports/wrow/roster/（队员 bio 页 'Prospective Student-Athletes - Email Coach Stone (ndrowing.ndrowing.1@nd.edu)'）"
+        },
+        "club_mens": {
+          "name": "Notre Dame Men's Rowing (club)",
+          "site": "http://www.ndmensrowing.com/",
+          "recruiting_page": "http://www.ndmensrowing.com/recruiting",
+          "recruiting_coordinator": "Ben Donohue — bdonohu2@nd.edu",
+          "head_coach": "Stephen Lambers — stephen.lambers@gmail.com",
+          "contact_source": "http://www.ndmensrowing.com/recruiting + http://www.ndmensrowing.com/row-for-notre-dame",
+          "note": "该邮箱来自 club 队自建官网（ndmensrowing.com），非学校 athletics(fightingirish.com) 发布。"
+        },
+        "source": "https://fightingirish.com/sports/wrow/roster + http://www.ndmensrowing.com/recruiting",
+        "source_note": "男子 club 队自述：'highest level of the club rowing scene'、'2024 ACRA National Championship'（ACRA=club 全国赛）；近 75% 现役队员此前无赛艇经验。"
+      },
+      "unverified": [
+        "Writing Supplement 中 Academic 区 100 词题（'Briefly share what draws you to the area(s) of study you listed.'）——官方 application-overview 页未列出该题，来自第三方转述"
+      ]
+    }
+  ],
+  "summary": {
+    "schools_count": 3,
+    "fields_per_school": ["test_policy", "deadlines", "supplements", "rowing_recruiting"],
+    "all_fields_have_conclusion": true,
+    "key_corrections": [
+      "Notre Dame 男子赛艇为 club（非 varsity）；女子赛艇才是 varsity（NCAA D-I ACC）。任务背景中『ND 有男子 varsity heavyweight』不成立。",
+      "Vanderbilt 无 varsity 赛艇（男女均无），赛艇仅存于 club 层。",
+      "WashU 赛艇为 club，非 varsity。"
+    ]
+  }
+}

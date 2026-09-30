@@ -1,0 +1,91 @@
+{
+  "task": "核实 HKU + CUHK + HKUST 本科招生要求 + 赛艇信息",
+  "verified_at": "2026-09-30 (Asia/Shanghai)",
+  "student_context": "Joe（魏源），上海光剑美高，男子赛艇校队，2km 测功仪 PB 7:24.1；家庭兜底方案含港前三",
+  "source_policy": "仅官方域名 hku.hk / cuhk.edu.hk / ust.hk（招生页 + 体育部门页）",
+  "schools": {
+    "HKU": {
+      "name": "香港大学 The University of Hong Kong",
+      "test_policy": {
+        "english_requirement": "IELTS Academic 总分 6.5（写作与口语各≥6.0，同一次考试）；TOEFL iBT 总分 95（2026-01-21 前考的旧分制）／总分 5.0（2026-01-21 起新分制），写作与口语各≥5.0，同一次考试；SAT Reading & Writing 610；IB English A(HL/SL) Grade 5 或 English B Grade 6；GCSE/GCE O-Level English Grade B/6 或 IGCSE English First Language B/6。成绩须在开学（9/1）前 2 年内取得；不接受 IELTS Indicator/Online 及 TOEFL ITP/Home Edition。",
+        "exam_policy": "国际生/非联招（Non-JUPAS）通道，接受 GCSE/GCE A-Level、International A-Level、IB、SAT/AP 及其他国家/地区高中资历；内地高考（NJCEE/高考）不在本通道（另有招生途径）。",
+        "note": "达最低门槛不等于录取；录取综合学术+面试+个人陈述+推荐等。",
+        "source": "https://admissions.hku.hk/apply/international-qualifications/english-language-requirement ; https://admissions.hku.hk/node/2303 (SAT/AP)"
+      },
+      "deadlines": {
+        "intake": "2027 入学（信息以官网为准，2026 入学为参考）",
+        "application_open": "2026-09-23",
+        "rounds": "第一轮评审截止：2026-11-25（中午 HKT）—— 此日期前收到的申请将获评审并进入第一轮遴选；之后滚动。",
+        "source": "https://admissions.hku.hk/apply/international-qualifications"
+      },
+      "supplements": {
+        "personal_statement": "需要。个人陈述不超过 1,000 字，详述对大学/专业的兴趣；无论选几个专业只提交 1 份个人陈述（HKU-UCL 法律双学位另需 1 份）。",
+        "interview": "需要（入围者）。以国际资历申请且入围者或获邀面试，按专业安排（如建筑 BA(AS) 需 12 月初前提交作品集）。",
+        "references": "录取考量含推荐/参考资料。",
+        "source": "https://admissions.hku.hk/node/888 ; https://admissions.hku.hk/apply/international-qualifications/interview"
+      },
+      "rowing_recruiting": {
+        "team": "HKU Rowing Club（大学赛艇队，隶属 CSE 认可校队；另有 HKU Alumni Rowing Club）",
+        "how_to_join": "HKU / HKU SPACE / HKU 社区学院全日制学生均可参加；招募周期通常每年 10 月开始，需关注招募日程；CSE 校队招募日约 9 月中旬（地点：Suen Chi Sun 多功能室 1，时间 TBC）。",
+        "contact_email": "rowclub@connect.hku.hk（CSE 校队招募联系人）；rowclub@hku.hk（俱乐部）；alumni@hkurowing.club（校友）",
+        "instagram": "@hkurowclub",
+        "source": "https://hkurowing.club/joinus ; https://hkurowing.club/aboutus/people ; https://cse.hku.hk/uploadfile/docs/20252026_Schedule%20of%20Recruiting%20HKU%20Sports%20Team%20Members.pdf"
+      }
+    },
+    "CUHK": {
+      "name": "香港中文大学 The Chinese University of Hong Kong",
+      "test_policy": {
+        "english_requirement": "IELTS Academic 总分 6.0；TOEFL iBT 总分 80（2026-01-21 前考的）／4.5（2026-01-21 起考的）；SAT EBRW 590；ACT ELA 23；GCSE/IGCSE/GCE-OL Grade C/4；GCE-AL/AS E；IB Grade 4。不接受 IELTS One Skill Retake/Indicator/Online 及 TOEFL Home Edition/Best Scores。",
+        "exam_policy": "非联招（Non-JUPAS，非本地/国际生通道）接受 GCE-AL/IAL（3AL 或 2AL+2AS）、IB Diploma，及其他高中资历（如美国：高中毕业证 + SAT/ACT + AP；马来西亚 UEC/STPM；澳洲 ATAR 等）。内地高考生另循「全国普通高校统一招生计划」途径，不走本通道。",
+        "note": "另有中文语言要求（可依情况豁免）；达最低门槛不等于录取。",
+        "source": "https://admission.cuhk.edu.hk/application/non-jupas/language-requirements/ ; https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/"
+      },
+      "deadlines": {
+        "intake": "2027 入学",
+        "application_open": "2026-10（Application Opens，10 月）",
+        "rounds": "提前录取轮（Advance Offer Round）截止：2026-11-12；常规轮（Regular Round）截止：2027-01-07。只需提交一次申请，未获提前录取者自动进入常规轮竞争。",
+        "source": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/important-dates/"
+      },
+      "supplements": {
+        "interview": "如获邀则需面试；录取综合教育背景+学术及非学术成就，面试表现计入考量。",
+        "personal_statement": "官网未明确要求个人陈述（以申请指南/专业要求为准）。",
+        "advanced_standing": "符合特定资历（GCE-AL/IAL、IB、Cambridge Pre-U 等）者可申请「Admission with Advanced Standing」，最多减免 24 学分（学制最多缩短 1 年）。",
+        "source": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/"
+      },
+      "rowing_recruiting": {
+        "team": "CUHK 男子/女子赛艇队（大学校队，由 Physical Education Unit, PEU 体育部管理；各书院另有书院队，如 CW Chu College Rowing Team）",
+        "how_to_join": "通过 PEU 校队选拔/tryout（每学年 1st/2nd term 有 tryout 日程，见 PEU「Try-out Schedule」）；场地含 CUHK 水上运动中心（Water Sports Centre）。书院队另设 tryout。",
+        "contact_email": "peunit@cuhk.edu.hk（PEU 体育部）；水上运动中心 2603-6776；PEU 总机 3943-6097",
+        "captains": "男子赛艇队长 袁健斌 (Yuen Kin Pan, Bennett)；女子赛艇队长 梁智晴 (Leung Chi Ching, Cici)（2025-26 学年 PEU 队长名单）",
+        "source": "https://www.peu.cuhk.edu.hk/en/sports-teams/ ; https://www.peu.cuhk.edu.hk/en/sports-teams/captain-list ; https://www.peu.cuhk.edu.hk/en/about-us/contact-us/"
+      }
+    },
+    "HKUST": {
+      "name": "香港科技大学 The Hong Kong University of Science and Technology",
+      "test_policy": {
+        "english_requirement": "IELTS Academic 总分 6.0；TOEFL iBT 一次考试总分 80（2026-01-21 前考的）／4.5（2026-01-21 起考的）；SAT EBRW 590；ACT English 与 Reading 各 23；IB English Grade 4（English B SL 需 5）；IGCSE/GCSE/GCE O-Level Grade 4/C；GCE AS/A-Level English Grade E；AP English Score 4；另有 PTE 64、Duolingo 125 等。",
+        "exam_policy": "国际资历申请者须满足 General Admissions Requirements + 学院/专业要求 + 英语要求；HKUST 接受多种国际资历（IB、GCE-AL/IAL、SAT/AP 等）。",
+        "note": "内地高考生另循内地招生途径。",
+        "source": "https://join.hkust.edu.hk/oas/elar.pdf ; https://join.hkust.edu.hk/admissions/international-qualifications"
+      },
+      "deadlines": {
+        "intake": "2027 入学",
+        "application_open": "2026-10-02（Online application system opens）",
+        "rounds": "优先轮（Priority Round）截止：2026-11-25；2026-11-26 起滚动审理；录取通知 Late Dec 2026 起陆续发出；申请关闭：2027-06-30。",
+        "source": "https://join.hkust.edu.hk/admissions/international-qualifications ; https://join.hkust.edu.hk/admissions/international-qualifications/application-procedures"
+      },
+      "supplements": {
+        "documents": "需提交：个人陈述（personal statement）、Grade 10 起的学校成绩报告、英语能力证明、公开考试成绩证书（如有）、重要奖项证明（如有）、学业推荐人（academic referee）提名；IB/GCE-AL/IAL/Cambridge Pre-U/印度高中考试学生还需提名 IB 协调员或升学指导（Career Counselor）。申请费 HKD 600。",
+        "interview": "部分专业需面试（Subject-specific Requirements/Interview）。",
+        "source": "https://join.hkust.edu.hk/admissions/international-qualifications/application-procedures"
+      },
+      "rowing_recruiting": {
+        "team": "Rowing Club, HKUSTSU（科大划艇会，1993 年成立，隶属学生会，由 Dean of Students' Office (DSTO) 指导；表现优异者被招入 HKUST Rowing Team 代表大学参加校际赛）",
+        "how_to_join": "加入 Rowing Club 培养基础技能 → 表现优异者入选 HKUST Rowing Team；联系俱乐部或关注 IG 获取招募信息。",
+        "contact_email": "su_row@ust.hk（俱乐部邮箱）；会长 ONG, Ho Chuen Hayden — hchong@connect.ust.hk；队长 WONG, Lui — lwongag@connect.ust.hk；俱乐部顾问/领队 Miss Carmen TSUI — sacarment@ust.hk",
+        "instagram": "@hkustsu_rowing",
+        "source": "https://dst.hkust.edu.hk/sports-&-wellness/sports-clubs-and-teams/rowing ; https://dst.hkust.edu.hk/sports-%26-wellness/sports-clubs-and-teams/rowing/rowing-club"
+      }
+    }
+  }
+}

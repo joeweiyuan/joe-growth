@@ -32,7 +32,7 @@
       "title": "逐校官方核实（MIT/Stanford/8藤校）：标化·DDL·文书·赛艇招募",
       "date": "2026-09-30",
       "type": "official-verification",
-      "status": "complete",
+      "status": "complete-28-schools",
       "file": "2026-09-30_逐校官方核实.md",
       "sources": [
         "各校招生官网 + 官方 athletics（逐字段附 URL）"
@@ -41,12 +41,13 @@
         "universities.admission_info 结构化填充"
       ],
       "key_findings": [
-        "10 校 × 4 字段全部带官方 URL（MIT·Stanford + 8 藤校）",
-        "标化：MIT/Stanford/Harvard/Yale/Dartmouth/Brown/Cornell/Penn 必交；Princeton/Columbia 26-27 test-optional、27-28 恢复",
-        "英语门槛：MIT 90/100（新制5/5.5）· Yale 100+ · Columbia 105/5.5 · Brown 建议105/5.5 · Cornell 新制5.0/5.5 · Penn 5+ · Stanford 不要求 · Dartmouth 条件性",
-        "赛艇招募：Princeton 唯一公布完整流程+4教练邮箱；Harvard 轻量级公开 erg 标准（2K sub 6:30）；Cornell/Penn 有重量级协调人",
-        "Checker 抽查 10 条：9 一致 / 1 不一致（Harvard 轻量级问卷 URL 404，已更正）",
-        "⚠️ armssoftware 问卷短链 HTTP 200 ≠ 仍受理当前招募季（同一 SPA 外壳）"
+        "28 校全部完成（2027 US News Top20 的 22 校 + 港前三 + 澳洲前三）",
+        "🚣 男子 varsity 赛艇仅存在于：8 藤校 + MIT + Stanford + UC Berkeley；其余 Top20 为 club 或无",
+        "JHU/Caltech 无赛艇；UChicago/Northwestern/Rice/Vanderbilt/WashU/Duke(男)/Notre Dame(男)/UCLA/CMU 仅 club",
+        "多校 test-optional 有终止年份（Vanderbilt 2029 起恢复、ND 2027-28 起恢复）；UC 系 Test-free；CMU 按学院分档",
+        "港校英语门槛：HKU IELTS 6.5/TOEFL 95(5.0新制)；CUHK/HKUST IELTS 6.0/TOEFL 80(4.5新制)",
+        "澳洲：墨尔本 IELTS 6.5/TOEFL 81；悉尼 IELTS 6.5（接受中国高考）；UNSW TOEFL 90–94",
+        "Checker 复核：批次1 10 条 9 一致/1 已更正；批次2 进行中"
       ]
     },
     {
