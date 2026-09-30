@@ -206,6 +206,33 @@
         "评审机制官方原话库（可用于评估引擎的'非量化'说明）",
         "赛艇 benchmark 表（体育模块）"
       ]
+    },
+    {
+      "id": "2026-09-30-isef-china-and-research-track",
+      "title": "科创主攻执行方案：ISEF 中国区路径 + 持续科研线 + OfferPath 成果",
+      "date": "2026-09-30",
+      "type": "execution-plan",
+      "file": "2026-09-30_科创主攻执行方案.md",
+      "sources": [
+        "ISEF 官方 Find-a-Fair",
+        "shssp.org / shssp.org.cn / cyscc.org",
+        "丘成桐奖官网",
+        "CEE/MIT（RSI/SSP）"
+      ],
+      "key_findings": [
+        "中国共 4 个 ISEF 官方附属赛；上海+江苏辖区为 CHN009 上海科学种子奥林匹克；CASTIC 未在官方清单（待核实）",
+        "国际学校学生可参加上海青创赛/科学社选拔（官方原文支撑）",
+        "ISEF 2027 = 2027/5/8-14 洛杉矶（官方）；ISEF 2028/29 未公布",
+        "MIT Research Supplement 截止=同申请轮（EA 11/1）",
+        "推荐科研线：丘成桐中学科学奖（主线，高一可注册、免费）+ 上海/全国青创赛（ISEF 通道）",
+        "资格红线：MIT THINK/MITES、Stanford SIMR 均不适用于中国学生",
+        "OfferPath 现状：119 校/4,709 条数据但用户≈0 → 成果须以可验证数据/版本/公开产出为准"
+      ],
+      "reusable_for_offerpath": [
+        "ISEF 中国区路径数据（可作产品内容）",
+        "竞赛资格红线表",
+        "科研项目对照表"
+      ]
     }
   ]
 }
