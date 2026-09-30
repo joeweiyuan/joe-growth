@@ -22,8 +22,8 @@ const SITE_DATA = {
     school: '光华剑桥',
     gpa: '3.91',
     gpaTerm: '2024-2025学年下学期期末',
-    toefl: '3.5 / 6.0',
-    toeflTarget: '≥4.5 (6月底)',
+    toefl: '4.0 / 6.0',
+    toeflTarget: '≥5.0 (年底)',
     rowing2k: "7'24\"1 (PB 🚀)",
     rowing2kLatest: "7'24\"1 (Jul 🚀)",
     rowingTarget: "✅ 7'24\"1 · 目标已超",
@@ -68,9 +68,9 @@ const SITE_DATA = {
   // 🎯 TOEFL 全部数据
   // ================================================================
   toefl: {
-    currentLevel: 3.5,
+    currentLevel: 4.0,
     targetLevels: [
-      { score: 4.5, deadline: '2026-06-30', label: '首考目标' },
+      { score: 4.0, deadline: '2026-08-30', label: '✅ 首考+二战（MyBest 4.0）' },
       { score: 5.0, deadline: '2026-12-31', label: '年底目标' },
       { score: 5.5, deadline: '2027-06-30', label: '最终目标' }
     ],
