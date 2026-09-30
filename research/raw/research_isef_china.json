@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "researched_at": "2026-09-30 (Asia/Shanghai)",
+    "scope": "ISEF 中国区(附属赛)晋级路径/资格/时间节点; 学生=上海光剑美高(国际课程体系), 现10年级, 2028秋申请(EA Nov 2028)/2029秋入学",
+    "rule": "官方优先; 每个事实附URL; 拿不到=官网未公布; 不编造日期/规则; 明确区分 官方规则/往年惯例/第三方说法"
+  },
+  "isef_china_affiliate": {
+    "name": "中国大陆目前并无单一'全国青少年科技创新大赛(CASTIC)'作为ISEF官方附属赛; Society for Science 官方 Find-a-Fair 目录(2025-2026赛季)列出的中国大陆 ISEF 附属赛共 4 个: CHN008 Sichuan Science Fair(成都, 仅面向在华外籍人员子女学校/International Schools Of China); CHN009 Shanghai Science Seed Olympiad(上海, 辖区 Shanghai+Jiangsu); CHN010 Chongqing Adolescent Science & Technology Innovation Contest(重庆); CHN011 Beijing-Tianjin-Hebei Young Science Fair/BTHYSF(京津冀)",
+    "note": "'全国青少年科技创新大赛(CASTIC)'是中国科协主办的国内赛事, 历史上有'全国赛获奖→冬令营→选拔中国代表队参加ISEF'的路径(第三方说法/往年惯例), 但未出现在 Society for Science 官方 Find-a-Fair 的中国大陆附属赛清单中, 需逐年核实",
+    "source": "https://findafair.societyforscience.org/ (Country=China 检索结果, 2025-2026赛季)"
+  },
+  "path": [
+    {
+      "stage": "A. 官方ISEF附属赛路径(推荐给上海国际课程学生) - 第1步: 上海青少年科学社高级会员选拔暨'科学种子'国际交流项目遴选(Society附属赛 CHN009)",
+      "organizer": "上海青少年科学社 / 上海市科学技术协会(SSAYT, 平台 www.shssp.org)",
+      "url": "https://www.shssp.org/NewsInfo.aspx?p=FB60D66BCD8D0F9CB6C83B660CAE70BD27625643CCE14D1616C7308BA0AF7388",
+      "eligibility": "上海市 6-12 年级在读学生, 仅接受个人申报; 热爱科学、学有余力, 具备良好英语听说读写能力; 有科技创新项目意向或已有初步成果。外省市优秀学生推荐至科学社外省分社。分 Junior 组(有开题项目/构思或初步探索)与 Senior 组(成果较完整/完成度≥70%)。学科: 数学、物理与天文、化学、能源与环境、生命科学、计算机科学与信息技术、工程学、行为与社会科学",
+      "nature": "官方规则"
+    },
+    {
+      "stage": "A-第2步: 通过CHN009遴选后由该附属赛向 Regeneron ISEF 全球总决赛输送项目(每个附属赛有固定名额配额)",
+      "organizer": "Society for Science (ISEF主办方)",
+      "url": "https://www.societyforscience.org/isef/",
+      "eligibility": "9-12年级; 须先赢得 Society-affiliated fair 资格; 不允许个人直接报名 ISEF; 每名学生/队只能报1个项目、只参加1个附属赛",
+      "nature": "官方规则"
+    },
+    {
+      "stage": "B. 国内全国赛路径(中国科协体系) - 第1步: 上海市青少年科技创新大赛(上海青创赛, 第41届)",
+      "organizer": "上海市科学技术协会、上海市教育委员会、上海市科学技术委员会 等多家联合主办; 组委会办公室设在上海科技报社",
+      "url": "https://ssedf.org.cn/gonggao/552.html ; 官网 https://www.shssp.org.cn",
+      "eligibility": "在本市普通中学、中等职业学校、特殊教育学校、国际学校等就读, 符合参赛年龄的学生均可报名(以当年9月1日为计算时点, 年满12周岁未满19周岁; 高年龄组为年满15周岁未满19周岁)。个人或团队(≤3人, 同一年龄组), 每个学生限报1项。作品分7学科",
+      "nature": "官方规则"
+    },
+    {
+      "stage": "B-第2步: 择优推荐参加全国青少年科技创新大赛(CASTIC, 中国科协主办)",
+      "organizer": "中国科协、教育部、科技部等(全国青少年科技创新大赛组委会); 官网 cyscc.org/castic",
+      "url": "https://www.cyscc.org/castic/",
+      "eligibility": "参赛学生须为国内在校中小学生; 每个学生一届只能申报1个作品; 须由省级单位在省赛获奖者中按名额择优推荐",
+      "nature": "官方规则(全国赛存在为官方; 但'全国赛→ISEF'衔接属第三方说法)"
+    },
+    {
+      "stage": "B-第3步(待核实): 全国赛优秀项目→中国科协青少年国际科技交流项目冬令营(约12月)→选拔 ISEF 中国代表队",
+      "organizer": "中国科协(青少年科技中心)",
+      "url": "https://www.itcssz.com/2 (第三方, 描述2018年Intel ISEF冬令营) ; https://www.hanlin.com/archives/1099003 (第三方)",
+      "eligibility": "来源为第三方/往年惯例, 官方当年通知未获取, 需每年向中国科协/上海科协核实",
+      "nature": "第三方/往年惯例(需核实当年)"
+    },
+    {
+      "stage": "C. 四川路径(不适用于光剑美高) - Sichuan Science Fair CHN008",
+      "organizer": "Chengdu (CDIS) / 面向 International Schools Of China",
+      "url": "https://findafair.societyforscience.org/",
+      "eligibility": "仅面向在华外籍人员子女学校(children of foreign nationals schools)9-12年级学生, 学校统一报名, 不接受个人报名; 每校限额(2025-26赛季获奖校4项/其他校3项)",
+      "nature": "官方规则"
+    }
+  ],
+  "eligibility": {
+    "international_school": "上海青创赛官方明文允许国际学校学生参加。原文(《第41届上海市青少年科技创新大赛实施方案》): '在本市普通中学、中等职业学校、特殊教育学校、国际学校等就读, 符合参赛年龄的学生均可报名参加。' 上海青少年科学社高级会员选拔原文: '上海市6-12年级在读学生(仅接受个人申报)', 未设国籍限制。四川省附属赛(CHN008)则仅限外籍人员子女学校学生, 中国籍国际课程学生不可参加。",
+    "grade": "ISEF官方: 9-12年级(必须先赢得 Society-affiliated fair 资格)。上海青创赛: 12-19周岁(高年龄组15-未满19周岁)。科学种子/科学社高级会员: 上海市6-12年级。ISEF项目研究窗口: 研究不超过12个月, 当年项目须在上一年1月之后开始。",
+    "individual_team": "ISEF: 可个人或团队(≤3人), 一名学生/一队只能报1个项目。上海青创赛: 可个人或团队(≤3人, 须同一年龄组, 不得兼报, 每人限1项)。科学社高级会员选拔: 仅接受个人申报。",
+    "mentor_and_lab": "ISEF要求提交 Research Application Form + Research Plan + 同意书, 须由成年导师(adult mentor)审阅; 涉及人类被试/脊椎动物/生物安全等需 SRC(科学审查委员会)预先批准。CASTIC(全国赛): 辅导教师1-3名, 并要求做'查新报告'(novelty search report)。",
+    "source": "https://ssedf.org.cn/gonggao/552.html ; https://www.shssp.org/NewsInfo.aspx?p=FB60D66BCD8D0F9CB6C83B660CAE70BD27625643CCE14D1616C7308BA0AF7388 ; https://findafair.societyforscience.org/ ; https://www.societyforscience.org/isef/international-rules/"
+  },
+  "timeline": [
+    {
+      "year": "2025-2026(参考样例, CHN009上海科学种子)",
+      "stage": "Shanghai Science Seed Olympiad 附属赛周期",
+      "window": "比赛日期 2025/11/17-2026/1/25; 报名截止 2025/11/16",
+      "source": "https://findafair.societyforscience.org/ (Country=China, CHN009)",
+      "nature": "官方"
+    },
+    {
+      "year": "2026(第41届上海青创赛)", 
+      "stage": "上海青创赛 作品申报",
+      "window": "2026/1/1 08:00 - 1/20 24:00 在线自主申报(官网 www.shssp.org.cn)",
+      "source": "https://www.sast.gov.cn/content.html?id=2001174689380139009 (关于举办第41届上海市青少年科技创新大赛的通知)",
+      "nature": "官方"
+    },
+    {
+      "year": "2026(第41届上海青创赛)",
+      "stage": "上海青创赛 现场活动",
+      "window": "3月下旬 在上海科学会堂举行现场问辩/动手实践/综合素质考察; 赛事整体2026年1-4月举行",
+      "source": "https://ssedf.org.cn/gonggao/552.html",
+      "nature": "官方"
+    },
+    {
+      "year": "2026-2027",
+      "stage": "上海青少年科学社高级会员选拔(Joe可直接对应的当前周期)",
+      "window": "2026-2027年度高级会员选拔通知发布 2026/6/15; 具体报名/评审窗口 官网未公布(以 shssp.org 通知为准)",
+      "source": "https://www.shssp.org/NewsInfo.aspx?p=FB60D66BCD8D0F9CB6C83B660CAE70BD27625643CCE14D1616C7308BA0AF7388",
+      "nature": "官方(发布日期为官方; 具体窗口待官网公布)"
+    },
+    {
+      "year": "2026-2027(参考样例)",
+      "stage": "上海科学社高级会员选拔暨'科学种子'国际交流项目遴选(上一周期)",
+      "window": "该周期通知发布 2025/9/15",
+      "source": "https://www.shssp.org/NewsInfo.aspx?p=FB60D66BCD8D0F9CB6C83B660CAE70BDA7515F20F86A7C8267DEF8CD95A58D78",
+      "nature": "官方"
+    },
+    {
+      "year": "2027",
+      "stage": "Regeneron ISEF 2027 全球总决赛",
+      "window": "2027/5/8-5/14, 洛杉矶 California (Los Angeles Convention Center)",
+      "source": "https://www.societyforscience.org/isef/affiliated-fair-network/",
+      "nature": "官方"
+    },
+    {
+      "year": "2026-2027赛季",
+      "stage": "ISEF附属赛最晚举办日(2027总决赛的资格赛)",
+      "window": "2027/4/12 为最后一个可举办 Regeneron ISEF 附属赛的日期; 决赛名单公布后12天内提交 Finalist Questionnaire",
+      "source": "https://www.societyforscience.org/isef/affiliated-fair-network/",
+      "nature": "官方"
+    },
+    {
+      "year": "2026",
+      "stage": "Regeneron ISEF 2026 全球总决赛(已结束)",
+      "window": "2026/5/9-5/15, Phoenix, Arizona",
+      "source": "https://www.societyforscience.org/isef",
+      "nature": "官方"
+    },
+    {
+      "year": "2027-2028赛季(对应 ISEF 2028, Joe 的关键年)",
+      "stage": "上海科学种子附属赛 / 上海青创赛 / 全国赛 具体日期",
+      "window": "官网未公布(截至2026-09-30); 可参照上一周期节奏: 科学种子报名约11月中截止、比赛约11月-次年1月; 上海青创赛申报约次年1月1-20日、现场约3月下旬",
+      "source": "待官网公布(参照 https://findafair.societyforscience.org/ 与 https://ssedf.org.cn/gonggao/552.html 上一周期)",
+      "nature": "往年惯例(需核实当年)"
+    },
+    {
+      "year": "2028",
+      "stage": "Regeneron ISEF 2028 全球总决赛",
+      "window": "官网未公布(截至2026-09-30)",
+      "source": "待官网公布 https://www.societyforscience.org/isef/",
+      "nature": "官方未公布"
+    },
+    {
+      "year": "2029",
+      "stage": "Regeneron ISEF 2029 全球总决赛",
+      "window": "官网未公布(截至2026-09-30)",
+      "source": "待官网公布",
+      "nature": "官方未公布"
+    }
+  ],
+  "mit_research_portfolio_link": {
+    "text": "MIT官方设有可选 Research Supplement(科研补充材料), 通过 SlideRoom 提交, 面向'在高中课程之外完成重要科研项目'的学生: 需完成科研问卷 + 上传 abstract/poster PDF(若已发表附引用) + 提名 research advisor/mentor/PI 直接通过 SlideRoom 提交推荐信; 每位申请者只允许1份 Research Supplement。MIT官方要求: portfolio 必须与对应申请轮次同一截止日期提交。MIT 2027申请季(参考): EA 截止 11月1日, RA 截止 1月4日。因此若走 MIT EA(Nov 1), Research Supplement 也须在 11月1日前提交。MIT官方页面未强制要求 ISEF, 任何'重要的科研项目'均可作为 Research Supplement 素材; ISEF 是可用以呈现的科研凭证之一(第三方称MIT页面'推荐'ISEF, 属第三方说法)。另有官方说明: EA被defer后若要补交 supplement, 截止约为1月5日。",
+    "source": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/ ; https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+    "timing_advice": "建议: 若希望以 ISEF 项目作为 Research Supplement 的核心素材, 应在申请季当年(2028)11月1日 EA 截止前完成 ISEF 参赛(即争取 ISEF 2028 / 2028年5月), 并提前取得导师推荐信; ISEF 2029(2029年5月)晚于EA截止, 只能在 RA/延后阶段作更新(参考 FUN Form)。"
+  },
+  "unverified": [
+    "'全国青少年科技创新大赛(CASTIC)→冬令营→ISEF中国代表队'的官方当年衔接文件未获取到; 上述路径来自第三方(itcssz.com / hanlin.com), 且冬季夏令营衔接属往年惯例, 需每年向中国科协或上海市科协核实。",
+    "Regeneron ISEF 2028 / 2029 的具体日期与地点: 截至2026-09-30 官网未公布。",
+    "2027-2028赛季(对应ISEF 2028)上海科学种子附属赛、上海青创赛、全国赛的具体报名与评审日期: 官网未公布。",
+    "Society for Science Find-a-Fair 的'2025-2026赛季'中国大陆4个附属赛清单(截至2026-09-30抓取): 2026-2027赛季清单可能未完全更新, 需以 findafair 当年公示为准。",
+    "'全国青少年科技创新大赛'是否为 ISEF 官方附属赛: 官方 Find-a-Fair 中国大陆清单中未出现 CASTIC, 与部分第三方'CASTIC是主要ISEF通道'的说法不一致, 需按官方当年公示核实。",
+    "'上海光剑美高'是否属外籍人员子女学校: 若为外籍人员子女学校则可用 CHN008 四川附属赛; 若为民办国际课程学校(招收中国籍学生), 则不适用四川路径, 应走 CHN009 上海科学种子 或 上海青创赛→全国赛路径。需以学校实际资质确认。"
+  ],
+  "sources": [
+    {"url": "https://findafair.societyforscience.org/", "desc": "Society for Science 官方 Find-a-Fair; Country=China 检索得 CHN008/009/010/011(2025-2026赛季)", "type": "官方"},
+    {"url": "https://www.societyforscience.org/isef/affiliated-fair-network/", "desc": "ISEF附属赛网络与日期: ISEF 2027 = 2027/5/8-14 洛杉矶; 附属赛最晚 2027/4/12", "type": "官方"},
+    {"url": "https://www.societyforscience.org/isef/", "desc": "Regeneron ISEF 官网; ISEF 2026 = 2026/5/9-15 Phoenix", "type": "官方"},
+    {"url": "https://www.societyforscience.org/isef/international-rules/", "desc": "ISEF International Rules(研究伦理/研究窗口/AI使用规范)", "type": "官方"},
+    {"url": "https://ssedf.org.cn/gonggao/552.html", "desc": "《第41届上海市青少年科技创新大赛实施方案》全文 (含国际学校参赛资格原文)", "type": "官方"},
+    {"url": "https://www.sast.gov.cn/content.html?id=2001174689380139009", "desc": "《关于举办第41届上海市青少年科技创新大赛的通知》(申报时间2026/1/1-1/20)", "type": "官方"},
+    {"url": "https://www.shssp.org/NewsInfo.aspx?p=FB60D66BCD8D0F9CB6C83B660CAE70BD27625643CCE14D1616C7308BA0AF7388", "desc": "《2026-2027年上海青少年科学社高级会员选拔通知》(上海市6-12年级/仅个人申报)", "type": "官方"},
+    {"url": "https://www.shssp.org/NewsInfo.aspx?p=FB60D66BCD8D0F9CB6C83B660CAE70BDA7515F20F86A7C8267DEF8CD95A58D78", "desc": "《2026年上海青少年科学社高级会员选拔暨科学种子国际交流项目遴选活动通知》", "type": "官方"},
+    {"url": "https://www.shssp.org.cn/", "desc": "上海青少年科技创新服务平台(上海青创赛官方申报/通知发布平台)", "type": "官方"},
+    {"url": "https://www.cyscc.org/castic/", "desc": "全国青少年科技创新大赛官网(中国科协体系)", "type": "官方"},
+    {"url": "https://mitadmissions.org/apply/firstyear/portfolios-additional-material/", "desc": "MIT Research Supplement 官方说明(SlideRoom提交/材料清单/截止=申请同轮)", "type": "官方"},
+    {"url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/", "desc": "MIT 申请截止: EA=11/1, RA=1/4", "type": "官方"},
+    {"url": "https://en.regeneronisef.org.cn/isef-guide", "desc": "2026赛季中国28支队伍经四通道输送(Sichuan 5/科学种子/重庆/BTHYSF 10)", "type": "第三方"},
+    {"url": "https://en.embarkchina.org/blog/1973.html", "desc": "中国三条ISEF路径说明(第三方)", "type": "第三方"},
+    {"url": "https://en.hanlin.com/competitions/castic", "desc": "CASTIC→ISEF 冬令营路径与CASTIC赛程(第三方)", "type": "第三方"}
+  ]
+}
