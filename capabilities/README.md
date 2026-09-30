@@ -65,10 +65,13 @@
 ## 七、研究归档 & 知识库备份（v1.1）
 
 - 🔬 **研究归档**：`research/`（索引 `_index.json`）。每次研究/分析归档为「问题 + 来源 + 结论 + 可复用维度」，标注 confidence，**供 OfferPath 直接参考**
-- 📚 **知识库备份**：`scripts/backup_kb.sh`
-  - ① 本地全量快照 → `~/backups/joe/`（含敏感信息，不入公开仓库，保留 20 份）
-  - ② 脱敏知识库层 → `knowledge/`（STATE 快照 + 12 专属技能 + README）→ 推送 main & gh-pages
-  - ⚠️ 仓库为 public：**禁止推送 token/手机号/邮箱/chatID**；「所有东西」的异地全量备份需**私有仓库**（待家主授权）
+- 📚 **知识库备份（三目的地）**：`scripts/backup_kb.sh`
+  - ① 本地全量 tar.gz → `~/backups/joe/`（保留 20 份）
+  - ② **public 脱敏层** → `joe-growth/knowledge/`（STATE 快照 + 12 技能）→ 网站/OfferPath 可公开参考
+  - ③ **private 全量** → `corinwe/weiwuji-knowledge-base` → `08-个人成长/少爷/`（STATE 原文 + 能力包 + research + admissions + daily-logs + 技能）
+  - ⚠️ 仓库为 public：**禁止推送 token/手机号/邮箱/chatID**（脚本对公开层自动脱敏）
+  - 🏛️ **架构结论**：public 网站**不能**从私有 KB 取数 → 走「本地主库 → 双推」；网站数据由自身仓库提供
+  - 🛡️ KB 推送只 `git add 08-个人成长/少爷`，远端有新提交先 `git pull --rebase`
 
 ## 八、当前缺口（待补）
 
