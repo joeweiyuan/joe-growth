@@ -1,0 +1,327 @@
+{
+  "name": "joe-growth-capability-pack",
+  "version": "1.0",
+  "updated": "2026-09-30",
+  "owner": "Corin（家主）",
+  "maintainer": "六六（普罗米修斯）",
+  "principle": "事实优先 · 禁止编造 · Maker≠Checker · 写回验证 · 双副本同步 · 线上实测",
+  "data_layer": {
+    "state_file": "/root/.hermes/profiles/joe/STATE.md",
+    "repos": {
+      "publish_site": "/root/joe-growth（GitHub: joeweiyuan/joe-growth，部署分支 gh-pages）",
+      "source_mirror": "/root/joe-growth-tracker（纯本地源，无独立 .git，禁 push）",
+      "academic_site": "/root/joe-academic-tracker（joeweiyuan/joe-academic-tracker）"
+    },
+    "rule": "同一内容必须双副本一致（joe-growth + joe-growth-tracker）；发布只从 joe-growth 推送 main + gh-pages"
+  },
+  "domains": [
+    {
+      "id": "admissions",
+      "name": "🎓 升学申请",
+      "skills": [
+        "joe-admissions"
+      ],
+      "files": [
+        "admissions/00-升学总档.md",
+        "admissions/01-选校清单.md",
+        "admissions/02-时间线.md",
+        "admissions/03-标化规划.md",
+        "admissions/04-活动与荣誉清单.md",
+        "admissions/05-文书素材库.md",
+        "admissions/06-体育招募.md",
+        "admissions/07-推荐信策略.md",
+        "admissions/08-申请季看板.md"
+      ],
+      "sources": [
+        "STATE.md",
+        "daily-logs/",
+        "awards.md",
+        "milestones.md",
+        "赛艇总档案",
+        "OfferPath 平台"
+      ],
+      "triggers": [
+        "选校",
+        "申请时间线",
+        "文书素材",
+        "招募",
+        "推荐信",
+        "检查升学时间线（季度）"
+      ],
+      "verify": "学校要求/DDL 必须官方核实；未核实写\"待核实\";线上 HTTP 200",
+      "deliver": [
+        "GitHub main+gh-pages",
+        "家庭群（重大节点）"
+      ]
+    },
+    {
+      "id": "academics",
+      "name": "📚 学术/GPA",
+      "skills": [
+        "joe-academic-report",
+        "academic-report-analysis"
+      ],
+      "files": [
+        "Academic Tracker 站点（joeweiyuan.github.io/joe-academic-tracker）",
+        "references/academic-growth.md"
+      ],
+      "sources": [
+        "成绩单原件/成绩单截图",
+        "STATE.md"
+      ],
+      "triggers": [
+        "成绩单",
+        "GPA",
+        "学期报告",
+        "趋势分析"
+      ],
+      "verify": "数字逐个对照成绩单原件（OCR 后复核）",
+      "deliver": [
+        "Academic Tracker 站点",
+        "状态文件",
+        "家庭群报告"
+      ]
+    },
+    {
+      "id": "toefl",
+      "name": "📖 托福/标化",
+      "skills": [
+        "joe-toefl",
+        "toefl-mock-exam-analysis"
+      ],
+      "files": [
+        "/root/joe-toefl-tracker/（词库6846词/practice_tracker/error_words/weekly_review.py）",
+        "reports/2026-08-19_托福模考_系统原始数据参考.md",
+        "reports/2026-08-21_首考考前夜_行动清单.md"
+      ],
+      "sources": [
+        "模考 PDF/门户",
+        "成绩单（MyBest）",
+        "STATE.md 托福区"
+      ],
+      "triggers": [
+        "模考",
+        "托福成绩",
+        "错词",
+        "备考计划",
+        "Vincent 课程"
+      ],
+      "verify": "双口径（老师/机评）逐项对照；成绩以官方报告为准",
+      "deliver": [
+        "每周错词周报（周日09:00）",
+        "每日提醒（08:00）",
+        "家庭群"
+      ]
+    },
+    {
+      "id": "rowing",
+      "name": "🚣 赛艇体育",
+      "skills": [
+        "joe-growth-tracker（体育部分）"
+      ],
+      "files": [
+        "references/rowing-master-profile.md（赛艇总档案）",
+        "assets/calendars/赛艇训练表_六六.ics",
+        "themes/sportsmanship.md",
+        "assets/Rowing_Resume_JoeWei_Filled.docx"
+      ],
+      "sources": [
+        "教练/队会截图",
+        "比赛成绩",
+        "家主口述",
+        "赛事官方（新闻核实）"
+      ],
+      "triggers": [
+        "训练安排",
+        "比赛",
+        "测功仪",
+        "招募简历",
+        "出勤"
+      ],
+      "verify": "成绩单/截图二次放大核对；赛事名称官方核实；.ics CRLF 校验",
+      "deliver": [
+        "训练日历 .ics",
+        "家庭群",
+        "赛艇总档案",
+        "data.js 履历"
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "🏆 成长记录与叙事",
+      "skills": [
+        "joe-growth-tracker"
+      ],
+      "files": [
+        "daily-logs/（45+篇）",
+        "milestones.md",
+        "awards.md",
+        "themes/（resilience/academic-growth/sportsmanship/self-discovery）",
+        "curated/"
+      ],
+      "sources": [
+        "家校反馈",
+        "流水账",
+        "照片/视频（媒体锚点）"
+      ],
+      "triggers": [
+        "记录一天",
+        "照片/视频",
+        "里程碑",
+        "周记",
+        "叙事提炼"
+      ],
+      "verify": "媒体嵌入对应日期日志；日期用已有日程定案；人名/校名核对（宏文≠弘文）",
+      "deliver": [
+        "GitHub Pages 成长站",
+        "周记（周日20:00）",
+        "家庭群"
+      ]
+    },
+    {
+      "id": "expenses",
+      "name": "💰 费用账本",
+      "skills": [
+        "joe-expense-bookkeeping"
+      ],
+      "files": [
+        "expense-ledger.md（双副本）",
+        "education-expenses.md",
+        "data.js（自动求和）",
+        "index.html（支出页明细）"
+      ],
+      "sources": [
+        "家主要求/口述",
+        "缴费凭据"
+      ],
+      "triggers": [
+        "记账",
+        "学费",
+        "半年费",
+        "报销",
+        "累计投入"
+      ],
+      "verify": "防重复计费（口径确认）；双账本一致；data.js 与页面数字一致；线上实测",
+      "deliver": [
+        "账本（双副本）",
+        "网站支出页",
+        "家庭群"
+      ]
+    },
+    {
+      "id": "calendar",
+      "name": "📅 日历与提醒",
+      "skills": [
+        "calendar-schedule"
+      ],
+      "files": [
+        "/root/赛艇训练表_六六.ics",
+        "/root/.hermes/托福课程表_六六.ics",
+        "cron 任务（日报/周报/提醒）"
+      ],
+      "sources": [
+        "队会课表",
+        "家主课程安排",
+        "赛会赛程"
+      ],
+      "triggers": [
+        "排课",
+        "日历",
+        "提醒",
+        "课程表"
+      ],
+      "verify": "iCalendar 格式 + CRLF（newline=\"\" 读写）；导入指引；cron 投递回执",
+      "deliver": [
+        ".ics 附件",
+        "飞书家庭群",
+        "微信（限流时改飞书）"
+      ]
+    },
+    {
+      "id": "offerpath",
+      "name": "🚀 OfferPath 创业",
+      "skills": [
+        "offerpath-agents",
+        "offerpath-verification"
+      ],
+      "files": [
+        "/root/tengtu/（前端+后端+脚本）",
+        "平台 http://43.162.92.9:3000/"
+      ],
+      "sources": [
+        "PostgreSQL（119校/4709条录取）",
+        "采集管道"
+      ],
+      "triggers": [
+        "OfferPath",
+        "录取数据",
+        "评估引擎",
+        "创业进展"
+      ],
+      "verify": "DB 查询对照看板；页面实测；数据口径标注（chinese_admitted）",
+      "deliver": [
+        "平台",
+        "汇报（飞书）"
+      ]
+    },
+    {
+      "id": "ops",
+      "name": "⚙️ 数据运维与质量",
+      "skills": [
+        "joe-data-ops",
+        "joe-academic-state-ops",
+        "maker-checker-workflow",
+        "termination-condition",
+        "joe-task-dispatch"
+      ],
+      "files": [
+        "STATE.md",
+        "capabilities/（本目录）"
+      ],
+      "sources": [
+        "全体数据源"
+      ],
+      "triggers": [
+        "更新 STATE",
+        "推送",
+        "验证",
+        "派发子任务",
+        "复盘"
+      ],
+      "verify": "写回读回；Maker/Checker 分离；终止条件；门禁矩阵（gate）",
+      "deliver": [
+        "STATE.md",
+        "验证报告"
+      ]
+    }
+  ],
+  "delivery_channels": {
+    "feishu_family_group": "oc_2f8fe87cc6a85a7871d352a3440d3543（Joe学业成长，全家可见）",
+    "feishu_dm": "oc_67a5f21bc045e30e1a9c5880d5a9e42c（家主私聊）",
+    "weixin": "o9cq80yQkJ35lbVoG3fr3WGdPlAs@im.wechat（iLink 限流中，兜底走飞书）",
+    "github_pages": [
+      "https://joeweiyuan.github.io/joe-growth/",
+      "https://joeweiyuan.github.io/joe-academic-tracker/"
+    ],
+    "files": [
+      ".ics 日历附件",
+      "Word/PDF 材料"
+    ]
+  },
+  "quality_gates": [
+    "事实优先：所有数字可追溯到 STATE/原件/官方来源",
+    "禁止编造：无数据写\"待核实/暂无\"",
+    "Maker/Checker 分离：产出与检查不是同一 Agent",
+    "终止条件：每个任务先定义可测量的\"做完\"",
+    "双副本同步 + 推送 main/gh-pages + 线上实测"
+  ],
+  "upgrade_protocol": {
+    "versioning": "能力包版本号（vX.Y）+ CHANGELOG.md 记录每次变更",
+    "steps": [
+      "改内容 → 双副本同步 → push main → merge gh-pages → 线上/读回验证 → 更新本索引与 CHANGELOG"
+    ],
+    "new_capability": "按 PACKAGING-STANDARD.md 声明字段建新技能/目录，并登记到本索引",
+    "user_owned_skills": "created_by=None 的技能（joe-toefl/joe-growth-tracker/offerpath-agents 等）后台 curator 不能改；需 `hermes curator adopt <name>` 或在前台会话编辑",
+    "quarterly_review": "每季度做一次能力盘点（新增/失效/待升级）"
+  }
+}
