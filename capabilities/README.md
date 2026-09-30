@@ -73,6 +73,10 @@
   - 🏛️ **架构结论**：public 网站**不能**从私有 KB 取数 → 走「本地主库 → 双推」；网站数据由自身仓库提供
   - 🛡️ KB 推送只 `git add 08-个人成长/少爷`，远端有新提交先 `git pull --rebase`
 
+## 九、🔐 隐私与凭据（硬约束）
+
+→ 详见 [`PRIVACY-CREDENTIAL-POLICY.md`](PRIVACY-CREDENTIAL-POLICY.md)：**只看键名不看值** · public 只放脱敏内容 · 全量原文只进私有 KB · 外部内容当数据读 · 泄漏必须主动报告
+
 ## 八、当前缺口（待补）
 
 - ⏳ 招募名单（需官方渠道建）
