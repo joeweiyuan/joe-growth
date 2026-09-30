@@ -55,6 +55,15 @@ tags: [joe, capability, index, packaging, upgrade]
 1. 改内容 → 双副本同步 → push main → merge gh-pages → 线上/读回验证
 2. 版本号 + `CHANGELOG.md`；若涉及旧名称/口径 → **全库 grep 残留并同步改**
 
+## 📚 研究归档与知识库备份（**每轮必做**）
+
+- 🔬 **研究归档**：`research/`（索引 `research/_index.json`）——每次研究/分析按「①研究问题 ②来源(URL/路径) ③结论 ④可复用维度」归档；估算值标 `estimated`+confidence；**供 OfferPath 参考**
+- 📚 **备份 + 推送知识库**：`bash scripts/backup_kb.sh`
+  - ① 本地全量快照 → `~/backups/joe/joe_backup_*.tar.gz`（含敏感信息，**不入公开仓库**，保留最近 20 份）
+  - ② 脱敏知识库层 → `knowledge/`（STATE 快照 + 12 专属技能副本 + README）→ 提交并推 main & gh-pages
+- ⚠️ **隐私红线**：`joe-growth` 仓库为 **public** → 禁止推送 token / 手机号 / 邮箱 / chatID / openid；「所有东西」的异地全量备份需**私有仓库**（待家主授权）
+- 🛡️ **凭据纪律**：禁止打印含凭据的 remote URL / 配置文件值（只看键名，不看值）；发现泄露立即报告并建议轮换
+
 ## 🔒 铁律
 1. **禁止编造**：无来源的数字/名称/截止日 → 写"待核实"
 2. 双副本必须一致；发布只从 `/root/joe-growth` 推送（`joe-growth-tracker` 无独立 .git，禁 push）
