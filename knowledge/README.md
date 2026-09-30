@@ -1,4 +1,4 @@
-# 📚 Joe 知识库（Knowledge Base）
-> 每轮自动备份（`scripts/backup_kb.sh`）。本目录含：STATE 快照（已脱敏）+ 专属技能副本。
-> 仓库内其他知识层：`../capabilities/`（能力包）· `../research/`（研究归档）· `../admissions/`（升学档案）· `../daily-logs/`（成长日志）
-> 完整含敏感信息的全量备份保存在服务器本地 `~/backups/joe/`（不进公开仓库）。
+# 📚 Joe 知识库（公开层）
+> 自动备份（`scripts/backup_kb.sh`）。本目录：STATE 快照（**已脱敏**）+ 专属技能副本 + README。
+> 仓库内其他层：`../capabilities/`（能力包）· `../research/`（研究归档）· `../admissions/`（升学档案）· `../daily-logs/`（成长日志）
+> 🔒 **全量备份（含 STATE 原文）在私有仓库** `corinwe/weiwuji-knowledge-base` → `08-个人成长/少爷/`

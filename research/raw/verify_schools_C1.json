@@ -1,0 +1,83 @@
+{
+  "schools": [
+    {
+      "school": "Dartmouth College",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "非强制常规项，但有条件强制：若母语非英语，且中学课程未以英语授课满2年，则必须提交英语能力考试成绩（TOEFL / IELTS / Duolingo / Cambridge English 任一）。官网未公布最低分数。",
+        "sat_act": "必须提交（必需项，非可选）。美国境内高中生：必须提交 SAT 或 ACT。境外高中生可用以下5种方式之一满足：①SAT或ACT ②3门不同AP考试 ③IBDP 预测/最终成绩 ④英国A-Level 预测/最终成绩（+第5种，国际学生项）。SAT/ACT自动拼分（superscore）。可自报分数，入学前需官方送分。",
+        "source": "https://admissions.dartmouth.edu/apply/testing-policy ; https://admissions.dartmouth.edu/glossary-question/if-english-not-my-first-language-am-i-required-submit-language-proficiency-test"
+      },
+      "deadlines": {
+        "cycle": "2026-2027 申请季 / Class of 2031（写作补充文书页标注 Updated July 22, 2026）",
+        "ED": "11月1日（Binding Early Decision，绑定录取；含写作补充文书 + ED Agreement 均需11月1日前完成；12月中放榜）",
+        "EA": "无 Early Action 轮次（官网仅设 Early Decision 与 Regular Decision 两轮）",
+        "RD": "1月1日 本地时间 23:59（Regular Decision；3月底/4月初放榜）",
+        "source": "https://admissions.dartmouth.edu/glossary-term/application-deadline ; https://admissions.dartmouth.edu/apply-dartmouth"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "第1题（全体必答，≤100词）：As you seek admission to Dartmouth's Class of 2031, what aspects of the college's academic program, community, and/or campus environment attract your interest? How is Dartmouth a good fit for you?",
+          "第2题（全体必答，二选一，≤250词）：A. There is a Quaker saying: Let your life speak. Describe the environment in which you were raised and the impact it has had on the person you are today. / B. \"Be yourself,\" Oscar Wilde advised. \"Everyone else is taken.\" Introduce yourself.",
+          "第3题（全体必答，六选一，≤250词）：A. What excites you? / B. Dolores Huerta 关于 purpose/impact（你如何已/将让世界更好） / C. Matt Haig 关于阅读如何让人想象他人生活 / D. Jane Goodall 关于困难对话与寻找共同点 / E. Celebrate your nerdy side. / F. Kermit the Frog \"It's not easy being green\" — 差异如何成为你身份/视野/使命感的一部分"
+        ],
+        "word_limit": "共3篇：1篇100词以内 + 2篇250词以内（另有 Common App 主文书）",
+        "source": "https://admissions.dartmouth.edu/glossary-term/writing-supplement"
+      },
+      "rowing_recruiting": {
+        "programs": ["Men's Heavyweight Rowing（男子重量级赛艇）", "Men's Lightweight Rowing（男子轻量级赛艇）"],
+        "official_page": "Heavyweight Crew Information Center: https://dartmouthsports.com/sports/2010/9/22/204998788 ；男子轻量级赛艇教练/招募页：https://dartmouthsports.com/sports/rowing/coaches",
+        "process": "官网路径：填写 recruiting questionnaire（问卷）→ 按 NCAA 资格指引注册 NCAA Eligibility Center → 提供 transcript / 2k 测功仪成绩等运动材料 → 联系所对应的分项主教练（重量级/轻量级分开招募）。校方统一说明见 Recruiting Information 页；Ivy League 不提供运动奖学金（Ivy League Admissions Statement）。注意：Dartmouth 赛艇由 IRA/EARC 体系主办（非 NCAA 锦标赛项目）。",
+        "coach_contact": "男子重量级赛艇 Head Coach: Wyatt Allen — wyatt.r.allen@dartmouth.edu，电话 603-646-2450（官网公布）；助理教练 Albert Monte (Albert.W.Monte@Dartmouth.edu, 603-646-9620)、Taylor Black (Taylor.D.Black@dartmouth.edu, 603-646-7620)。男子轻量级赛艇 Head Coach: Trevor Michelson — Trevor.D.Michelson@dartmouth.edu，电话 603-646-8601（官网公布）。",
+        "questionnaire_url": "男子重量级: https://questionnaires.armssoftware.com/cb8624a8f442?DB_OEM_ID=11600 ；男子轻量级: https://questionnaires.armssoftware.com/461df90cdf8f?DB_OEM_ID=11600",
+        "source": "https://dartmouthsports.com/sports/2018/5/29/684603 ; https://dartmouthsports.com/sports/rowing/coaches ; https://admin.dartmouthsports.com/sports/mens-rowing/roster/coaches/wyatt-allen/10202 ; https://dartmouthsports.com/staff-directory/trevor-michelson/544 ; https://dartmouthsports.com/sports/2018/5/29/584968"
+      },
+      "unverified": [
+        "Dartmouth 英语能力考试（TOEFL/IELTS/Duolingo）的最低分数：官网未公布，待核实（官方未给分数线）",
+        "RD 截止日存在官网内部不一致：多数页面（glossary-term/application-deadline、RD timeline）写 1月1日，QuestBridge 段落写 1月2日 → 以 1月1日 为主，差异待官方确认",
+        "赛艇招募是否接受 2026 夏校学员直接进入教练评估流程：官方未说明，待核实（不得联系任何人，本轮未联系）"
+      ]
+    },
+    {
+      "school": "Brown University",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "强烈建议（非硬性）：母语非英语/家庭主要用语非英语/中学授课主要语言非英语的国际申请者，强烈建议提交英语能力成绩。接受 TOEFL、IELTS、Duolingo、Pearson PTE、Cambridge English，及 TOEFL iBT Home Edition。多数情况下期望最低分：TOEFL iBT 105（2026年1月前考试）/ 5.5（2026年1月及之后新分制）；IELTS 8.0；Duolingo 130；PTE 75；Cambridge C1/C2 191。不接受 MyBest scores；官网明确此项为建议提交而非强制提交要求。",
+        "sat_act": "必须提交：自 2024-25 申请季起恢复要求 SAT 或 ACT 成绩（第一年及转学申请者）。SAT/ACT 均拼分；SAT Essay / ACT Writing 可选。SAT 送分代码 3094，ACT 3800。无最低分数要求（contextual review）。",
+        "source": "https://admission.brown.edu/international/english-proficiency ; https://admission.brown.edu/first-year/standardized-tests ; https://admission.brown.edu/ask/standardized-tests"
+      },
+      "deadlines": {
+        "cycle": "2026-2027 申请季 / Class of 2031（官网 How to Apply 明示 essays for the 2026-2027 application cycle）",
+        "ED": "11月1日（Early Decision）",
+        "EA": "无 Early Action 轮次（官网仅 Early Decision 与 Regular Decision）",
+        "RD": "1月5日（Regular Decision）",
+        "source": "https://admission.brown.edu/apply/how-apply"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "第1题（150-250词）：\"There is something distinctive about Brown students. It is a blend of intellectual curiosity, creativity, and humility. A commitment to collaboration. An openness to new ideas and perspectives. A desire to make the world better. And it is resilience: the ability to recover and thrive after experiencing difficulties.\" From President Christina Paxson's 2025 Convocation Address. How will you use these characteristics or others to shape your approach to the Open Curriculum?",
+          "第2题（150-250词）：Students entering Brown often find that making their home on College Hill naturally invites reflection on where they came from. Share how an aspect of your growing up has inspired or challenged you, and what unique contributions this might allow you to make to the Brown community.",
+          "第3题（100-150词）：If you could teach a class on any one thing, whether academic or otherwise, what would it be?",
+          "第4题（100-150词）：Brown students care deeply about their work and the world around them. Students find contentment, satisfaction, and meaning in daily interactions and major discoveries. Whether big or small, mundane or spectacular, tell us about something that brings you joy.",
+          "附加（仅特定项目）：PLME 3篇×250词（Why medicine? / Why PLME? / 你身上能让你成为好医生的特质）；Brown|RISD 双学位 1篇 650词"
+        ],
+        "word_limit": "4篇通用文书：2篇150-250词 + 2篇100-150词（本轮已取消旧版三词/一句话 Why Brown 短答）",
+        "source": "https://admission.brown.edu/apply/how-apply"
+      },
+      "rowing_recruiting": {
+        "programs": ["Men's Crew（男子赛艇，重量级 heavyweight；Brown 无男子轻量级 varsity 赛艇项目）", "Women's Crew（女子赛艇，非本次目标）"],
+        "official_page": "https://brownbears.com/sports/mens-crew ; 信息与资源页：https://brownbears.com/sports/2021/6/23/brown-mens-crew-information-and-resource-page",
+        "process": "官方路径：在 Brown Bears 官网 \"Recruiting Questionnaires\" 页填写对应项目招募问卷 → 依 NCAA 规则，仅当达到 prospect age 后教练方可开展招募沟通 → 校园访问分 unofficial visit（次数不限、费用自理）与 official visit（每校1次，球队可承担合规费用）→ official visit 前须提供在读成绩单、注册 NCAA Eligibility Center（男子赛艇/帆船只需 'Option 3 - Profile Page Account'，非 Option 1）、填写项目专属 Official Visit Questionnaire。项目通用咨询邮箱 rowing@brown.edu。",
+        "coach_contact": "Men's Crew 主教练（Norman W. Alpert '80 Head Coaching Chair）: Paul Cooke — paul_cooke@brown.edu，电话 401-863-1097（官网公布）；Associate Head Coach: Rufus Biggs — rufus_biggs@brown.edu（官网公布）；Assistant Coach: Michael Colella — michael_colella@brown.edu（官网公布）；Rigger（船械师）: Ned Foster — elon_foster@brown.edu。项目通用邮箱 rowing@brown.edu。",
+        "questionnaire_url": "Men's Crew 招募问卷: https://my.armssoftware.com/arms/public/questionnaire/1c1ae383f34e （入口页 https://brownbears.com/sports/2025/10/30/recruiting-questionnaires ）",
+        "source": "https://brownbears.com/sports/2025/10/30/recruiting-questionnaires ; https://brownbears.com/sports/mens-crew/coaches ; https://brownbears.com/sports/mens-crew/roster/coaches/paul-cooke/8205 ; https://brownbears.com/sports/mens-crew/roster/coaches/michael-colella/8246 ; https://brownbears.com/sports/2025/10/30/information-for-prospective-student-athletes ; https://brownbears.com/sports/2021/6/23/brown-mens-crew-information-and-resource-page"
+      },
+      "unverified": [
+        "Brown 官网未给出赛艇教练对 2k 测功仪成绩的明确招募分数线：待核实（官方未公布标准，仅可通过问卷提交成绩供教练评估）",
+        "Brown 男子赛艇是否设有独立轻量级 varsity 队伍：Brown Bears 官方项目列表仅见 Men's Crew（重量级），未公布男子轻量级项目页 → 官方列表为重量级；如需确认是否可赛轻量级艇，待核实"
+      ]
+    }
+  ]
+}

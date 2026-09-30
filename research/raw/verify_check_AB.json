@@ -1,0 +1,112 @@
+{
+  "checker": "independent spot-check (Checker role)",
+  "check_date": "2026-09-30",
+  "method": "只读：逐条访问被复核 JSON 声称的官方 source URL，用 web_extract + curl 原始 HTML 核对（对 JS 渲染为空的页面取 raw HTML 二次确认）；未联系任何机构，未修改原 JSON",
+  "checked": [
+    {
+      "school": "MIT",
+      "field": "test_policy.toefl",
+      "claim": "TOEFL(1/21/26前)最低90/建议100；TOEFL(1/21/26起1–6分制)最低5/建议5.5；IELTS最低7/建议7.5；PTE最低65/建议70；Cambridge C1/C2最低185/建议190；DET最低120/建议125",
+      "source": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+      "verdict": "一致",
+      "actual": "官网表格逐项吻合：TOEFL(before 1/21/26) Min 90 / Rec 100；TOEFL(on or after 1/21/26) Min 5 / Rec 5.5；IELTS Min 7 / Rec 7.5；PTE Academic Min 65 / Rec 70；Cambridge C1/C2 Min 185 / Rec 190；DET Min 120 / Rec 125",
+      "note": "同页另证：'We do not have cutoff or recommended scores for the ACT or SAT'（对应 JSON 的 sat_act 无最低分说法）；测试时间 Nov 30(EA)/Dec 31(RA)、英语考试可到1月场次亦一致。6项考试2套分制全部命中，无臆造数字"
+    },
+    {
+      "school": "MIT",
+      "field": "deadlines.EA / deadlines.RD",
+      "claim": "EA 申请截止 11月1日、决定约12月中旬；RA 截止 1月4日、决定约3月中旬；EA资助11月30日、RA资助2月15日；入学回复5月1日",
+      "source": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+      "verdict": "一致",
+      "actual": "官网原文：'Early Action (EA) applications are due November 1 and admission decisions are released in mid-December. Regular Action (RA) applications are due January 4 and admission decisions are released in mid-March.'；资助申请 'due November 30 for EA applicants and February 15 for RA applicants'；May 1 回复表",
+      "note": "无 ED（JSON 称 MIT 不设 ED）与官网仅列 EA/RA 两轮一致"
+    },
+    {
+      "school": "MIT",
+      "field": "rowing_recruiting.coach_contact",
+      "claim": "男子 Heavyweight Crew 主教练 Evan Thews-Wassell，etw@mit.edu，617-253-7986；助理教练/招募协调员 Hannah Woodruff，hwoodruf@mit.edu",
+      "source": "https://mitathletics.com/staff-directory",
+      "verdict": "一致",
+      "actual": "staff-directory 页确认：Evan Thews-Wassell = Head Coach（Men's Crew - Heavyweight），617-253-7986；Hannah Woodruff = Assistant Coach/Recruiting Coordinator。邮箱 etw@mit.edu 与其官方个人页 https://mitathletics.com/staff-directory/evan-thews-wassell/41 的 <a href=\"mailto:etw@mit.edu\"> 完全一致；hwoodruf@mit.edu 亦见 https://mitathletics.com/staff-directory/hannah-woodruff/675",
+      "note": "⚠️来源精度问题（非错误）：staff-directory 页面本身不渲染 Email 列（raw HTML 中全站仅 ehayes@mit.edu 一个明文邮箱），邮箱实际出现在个人 bio 页。值正确、域名官方，但 JSON 标注的 source URL 不能直接支撑该邮箱。另：bio 页写 'begins his first year as Head Coach ... in 2026-27'，支持 JSON 关于 2026 年教练更替的表述"
+    },
+    {
+      "school": "Stanford",
+      "field": "test_policy.toefl",
+      "claim": "本科申请不要求任何英语能力考试，官网原文：'No, we do not require any English proficiency exams.'；未公布本科 TOEFL/IELTS 最低分",
+      "source": "https://admission.stanford.edu/apply/international/index.html",
+      "verdict": "一致",
+      "actual": "官网 FAQ 原文逐字命中：'No, we do not require any English proficiency exams. If you would like to send us one, you are welcome to self-report your scores from any English proficiency exam.'；同页未出现任何 TOEFL/IELTS 最低分数字",
+      "note": "这是否定型断言（易被写反），核对成立。同页 'Yes, the ACT or SAT is required' 亦与 JSON sat_act 一致"
+    },
+    {
+      "school": "Stanford",
+      "field": "rowing_recruiting.coach_contact",
+      "claim": "男子赛艇：Ted Sobolewski（Farwell Family Director of Men's Rowing）tsobolew@stanford.edu；Niles Garratt nilesg@stanford.edu 650.850.2551；John Pojednic pojednic@stanford.edu",
+      "source": "https://gostanford.com/staff-directory/department/mens-rowing",
+      "verdict": "一致",
+      "actual": "raw HTML 结构化数据可读到：\"Ted\",\"Sobolewski\",\"Farwell Family Director of Men’s Rowing\",\"tsobolew@stanford.edu\"；另有 nilesg@stanford.edu + 650.850.2551、pojednic@stanford.edu、gabbyrow@stanford.edu（Boatwright/Rigger）",
+      "note": "附带确认：Stanford 截止日断言（REA 11/1、RD 1/5，含arts portfolio 10/15、12/5）与 https://admission.stanford.edu/apply/first-year/ 逐项吻合，且该页 'Updated on September 10, 2026' 与 JSON 标注的更新时间一致"
+    },
+    {
+      "school": "Harvard",
+      "field": "deadlines.REA / deadlines.RD",
+      "claim": "REA 11月1日截止、mid-December 放榜；RD 1月1日截止、end of March 放榜；REA 标化建议10月底前送达（11月场次仍可）；5月1日前答复",
+      "source": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+      "verdict": "一致",
+      "actual": "官网原文：'Restrictive Early Action candidates apply by November 1 and receive notification by mid-December. Regular Decision candidates apply by January 1 and receive notification by the end of March.'；'we request that you submit your required test scores by the end of October ... you are still eligible to apply using the November series'；footer 显示 2026-2027 补充表 PDF",
+      "note": "同页确认 'five required short-answer questions with 150 word limits for each'，支持 JSON supplements.word_limit；Harvard 无 ED、用 REA 亦一致"
+    },
+    {
+      "school": "Harvard",
+      "field": "rowing_recruiting.questionnaire_url（男子轻量级）",
+      "claim": "男子轻量级问卷：https://www.gocrimson.com/sports/mcrew-lw/questionnaire",
+      "source": "https://gocrimson.com/sports/mcrew-lw/questionnaire",
+      "verdict": "不一致",
+      "actual": "该 URL 返回 HTTP 404（curl -sIL：302 → /404.aspx → 404；web_extract 亦得到 'Page Not Found (404)'）。官网男子轻量级招募页自身给出的问卷链接是 https://questionnaires.armssoftware.com/468885f513e8 （HTTP 200）",
+      "note": "同一 source 页（https://gocrimson.com/sports/2023/9/19/mens-lightweight-rowing-recruiting.aspx）的其余断言全部一致：2K sub 6:30 / 6K sub 21 min（5K 需快于对应配速）/ Max Watts 800+ / SAT 每项 700+ / ACT 综合 32+ / AP 5分上传 / 'Harvard will super-score the SAT, but it will NOT super-score the ACT' 逐字吻合。即本条目是 URL 字段错误，不是标准数值编造。建议改为 armssoftware 的 468885f513e8"
+    },
+    {
+      "school": "Yale",
+      "field": "test_policy.toefl",
+      "claim": "最具竞争力申请者参考分：TOEFL 100+（2026-01-21 前考试）或 5+（2026-01-21 及之后）；IELTS 7+；Cambridge English 185+；DET 120+；且非英语母语者必须提交英语测试（同时仍需 ACT/SAT）",
+      "source": "https://admissions.yale.edu/standardized-testing",
+      "verdict": "一致",
+      "actual": "官网原文：'Yale’s most competitive applicants typically earn a score of 5 or higher (for tests taken after January 21, 2026) or at least 100 (for tests taken before January 21, 2026).'；'IELTS scores of 7 or higher'；'Cambridge English scores of 185 or higher'；'DET scores of at least 120'；'If you are a non-native English speaker without two or more years of enrollment in an English-medium school, you are required to submit scores from an English proficiency test, in addition to ... ACT or SAT'",
+      "note": "阈值型断言全部命中；TOEFL 双分制（100 / 5+）与 MIT、Columbia 的 2026-01-21 分制切换口径一致"
+    },
+    {
+      "school": "Princeton",
+      "field": "deadlines.REA / deadlines.RD",
+      "claim": "SCEA 11月1日截止、mid-December 放榜；11月6日艺术补充材料、11月9日助学金截止；RD 1月1日截止、late March 放榜；1月8日艺术补充材料、2月1日助学金；5月1日答复；且 SCEA 不得同时申请美国境内其他私立院校早申",
+      "source": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines",
+      "verdict": "一致",
+      "actual": "官网时间轴逐项吻合：Nov. 1（申请+Graded Written Paper）、Nov. 6（Optional Arts Supplement）、Nov. 9（Financial Aid）、Mid-December（Decision）、Jan. 1、Jan. 8、Feb. 1、Late March、May 1；限制条款原文：'you may not apply to an early program at any other private college or university within the United States'，并允许公立/军校、境外院校、非绑定滚动录取",
+      "note": "JSON 中 11月1日 DET/TOEFL/IELTS/PTE 须考完一项亦与官网 Nov.1 行一致"
+    },
+    {
+      "school": "Columbia",
+      "field": "test_policy.toefl",
+      "claim": "TOEFL iBT 最低105（2026-01-20 及之前考试）或最低5.5（2026-01-21 及之后），送分代码2116，不接受 MyBest 拼分；IELTS Academic 最低7.5；DET 最低135；Cambridge C1/C2 最低191",
+      "source": "https://undergrad.admissions.columbia.edu/english-proficiency",
+      "verdict": "一致",
+      "actual": "官网原文：'For exams taken on or before January 20, 2026, a minimum score of 105 ... For exams taken on or after January 21, 2026, a minimum score of 5.5 ... report code 2116'；'does not accept MyBest™ scores'；IELTS 7.5；DET 135；Cambridge 191",
+      "note": "附带确认：Columbia 截止日断言（8/1开放、11/1 ED+QuestBridge、11/15 ED资助、mid-Dec ED结果、1/1 RD、2/15 RD资助、late March、5/1）与 https://undergrad.admissions.columbia.edu/apply/firstyear 一致；JSON 标注的星期亦正确（2026-11-01=周日、2027-01-01=周五，已用 date 核）"
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "consistent": 9,
+    "inconsistent": 1,
+    "unverifiable": 0
+  },
+  "risk_flags": [
+    "【不一致】Harvard rowing_recruiting.questionnaire_url（男子轻量级）：gocrimson.com/sports/mcrew-lw/questionnaire 实测 HTTP 404，官网招募页给出的有效链接为 https://questionnaires.armssoftware.com/468885f513e8。其余 Harvard 轻量级数值标准全部一致，判断为 URL 字段陈旧，非数据编造。",
+    "【来源精度】MIT rowing_recruiting.coach_contact 声称来源为 mitathletics.com/staff-directory，但该页 raw HTML 不渲染 Email 列（全站仅 ehayes@mit.edu 明文），邮箱实际只在个人 bio 页出现。值正确但引用页面不能直接支撑，建议把 source 改为具体 bio 页。",
+    "【通用风险】所有 armssoftware.com 问卷短链（MIT/Harvard/Stanford/Princeton 共 6 条）返回完全相同的 22361 字节 SPA 外壳（last-modified 2026-09-24），HTTP 200 只能证明域名可达，不能证明该链接仍绑定对应项目/仍受理当前招募季。JSON 中 'HTTP 200 可访问' 的表述不足以支撑'链接有效'的结论。",
+    "【未消解矛盾（原 JSON 已自标）】MIT 赛艇教练：staff-directory/bio 页（Evan Thews-Wassell、Will Oliver-Milchman）与项目子页 sports/mcrewhvy/coaches 仍列 Tony Kilbridge（coachk@mit.edu）不一致。本次抽查确认 staff-directory + bio 页为最新（bio 页明确写 2026-27 起任 Head Coach），但项目子页未更新的矛盾仍在，引用前需注意。",
+    "【未找到官方来源的合理数字——已按规范标注，未发现编造】Columbia 两个赛艇问卷链接仅见于官网 2006 年页面、Columbia 无现行赛艇招募专页、Yale 赛艇招募流程/问卷缺失、Princeton 未公布 erg 标准、Harvard 轻量级教练邮箱未列出——这些原 JSON 均已在 unverified 中自曝，抽查未见'看起来合理但官网找不到却被当成官方结论'的硬伤。",
+    "【来源类型合规】本次抽查的 10 条断言，source 全部为学校官方域名（mitadmissions.org / mitathletics.com / admission.stanford.edu / gostanford.com / college.harvard.edu / gocrimson.com / admissions.yale.edu / admission.princeton.edu / undergrad.admissions.columbia.edu），未发现中介、百科、论坛或第三方咨询机构来源。",
+    "【深度缺口】本次未复核各校 supplements 题目原文、MIT/Stanford 项目子页教练页、以及 A 组自述的 MIT 赛艇招募问卷 URL 与女子项目 NCAA 要求；如需 100% 覆盖需追加一轮。"
+  ]
+}

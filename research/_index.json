@@ -32,7 +32,7 @@
       "title": "逐校官方核实（MIT/Stanford/8藤校）：标化·DDL·文书·赛艇招募",
       "date": "2026-09-30",
       "type": "official-verification",
-      "status": "partial-complete",
+      "status": "complete",
       "file": "2026-09-30_逐校官方核实.md",
       "sources": [
         "各校招生官网 + 官方 athletics（逐字段附 URL）"
@@ -41,11 +41,12 @@
         "universities.admission_info 结构化填充"
       ],
       "key_findings": [
-        "6/10 校完成（MIT·Stanford·Harvard·Yale·Princeton·Columbia），4 校重跑中",
-        "MIT/Stanford/Harvard/Yale 标化必交；Princeton/Columbia 26-27 test-optional、27-28 恢复",
-        "Princeton 是唯一官网公布完整赛艇招募流程 + 4 教练邮箱的学校",
-        "Harvard 男子轻量级公开 erg 标准：2K sub 6:30",
-        "Stanford 本科不要求任何英语能力考试；MIT TOEFL 90/建议 100（2026-01 新制 5/5.5）"
+        "10 校 × 4 字段全部带官方 URL（MIT·Stanford + 8 藤校）",
+        "标化：MIT/Stanford/Harvard/Yale/Dartmouth/Brown/Cornell/Penn 必交；Princeton/Columbia 26-27 test-optional、27-28 恢复",
+        "英语门槛：MIT 90/100（新制5/5.5）· Yale 100+ · Columbia 105/5.5 · Brown 建议105/5.5 · Cornell 新制5.0/5.5 · Penn 5+ · Stanford 不要求 · Dartmouth 条件性",
+        "赛艇招募：Princeton 唯一公布完整流程+4教练邮箱；Harvard 轻量级公开 erg 标准（2K sub 6:30）；Cornell/Penn 有重量级协调人",
+        "Checker 抽查 10 条：9 一致 / 1 不一致（Harvard 轻量级问卷 URL 404，已更正）",
+        "⚠️ armssoftware 问卷短链 HTTP 200 ≠ 仍受理当前招募季（同一 SPA 外壳）"
       ]
     },
     {

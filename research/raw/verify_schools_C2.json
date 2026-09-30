@@ -1,0 +1,84 @@
+{
+  "schools": [
+    {
+      "school": "Cornell",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "国际生需证明英语能力：TOEFL（2026年1月前考试）最低100分；（2026年1月起新版评分）最低5.0、建议5.5；IELTS最低7.5；Duolingo最低130；Cambridge C1/C2最低191。豁免条件：美国公民/绿卡、母语为英语、或过去4年英语为主要教学语言。可self-report，入学时需官方成绩。",
+        "sat_act": "必需（2026秋季及以后入学）：所有一年级申请人须提交SAT或ACT；可self-report；招募运动员(recruited athletes)须提交官方成绩(测试机构直送)。SAT code 2098，ACT code 2726。接受superscore/Score Choice。",
+        "source": "https://admissions.cornell.edu/policies/standardized-testing-policy"
+      },
+      "deadlines": {
+        "cycle": "Fall 2027 入学（申请已于2026年8月开放）",
+        "ED": "11月1日（其余材料11月13日）",
+        "EA": "无（Cornell仅设ED与RD，不设EA）",
+        "RD": "1月2日（其余材料1月19日）",
+        "source": "https://admissions.cornell.edu/how-to-apply/first-year-applicants"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "Fall 2027 取消全校统一essay，无university-wide essay question。",
+          "申请人仅需回答所申本科学院/学校对应的1篇essay。示例（官方原文）：Arts & Sciences / AAP / SC Johnson商学院 / ILR 为650词限额；CALS 为500词限额；Duffield College of Engineering 为2篇长essay（各200词）+4篇短答（各100词）。"
+        ],
+        "word_limit": "因学院而异：100–650词（CALS 500；工程 200/100；多数学院 650）",
+        "source": "https://admissions.cornell.edu/how-to-apply/first-year-applicants/cornell-first-year-writing-supplement-prompts"
+      },
+      "rowing_recruiting": {
+        "programs": [
+          "Men's Rowing - Heavyweight",
+          "Men's Rowing - Lightweight"
+        ],
+        "official_page": "https://cornellbigred.com/sports/rowing (Heavyweight) ; https://cornellbigred.com/sports/mens-rowing (Lightweight)",
+        "process": "校方Prospective Student-Athletes页指引：招募与参赛咨询直接联系对应项目的教练（inquiries should be made directly with the coaching staff of your sport）。Ivy League不提供体育奖学金，且不允许redshirt（按Ivy规则无红衫）。",
+        "coach_contact": "男子重量级(Heavyweight)：Todd Kennett — Spirit of '57 Director of Rowing/Head Coach of Heavyweight Rowing，tpk2@cornell.edu，607-255-8642；男子轻量级(Lightweight)：Reid Johnson — The Henry E. Bartels '48 Head Coach of Men's Lightweight Rowing（本次抓取页未列其邮箱）。",
+        "questionnaire_url": "待核实（Cornell官网未见公开的赛艇在线招募问卷，官方指引为直接联系项目教练）",
+        "source": "https://cornellbigred.com/sports/rowing/coaches"
+      },
+      "unverified": [
+        "Cornell赛艇在线招募问卷链接（官网未公开，无prospect form）",
+        "Cornell男子轻量级教练(Reid Johnson)官方邮箱（未在本次抓取页面列出）"
+      ]
+    },
+    {
+      "school": "Penn",
+      "verification_date": "2026-09-30",
+      "test_policy": {
+        "toefl": "国际生（非英语母语且过去3年非英语授课）须提交TOEFL/IELTS/Duolingo。新版TOEFL iBT为1–6分制(0.5递增)，有竞争力者综合5分以上且四科均衡；Duolingo 130+；不接受IELTS Indicator/One Retake及TOEFL MyBest。不接受self-report，须官方直送。TOEFL code 2926。",
+        "sat_act": "必需：所有一年级申请人须提交SAT或ACT；无法参加考试者可提交waiver豁免，成绩自动waive。招募运动员(recruited athletes)须提交官方成绩。无最低分要求，接受superscore。ED最晚SAT 2026-11-07 / ACT 2026-10-17；RD最晚SAT 2026-12-05 / ACT 2026-12-12。",
+        "source": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing"
+      },
+      "deadlines": {
+        "cycle": "Fall 2027 入学（Class of 2031，申请已开放）",
+        "ED": "2026年11月1日（binding，12月放榜）",
+        "EA": "无（Penn仅设ED与RD，不设EA）",
+        "RD": "2027年1月5日（4月放榜）",
+        "source": "https://admissions.upenn.edu/how-to-apply/first-year-applicants"
+      },
+      "supplements": {
+        "required": true,
+        "prompts": [
+          "1. Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (50-200 words)",
+          "2. How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn. (50-200 words)",
+          "3. School-specific short answer（按所申本科学院/项目，如College of Arts and Sciences / Wharton / Penn Engineering / School of Nursing 等）(50-200 words)"
+        ],
+        "word_limit": "每篇50–200词（2篇全校短答 + 1篇学院专项短答）；coordinated dual-degree/specialized programs另有项目essay",
+        "source": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing"
+      },
+      "rowing_recruiting": {
+        "programs": [
+          "Men's Heavyweight Rowing",
+          "Men's Lightweight Rowing"
+        ],
+        "official_page": "https://pennathletics.com/sports/mens-rowing",
+        "process": "通过Penn Athletics官方Recruit Central在线招募问卷提交（各项目独立问卷），填写运动经历/成绩由教练组评估。",
+        "coach_contact": "男子重量级(Heavyweight)：Al Monte — Nicholas B. Paumgarten Head Coach，awmonte@upenn.edu；Phillip Brunner — Associate Head Coach / Recruiting Coordinator，pbrunner@upenn.edu，215-898-6144。",
+        "questionnaire_url": "https://questionnaires.armssoftware.com/4350aa06c569 (University of Pennsylvania Men's Heavyweight Crew)",
+        "source": "https://pennathletics.com/sports/mrow/coaches"
+      },
+      "unverified": [
+        "Penn男子轻量级(Lightweight)赛艇教练邮箱与专属招募问卷链接（本次未抓取该子页）"
+      ]
+    }
+  ]
+}
