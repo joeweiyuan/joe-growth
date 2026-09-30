@@ -18,7 +18,8 @@ STAGE=$(mktemp -d)
 mkdir -p "$STAGE"/{state,skills,repos}
 cp "$PROF/STATE.md" "$STAGE/state/" 2>/dev/null || true
 cp -r "$PROF/skills/joe-sub-agents" "$STAGE/skills/" 2>/dev/null || true
-cp -r "$REPO"/{capabilities,research,admissions,daily-logs,references,milestones.md,awards.md,expense-ledger.md,data.js} "$STAGE/repos/" 2>/dev/null || true
+cp -r "$REPO"/{capabilities,research,admissions,daily-logs,references,assets} "$STAGE/repos/" 2>/dev/null || true
+cp "$REPO/index.html" "$STAGE/repos/" 2>/dev/null || true
 cp "$PROF/cron/jobs.json" "$STAGE/state/" 2>/dev/null || true
 tar -czf "$BK/joe_backup_$TS.tar.gz" -C "$STAGE" . && rm -rf "$STAGE"
 echo "  → $BK/joe_backup_$TS.tar.gz ($(du -h "$BK/joe_backup_$TS.tar.gz" | cut -f1))"
@@ -45,7 +46,8 @@ if [ -d "$KBREPO/.git" ]; then
   mkdir -p "$KB/skills"
   cp "$PROF/STATE.md" "$KB/STATE.md"
   rm -rf "$KB"/{capabilities,research,admissions,daily-logs,references}
-  cp -r "$REPO"/{capabilities,research,admissions,daily-logs,references} "$KB/" 2>/dev/null || true
+  cp -r "$REPO"/{capabilities,research,admissions,daily-logs,references,assets} "$KB/" 2>/dev/null || true
+cp "$REPO/index.html" "$KB/" 2>/dev/null || true
   for f in milestones.md awards.md expense-ledger.md data.js; do cp "$REPO/$f" "$KB/$f" 2>/dev/null || true; done
   cp "$KBREPO/技能库/skills/joe-sub-agents"/*.md "$KB/skills/" 2>/dev/null || true
   for s in "$PROF"/skills/joe-sub-agents/*/; do
