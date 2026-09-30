@@ -94,6 +94,31 @@
         "rankings 表：year/rank/school",
         "与 admissions 表的中国录取趋势交叉"
       ]
+    },
+    {
+      "id": "2026-09-30-mit-stanford-roadmap",
+      "title": "MIT/斯坦福 冲刺路线图：差距分析与时间节点",
+      "date": "2026-09-30",
+      "type": "gap-analysis-roadmap",
+      "file": "2026-09-30_MIT斯坦福冲刺路线图.md",
+      "sources": [
+        "admissions/09-官方核实台账.md（官方 URL）",
+        "STATE.md",
+        "Academic Tracker",
+        "赛艇总档案"
+      ],
+      "key_findings": [
+        "申请季 = 2028 秋（EA/REA 11/1/2028），2029 秋入学（Joe 现高一/10年级）",
+        "P0 差距：托福 4.0→5.0/5.5（写作 3.0 短板）；SAT 未启动→1520+；GPA 保持",
+        "赛艇：2km 7:24.1 vs heavyweight 招募常见 ≤6:40，差 44-54 秒 → 定位调整为'长期投入+叙事主线'，保留 2028 春 6:55 门槛的招募可能性",
+        "差异化优势：OfferPath 创业（真实产品 + AI Agent）",
+        "里程碑：2026-12 托福≥5.0 & 测功仪 7:20；2027-08 SAT 1450+；2027-12 SAT 1500+ & 2km ≤7:00；2028-05 SAT 1520+；2028-11-01 提交"
+      ],
+      "reusable_for_offerpath": [
+        "申请季时间轴模板",
+        "标化→录取概率对照（可作评估引擎输入）",
+        "体育招募门槛基准（2km/heavyweight）"
+      ]
     }
   ]
 }
