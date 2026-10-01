@@ -47,3 +47,16 @@
 ### 同日并入的能力变更
 - 🎓 升学域新建（`admissions/` 9 文件 + `joe-admissions` 技能）→ 补齐升学能力缺口
 - 🎯 托福域：成绩落档（MyBest 4.0/6）+ 老师名更正（Vincent）+ 课程排定（每周日 20:30-22:30）
+
+## 2026-10-01 · 平台修复：飞书 post 富文本附件丢失
+- **现象**：家主发送含附件的飞书**富文本(post)**消息 → 网关日志 `type=post` 但 `media=0`，附件静默丢失（当日为《光剑赛艇队十一期间训练计划.xlsx》）
+- **根因（两处）**：
+  1. `_to_post_payload()` 把 post 投影为 `{title, content}`，**顶层 `files` 数组被丢弃**
+  2. `parse_feishu_post_payload()` 只遍历 `content` 行内元素，**从不扫顶层 `files`**
+- **修复**（`plugins/platforms/feishu/adapter.py`，补丁脚本 `scripts/patch_feishu_adapter.py`）：
+  1. `_to_post_payload` 保留 `files`/`images`/`image_keys` 容器
+  2. 新增 `_collect_post_top_level_media()` 并在解析尾部调用
+  3. 新增 `_recover_post_media_refs()` + 在 `_download_feishu_message_resources()` 中兜底：post 无媒体时**回查 `im/v1/messages/{id}`** 取回附件（防事件报文不带 files）
+- **验证**：真实报文单测 原版 `refs=0` → 补丁版 `refs=1`（文件名正确）；7 项回归全过（含纯文本/行内 media/locale 分支/文件夹跳过/空报文）
+- **注意**：补丁改的是**核心插件文件**，`hermes update` 后可能被覆盖 → 用 `scripts/patch_feishu_adapter.py` 重放（幂等，锚点不命中会报错退出）
+- **同时沉淀**：`scripts/fetch_feishu_attachment.py`（按 message_id 直取附件，兜底手段）
