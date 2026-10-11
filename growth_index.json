@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-10-04 20:00",
+  "last_updated": "2026-10-11 20:00",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -297,6 +297,19 @@
         "system"
       ],
       "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-10-11",
+      "file": "daily-logs/2026-10-11.md",
+      "summary": "⭐ 第41周周记：国庆三天训练收官（10/5力量·10/6跑步测功仪·10/7水上8-10km，无细节回流）→ 10/8 假期结束恢复上课/住校 → 托福提醒系统升级（08:00→20:30晚间 + 周日专场20:00 + 双渠道，飞书API实证送达）→ 错词三钉子户连续第11次上榜（毕业任务待提交）→ 微信通道诊断升级（rate limited→session not ready），飞书家庭群兜底全周零漏发",
+      "tags": [
+        "weekly",
+        "rowing",
+        "toefl",
+        "system",
+        "holiday"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -327,8 +340,8 @@
     }
   ],
   "stats": {
-    "total_logs": 25,
-    "total_words": 44579,
+    "total_logs": 26,
+    "total_words": 48079,
     "total_themes_extracted": 6
   }
 }
