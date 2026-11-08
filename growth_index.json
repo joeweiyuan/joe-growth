@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-11-01 20:00",
+  "last_updated": "2026-11-08 20:00",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -33,16 +33,6 @@
         "reflection",
         "rowing",
         "toefl"
-      ],
-      "recorder": "爸爸"
-    },
-    {
-      "date": "2026-05-24",
-      "file": "daily-logs/2026-05-24.md",
-      "summary": "星辰记基线录入 — 少爷完整档案建立",
-      "tags": [
-        "baseline",
-        "milestone"
       ],
       "recorder": "爸爸"
     },
@@ -139,19 +129,6 @@
         "academic",
         "toefl",
         "milestone"
-      ],
-      "recorder": "六六（普罗米修斯）"
-    },
-    {
-      "date": "2026-08-16",
-      "file": "daily-logs/2026-08-16.md",
-      "summary": "⭐ 第33周周记：宾大结营→普林斯顿顺访→美国行27天收官→托福冲刺重启（8/22首考倒计时6天）",
-      "tags": [
-        "weekly",
-        "rowing",
-        "toefl",
-        "milestone",
-        "usa-tour"
       ],
       "recorder": "六六（普罗米修斯）"
     },
@@ -352,6 +329,22 @@
         "verification"
       ],
       "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-11-08",
+      "file": "daily-logs/2026-11-08.md",
+      "summary": "⭐ 第45周周记：连续第四周静默 —— 系统侧 8 条投递全部 API 读回实证在群（6次日提醒+错词周报第15期+周日专场，连续零漏发第78天）；本周唯一实质新增＝修好错词周报脚本 2 处 Bug（按 word 去重 6条→3词、过期口径 3.5→4.5 改为 4.0→5.0）；业务侧人工输入0条/训练回执0条/课程回执0条/写作0篇（连续第4周）；错词本最后新增6/14→147天零新增；三钉子户第15周在榜（98天）；写作39天零可核查输出、距年底5.0仅53天；微信iLink断连满30天（满月）；前四周三度复发的系统状态行混群本周0次",
+      "tags": [
+        "weekly",
+        "toefl",
+        "rowing",
+        "system",
+        "reflection",
+        "silence",
+        "verification",
+        "tooling"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -382,8 +375,8 @@
     }
   ],
   "stats": {
-    "total_logs": 29,
-    "total_words": 63004,
+    "total_logs": 28,
+    "total_words": 59658,
     "total_themes_extracted": 6
   }
 }
