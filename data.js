@@ -85,6 +85,16 @@ const SITE_DATA = {
       { date: '2026-12-12', label: '三战（2026-11-16 报名 · ¥2,100）' }
     ],
 
+    /** 全真模考（老师安排的真題测试，非 ETS 官方口径） */
+    mockExams: [
+      {
+        date: '2026-11-15', provider: 'Vincent 老师',
+        reading: 5.5, listening: 5.0, writing: 5.0, speaking: 5.0, overall: 5.0,
+        note: '5.0 水平已具备但不稳定：①阅读看题太快、缺 double check ②听力记笔记没跟上节奏 ③简单题反而「听漂」',
+        goal: '12/12 三战：保 5.0+'
+      }
+    ],
+
     /** 全部练习履历——加一条新练习就是在这里加 */
     practiceSessions: [
       {
