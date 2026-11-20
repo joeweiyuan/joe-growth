@@ -97,6 +97,25 @@ GIT_SSH_COMMAND="ssh -i /root/.ssh/id_ed25519_github -o IdentitiesOnly=yes" git 
   复测用缓存破坏参数 `?v=$(date +%s)`；非 ASCII 路径先 URL-encode（`urllib.parse.quote`）。
 - 说"已推送"前给证据：**分支差异 0 + 目标 URL 逐个 HTTP 200**，不能只给 commit 号。
 
+## 🎓 学术追踪站（joe-academic-tracker）数据与 UI
+
+独立 repo `/root/joe-academic-tracker/`，站点 https://joeweiyuan.github.io/joe-academic-tracker/
+（成绩相关的数值口径、满绩、目标反推算法 → 见 `academic-gpa-normalization`，本段只管"怎么改站"）。
+
+- **数据全在 `data.js`**：`STUDENT` / `SUBJECTS` / `CATEGORIES` / `SEMESTERS` / `SEMESTER_COMPOSITE` / `HIGHLIGHTS` / `COMMENTS`。
+  新增学期 = 向 `SEMESTERS` 追加一项（`id/label/shortLabel/term/year/semester/overall_gpa/date/scores`）；
+  `scores` 每科 `{gpa, gpa4, credit, attendance, participation, homework, exam}`；老学期缺新科目键没关系（页面用 `?.` 兜底）。
+  新科目必须同时加进 `SUBJECTS`（`id/label/short/category/color`），否则表里不显示；同名校同科目沿用旧 id（如 psychology/art/pe）保持趋势连续。
+- **语法校验**：`node --check data.js`；要读变量值用 `vm.runInContext(src + ';this.d={SEMESTERS}', ctx)` —— **`const` 不会从 `eval` 泄漏到外层作用域**，直接 eval 后访问得到 undefined。
+- **内联 JS 必须单独校验**：抽出最后一个 `<script>` 块 → `node --check`。
+  往 `</script>` 前插代码时，锚点 `</script>` 会先命中 `<script src="data.js?...">` 那一行 → 用 `</script>\n</body>` 或更长上下文；
+  插完确认 IIFE 的 `})();` 配对，少一个就 `SyntaxError: Unexpected end of input`（页面不渲染，元素在但 querySelector 返回 null）。
+- **缓存版本号**：`<script src="data.js?v=YYYYMMDD">` —— 换数据必须同时改版本号，否则浏览器长期用旧缓存；排查"线上不更新"先看这个。
+- **Pages 构建会滞后**：推完可能 1–3 分钟才生效，必要时空提交 nudge（`git commit --allow-empty -m "chore: nudge pages rebuild"`）。
+  验证 = 循环 `curl` 线上 HTML 搜新增标记/新版本号（命中才算上线）+ 浏览器取 DOM 值；**禁止凭 push 成功宣布上线**。
+- **`.hermes.md` 不能进公开仓**：repo 根目录的项目说明是 agent 指令，`git add -A` 会把它带进公开仓库 → `.gitignore` 加一行，提交前 `git status` 检查。
+- main → gh-pages 合并时 `data.js` 常冲突（两分支各自演进过）：先 `git diff HEAD:data.js origin/main:data.js` 确认清楚哪边是超集，再 `git checkout --theirs`，别忘了 `git add` 才算解决。
+
 ## 🔒 私有备份目的地（知识库）
 
 全量备份推**私有** KB 仓库（`08-个人成长/少爷/`）；公开仓库只放**脱敏层**（STATE 快照 + 技能副本）。
