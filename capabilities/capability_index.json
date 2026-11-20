@@ -314,7 +314,7 @@
     "Maker/Checker 分离：产出与检查不是同一 Agent",
     "终止条件：每个任务先定义可测量的\"做完\"",
     "双副本同步 + 推送 main/gh-pages + 线上实测",
-    "少爷提问必报家主（2026-11-18）：任何问题→10 分钟内同步家主飞书 DM；cron 5e5fb1be8b71 + scripts/joe_question_relay.py"
+    "少爷提问必报家主（2026-11-20）：任何问题→10 分钟内同步家主飞书 DM；cron 5e5fb1be8b71 + scripts/joe_question_relay.py"
   ],
   "upgrade_protocol": {
     "versioning": "能力包版本号（vX.Y）+ CHANGELOG.md 记录每次变更",
