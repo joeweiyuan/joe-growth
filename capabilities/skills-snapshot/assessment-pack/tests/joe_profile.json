@@ -1,0 +1,30 @@
+{
+  "student": {"name": "Joe Wei", "grade": "10"},
+  "academic": {
+    "gpa": 3.73,
+    "max_gpa": 4.40,
+    "pct_avg": 88.19,
+    "trend": "flat",
+    "courses": [
+      {"level": "AP", "count": 2},
+      {"level": "Honors", "count": 4},
+      {"level": "Regular", "count": 4}
+    ]
+  },
+  "language": {"toefl6": 4.0, "ielts": null, "sat": null, "act": null},
+  "depth": [
+    {"name": "iENA 纽伦堡国际发明展 一等奖", "level": "A", "years": 1, "evidence": "2023"},
+    {"name": "WAICY 全球青少年AI挑战赛 银奖", "level": "A", "years": 1, "evidence": "2024"},
+    {"name": "袋鼠数学全国金奖", "level": "A", "years": 1, "evidence": "2023"},
+    {"name": "蓝桥杯全国三等奖", "level": "B", "years": 1, "evidence": "2019"},
+    {"name": "OfferPath 产品设计与测试", "level": "B", "years": 2, "evidence": "2025-2026 参与需求与验收"}
+  ],
+  "leadership": [
+    {"role": "赛艇校队核心队员", "level": "B", "years": 3, "impact": "代表学校参赛，平湖公开赛混双冠军"},
+    {"role": "OfferPath 学生侧测试负责人", "level": "C", "years": 2, "impact": "提交 bug 与体验反馈"}
+  ],
+  "talent": [
+    {"domain": "rowing", "level": "B", "years": 4, "evidence": "2k erg 7:24.1 (2026-07)；平湖 500m 混双冠军"},
+    {"domain": "music", "level": "C", "years": 3, "evidence": "长期学习"}
+  ]
+}
