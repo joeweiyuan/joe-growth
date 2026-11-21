@@ -64,6 +64,13 @@ CREATE TABLE IF NOT EXISTS sources (
   fetched_at  TEXT,
   note        TEXT
 );
+CREATE TABLE IF NOT EXISTS cds_factors (
+  univ_slug   TEXT NOT NULL,
+  cds_year    INTEGER NOT NULL,
+  factor      TEXT NOT NULL,
+  importance  TEXT,
+  PRIMARY KEY (univ_slug, cds_year, factor)
+);
 CREATE INDEX IF NOT EXISTS idx_cds_univ ON cds_records(univ_slug);
 """
 
@@ -132,12 +139,17 @@ def cmd_ingest(a):
          cost["tuition"], cost["room_board"],
          data["coverage"], json.dumps(data["missing"], ensure_ascii=False),
          a.url, sha, datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")))
+    factors = (data.get("c7_factors") or {}).get("factors") or {}
+    conn.execute("DELETE FROM cds_factors WHERE univ_slug=? AND cds_year=?", (a.univ, a.year))
+    for fk, imp in factors.items():
+        conn.execute("INSERT OR REPLACE INTO cds_factors (univ_slug, cds_year, factor, importance) VALUES (?,?,?,?)",
+                     (a.univ, a.year, fk, imp))
     conn.execute("INSERT INTO sources (univ_slug, cds_year, url, sha256, fetched_at, note) VALUES (?,?,?,?,?,?)",
                  (a.univ, a.year, a.url, sha,
                   datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"), "cds_parse"))
     conn.commit()
     print(json.dumps({"univ": a.univ, "year": a.year, "coverage": data["coverage"],
-                      "missing": data["missing"], "sha256": sha[:16]}, ensure_ascii=False))
+                      "missing": data["missing"], "c7_factors": len(factors), "sha256": sha[:16]}, ensure_ascii=False))
     conn.close()
     return 0
 
