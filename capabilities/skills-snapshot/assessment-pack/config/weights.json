@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "note": "经验权重 v1，可由数据回归校准；修改此文件即全局生效，代码不写死权重",
+  "dimensions": ["academic", "language", "depth", "leadership", "talent"],
+  "weights_by_destination": {
+    "us": {"academic": 35, "language": 15, "depth": 20, "leadership": 15, "talent": 15},
+    "uk": {"academic": 45, "language": 15, "depth": 25, "leadership": 5, "talent": 10},
+    "ca": {"academic": 40, "language": 15, "depth": 20, "leadership": 10, "talent": 15},
+    "au": {"academic": 45, "language": 15, "depth": 15, "leadership": 10, "talent": 15},
+    "hk": {"academic": 45, "language": 20, "depth": 15, "leadership": 10, "talent": 10},
+    "sg": {"academic": 45, "language": 20, "depth": 15, "leadership": 10, "talent": 10},
+    "eu": {"academic": 50, "language": 15, "depth": 20, "leadership": 5, "talent": 10}
+  },
+  "major_tilt": {
+    "stem":      {"academic": 5, "depth": 5, "leadership": -3, "talent": -2, "language": -5},
+    "business":  {"leadership": 6, "language": 3, "academic": -4, "depth": -3, "talent": -2},
+    "humanities":{"language": 6, "depth": 5, "academic": -4, "talent": -3, "leadership": -2},
+    "arts":      {"talent": 12, "depth": 3, "academic": -8, "language": -3, "leadership": -4}
+  },
+  "level_scores": {"S": 100, "A": 80, "B": 60, "C": 40, "D": 20},
+  "academic": {
+    "pct_weight": 0.60,
+    "rigor_weight": 0.25,
+    "trend_weight": 0.15,
+    "trend_scores": {"up": 100, "flat": 60, "down": 30}
+  },
+  "language_targets": {
+    "us_top": {"toefl6": 5.0, "ielts": 7.5, "sat": 1520},
+    "us_mid": {"toefl6": 4.5, "ielts": 7.0, "sat": 1400},
+    "uk_top": {"toefl6": 5.0, "ielts": 7.5, "sat": null},
+    "uk_mid": {"toefl6": 4.5, "ielts": 6.5, "sat": null}
+  },
+  "bands": [
+    {"min": 85, "band": "A+", "desc": "第一梯队竞争力"},
+    {"min": 75, "band": "A",  "desc": "强竞争力"},
+    {"min": 65, "band": "B+", "desc": "中上，可通过补强进第一梯队"},
+    {"min": 55, "band": "B",  "desc": "中等，需要结构性提升"},
+    {"min": 0,  "band": "C",  "desc": "基础薄弱，先补地基"}
+  ]
+}
