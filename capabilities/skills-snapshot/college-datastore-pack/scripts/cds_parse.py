@@ -134,6 +134,85 @@ def parse_c11(lines):
     return res
 
 
+def parse_c7(lines):
+    """C7 录取因素重视程度（官方）
+
+    表头四档：Very Important / Important / Considered / Not Considered
+    返回 {factor_key: importance}
+    """
+    res = {"factors": {}, "evidence": {"section": "C7"}}
+    start = None
+    for i, line in enumerate(lines):
+        if re.search(r"C7\b.*(Relative importance|importance of each)", line, re.I) or \
+           re.search(r"Relative importance of each", line, re.I):
+            start = i
+            break
+    if start is None:
+        return res
+
+    end = len(lines)
+    for j in range(start + 1, min(len(lines), start + 90)):
+        if re.match(r"^\s*(C8|D\s*\.|D[0-9])\b", lines[j]):
+            end = j
+            break
+
+    # 表头列位置
+    header = ""
+    for j in range(start, min(end, start + 6)):
+        if re.search(r"Very Important", lines[j], re.I) or re.search(r"Important\s+Considered", lines[j], re.I):
+            header = lines[j]
+            break
+    cols = {}
+    if header:
+        for key, pat in (("very_important", r"Very\s+Important"),
+                         ("important", r"(?<!Very\s)\bImportant\b"),
+                         ("considered", r"Considered"),
+                         ("not_considered", r"Not\s+Considered")):
+            m = re.search(pat, header, re.I)
+            if m:
+                cols[key] = m.start()
+
+    FACTORS = {
+        "rigor": r"Rigor of secondary school record",
+        "class_rank": r"Class rank",
+        "gpa": r"Academic GPA",
+        "test_scores": r"Standardized test scores",
+        "essay": r"Application essay",
+        "recommendation": r"Recommendation",
+        "interview": r"Interview",
+        "extracurricular": r"Extracurricular activities",
+        "talent": r"Talent/ability",
+        "character": r"Character/personal qualities",
+        "first_gen": r"First generation",
+        "alumni": r"Alumni/ae relation",
+        "geography": r"Geographical residence",
+        "state_residency": r"State residency",
+        "religion": r"Religious affiliation",
+        "race": r"Racial/ethnic status",
+        "volunteer": r"Volunteer work",
+        "work": r"Work experience",
+        "interest": r"Level of applicant.s interest",
+    }
+
+    for j in range(start, end):
+        line = lines[j]
+        for key, pat in FACTORS.items():
+            if key in res["factors"]:
+                continue
+            if re.search(pat, line, re.I):
+                marks = [m.start() for m in re.finditer(r"[X✓✔]", line)]
+                if not marks:
+                    continue
+                pos = marks[0]
+                level = None
+                if cols:
+                    # 归到最近的列
+                    best = min(cols.items(), key=lambda kv: abs(kv[1] - pos))
+                    level = best[0]
+                res["factors"][key] = level or "marked"
+    return res
+
+
 def parse_cost(lines):
     """G/H 区块：学费与食宿"""
     res = {"tuition": None, "room_board": None, "evidence": {}}
@@ -162,6 +241,7 @@ def parse(text, meta=None):
         "c1_admissions": parse_c1(lines),
         "c9_test_scores": parse_c9(lines),
         "c11_deadlines": parse_c11(lines),
+        "c7_factors": parse_c7(lines),
         "costs": parse_cost(lines),
     }
     # 汇总缺失字段（给人工补录用，不自动填）
