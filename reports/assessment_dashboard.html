@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>Joe Wei 增值追踪看板</title>
+<style>
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f7fafc;margin:0;padding:24px;color:#2d3748}
+.wrap{max-width:900px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px} .sub{color:#718096;font-size:13px;margin-bottom:18px}
+.cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:14px 18px;flex:1;min-width:150px}
+.card .k{font-size:12px;color:#718096} .card .v{font-size:26px;font-weight:700;margin-top:4px}
+.card .d{font-size:12px;margin-top:2px}
+.panel{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:18px;margin-bottom:16px}
+.panel h2{font-size:15px;margin:0 0 12px;color:#4a5568}
+.chart{width:100%;height:auto}
+.bar-row{display:flex;align-items:center;gap:10px;margin:7px 0}
+.bar-label{width:70px;font-size:13px;color:#4a5568}
+.bar-track{flex:1;height:12px;background:#edf2f7;border-radius:6px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#4299e1,#2b6cb0);border-radius:6px}
+.bar-val{width:44px;text-align:right;font-size:13px;font-weight:600}
+.chip{display:inline-block;background:#f7fafc;border:1px solid #e2e8f0;border-radius:999px;padding:4px 10px;font-size:12px;margin:3px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px;border-bottom:1px solid #edf2f7;text-align:left}
+th{color:#718096;font-weight:600;font-size:12px}
+.num{text-align:right} .empty{color:#a0aec0;padding:20px;text-align:center}
+.foot{color:#a0aec0;font-size:11px;margin-top:14px}
+</style></head><body><div class="wrap">
+<h1>Joe Wei · 增值追踪看板</h1>
+<div class="sub">共 1 次评估 · 最新 2026-11-21</div>
+<div class="cards">
+  <div class="card"><div class="k">最新综合分（US / stem）</div>
+    <div class="v">77.0</div></div>
+  <div class="card"><div class="k">较首次</div>
+    <div class="v" style="color:#718096">—0</div>
+    <div class="d" style="color:#718096">首次 77.0</div></div>
+  <div class="card"><div class="k">快照次数</div><div class="v">1</div></div>
+</div>
+<div class="panel"><h2>综合分趋势</h2><svg viewBox="0 0 760 220" class="chart"><line x1="34" y1="186.0" x2="726" y2="186.0" stroke="#eee"/><line x1="34" y1="110.0" x2="726" y2="110.0" stroke="#eee"/><line x1="34" y1="34.0" x2="726" y2="34.0" stroke="#eee"/><path d="M34.0,69.0" fill="none" stroke="#2b6cb0" stroke-width="2.5"/><circle cx="34.0" cy="69.0" r="4" fill="#2b6cb0"/><text x="34.0" y="59.0" font-size="11" text-anchor="middle" fill="#2b6cb0">77.0</text><text x="34.0" y="212" font-size="10" text-anchor="middle" fill="#666">11-21</text></svg></div>
+<div class="panel"><h2>最新五维</h2><div class="bar-row"><span class="bar-label">学术</span>
+        <div class="bar-track"><div class="bar-fill" style="width:78.2%"></div></div>
+        <span class="bar-val">78.2</span></div><div class="bar-row"><span class="bar-label">语言</span>
+        <div class="bar-track"><div class="bar-fill" style="width:66.7%"></div></div>
+        <span class="bar-val">66.7</span></div><div class="bar-row"><span class="bar-label">学术深度</span>
+        <div class="bar-track"><div class="bar-fill" style="width:84.0%"></div></div>
+        <span class="bar-val">84.0</span></div><div class="bar-row"><span class="bar-label">领导力</span>
+        <div class="bar-track"><div class="bar-fill" style="width:69.0%"></div></div>
+        <span class="bar-val">69.0</span></div><div class="bar-row"><span class="bar-label">特长</span>
+        <div class="bar-track"><div class="bar-fill" style="width:75.0%"></div></div>
+        <span class="bar-val">75.0</span></div></div>
+<div class="panel"><h2>维度变化（较首次）</h2><span class="chip">学术 <b style="color:#a0aec0">—0</b></span><span class="chip">语言 <b style="color:#a0aec0">—0</b></span><span class="chip">学术深度 <b style="color:#a0aec0">—0</b></span><span class="chip">领导力 <b style="color:#a0aec0">—0</b></span><span class="chip">特长 <b style="color:#a0aec0">—0</b></span></div>
+<div class="panel"><h2>快照明细</h2>
+<table><thead><tr><th>时间</th><th>方向</th><th>专业</th><th class="num">综合</th>
+<th class="num">学术</th><th class="num">语言</th><th class="num">深度</th><th class="num">领导力</th><th class="num">特长</th></tr></thead>
+<tbody><tr><td>2026-11-21 11:06</td><td>us</td><td>stem</td><td class="num">77.0</td><td class="num">78.2</td><td class="num">66.7</td><td class="num">84.0</td><td class="num">69.0</td><td class="num">75.0</td></tr></tbody></table></div>
+<div class="foot">生成于 2026-11-21 11:06 · 评分为经验模型 v1/v2，用于诊断与趋势追踪，不预测录取</div>
+</div></body></html>

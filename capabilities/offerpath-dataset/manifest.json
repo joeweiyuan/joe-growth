@@ -1,0 +1,58 @@
+{
+  "dataset": "offerpath-college-dataset",
+  "version": "20261121.1330",
+  "generated_at": "2026-11-21T13:30:09+08:00",
+  "owner": "六六 (joe profile)",
+  "consumer": "云策 (dad profile) / OfferPath MVP",
+  "source_of_truth": "/root/shared/offerpath/college.db",
+  "tables": {
+    "universities": 4,
+    "cds_records": 4,
+    "cds_factors": 36,
+    "cds_sources": 4
+  },
+  "schools": [
+    {
+      "slug": "stanford",
+      "name_cn": "斯坦福大学",
+      "cds_year": 2025,
+      "admission_rate": 3.61,
+      "quality": "ok",
+      "quality_note": "{\"c1\": \"ok\", \"c9\": \"ok\", \"c7\": \"ok\"}"
+    },
+    {
+      "slug": "caltech",
+      "name_cn": "加州理工学院",
+      "cds_year": 2025,
+      "admission_rate": 2.57,
+      "quality": "partial",
+      "quality_note": "{\"c1\": \"ok\", \"c9\": \"unparsed\", \"c7\": \"unparsed\"}"
+    },
+    {
+      "slug": "harvard",
+      "name_cn": "哈佛大学",
+      "cds_year": 2026,
+      "admission_rate": 4.18,
+      "quality": "partial",
+      "quality_note": "{\"c1\": \"ok\", \"c9\": \"ok\", \"c7\": \"suspicious\"}"
+    },
+    {
+      "slug": "mit",
+      "name_cn": "麻省理工学院",
+      "cds_year": 2025,
+      "admission_rate": 4.55,
+      "quality": "partial",
+      "quality_note": "{\"c1\": \"ok\", \"c9\": \"ok\", \"c7\": \"unparsed\"}"
+    }
+  ],
+  "quality_semantics": {
+    "ok": "该区块解析可信，可用于评分",
+    "suspicious": "结构完整但取值异常，需人工复核后才可用",
+    "partial": "部分区块缺失",
+    "unparsed": "未解析出，不得当作 0 使用"
+  },
+  "checksums": {
+    "college.db": "694acb1307d8ad0247fe14dd4eefdd67dfea015b155af07a5fad4d72ab818359",
+    "schema.sql": "fa1a58df55b5ca669dc5c78ab5a6cb8a6047f995ee70aace7c618d95a5153830"
+  }
+}
