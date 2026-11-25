@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-11-15",
+  "last_updated": "2026-11-22T20:00:00+08:00",
   "daily_logs": [
     {
       "date": "2026-05-16",
@@ -361,6 +361,22 @@
         "reflection"
       ],
       "recorder": "六六（普罗米修斯）"
+    },
+    {
+      "date": "2026-11-22",
+      "file": "daily-logs/2026-11-22.md",
+      "summary": "⭐ 第47周周记：能力端一周建成、产出端第七周为零——人工输入 6 天/29 条（11/16·17·18·20·21·22；11/19=0），交付：GPA 三次修订（3.20→3.73→满绩 4.40=84.8%、折算 3.41/核心 3.35、期末 3.90 缺口+1.465）·一天建成 11 个学术包+college-datastore-pack 17/17+assessment-pack 19/19+评估模型v2（门槛层+区分层）+数据集固定 /root/shared/offerpath（19校/check✅）·断层诊断卷 28 题·AP 大纲全中文对照版 10 页；本周 24 个 SKILL 新建或更新；但少爷侧五项产出均为 0：写作 53 天 0 篇、训练 0 回执第 6 周、Vincent 新课第 1 节 0 回执、诊断卷 0 份回填、三钉子户第 17 周（112 天）；系统侧飞书 7/7 在群（零漏发 92 天），微信 1/7（仅 11/16 少爷发「.」后 delivered，<24h 再断）；旧 cron 空转 72 次；关机播报混群第 4 次；诚实标注 AP/IB/A-Level 三包仅骨架 v1",
+      "tags": [
+        "weekly",
+        "academic",
+        "gpa",
+        "toefl",
+        "offerpath",
+        "system",
+        "verification",
+        "reflection"
+      ],
+      "recorder": "六六（普罗米修斯）"
     }
   ],
   "monthly_narratives": [],
@@ -391,8 +407,8 @@
     }
   ],
   "stats": {
-    "total_logs": 29,
-    "total_words": 64800,
+    "total_logs": 30,
+    "total_words": 70962,
     "total_themes_extracted": 6
   }
 }
